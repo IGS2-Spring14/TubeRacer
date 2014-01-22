@@ -232,17 +232,41 @@ public class SplineInterpolator : MonoBehaviour
 		if (timeParam >= mNodes[mNodes.Count - 2].Time)
 			return mNodes[mNodes.Count - 2].Point;
 
+		int idx;
+		float param;
+		GetIndexAndParamAtTime(timeParam, out idx, out param);
+		return GetHermiteInternal(idx, param);
+	}
+
+	public Quaternion GetSquadAtTime(float timeParam)
+	{
+		if (timeParam >= mNodes[mNodes.Count - 2].Time)
+			return mNodes[mNodes.Count - 2].Rot;
+		
+		int idx;
+		float param;
+		GetIndexAndParamAtTime(timeParam, out idx, out param);
+		return GetSquad(idx, param);
+	}
+
+	private void GetIndexAndParamAtTime(float timeParam, out int idx, out float param)
+	{
+		if (timeParam >= mNodes[mNodes.Count - 2].Time)
+		{
+			idx = mNodes.Count - 2;
+			param = 1.0f;
+			return;
+		}
+		
 		int c;
 		for (c = 1; c < mNodes.Count - 2; c++)
 		{
 			if (mNodes[c].Time > timeParam)
 				break;
 		}
-
-		int idx = c - 1;
-		float param = (timeParam - mNodes[idx].Time) / (mNodes[idx + 1].Time - mNodes[idx].Time);
+		
+		idx = c - 1;
+		param = (timeParam - mNodes[idx].Time) / (mNodes[idx + 1].Time - mNodes[idx].Time);
 		param = MathUtils.Ease(param, mNodes[idx].EaseIO.x, mNodes[idx].EaseIO.y);
-
-		return GetHermiteInternal(idx, param);
 	}
 }

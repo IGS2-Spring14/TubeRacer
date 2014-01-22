@@ -50,11 +50,12 @@ public class SplineController : MonoBehaviour
 
 		mTransforms = GetTransforms();
 
+		if (AutoStart)
+			FollowSpline();
+
 		if (HideOnExecute)
 			DisableTransforms();
 
-		if (AutoStart)
-			FollowSpline();
 	}
 
 	void SetupSplineInterpolator(SplineInterpolator interp, Transform[] trans)
@@ -119,7 +120,7 @@ public class SplineController : MonoBehaviour
 	{
 		if (SplineRoot != null)
 		{
-			SplineRoot.SetActiveRecursively(false);
+			SplineRoot.SetActive(false);
 		}
 	}
 
