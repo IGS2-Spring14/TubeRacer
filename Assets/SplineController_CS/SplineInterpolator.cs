@@ -10,6 +10,8 @@ public class SplineInterpolator : MonoBehaviour
 {
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
 
+	public float TimeScale = 1.0f;
+
 	internal class SplineNode
 	{
 		internal Vector3 Point;
@@ -138,7 +140,7 @@ public class SplineInterpolator : MonoBehaviour
 		if (mState == "Reset" || mState == "Stopped" || mNodes.Count < 4)
 			return;
 
-		mCurrentTime += Time.deltaTime;
+		mCurrentTime += Time.deltaTime * TimeScale;
 
 		// We advance to next point in the path
 		if (mCurrentTime >= mNodes[mCurrentIdx + 1].Time)
