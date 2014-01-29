@@ -1,0 +1,120 @@
+fileFormatVersion: 2
+guid: 0ea543865b886564cbd20646aceea359
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Base
+    100002: Base_Head
+    100004: Firing_Gun
+    100006: Gun
+    100008: Missile_Holder
+    100010: Missile_Holder1
+    100012: Missile_Holders
+    100014: Missile_Pad
+    100016: Missile_Pad1
+    100018: Missile_Pads
+    100020: Ring_1
+    100022: Ring_2
+    100024: Ring_3
+    100026: Rings
+    100028: //RootNode
+    400000: Base
+    400002: Base_Head
+    400004: Firing_Gun
+    400006: Gun
+    400008: Missile_Holder
+    400010: Missile_Holder1
+    400012: Missile_Holders
+    400014: Missile_Pad
+    400016: Missile_Pad1
+    400018: Missile_Pads
+    400020: Ring_1
+    400022: Ring_2
+    400024: Ring_3
+    400026: Rings
+    400028: //RootNode
+    2300000: Base
+    2300002: Base_Head
+    2300004: Gun
+    2300006: Missile_Holder
+    2300008: Missile_Holder1
+    2300010: Missile_Pad
+    2300012: Missile_Pad1
+    2300014: Ring_1
+    2300016: Ring_2
+    2300018: Ring_3
+    3300000: Base
+    3300002: Base_Head
+    3300004: Gun
+    3300006: Missile_Holder
+    3300008: Missile_Holder1
+    3300010: Missile_Pad
+    3300012: Missile_Pad1
+    3300014: Ring_1
+    3300016: Ring_2
+    3300018: Ring_3
+    4300000: Base
+    4300002: Base_Head
+    4300004: Gun
+    4300006: Ring_1
+    4300008: Ring_2
+    4300010: Ring_3
+    4300012: Missile_Holder
+    4300014: Missile_Holder1
+    4300016: Missile_Pad1
+    4300018: Missile_Pad
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
