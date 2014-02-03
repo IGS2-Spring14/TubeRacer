@@ -16,5 +16,8 @@ public class RS_GUIControl_Options : MonoBehaviour {
 	//Handles GUI functions
 	void OnGUI () {
 		GUI.Box (new Rect (Screen.width / 8, Screen.height / 8, 3 * Screen.width / 4, 3 * Screen.height / 4), "Options");
+
+		if (GUI.Button(new Rect(0, 0, 100, 50), "Return to Menu"))
+			Application.LoadLevel ("Menu");
 	}
 }
