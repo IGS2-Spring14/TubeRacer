@@ -190,6 +190,23 @@ public class SplineInterpolator : MonoBehaviour
 		}
 	}
 
+	public Vector3 GetPoint(int idxFirstPoint)
+	{
+		Vector3 P0 = mNodes [idxFirstPoint].Point;
+		return P0;
+	}
+	
+	public Vector3 GetPointAtTime(float timeParam)
+	{
+		if (timeParam >= mNodes[mNodes.Count - 2].Time)
+			return mNodes[mNodes.Count - 2].Point;
+		
+		int idx;
+		float param;
+		GetIndexAndParamAtTime(timeParam, out idx, out param);
+		return GetPoint(idx);
+	}
+
 	Quaternion GetSquad(int idxFirstPoint, float t)
 	{
 		Quaternion Q0 = mNodes[idxFirstPoint - 1].Rot;
