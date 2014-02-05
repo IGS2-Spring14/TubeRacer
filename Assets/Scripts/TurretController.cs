@@ -10,12 +10,13 @@ public class TurretController : MonoBehaviour
 
 	//Firing
 	public Rigidbody projectile;
-	public int FiringRate = 1000;
+	public int FiringCooldown = 1000;
 	float timer = 0;
 
 	// Both
 	public SplineInterpolator Spline;
 	public int Range = 500; 
+	Vector3 relPos;
 
 	// Use this for initialization
 	void Start () 
@@ -38,7 +39,7 @@ public class TurretController : MonoBehaviour
 	{
 		//Direction to look at (needs to be reversed so model faces player)
 		//Vector3 relPos = target.position - transform.position;
-		Vector3 relPos = Spline.GetPointAtTime (Time.time + 3) - transform.position;
+		relPos = Spline.GetPointAtTime (Time.time + 3) - transform.position;
 		if (ReverseAim)
 			relPos = relPos * -1;
 		relPos.y = 0.0f;
@@ -68,7 +69,7 @@ public class TurretController : MonoBehaviour
 		}
 		if (timer <= 1)
 		{
-			timer = FiringRate;
+			timer = FiringCooldown;
 			Rigidbody clone;
 			clone = Instantiate (projectile, transform.position, GunTransform.rotation) as Rigidbody;
 		}
