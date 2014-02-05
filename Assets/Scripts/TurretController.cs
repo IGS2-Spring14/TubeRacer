@@ -7,11 +7,15 @@ public class TurretController : MonoBehaviour
 	public float MaxGunAngle = 60f;
 	public bool ReverseAim = true;
 	public Transform target, GunTransform;
-	
+
 	//Firing
 	public Rigidbody projectile;
 	public int FiringRate = 1000;
 	float timer = 0;
+
+	// Both
+	public SplineInterpolator Spline;
+	public int Range = 500; 
 
 	// Use this for initialization
 	void Start () 
@@ -23,14 +27,18 @@ public class TurretController : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		UpdateAimRotation();
-		UpdateFiring();
+		if (Vector3.Distance(target.position, transform.position) < Range) 
+		{
+			UpdateAimRotation ();
+			UpdateFiring ();
+		}
 	}
 
 	void UpdateAimRotation()
 	{
 		//Direction to look at (needs to be reversed so model faces player)
-		Vector3 relPos = target.position - transform.position;
+		//Vector3 relPos = target.position - transform.position;
+		Vector3 relPos = Spline.GetPointAtTime (Time.time + 3) - transform.position;
 		if (ReverseAim)
 			relPos = relPos * -1;
 		relPos.y = 0.0f;
@@ -39,15 +47,16 @@ public class TurretController : MonoBehaviour
 		transform.rotation = Quaternion.LookRotation(relPos);
 
 		//Face the gun toward the player
-		relPos = target.position - transform.position;
+		//relPos = target.position - transform.position;
+		relPos = Spline.GetPointAtTime (Time.time + 3) - transform.position;
 		if (ReverseAim)
 			relPos = relPos * -1;
 		if (Vector3.Angle(relPos, transform.forward) <= MaxGunAngle)
 			GunTransform.rotation = Quaternion.LookRotation(relPos);
 
 		//Debug info
-		print(Vector3.Angle(relPos, transform.forward));
-		Debug.DrawLine(GunTransform.position, target.position, Color.red);
+		//print(Vector3.Angle(relPos, transform.forward));
+		//Debug.DrawLine(GunTransform.position, target.position, Color.red);
 	}
 	
 	// Update is called once per frame
