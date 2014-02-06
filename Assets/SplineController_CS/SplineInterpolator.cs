@@ -10,6 +10,8 @@ public class SplineInterpolator : MonoBehaviour
 {
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
 
+	public float TimeScale = 1.0f;
+
 	internal class SplineNode
 	{
 		internal Vector3 Point;
@@ -138,7 +140,7 @@ public class SplineInterpolator : MonoBehaviour
 		if (mState == "Reset" || mState == "Stopped" || mNodes.Count < 4)
 			return;
 
-		mCurrentTime += Time.deltaTime;
+		mCurrentTime += Time.deltaTime * TimeScale;
 
 		// We advance to next point in the path
 		if (mCurrentTime >= mNodes[mCurrentIdx + 1].Time)
@@ -186,6 +188,23 @@ public class SplineInterpolator : MonoBehaviour
 				transform.rotation = GetSquad(mCurrentIdx, param);
 			}
 		}
+	}
+
+	public Vector3 GetPoint(int idxFirstPoint)
+	{
+		Vector3 P0 = mNodes [idxFirstPoint].Point;
+		return P0;
+	}
+	
+	public Vector3 GetPointAtTime(float timeParam)
+	{
+		if (timeParam >= mNodes[mNodes.Count - 2].Time)
+			return mNodes[mNodes.Count - 2].Point;
+		
+		int idx;
+		float param;
+		GetIndexAndParamAtTime(timeParam, out idx, out param);
+		return GetPoint(idx);
 	}
 
 	Quaternion GetSquad(int idxFirstPoint, float t)
