@@ -16,8 +16,9 @@ public class RS_GUIControl_Loading : MonoBehaviour {
 
 		load -= 1f * Time.deltaTime;
 		
-		if (load <= 0f)
+		if (load <= 0f){
 			Application.LoadLevel(toScreen);
+		}
 	}
 
 	//Handles GUI functions
