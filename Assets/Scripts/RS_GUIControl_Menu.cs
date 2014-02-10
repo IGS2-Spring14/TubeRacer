@@ -3,10 +3,11 @@ using System.Collections;
 
 public class RS_GUIControl_Menu : MonoBehaviour {
 
-	public GameObject loading;
+	//public GameObject loading;
+	public Texture menuBG;
 
 	// Use this for initialization
-	void Loading () {
+	void Start () {
 		//loading = GameObject.Find("loadScreen");
 		//RS_GUIControl_Loading.toScreen = "Menu";
 
@@ -19,10 +20,11 @@ public class RS_GUIControl_Menu : MonoBehaviour {
 
 	//Handles GUI functions
 	void OnGUI () {
+		GUI.DrawTexture(new Rect (0, 0, Screen.width, Screen.height), menuBG, ScaleMode.StretchToFill);
 
 		//code for main menu
 		if (GUI.Button (new Rect(3 * Screen.width / 8, Screen.height / 2, Screen.width / 4, 50), "Play")){
-			RS_GUIControl_Loading.toScreen = "MainGameplay";
+			RS_GUIControl_Loading.toScreen = "Basic_2";
 			Application.LoadLevel("Loading");
 		}
 		
