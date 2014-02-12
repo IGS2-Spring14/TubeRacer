@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RS_AudioControl_Menu : MonoBehaviour {
+public class RS_AudioControl : MonoBehaviour {
 
 	public AudioSource bgm;
 	private static bool destroyAudio = false;
@@ -10,7 +10,7 @@ public class RS_AudioControl_Menu : MonoBehaviour {
 	 * Begin:
 	 * Ensures that a duplicate object playing this sound doesn't exist.
 	 * */
-	private static RS_AudioControl_Menu instance = null;
+	private static RS_AudioControl instance = null;
 
 	void Awake() {
 		if (instance != null && instance != this) {
