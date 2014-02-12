@@ -16,4 +16,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
   - enabled: 1
-    path: Assets/Scenes/Basic_2.unity
+    path: Assets/Scenes/Basic_2_REDUX.unity

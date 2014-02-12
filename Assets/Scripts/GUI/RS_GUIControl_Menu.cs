@@ -5,7 +5,7 @@ public class RS_GUIControl_Menu : MonoBehaviour {
 
 	//public GameObject loading;
 	public Texture menuBG;
-	public RS_AudioControl_Menu music;
+	public RS_AudioControl music;
 	public GUISkin gameGUI;
 
 	// Use this for initialization
@@ -29,7 +29,7 @@ public class RS_GUIControl_Menu : MonoBehaviour {
 		if (GUI.Button (new Rect(3 * Screen.width / 8, Screen.height / 2, Screen.width / 4, 50), "", gameGUI.FindStyle("StartButton"))){
 			//RS_GUIControl_Loading.toScreen = "Basic_2";
 			music.RemoveObject();
-			Application.LoadLevel("Basic_2");
+			Application.LoadLevel("Basic_2_REDUX");
 		}
 		
 		if (GUI.Button (new Rect(3 * Screen.width / 8, Screen.height / 2 + 70, Screen.width / 4, 50), "", gameGUI.FindStyle("OptionsButton"))){
