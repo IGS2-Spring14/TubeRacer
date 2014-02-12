@@ -27,6 +27,8 @@ public class RS_AudioControl_Menu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		DontDestroyOnLoad(this.gameObject);
+
 		//tells self not to destroy self
 		destroyAudio = false;
 
