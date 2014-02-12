@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: 27aa828097ff2b346942b9d797e0522d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: body
+    100002: group1
+    100004: group2
+    100006: head
+    100008: head 1
+    100010: l_ankle
+    100012: l_foot
+    100014: l_hip
+    100016: l_thigh
+    100018: l_toe
+    100020: left_foot
+    100022: left_foot1
+    100024: pCube2
+    100026: pCube3
+    100028: pCube5
+    100030: pCube6
+    100032: pCylinder1
+    100034: pCylinder2
+    100036: persp1
+    100038: polySurface3
+    100040: polySurface4
+    100042: r_ankle
+    100044: r_barrel
+    100046: r_foot
+    100048: r_gun
+    100050: r_hip
+    100052: r_thigh
+    100054: r_toe
+    100056: //RootNode
+    100058: torso
+    400000: body
+    400002: group1
+    400004: group2
+    400006: head
+    400008: head 1
+    400010: l_ankle
+    400012: l_foot
+    400014: l_hip
+    400016: l_thigh
+    400018: l_toe
+    400020: left_foot
+    400022: left_foot1
+    400024: pCube2
+    400026: pCube3
+    400028: pCube5
+    400030: pCube6
+    400032: pCylinder1
+    400034: pCylinder2
+    400036: persp1
+    400038: polySurface3
+    400040: polySurface4
+    400042: r_ankle
+    400044: r_barrel
+    400046: r_foot
+    400048: r_gun
+    400050: r_hip
+    400052: r_thigh
+    400054: r_toe
+    400056: //RootNode
+    400058: torso
+    2300000: head 1
+    2300002: left_foot
+    2300004: left_foot1
+    2300006: pCube2
+    2300008: pCube3
+    2300010: pCube5
+    2300012: pCube6
+    2300014: pCylinder1
+    2300016: pCylinder2
+    2300018: polySurface3
+    2300020: polySurface4
+    2300022: torso
+    3300000: head 1
+    3300002: left_foot
+    3300004: left_foot1
+    3300006: pCube2
+    3300008: pCube3
+    3300010: pCube5
+    3300012: pCube6
+    3300014: pCylinder1
+    3300016: pCylinder2
+    3300018: polySurface3
+    3300020: polySurface4
+    3300022: torso
+    4300000: pCylinder2
+    4300002: pCylinder1
+    4300004: head
+    4300006: left_foot1
+    4300008: pCube6
+    4300010: polySurface3
+    4300012: pCube3
+    4300014: left_foot
+    4300016: pCube5
+    4300018: polySurface4
+    4300020: pCube2
+    4300022: torso
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 48
+      lastFrame: 144
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: body/head
+        weight: 1
+      - path: body/head/head 1
+        weight: 1
+      - path: body/head/r_barrel
+        weight: 1
+      - path: body/head/r_barrel/r_gun
+        weight: 1
+      - path: body/head/r_barrel/r_gun/pCylinder1
+        weight: 1
+      - path: body/head/r_barrel/r_gun/pCylinder2
+        weight: 1
+      - path: body/l_hip
+        weight: 1
+      - path: body/l_hip/l_thigh
+        weight: 1
+      - path: body/l_hip/l_thigh/l_ankle
+        weight: 1
+      - path: body/l_hip/l_thigh/l_ankle/l_foot
+        weight: 1
+      - path: body/l_hip/l_thigh/l_ankle/l_foot/l_toe
+        weight: 1
+      - path: body/l_hip/l_thigh/l_ankle/l_foot/left_foot
+        weight: 1
+      - path: body/l_hip/l_thigh/l_ankle/pCube5
+        weight: 1
+      - path: body/l_hip/l_thigh/polySurface4
+        weight: 1
+      - path: body/l_hip/pCube2
+        weight: 1
+      - path: body/r_hip
+        weight: 1
+      - path: body/r_hip/pCube3
+        weight: 1
+      - path: body/r_hip/r_thigh
+        weight: 1
+      - path: body/r_hip/r_thigh/polySurface3
+        weight: 1
+      - path: body/r_hip/r_thigh/r_ankle
+        weight: 1
+      - path: body/r_hip/r_thigh/r_ankle/pCube6
+        weight: 1
+      - path: body/r_hip/r_thigh/r_ankle/r_foot
+        weight: 1
+      - path: body/r_hip/r_thigh/r_ankle/r_foot/left_foot1
+        weight: 1
+      - path: body/r_hip/r_thigh/r_ankle/r_foot/r_toe
+        weight: 1
+      - path: body/torso
+        weight: 1
+      - path: group1
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: persp1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
