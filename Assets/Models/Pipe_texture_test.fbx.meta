@@ -1,32 +1,12 @@
 fileFormatVersion: 2
-guid: 6c4f1cce0e170934e90ed9be40d8b848
+guid: 23b2910cc1cf6394192cd640a1fbbbd1
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: group
-    100004: group1
-    100006: pasted__nurbsToPoly1
-    100008: pasted__nurbsToPoly1 1
-    100010: pasted__nurbsToPoly2
-    100012: pasted__polySurface1
-    100014: pasted__polySurface2
-    100016: pasted__transform1
-    100018: pasted__transform2
-    100020: pasted__transform3
-    100022: pasted__transform4
-    400000: //RootNode
-    400002: group
-    400004: group1
-    400006: pasted__nurbsToPoly1
-    400008: pasted__nurbsToPoly1 1
-    400010: pasted__nurbsToPoly2
-    400012: pasted__polySurface1
-    400014: pasted__polySurface2
-    400016: pasted__transform1
-    400018: pasted__transform2
-    400020: pasted__transform3
-    400022: pasted__transform4
+    100000: pasted__nurbsToPoly1
+    100002: //RootNode
+    400000: pasted__nurbsToPoly1
+    400002: //RootNode
     2300000: pasted__nurbsToPoly1
     3300000: pasted__nurbsToPoly1
     4300000: pasted__nurbsToPoly1
