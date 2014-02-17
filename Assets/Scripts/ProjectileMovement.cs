@@ -16,4 +16,11 @@ public class ProjectileMovement : MonoBehaviour
 		Vector3 vSpeedDelta = transform.forward * (Time.deltaTime * Projectile_Speed);
 		transform.position += (vSpeedDelta);
 	}
+	void onCollisionEnter(Collision collision)
+	{
+		if(collision.gameObject.CompareTag("Player"))
+		   	{
+				Debug.Log("hit player");
+			}
+	}
 }
