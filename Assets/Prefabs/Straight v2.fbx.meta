@@ -1,47 +1,23 @@
 fileFormatVersion: 2
-guid: bc7af053e0eb25841a53daf4bf49f5fe
+guid: 7aaf4c76a25164c49af18a6eb9bf1d37
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
-    100000: nurbsToPoly1
-    100002: nurbsToPoly2
+    100000: pCylinder1
+    100002: pCylinder2
     100004: polySurface1
-    100006: polySurface2
-    100008: polySurface3
-    100010: polySurface4
-    100012: polySurface5
-    100014: polySurface6
-    100016: polySurface7
-    100018: transform1
-    100020: transform2
-    100022: transform3
-    100024: transform4
-    100026: transform5
-    100028: transform6
-    100030: transform7
-    100032: transform8
-    100034: //RootNode
-    400000: nurbsToPoly1
-    400002: nurbsToPoly2
+    100006: //RootNode
+    100008: transform1
+    100010: transform2
+    400000: pCylinder1
+    400002: pCylinder2
     400004: polySurface1
-    400006: polySurface2
-    400008: polySurface3
-    400010: polySurface4
-    400012: polySurface5
-    400014: polySurface6
-    400016: polySurface7
-    400018: transform1
-    400020: transform2
-    400022: transform3
-    400024: transform4
-    400026: transform5
-    400028: transform6
-    400030: transform7
-    400032: transform8
-    400034: //RootNode
-    2300000: polySurface7
-    3300000: polySurface7
-    4300000: polySurface7
+    400006: //RootNode
+    400008: transform1
+    400010: transform2
+    2300000: polySurface1
+    3300000: polySurface1
+    4300000: polySurface1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -61,7 +37,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 40
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -94,4 +70,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  additionalBone: 0
   userData: 
