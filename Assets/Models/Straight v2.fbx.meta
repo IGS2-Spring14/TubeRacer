@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 7aaf4c76a25164c49af18a6eb9bf1d37
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: pCylinder1
     100002: pCylinder2
@@ -37,7 +37,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 144
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -70,5 +70,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  additionalBone: 0
   userData: 
