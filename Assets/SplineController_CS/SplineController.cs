@@ -151,7 +151,7 @@ public class SplineController : MonoBehaviour
 	//shake function
 	void Shake(){
 		Debug.Log ("Shake method called!");
-		GameObject.FindGameObjectWithTag("MainCamera").transform.position.Set(Random.Range (-0.15f, 0.15f), Random.Range (0.39f, 0.5f), Random.Range (-1.2f, -0.6f));
+		//GameObject.FindGameObjectWithTag("MainCamera").transform.position.Set(Random.Range (-0.15f, 0.15f), Random.Range (0.39f, 0.5f), Random.Range (-1.2f, -0.6f));
 	}
 
 	
