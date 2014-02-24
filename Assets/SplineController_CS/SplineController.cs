@@ -15,7 +15,10 @@ public class SplineController : MonoBehaviour
 	public bool AutoStart = true;
 	public bool AutoClose = true;
 	public bool HideOnExecute = true;
-
+	public bool DieByHit = true;
+	public int HitMaximum = 10;
+	private int NumberHit = 1;
+	//private float CameraX =0.0f, CameraY=0.4f, CameraZ=0.8f;
 
 	SplineInterpolator mSplineInterp;
 	Transform[] mTransforms;
@@ -56,6 +59,14 @@ public class SplineController : MonoBehaviour
 		if (HideOnExecute)
 			DisableTransforms();
 
+	}
+
+	void Update()
+	{
+		if (DieByHit) {
+						if (NumberHit > HitMaximum)
+								Destroy (gameObject);
+				}
 	}
 
 	void SetupSplineInterpolator(SplineInterpolator interp, Transform[] trans)
@@ -135,5 +146,22 @@ public class SplineController : MonoBehaviour
 			SetupSplineInterpolator(mSplineInterp, mTransforms);
 			mSplineInterp.StartInterpolation(null, true, WrapMode);
 		}
+	}
+
+	//shake function
+	void Shake(){
+		Debug.Log ("Shake method called!");
+		GameObject.FindGameObjectWithTag("MainCamera").transform.position.Set(Random.Range (-0.15f, 0.15f), Random.Range (0.39f, 0.5f), Random.Range (-1.2f, -0.6f));
+	}
+
+	
+	void OnTriggerEnter(Collider collision)
+	{
+		if (collision.gameObject.CompareTag ("Enemy")) {
+			Debug.Log ("Missile hit player " + NumberHit + " times.");
+			NumberHit++;
+			Shake ();
+		} else
+			Debug.Log ("Player hit " + collision.ToString() +".");
 	}
 }
