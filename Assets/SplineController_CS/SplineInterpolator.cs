@@ -143,6 +143,7 @@ public class SplineInterpolator : MonoBehaviour
 		mCurrentTime += Time.deltaTime * TimeScale;
 
 		// We advance to next point in the path
+		Debug.Log (mNodes[mNodes.Count - 2].Point);
 		if (mCurrentTime >= mNodes[mCurrentIdx + 1].Time)
 		{
 			if (mCurrentIdx < mNodes.Count - 3)
@@ -200,7 +201,9 @@ public class SplineInterpolator : MonoBehaviour
 	{
 		if (timeParam >= mNodes[mNodes.Count - 2].Time)
 			return mNodes[mNodes.Count - 2].Point;
-		
+
+		Debug.Log (mNodes[mNodes.Count - 2].Point);
+
 		int idx;
 		float param;
 		GetIndexAndParamAtTime(timeParam, out idx, out param);

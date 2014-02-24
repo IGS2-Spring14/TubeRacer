@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ProjectileMovement : MonoBehaviour 
 {
-	int Projectile_Speed = 1000;
+	public int Projectile_Speed = 1000;
 	// Use this for initialization
 	void Start ()
 	{
