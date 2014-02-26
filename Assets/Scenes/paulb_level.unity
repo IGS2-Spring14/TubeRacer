@@ -395,6 +395,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 273756269}
+  - 114: {fileID: 273756270}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -417,6 +418,20 @@ Transform:
   - {fileID: 2000452110}
   - {fileID: 1367977157}
   m_Father: {fileID: 1747417772}
+--- !u!114 &273756270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 273756268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAltitude: 10
+  minAltitude: .5
+  maneuverability: {x: 200, y: 1}
 --- !u!1 &280761833
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,6 +1608,7 @@ GameObject:
   - 4: {fileID: 1747417772}
   - 114: {fileID: 1747417773}
   - 114: {fileID: 1367977158}
+  - 114: {fileID: 1747417774}
   m_Layer: 0
   m_Name: GamePlatform
   m_TagString: Untagged
@@ -1657,6 +1673,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeScale: 5
+--- !u!114 &1747417774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1747417769}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAltitude: 10
+  minAltitude: .5
+  maneuverability: {x: 200, y: 1}
 --- !u!1 &1751714868
 GameObject:
   m_ObjectHideFlags: 0
