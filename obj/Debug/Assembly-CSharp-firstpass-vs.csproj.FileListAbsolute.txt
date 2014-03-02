@@ -1,0 +1,11 @@
+C:\Users\Royale Letourneau\Desktop\TubeRacer\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Royale Letourneau\Desktop\TubeRacer\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Royale Letourneau\Desktop\TubeRacer\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Royale Letourneau\Desktop\TubeRacer\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Royale Letourneau\Desktop\TubeRacer\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Royale Letourneau\Desktop\TubeRacer\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Royale Letourneau\Desktop\TubeRacer\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Royale Letourneau\Desktop\TubeRacer\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Royale Letourneau\Desktop\TubeRacer\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\Royale Letourneau\Desktop\TubeRacer\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Royale Letourneau\Desktop\TubeRacer\obj\Debug\Assembly-CSharp-firstpass.pdb

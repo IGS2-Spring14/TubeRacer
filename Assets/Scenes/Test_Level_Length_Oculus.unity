@@ -573,6 +573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeScale: 1
+  mCurrentTime: 0
 --- !u!1 &297890778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2566,6 +2567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeScale: 10
+  mCurrentTime: 0
 --- !u!1 &1829347699
 GameObject:
   m_ObjectHideFlags: 0
@@ -2716,6 +2718,7 @@ GameObject:
   - 4: {fileID: 1910846031}
   - 114: {fileID: 1910846033}
   - 114: {fileID: 1910846032}
+  - 114: {fileID: 1910846034}
   m_Layer: 8
   m_Name: OVRCameraController
   m_TagString: Untagged
@@ -2780,6 +2783,19 @@ MonoBehaviour:
   backgroundColor: {r: .192000002, g: .301999986, b: .474999994, a: 1}
   nearClipPlane: .150000006
   farClipPlane: 1000
+--- !u!114 &1910846034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1910846030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireCooldown: 500
+  projectile: {fileID: 0}
 --- !u!1001 &1972533272
 Prefab:
   m_ObjectHideFlags: 0

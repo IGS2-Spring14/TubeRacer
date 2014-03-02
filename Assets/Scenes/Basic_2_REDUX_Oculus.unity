@@ -710,6 +710,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &81340991
 Animator:
   serializedVersion: 2
@@ -1937,6 +1938,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &259125679
 Animator:
   serializedVersion: 2
@@ -3773,6 +3775,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &468139143
 Animator:
   serializedVersion: 2
@@ -6141,6 +6144,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &723316682
 Animator:
   serializedVersion: 2
@@ -6857,6 +6861,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &795586828
 Animator:
   serializedVersion: 2
@@ -7680,6 +7685,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &874893920
 Animator:
   serializedVersion: 2
@@ -7756,6 +7762,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &880586182
 Animator:
   serializedVersion: 2
@@ -7832,6 +7839,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &894704827
 Animator:
   serializedVersion: 2
@@ -7908,6 +7916,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &911925580
 Animator:
   serializedVersion: 2
@@ -8042,6 +8051,7 @@ GameObject:
   - 81: {fileID: 922468621}
   - 114: {fileID: 922468620}
   - 114: {fileID: 922468619}
+  - 114: {fileID: 922468624}
   m_Layer: 8
   m_Name: CameraRight
   m_TagString: MainCamera
@@ -8141,6 +8151,19 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
+--- !u!114 &922468624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 922468617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireCooldown: 500
+  projectile: {fileID: 632529521}
 --- !u!1 &926754901
 GameObject:
   m_ObjectHideFlags: 0
@@ -8329,6 +8352,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &934748399
 Animator:
   serializedVersion: 2
@@ -9845,6 +9869,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &1157063830
 Animator:
   serializedVersion: 2
@@ -14131,7 +14156,7 @@ GameObject:
   - 135: {fileID: 1636874082}
   - 23: {fileID: 1636874081}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Reticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15171,6 +15196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeScale: 6.88000011
+  mCurrentTime: 0
 --- !u!136 &1747417774
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -18380,6 +18406,7 @@ MonoBehaviour:
   FiringCooldown: 10000
   Spline: {fileID: 1747417773}
   Range: 50000
+  LeadTime: 10
 --- !u!95 &2117842515
 Animator:
   serializedVersion: 2
