@@ -10,9 +10,6 @@ public class RS_AudioControl_Player : MonoBehaviour {
 	void Start () {
 		DontDestroyOnLoad(this.gameObject);
 
-		//tells self not to destroy self
-		//destroySelf = false;
-
 		//plays audio clip tied to AudioSource if not currently playing
 		if (!bgm.isPlaying)
 			bgm.Play();

@@ -32,7 +32,7 @@ GameObject:
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: GamePlatform
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,9 +61,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400006}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: PlayerShip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +113,6 @@ GameObject:
   - 20: {fileID: 2000002}
   - 92: {fileID: 9200002}
   - 124: {fileID: 12400002}
-  - 81: {fileID: 8100002}
   - 45: {fileID: 4500002}
   m_Layer: 0
   m_Name: FollowCam
@@ -313,13 +313,6 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
---- !u!81 &8100002
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100012}
   m_Enabled: 0
 --- !u!92 &9200000
 Behaviour:
@@ -346,7 +339,7 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 3
-  m_Range: 20000
+  m_Range: 4000
   m_SpotAngle: 60
   m_CookieSize: 10
   m_Shadows:
@@ -419,10 +412,26 @@ MonoBehaviour:
   SplineRoot: {fileID: 0}
   Duration: 180
   OrientationMode: 1
-  WrapMode: 1
+  WrapMode: 0
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 1
+  DieByHit: 1
+  HitMaximum: 10
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAltitude: 10
+  minAltitude: .5
+  maneuverability: {x: 200, y: 1}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -435,6 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeScale: 10
+  mCurrentTime: 0
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
