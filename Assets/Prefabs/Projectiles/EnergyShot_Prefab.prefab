@@ -27,7 +27,7 @@ GameObject:
   - 23: {fileID: 2300000}
   - 95: {fileID: 9500000}
   m_Layer: 0
-  m_Name: EnergyShot
+  m_Name: EnergyShot_LowPoly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52,8 +52,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 0, z: .00203932077}
-  m_LocalScale: {x: .0181860495, y: .0181860495, z: .0181860495}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .0181860495, y: .0181860495, z: .0210556742}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!23 &2300000
@@ -83,7 +83,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Mesh: {fileID: 4300000, guid: 09203b04c180c044a8591de5d647da80, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 2e9f1087e3a631d4197cca71cd2dbba0, type: 3}
 --- !u!95 &9500000
 Animator:
   serializedVersion: 2
@@ -92,7 +92,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 09203b04c180c044a8591de5d647da80, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 2e9f1087e3a631d4197cca71cd2dbba0, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_ApplyRootMotion: 1
