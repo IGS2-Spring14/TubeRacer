@@ -10,6 +10,7 @@ public class TurretController : MonoBehaviour
 	//Firing
 	public Rigidbody projectile;
 	public int FiringCooldown = 1000;
+	public int StaggerTime = 0;
 	float timer = 0;
 
 	// Both
@@ -23,6 +24,7 @@ public class TurretController : MonoBehaviour
 	{
 		//target = GameObject.FindGameObjectWithTag("Player").transform;
 		//GunTransform = transform.FindChild("Firing_Gun").transform;
+		timer = StaggerTime;
 	}
 	
 	// Update is called once per frame
