@@ -259,11 +259,11 @@ GameObject:
   - 45: {fileID: 2000452115}
   m_Layer: 0
   m_Name: FPVCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &36203547
 Transform:
   m_ObjectHideFlags: 0
@@ -291,7 +291,7 @@ AudioListener:
     type: 2}
   m_PrefabInternal: {fileID: 2011032590}
   m_GameObject: {fileID: 36203546}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &36203550
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1753,6 +1753,49 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 249607707}
+--- !u!1 &248828034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 248828035}
+  - 114: {fileID: 248828036}
+  m_Layer: 0
+  m_Name: OculusDisable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &248828035
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248828034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1815165797}
+  m_Father: {fileID: 273756269}
+--- !u!114 &248828036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248828034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireCooldown: 500
+  projectile: {fileID: 632529521}
+  ReticleDistance: 1000
+  OculusAim: 0
 --- !u!1 &249607706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1988,9 +2031,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 273756269}
+  - 114: {fileID: 273756270}
   m_Layer: 0
   m_Name: PlayerShip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2009,8 +2053,24 @@ Transform:
   - {fileID: 1115642231}
   - {fileID: 2000452110}
   - {fileID: 1367977157}
-  - {fileID: 927795396}
+  - {fileID: 248828035}
+  - {fileID: 1877069803}
   m_Father: {fileID: 1747417772}
+--- !u!114 &273756270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851,
+    type: 2}
+  m_PrefabInternal: {fileID: 2011032590}
+  m_GameObject: {fileID: 273756268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAltitude: 10
+  minAltitude: .5
+  maneuverability: {x: 200, y: 1}
 --- !u!1 &277378790
 GameObject:
   m_ObjectHideFlags: 0
@@ -8164,6 +8224,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FireCooldown: 500
   projectile: {fileID: 632529521}
+  ReticleDistance: 1000
+  OculusAim: 1
 --- !u!1 &926754901
 GameObject:
   m_ObjectHideFlags: 0
@@ -8220,7 +8282,7 @@ Transform:
   m_Children:
   - {fileID: 1764740102}
   - {fileID: 922468618}
-  m_Father: {fileID: 273756269}
+  m_Father: {fileID: 1877069803}
 --- !u!114 &927795397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11679,7 +11741,7 @@ MonoBehaviour:
   SplineRoot: {fileID: 249607706}
   Duration: 180
   OrientationMode: 1
-  WrapMode: 1
+  WrapMode: 0
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 1
@@ -11697,7 +11759,7 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 3
-  m_Range: 20000
+  m_Range: 4000
   m_SpotAngle: 60
   m_CookieSize: 10
   m_Shadows:
@@ -13038,7 +13100,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 273756269}
+    m_TransformParent: {fileID: 1877069803}
     m_Modifications:
     - target: {fileID: 400002, guid: 9da535ecc7e009544bd58323d6696a4d, type: 2}
       propertyPath: m_LocalPosition.x
@@ -15134,7 +15196,7 @@ GameObject:
   - 54: {fileID: 1747417775}
   m_Layer: 0
   m_Name: GamePlatform
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15742,6 +15804,75 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1489531782}
   m_GameObject: {fileID: 1802008806}
   m_Mesh: {fileID: 4300006, guid: b3857d07504563e4b845b9fe61b4b5f3, type: 3}
+--- !u!1 &1815165796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1815165797}
+  - 33: {fileID: 1815165800}
+  - 135: {fileID: 1815165799}
+  - 23: {fileID: 1815165798}
+  m_Layer: 0
+  m_Name: Reticle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1815165797
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1815165796}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 6.70000029, z: 999.22998}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 248828035}
+--- !u!23 &1815165798
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1815165796}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!135 &1815165799
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1815165796}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1815165800
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1815165796}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1815239131
 GameObject:
   m_ObjectHideFlags: 0
@@ -16182,6 +16313,33 @@ Prefab:
   m_RootGameObject: {fileID: 632529519}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1877069802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1877069803}
+  m_Layer: 0
+  m_Name: OculusEnable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1877069803
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877069802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 927795396}
+  m_Father: {fileID: 273756269}
 --- !u!1 &1878493764
 GameObject:
   m_ObjectHideFlags: 0
@@ -17476,7 +17634,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8100002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}

@@ -259,7 +259,7 @@ GameObject:
   - 45: {fileID: 2000452115}
   m_Layer: 0
   m_Name: FPVCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -291,7 +291,7 @@ AudioListener:
     type: 2}
   m_PrefabInternal: {fileID: 2011032590}
   m_GameObject: {fileID: 36203546}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!92 &36203550
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1992,10 +1992,12 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 273756269}
+  - 114: {fileID: 273756272}
   - 114: {fileID: 273756270}
+  - 114: {fileID: 273756271}
   m_Layer: 0
   m_Name: PlayerShip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2014,12 +2016,42 @@ Transform:
   - {fileID: 1115642231}
   - {fileID: 2000452110}
   - {fileID: 1367977157}
+  - {fileID: 2127090576}
   m_Father: {fileID: 1747417772}
 --- !u!114 &273756270
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 273756268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAltitude: 10
+  minAltitude: .5
+  maneuverability: {x: 200, y: 1}
+--- !u!114 &273756271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 273756268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireCooldown: 500
+  projectile: {fileID: 521013263}
+  ReticleDistance: 1500
+--- !u!114 &273756272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851,
+    type: 2}
+  m_PrefabInternal: {fileID: 2011032590}
   m_GameObject: {fileID: 273756268}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4321,7 +4353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 685b81ba62f48d6479496d6b686d24fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Projectile_Speed: 5000
+  Projectile_Speed: 10000
 --- !u!54 &521013263
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11450,11 +11482,11 @@ MonoBehaviour:
   SplineRoot: {fileID: 249607706}
   Duration: 180
   OrientationMode: 1
-  WrapMode: 1
+  WrapMode: 0
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 1
-  DieByHit: 0
+  DieByHit: 1
   HitMaximum: 10
 --- !u!108 &1367977159
 Light:
@@ -11468,7 +11500,7 @@ Light:
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 3
-  m_Range: 20000
+  m_Range: 4000
   m_SpotAngle: 60
   m_CookieSize: 10
   m_Shadows:
@@ -14669,10 +14701,9 @@ GameObject:
   - 114: {fileID: 1747417773}
   - 114: {fileID: 1367977158}
   - 136: {fileID: 1747417774}
-  - 54: {fileID: 1747417775}
   m_Layer: 0
   m_Name: GamePlatform
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15792,7 +15823,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 27070c2ac2061e445a64b1566bba870a, type: 2}
       propertyPath: Projectile_Speed
-      value: 5000
+      value: 10000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27070c2ac2061e445a64b1566bba870a, type: 2}
@@ -16233,7 +16264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1961148645
 Transform:
   m_ObjectHideFlags: 0
@@ -16905,6 +16936,10 @@ Prefab:
     - target: {fileID: 11400006, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: TimeScale
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8100002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
@@ -17880,6 +17915,75 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 780091764}
+--- !u!1 &2127090575
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2127090576}
+  - 33: {fileID: 2127090579}
+  - 135: {fileID: 2127090578}
+  - 23: {fileID: 2127090577}
+  m_Layer: 0
+  m_Name: Reticle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2127090576
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127090575}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1000}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 273756269}
+--- !u!23 &2127090577
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127090575}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!135 &2127090578
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127090575}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &2127090579
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127090575}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2135152652
 GameObject:
   m_ObjectHideFlags: 0
