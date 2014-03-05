@@ -8,6 +8,7 @@ public class Enemy_Controller : MonoBehaviour
 	public int FiringCooldown = 1000;
 	float timer = 0;
 	public int Range = 500; 
+	public int FollowDistance = 0; 
 	
 	// Use this for initialization
 	void Start () 
@@ -22,6 +23,11 @@ public class Enemy_Controller : MonoBehaviour
 		{
 			UpdateAimRotation ();
 			UpdateFiring ();
+		}
+
+		if (Vector3.Distance(target.position, transform.position) < FollowDistance)
+		{
+			UpdateFollowing(); 
 		}
 	}
 
@@ -49,5 +55,13 @@ public class Enemy_Controller : MonoBehaviour
 			Rigidbody clone;
 			clone = Instantiate (projectile, transform.position, transform.rotation) as Rigidbody;
 		}
+	}
+
+	void UpdateFollowing()
+	{
+	//	SplineInterpolator MySpline = this.GetComponent<SplineInterpolator>;
+	//	SplineInterpolator TheirSpline = target.GetComponent<SplineInterpolator>;
+
+	//	MySpline.TimeScale = TheirSpline.TimeScale; 
 	}
 }
