@@ -580,7 +580,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 2093259859}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   Spline: {fileID: 1747417773}
@@ -708,62 +708,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1813877448}
---- !u!1001 &22426620
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-      propertyPath: m_Name
-      value: PlayerShot_Prefab
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-  m_RootGameObject: {fileID: 466595073}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &23669006
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +940,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 689062929}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   Spline: {fileID: 1747417773}
@@ -1225,6 +1169,7 @@ GameObject:
   - 92: {fileID: 36203550}
   - 81: {fileID: 36203549}
   - 45: {fileID: 2000452115}
+  - 114: {fileID: 36203553}
   m_Layer: 0
   m_Name: FPVCamera
   m_TagString: MainCamera
@@ -1306,6 +1251,19 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
+--- !u!114 &36203553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36203546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9a3c4a1e33104b4098f0ddf9689cc03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shake_decay: 0
+  shake_intensity: 0
 --- !u!1 &36341063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,35 +1732,35 @@ Prefab:
     - target: {fileID: 11400014, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400012, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400010, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400008, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400006, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400004, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400002, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400000, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 100384, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -2656,35 +2614,35 @@ Prefab:
     - target: {fileID: 11400014, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400012, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400010, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400008, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400006, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400004, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400002, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400000, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 100384, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -3911,7 +3869,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 835424997}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   Spline: {fileID: 1747417773}
@@ -5564,7 +5522,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1684246768}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   Spline: {fileID: 1747417773}
@@ -6761,7 +6719,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 674210702}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   Spline: {fileID: 1747417773}
@@ -7991,35 +7949,35 @@ Prefab:
     - target: {fileID: 11400014, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400012, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400010, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400008, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400006, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400004, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400002, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400000, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 100384, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -8226,7 +8184,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1901760800}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   Spline: {fileID: 1747417773}
@@ -8568,80 +8526,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 249607707}
---- !u!1 &367069431
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-  m_PrefabInternal: {fileID: 543043569}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 367069432}
-  - 33: {fileID: 367069435}
-  - 23: {fileID: 367069434}
-  - 95: {fileID: 367069433}
-  m_Layer: 0
-  m_Name: EnergyShot_LowPoly
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &367069432
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-  m_PrefabInternal: {fileID: 543043569}
-  m_GameObject: {fileID: 367069431}
-  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 75, y: 75, z: 75}
-  m_Children: []
-  m_Father: {fileID: 1525454345}
---- !u!95 &367069433
-Animator:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: 3261d6a367f41db42b6718834e26ad2d,
-    type: 2}
-  m_PrefabInternal: {fileID: 543043569}
-  m_GameObject: {fileID: 367069431}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 2e9f1087e3a631d4197cca71cd2dbba0, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
---- !u!23 &367069434
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 3261d6a367f41db42b6718834e26ad2d,
-    type: 2}
-  m_PrefabInternal: {fileID: 543043569}
-  m_GameObject: {fileID: 367069431}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: d354c9c20f9294246ad3cfd3f5b4cf51, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
---- !u!33 &367069435
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 3261d6a367f41db42b6718834e26ad2d,
-    type: 2}
-  m_PrefabInternal: {fileID: 543043569}
-  m_GameObject: {fileID: 367069431}
-  m_Mesh: {fileID: 4300000, guid: 2e9f1087e3a631d4197cca71cd2dbba0, type: 3}
 --- !u!1 &369861802
 GameObject:
   m_ObjectHideFlags: 0
@@ -9113,7 +8997,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1282909867}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   Spline: {fileID: 1747417773}
@@ -9474,7 +9358,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1930024682}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   Spline: {fileID: 1747417773}
@@ -9863,7 +9747,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 908227830}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   Spline: {fileID: 1747417773}
@@ -10074,80 +9958,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1058068882}
---- !u!1 &417035718
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100002, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-  m_PrefabInternal: {fileID: 22426620}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 417035719}
-  - 33: {fileID: 417035722}
-  - 23: {fileID: 417035721}
-  - 95: {fileID: 417035720}
-  m_Layer: 0
-  m_Name: EnergyShot_LowPoly
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &417035719
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400002, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-  m_PrefabInternal: {fileID: 22426620}
-  m_GameObject: {fileID: 417035718}
-  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 75, y: 75, z: 75}
-  m_Children: []
-  m_Father: {fileID: 466595075}
---- !u!95 &417035720
-Animator:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: 8cdd457f231fdb44695c5607ae92a21c,
-    type: 2}
-  m_PrefabInternal: {fileID: 22426620}
-  m_GameObject: {fileID: 417035718}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 2e9f1087e3a631d4197cca71cd2dbba0, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_ApplyRootMotion: 1
-  m_AnimatePhysics: 0
-  m_HasTransformHierarchy: 1
---- !u!23 &417035721
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2300000, guid: 8cdd457f231fdb44695c5607ae92a21c,
-    type: 2}
-  m_PrefabInternal: {fileID: 22426620}
-  m_GameObject: {fileID: 417035718}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: d354c9c20f9294246ad3cfd3f5b4cf51, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
---- !u!33 &417035722
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 3300000, guid: 8cdd457f231fdb44695c5607ae92a21c,
-    type: 2}
-  m_PrefabInternal: {fileID: 22426620}
-  m_GameObject: {fileID: 417035718}
-  m_Mesh: {fileID: 4300000, guid: 2e9f1087e3a631d4197cca71cd2dbba0, type: 3}
 --- !u!1 &419663834
 GameObject:
   m_ObjectHideFlags: 0
@@ -10258,7 +10068,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 462289103}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   Spline: {fileID: 1747417773}
@@ -10606,7 +10416,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1959838028}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   Spline: {fileID: 1747417773}
@@ -11187,7 +10997,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1847476794}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   Spline: {fileID: 1747417773}
@@ -11266,7 +11076,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 587164378}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   Spline: {fileID: 1747417773}
@@ -11481,63 +11291,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 249607707}
---- !u!1 &466595073
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-  m_PrefabInternal: {fileID: 22426620}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 466595075}
-  - 54: {fileID: 466595074}
-  - 114: {fileID: 466595076}
-  m_Layer: 0
-  m_Name: PlayerShot_Prefab
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &466595074
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466595073}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!4 &466595075
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
-  m_PrefabInternal: {fileID: 22426620}
-  m_GameObject: {fileID: 466595073}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 417035719}
-  m_Father: {fileID: 0}
---- !u!114 &466595076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 466595073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 7000
-  Destroy_Timer: 10
 --- !u!1 &468765615
 GameObject:
   m_ObjectHideFlags: 0
@@ -12279,7 +12032,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 734497983}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   Spline: {fileID: 1747417773}
@@ -12825,7 +12578,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1340402700}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   Spline: {fileID: 1747417773}
@@ -13279,46 +13032,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1984731136}
   m_GameObject: {fileID: 540255853}
   m_Mesh: {fileID: 4300008, guid: b3857d07504563e4b845b9fe61b4b5f3, type: 3}
---- !u!1001 &543043569
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-  m_RootGameObject: {fileID: 1525454342}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &544927371
 GameObject:
   m_ObjectHideFlags: 0
@@ -14463,35 +14176,35 @@ Prefab:
     - target: {fileID: 11400014, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400012, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400010, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400008, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400006, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400004, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400002, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400000, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 100384, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -14640,7 +14353,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1233685781}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   Spline: {fileID: 1747417773}
@@ -15358,7 +15071,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 3270243}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   Spline: {fileID: 1747417773}
@@ -15648,7 +15361,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 2116551961}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   Spline: {fileID: 1747417773}
@@ -15859,7 +15572,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 30011882}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   Spline: {fileID: 1747417773}
@@ -17744,7 +17457,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1705167685}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   Spline: {fileID: 1747417773}
@@ -18875,7 +18588,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 261802318}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   Spline: {fileID: 1747417773}
@@ -20912,7 +20625,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1726455842}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   Spline: {fileID: 1747417773}
@@ -23177,7 +22890,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1769511793}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   Spline: {fileID: 1747417773}
@@ -24882,7 +24595,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 885804564}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   Spline: {fileID: 1747417773}
@@ -26106,7 +25819,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 880864461}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   Spline: {fileID: 1747417773}
@@ -27939,7 +27652,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 398961841}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   Spline: {fileID: 1747417773}
@@ -28597,7 +28310,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1512518502}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   Spline: {fileID: 1747417773}
@@ -29927,7 +29640,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 2010011588}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   Spline: {fileID: 1747417773}
@@ -30564,7 +30277,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1088206776}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   Spline: {fileID: 1747417773}
@@ -31928,7 +31641,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 496631921}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   Spline: {fileID: 1747417773}
@@ -32611,35 +32324,35 @@ Prefab:
     - target: {fileID: 11400014, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400012, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400010, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400008, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400006, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400004, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400002, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400000, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 100384, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -33239,7 +32952,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1731024788}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   Spline: {fileID: 1747417773}
@@ -33581,13 +33294,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SplineRoot: {fileID: 249607706}
+  MyCamera: {fileID: 0}
   Duration: 180
   OrientationMode: 1
-  WrapMode: 0
+  WrapMode: 1
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 1
-  DieByHit: 1
+  DieByHit: 0
+  Log: 1
   HitMaximum: 10
 --- !u!108 &1367977159
 Light:
@@ -35102,7 +34817,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 402175614}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   Spline: {fileID: 1747417773}
@@ -36067,7 +35782,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1426303611}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   Spline: {fileID: 1747417773}
@@ -36676,7 +36391,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 76706795}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   Spline: {fileID: 1747417773}
@@ -37151,65 +36866,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 49193085}
   m_GameObject: {fileID: 1522956890}
   m_Mesh: {fileID: 4300000, guid: b3857d07504563e4b845b9fe61b4b5f3, type: 3}
---- !u!1 &1525454342
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-  m_PrefabInternal: {fileID: 543043569}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1525454345}
-  - 54: {fileID: 1525454344}
-  - 114: {fileID: 1525454343}
-  m_Layer: 0
-  m_Name: EnergyShot_Prefab_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1525454343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 3261d6a367f41db42b6718834e26ad2d,
-    type: 2}
-  m_PrefabInternal: {fileID: 543043569}
-  m_GameObject: {fileID: 1525454342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 7000
-  Destroy_Timer: 10
---- !u!54 &1525454344
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d,
-    type: 2}
-  m_PrefabInternal: {fileID: 543043569}
-  m_GameObject: {fileID: 1525454342}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!4 &1525454345
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-  m_PrefabInternal: {fileID: 543043569}
-  m_GameObject: {fileID: 1525454342}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 367069432}
-  m_Father: {fileID: 0}
 --- !u!1 &1526331497
 GameObject:
   m_ObjectHideFlags: 0
@@ -37326,7 +36982,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 2034058115}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   Spline: {fileID: 1747417773}
@@ -37631,7 +37287,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1473701571}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   Spline: {fileID: 1747417773}
@@ -37985,7 +37641,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1419398361}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   Spline: {fileID: 1747417773}
@@ -38654,7 +38310,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 529455782}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   Spline: {fileID: 1747417773}
@@ -40061,7 +39717,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 886365847}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   Spline: {fileID: 1747417773}
@@ -40567,7 +40223,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 408961574}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   Spline: {fileID: 1747417773}
@@ -41572,7 +41228,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1473951740}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   Spline: {fileID: 1747417773}
@@ -41651,7 +41307,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 445254784}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   Spline: {fileID: 1747417773}
@@ -41840,7 +41496,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1089233717}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   Spline: {fileID: 1747417773}
@@ -42889,7 +42545,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 801751791}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   Spline: {fileID: 1747417773}
@@ -44477,7 +44133,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 762477034}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   Spline: {fileID: 1747417773}
@@ -44556,7 +44212,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1883430613}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   Spline: {fileID: 1747417773}
@@ -47722,35 +47378,35 @@ Prefab:
     - target: {fileID: 11400014, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400012, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400010, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400008, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400006, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400004, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400002, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 11400000, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
-      objectReference: {fileID: 466595074}
+      objectReference: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
     - target: {fileID: 100384, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: m_IsActive
       value: 1
@@ -47927,7 +47583,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 540255854}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   Spline: {fileID: 1747417773}
@@ -48165,7 +47821,7 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1734935226}
-  projectile: {fileID: 466595074}
+  projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   Spline: {fileID: 1747417773}
@@ -48726,6 +48382,14 @@ Prefab:
     - target: {fileID: 100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: m_TagString
       value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: DieByHit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: WrapMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8100002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}

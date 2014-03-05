@@ -8,7 +8,7 @@ public enum eOrientationMode { NODE = 0, TANGENT }
 [RequireComponent(typeof(SplineInterpolator))]
 public class SplineController : MonoBehaviour
 {
-	public GameObject SplineRoot;
+	public GameObject SplineRoot, MyCamera;
 	public float Duration = 10;
 	public eOrientationMode OrientationMode = eOrientationMode.NODE;
 	public eWrapMode WrapMode = eWrapMode.ONCE;
@@ -16,6 +16,7 @@ public class SplineController : MonoBehaviour
 	public bool AutoClose = true;
 	public bool HideOnExecute = true;
 	public bool DieByHit = false;
+	public bool Log = true;
 	public int HitMaximum = 10;
 	private int NumberHit = 1;
 	SplineInterpolator mSplineInterp;
@@ -48,7 +49,7 @@ public class SplineController : MonoBehaviour
 	void Start()
 	{
 		mSplineInterp = GetComponent(typeof(SplineInterpolator)) as SplineInterpolator;
-
+		MyCamera = GameObject.Find("FPVCamera");
 		mTransforms = GetTransforms();
 
 		if (AutoStart)
@@ -149,9 +150,12 @@ public class SplineController : MonoBehaviour
 	void OnTriggerEnter(Collider collision)
 	{
 		if (collision.gameObject.CompareTag ("Enemy")) {
-			Debug.Log ("Missile hit player " + NumberHit + " times.");
+			if(Log)
+				Debug.Log ("Missile hit player " + NumberHit + " times.");
 			NumberHit++;
+			MyCamera.SendMessage("Shake");
 		} else
-			Debug.Log ("Player hit " + collision.ToString() +".");
+			if(Log)
+				Debug.Log ("Player hit " + collision.ToString() +".");
 	}
 }
