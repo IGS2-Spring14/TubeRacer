@@ -17,6 +17,7 @@ public class SplineController : MonoBehaviour
 	public bool HideOnExecute = true;
 	public bool DieByHit = false;
 	public bool Log = true;
+	public bool EnableCollision = true;
 	public int HitMaximum = 10;
 	private int NumberHit = 1;
 	SplineInterpolator mSplineInterp;
@@ -149,13 +150,15 @@ public class SplineController : MonoBehaviour
 
 	void OnTriggerEnter(Collider collision)
 	{
-		if (collision.gameObject.CompareTag ("Enemy")) {
-			if(Log)
-				Debug.Log ("Missile hit player " + NumberHit + " times.");
-			NumberHit++;
-			MyCamera.SendMessage("Shake");
-		} else
-			if(Log)
-				Debug.Log ("Player hit " + collision.ToString() +".");
+		if (EnableCollision) {
+						if (collision.gameObject.CompareTag ("Enemy")) {
+								if (Log)
+										Debug.Log ("Missile hit player " + NumberHit + " times.");
+								NumberHit++;
+								MyCamera.SendMessage ("Shake");
+						} else
+			if (Log)
+								Debug.Log ("Player hit " + collision.ToString () + ".");
+				}
 	}
 }
