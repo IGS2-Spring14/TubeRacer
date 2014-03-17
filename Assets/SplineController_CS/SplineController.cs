@@ -141,11 +141,13 @@ public class SplineController : MonoBehaviour
 	/// </summary>
 	void FollowSpline()
 	{
-		if (mTransforms.Length > 0)
-		{
-			SetupSplineInterpolator(mSplineInterp, mTransforms);
-			mSplineInterp.StartInterpolation(null, true, WrapMode);
-		}
+		Debug.Log (mTransforms[0]);
+		if (mTransforms != null)
+			if (mTransforms.Length > 0)
+			{
+				SetupSplineInterpolator(mSplineInterp, mTransforms);
+				mSplineInterp.StartInterpolation(null, true, WrapMode);
+			}
 	}
 
 	void OnTriggerEnter(Collider collision)
@@ -155,7 +157,7 @@ public class SplineController : MonoBehaviour
 								if (Log)
 										Debug.Log ("Missile hit player " + NumberHit + " times.");
 								NumberHit++;
-								MyCamera.SendMessage ("Shake");
+//								MyCamera.SendMessage ("Shake");
 						} else
 			if (Log)
 								Debug.Log ("Player hit " + collision.ToString () + ".");

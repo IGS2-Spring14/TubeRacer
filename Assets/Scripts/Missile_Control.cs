@@ -26,7 +26,7 @@ public class Missile_Control : MonoBehaviour {
 
 	void UpdateDestroy ()
 	{
-		if (Time.time == Destroy_Time)
+		if (Time.time > Destroy_Time)
 		{
 			Destroy (this.gameObject);
 		}
