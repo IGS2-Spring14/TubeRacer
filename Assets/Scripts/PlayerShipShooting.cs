@@ -36,7 +36,7 @@ public class PlayerShipShooting : MonoBehaviour
     {
         timer = FireCooldown;
 
-        Vector3 offset = transform.forward * 500;
+        Vector3 offset = transform.forward * 900;
 		Vector3 relpos = reticle.position - transform.position;
         Rigidbody clone;
         clone = Instantiate(projectile, transform.position + offset, Quaternion.LookRotation(relpos)) as Rigidbody;
