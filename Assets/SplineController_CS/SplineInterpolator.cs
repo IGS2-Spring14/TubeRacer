@@ -8,6 +8,8 @@ public delegate void OnEndCallback();
 
 public class SplineInterpolator : MonoBehaviour
 {
+	public bool StopShip = false;
+	public bool ResetSpeed = false;
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
 
 	public float TimeScale = 1.0f;
@@ -139,6 +141,15 @@ public class SplineInterpolator : MonoBehaviour
 	{
 		if (mState == "Reset" || mState == "Stopped" || mNodes.Count < 4)
 			return;
+
+		if (StopShip) {
+			TimeScale = 0f;
+				}
+		if (ResetSpeed) {
+			StopShip = false;
+			TimeScale = 6.88f;
+			ResetSpeed = false;
+				}
 
 		mCurrentTime += Time.deltaTime * TimeScale;
 

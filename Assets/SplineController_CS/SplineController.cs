@@ -157,6 +157,7 @@ public class SplineController : MonoBehaviour
 								if (Log)
 										Debug.Log ("Missile hit player " + NumberHit + " times.");
 								NumberHit++;
+				// put sound here
 //								MyCamera.SendMessage ("Shake");
 						} else
 			if (Log)
