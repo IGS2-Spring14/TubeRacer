@@ -24,19 +24,20 @@ public class PlayerShipShooting : MonoBehaviour
 	void Update () 
     {
         timer -= Time.deltaTime * 1000;
-
-		if (!OculusAim)
-			UpdateAiming ();
-
-        if (Input.GetKeyDown(KeyCode.Mouse0) && timer < 0)
-            Fire();
+		if (!OculusAim) {
+			UpdateAiming();		
+		}
+        if ((Input.GetKeyDown (KeyCode.Mouse0) || Input.GetKeyDown (KeyCode.JoystickButton2)) && timer < 0) {
+						Debug.Log ("shooting");
+						Fire ();
+				}
 	}
 
     private void Fire()
     {
         timer = FireCooldown;
 
-        Vector3 offset = transform.forward * 500;
+        Vector3 offset = transform.forward * 900;
 		Vector3 relpos = reticle.position - transform.position;
         Rigidbody clone;
         clone = Instantiate(projectile, transform.position + offset, Quaternion.LookRotation(relpos)) as Rigidbody;
