@@ -4,12 +4,26 @@ using System.Collections;
 public class Enemy_Controller : MonoBehaviour 
 {
 	public Transform target;
+	public GameObject targetObject;
 	public Rigidbody projectile;
 	public int FiringCooldown = 1000;
 	float timer = 0;
 	public int Range = 500; 
-	public int FollowDistance = 0; 
-	
+	public int FollowDistance = 5000; 
+	internal bool isFollowing = false;
+	SplineInterpolator TheirSpline;
+	SplineInterpolator MySpline;
+
+	void Awake ()
+	{
+		target = GameObject.Find ("PlayerShip").transform;
+		targetObject = GameObject.Find ("GamePlatform");
+
+		SplineController TheirSplineControl = target.GetComponent<SplineController> ();
+		SplineController MySplineControl = this.GetComponent<SplineController> ();
+		MySplineControl.SplineRoot = GameObject.Find ("Path");
+	}
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -25,7 +39,7 @@ public class Enemy_Controller : MonoBehaviour
 			UpdateFiring ();
 		}
 
-		if (Vector3.Distance(target.position, transform.position) < FollowDistance)
+		if (Vector3.Distance(target.position, transform.position) > FollowDistance && !isFollowing)
 		{
 			UpdateFollowing(); 
 		}
@@ -59,9 +73,10 @@ public class Enemy_Controller : MonoBehaviour
 
 	void UpdateFollowing()
 	{
-	//	SplineInterpolator MySpline = this.GetComponent<SplineInterpolator>;
-	//	SplineInterpolator TheirSpline = target.GetComponent<SplineInterpolator>;
-
-	//	MySpline.TimeScale = TheirSpline.TimeScale; 
+		TheirSpline = targetObject.GetComponent<SplineInterpolator> ();
+		MySpline = this.GetComponent<SplineInterpolator> ();
+		
+		MySpline.TimeScale = TheirSpline.TimeScale;
+		isFollowing = true; 
 	}
 }
