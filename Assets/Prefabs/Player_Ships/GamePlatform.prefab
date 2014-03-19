@@ -859,7 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FireCooldown: 500
-  projectile: {fileID: 0}
+  projectile: {fileID: 5400000, guid: e7558b497f4eb874094179040e26ffcd, type: 2}
   ReticleDistance: 1000
   OculusAim: 1
 --- !u!114 &11400006
@@ -873,6 +873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71239b463248c49d2b4165ad3da2b9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StopShip: 0
+  ResetSpeed: 0
   TimeScale: 6.88000011
   mCurrentTime: 0
 --- !u!114 &11400008
@@ -918,7 +920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FireCooldown: 500
-  projectile: {fileID: 0}
+  projectile: {fileID: 5400000, guid: e7558b497f4eb874094179040e26ffcd, type: 2}
   ReticleDistance: 1000
   OculusAim: 0
 --- !u!114 &11400014

@@ -14,6 +14,19 @@ public class SplineInterpolator : MonoBehaviour
 
 	public float TimeScale = 1.0f;
 
+	
+	public void SlowDown()
+	{
+		//Debug.Log ("I will speed you down to " + TimeScale);
+		if(TimeScale-0.2f>0f)
+		TimeScale = TimeScale - 0.2f;
+	}
+	public void SpeedUp()
+	{
+		//Debug.Log ("I will speed you up to " + TimeScale);
+		TimeScale = TimeScale + 0.2f;
+	}
+
 	internal class SplineNode
 	{
 		internal Vector3 Point;
@@ -139,13 +152,29 @@ public class SplineInterpolator : MonoBehaviour
 
 	void Update()
 	{
+		if ((Input.GetKey (KeyCode.UpArrow)) || Input.GetKey (KeyCode.JoystickButton4)){
+						SpeedUp ();
+		} else if ((Input.GetKey (KeyCode.DownArrow))|| Input.GetKey (KeyCode.JoystickButton5)){
+						SlowDown ();
+				} else
+		{
+			if(TimeScale>6.9f||TimeScale<6.7f)
+			{
+				if(TimeScale>6.9f)
+					TimeScale = TimeScale - 0.2f;
+				if(TimeScale<6.5f)
+					TimeScale = TimeScale + 0.2f;
+			}
+				}
+
+
 		if (mState == "Reset" || mState == "Stopped" || mNodes.Count < 4)
 			return;
 
 		if (StopShip) {
 			TimeScale = 0f;
 				}
-		if (ResetSpeed) {
+		if (ResetSpeed){
 			StopShip = false;
 			TimeScale = 6.88f;
 			ResetSpeed = false;
