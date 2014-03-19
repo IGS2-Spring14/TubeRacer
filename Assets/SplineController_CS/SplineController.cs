@@ -23,6 +23,8 @@ public class SplineController : MonoBehaviour
 	SplineInterpolator mSplineInterp;
 	Transform[] mTransforms;
 
+	public AudioSource [] playerSFX;
+
 	void OnDrawGizmos()
 	{
 		Transform[] trans = GetTransforms();
@@ -153,15 +155,18 @@ public class SplineController : MonoBehaviour
 	void OnTriggerEnter(Collider collision)
 	{
 		if (EnableCollision) {
-						if (collision.gameObject.CompareTag ("Enemy")) {
-								if (Log)
-										Debug.Log ("Missile hit player " + NumberHit + " times.");
-								NumberHit++;
+			if (collision.gameObject.CompareTag ("Enemy")) {
+				if (Log)
+					Debug.Log ("Missile hit player " + NumberHit + " times.");
+				NumberHit++;
 				// put sound here
-//								MyCamera.SendMessage ("Shake");
-						} else
-			if (Log)
-								Debug.Log ("Player hit " + collision.ToString () + ".");
-				}
+				//if (!playerSFX[0].isPlaying)
+					playerSFX[0].Play();
+				print (playerSFX[0].isPlaying);
+				//MyCamera.SendMessage ("Shake");
+			} else
+				if (Log)
+					Debug.Log ("Player hit " + collision.ToString () + ".");
+		}
 	}
 }

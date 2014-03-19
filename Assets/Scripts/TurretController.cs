@@ -12,6 +12,7 @@ public class TurretController : MonoBehaviour
 	public int FiringCooldown = 1000;
 	public int StaggerTime = 0;
 	float timer = 0;
+	public AudioSource firingSFX;
 
 	// Both
 	public SplineInterpolator Spline;
@@ -82,6 +83,9 @@ public class TurretController : MonoBehaviour
 			timer = FiringCooldown;
 			Rigidbody clone;
 			clone = Instantiate (projectile, transform.position, GunTransform.rotation) as Rigidbody;
+			//if (!firingSFX.isPlaying)
+			firingSFX.Play ();
+			//print (firingSFX.isPlaying);
 		}
 	}
 }
