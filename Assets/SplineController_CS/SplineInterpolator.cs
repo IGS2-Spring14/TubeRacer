@@ -10,6 +10,7 @@ public class SplineInterpolator : MonoBehaviour
 {
 	public bool StopShip = false;
 	public bool ResetSpeed = false;
+	bool UserSet = false;
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
 
 	public float TimeScale = 1.0f;
@@ -26,6 +27,11 @@ public class SplineInterpolator : MonoBehaviour
 		//Debug.Log ("I will speed you up to " + TimeScale);
 		TimeScale = TimeScale + 0.2f;
 	}
+	public void SetSpeed(float Speed)
+	{
+		TimeScale = Speed;
+		UserSet = true;
+		}
 
 	internal class SplineNode
 	{
@@ -154,16 +160,18 @@ public class SplineInterpolator : MonoBehaviour
 	{
 		if ((Input.GetKey (KeyCode.UpArrow)) || Input.GetKey (KeyCode.JoystickButton4)){
 						SpeedUp ();
+			UserSet = false;
 		} else if ((Input.GetKey (KeyCode.DownArrow))|| Input.GetKey (KeyCode.JoystickButton5)){
 						SlowDown ();
+			UserSet=false;
 				} else
 		{
-			if(TimeScale>6.9f||TimeScale<6.7f)
+			if(TimeScale>6.9f||TimeScale<6.7f && !UserSet)
 			{
 				if(TimeScale>6.9f)
-					TimeScale = TimeScale - 0.2f;
-				if(TimeScale<6.5f)
-					TimeScale = TimeScale + 0.2f;
+					TimeScale = TimeScale - 0.3f;
+				if(TimeScale<6.4f)
+					TimeScale = TimeScale + 0.3f;
 			}
 				}
 
