@@ -8,7 +8,7 @@ public class TurretController : MonoBehaviour
 	public Transform target, GunTransform;
 
 	//Firing
-	public Rigidbody projectile;
+	public GameObject projectile;
 	public int FiringCooldown = 1000;
 	public int StaggerTime = 0;
 	float timer = 0;
@@ -32,8 +32,6 @@ public class TurretController : MonoBehaviour
 
 	void Start () 
 	{
-		//target = GameObject.FindGameObjectWithTag("Player").transform;
-		//GunTransform = transform.FindChild("Firing_Gun").transform;
 		timer = StaggerTime;
 	}
 	
@@ -51,7 +49,6 @@ public class TurretController : MonoBehaviour
 	void UpdateAimRotation()
 	{
 		//Direction to look at (needs to be reversed so model faces player)
-		//Vector3 relPos = target.position - transform.position;
 		Vector3 relPos = Spline.GetHermiteAtTime (Spline.mCurrentTime + (LeadTime * Spline.TimeScale)) - transform.position;
 		relPos.y = 0.0f;
 
@@ -61,7 +58,6 @@ public class TurretController : MonoBehaviour
 
 
 		//Face the gun toward the player
-		//relPos = target.position - transform.position;
 		relPos = Spline.GetHermiteAtTime (Spline.mCurrentTime + (LeadTime * Spline.TimeScale)) - transform.position;
 		if (Vector3.Angle(relPos, transform.forward) <= MaxGunAngle)
 			GunTransform.rotation = Quaternion.LookRotation(relPos);
@@ -81,8 +77,8 @@ public class TurretController : MonoBehaviour
 		if (timer <= 1)
 		{
 			timer = FiringCooldown;
-			Rigidbody clone;
-			clone = Instantiate (projectile, transform.position, GunTransform.rotation) as Rigidbody;
+			GameObject clone;
+			clone = Instantiate (projectile, transform.position, GunTransform.rotation) as GameObject;
 			//if (!firingSFX.isPlaying)
 			firingSFX.Play ();
 			//print (firingSFX.isPlaying);
