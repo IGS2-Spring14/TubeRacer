@@ -338,7 +338,7 @@ MonoBehaviour:
   StaggerTime: 400
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &9628687
@@ -548,6 +548,10 @@ Prefab:
       value: 
       objectReference: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
     - target: {fileID: 11400002, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+    - target: {fileID: 11400010, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
       objectReference: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
@@ -3263,7 +3267,7 @@ MonoBehaviour:
   StaggerTime: 400
   firingSFX: {fileID: 334345419}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &35327306
@@ -3506,7 +3510,7 @@ MonoBehaviour:
   StaggerTime: 300
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &36668474
@@ -16801,6 +16805,10 @@ Prefab:
       propertyPath: Spline
       value: 
       objectReference: {fileID: 1747417773}
+    - target: {fileID: 11400010, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
   m_RootGameObject: {fileID: 928287939}
@@ -17985,15 +17993,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 1be4472894949437694aead55c6da60f, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 1
+  Priority: 128
   DopplerLevel: 1
-  MinDistance: 1000
-  MaxDistance: 5000
+  MinDistance: 1
+  MaxDistance: 10000
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -27070,7 +27078,7 @@ MonoBehaviour:
   StaggerTime: 700
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &409419555
@@ -29024,7 +29032,7 @@ MonoBehaviour:
   StaggerTime: 200
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &453864701
@@ -33106,7 +33114,7 @@ MonoBehaviour:
   StaggerTime: 600
   firingSFX: {fileID: 334345419}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &545013818
@@ -33187,7 +33195,7 @@ MonoBehaviour:
   StaggerTime: 700
   firingSFX: {fileID: 334345419}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &545682491
@@ -37998,7 +38006,7 @@ MonoBehaviour:
   StaggerTime: 500
   firingSFX: {fileID: 334345419}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &580168375
@@ -41255,7 +41263,7 @@ MonoBehaviour:
   StaggerTime: 200
   firingSFX: {fileID: 334345419}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &645248251
@@ -45075,7 +45083,7 @@ MonoBehaviour:
   StaggerTime: 100
   firingSFX: {fileID: 334345419}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &747902230
@@ -53060,6 +53068,10 @@ Prefab:
       value: 
       objectReference: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
     - target: {fileID: 11400014, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
+      propertyPath: projectile
+      value: 
+      objectReference: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+    - target: {fileID: 11400010, guid: 95d2ea5c25f043849b642a2206687283, type: 2}
       propertyPath: projectile
       value: 
       objectReference: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
@@ -71292,7 +71304,7 @@ MonoBehaviour:
   StaggerTime: 100
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &1123220484
@@ -82785,7 +82797,7 @@ MonoBehaviour:
   StaggerTime: 0
   firingSFX: {fileID: 334345419}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &1324203515
@@ -89223,7 +89235,7 @@ MonoBehaviour:
   StaggerTime: 500
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &1436873001
@@ -95518,7 +95530,7 @@ MonoBehaviour:
   StaggerTime: 300
   firingSFX: {fileID: 334345419}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &1537072613
@@ -96151,7 +96163,7 @@ MonoBehaviour:
   StaggerTime: 600
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &1567994502
@@ -97622,7 +97634,7 @@ MonoBehaviour:
   StaggerTime: 0
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 20000
+  Range: 50000
   LeadTime: 2.25
   MinRange: 0
 --- !u!95 &1587522335
@@ -98293,6 +98305,106 @@ Transform:
   m_Children:
   - {fileID: 1099828765}
   m_Father: {fileID: 410568912}
+--- !u!1 &1622401488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1622401492}
+  - 33: {fileID: 1622401491}
+  - 65: {fileID: 1622401490}
+  - 23: {fileID: 1622401489}
+  - 65: {fileID: 1622401493}
+  - 114: {fileID: 1622401494}
+  m_Layer: 0
+  m_Name: Obstacle
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1622401489
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622401488}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!65 &1622401490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622401488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1622401491
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622401488}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1622401492
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622401488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 742.224854, y: 2314.07739, z: -737.507568}
+  m_LocalScale: {x: 5000, y: 5000, z: 500}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!65 &1622401493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622401488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 5, z: 50}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1622401494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622401488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 0
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 5000
+  speed: 30
 --- !u!1 &1622826053
 GameObject:
   m_ObjectHideFlags: 0
@@ -103916,15 +104028,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 1be4472894949437694aead55c6da60f, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Priority: 1
+  Priority: 128
   DopplerLevel: 1
-  MinDistance: 1000
-  MaxDistance: 5000
+  MinDistance: 1
+  MaxDistance: 10000
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
