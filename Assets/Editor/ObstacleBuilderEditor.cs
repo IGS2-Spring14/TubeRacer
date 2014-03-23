@@ -6,18 +6,16 @@ using System.Collections;
 [CustomEditor(typeof(ObstacleContoller))]
 public class ObstacleBuilderEditor : Editor
 {
-    private string[] obstacleTypeNames = { "MovingPattern", "SuddenMovement", "RotatingPattern" };
-    private int obstacleSelectionIndex = 0;
-
     public override void OnInspectorGUI()
     {
         GUILayout.Label("Obstacle Builder: choose obstacle type... (all pending further updates)");
 
-        obstacleSelectionIndex = GUILayout.Toolbar(obstacleSelectionIndex, obstacleTypeNames);
-        GUILayout.Space(10f);
-        ObstacleContoller obstacle = (ObstacleContoller)target;
+		ObstacleContoller obstacle = (ObstacleContoller)target;
 
-        if (obstacleSelectionIndex == 0)
+		obstacle.obstacleSelectionIndex = GUILayout.Toolbar( obstacle.obstacleSelectionIndex, obstacle.obstacleTypeNames);
+        GUILayout.Space(10f);
+
+		if ( obstacle.obstacleSelectionIndex == 0)
         {
             obstacle.obstacleType = ObstacleContoller.ObstacleType.MovingPattern;
 
@@ -28,20 +26,21 @@ public class ObstacleBuilderEditor : Editor
             obstacle.TraverseDistance = EditorGUILayout.FloatField("Traverse Distance", obstacle.TraverseDistance);
             obstacle.speed = EditorGUILayout.FloatField("Speed", obstacle.speed);
         }
-        else if (obstacleSelectionIndex == 1)
+		else if ( obstacle.obstacleSelectionIndex == 1)
         {
             obstacle.obstacleType = ObstacleContoller.ObstacleType.SuddenMovement;
 
-            GUILayout.Label("Not yet implemented");
             GUILayout.Label("SuddenMovement obstacle will hold its position until the player\nenters its trigger box to move in a direction (not repeating)");
             GUILayout.Space(10f);
+
         }
-        else if (obstacleSelectionIndex == 2)
+		else if ( obstacle.obstacleSelectionIndex == 2)
         {
             obstacle.obstacleType = ObstacleContoller.ObstacleType.RotatingPattern;
 
-            GUILayout.Label("Not yet implemented");
-            GUILayout.Space(10f);
+			obstacle.rotationSpeed = EditorGUILayout.FloatField("Rotation Speed", obstacle.rotationSpeed);
+			obstacle.useRotationOffset = EditorGUILayout.Toggle("Use Offset", obstacle.useRotationOffset);
+			obstacle.rotationOffset = EditorGUILayout.FloatField("Rotation Offset", obstacle.rotationOffset);
         }
     }
 }
