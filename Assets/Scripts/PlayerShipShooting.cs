@@ -30,7 +30,7 @@ public class PlayerShipShooting : MonoBehaviour
 			UpdateAiming();		
 		
         if ((Input.GetKeyDown (KeyCode.Mouse0) || Input.GetKeyDown (KeyCode.JoystickButton2)) && timer < 0) {
-			Debug.Log ("shooting");
+			//Debug.Log ("shooting");
 			Fire ();
 		}
 	}

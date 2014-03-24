@@ -26,7 +26,7 @@ public class Life_Default : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collision)
 	{
-		if (collision.CompareTag ("Gun")) {
+		if (collision.gameObject.CompareTag ("Gun")) {
 						Debug.Log (this.name.ToString () + " was hit");
 						life--;
 				}
