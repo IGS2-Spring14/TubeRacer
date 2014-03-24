@@ -98400,11 +98400,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleType: 0
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 0
   direction: 1
   Velocity: {x: 0, y: 0, z: 0}
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 5000
   speed: 30
+  rotationSpeed: 1
+  rotationOffset: 5000
+  useRotationOffset: 0
 --- !u!1 &1622826053
 GameObject:
   m_ObjectHideFlags: 0
@@ -114648,8 +114656,6 @@ GameObject:
   - 4: {fileID: 1914979293}
   - 114: {fileID: 1914979297}
   - 136: {fileID: 1914979296}
-  - 114: {fileID: 1914979295}
-  - 136: {fileID: 1914979294}
   m_Layer: 0
   m_Name: FrigatePrefab
   m_TagString: Untagged
@@ -114670,31 +114676,6 @@ Transform:
   - {fileID: 189530906}
   - {fileID: 1672619069}
   m_Father: {fileID: 0}
---- !u!136 &1914979294
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1914979292}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 5638
-  m_Height: 22525
-  m_Direction: 0
-  m_Center: {x: 10000, y: 0, z: -532}
---- !u!114 &1914979295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1914979292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  life: 0
 --- !u!136 &1914979296
 CapsuleCollider:
   m_ObjectHideFlags: 0
