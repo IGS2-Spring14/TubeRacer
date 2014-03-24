@@ -8,14 +8,16 @@ public class PlayerShipShooting : MonoBehaviour
 	public float ReticleDistance = 1000;
 	public bool OculusAim = false;
 
-    private Transform ship, reticle;
+	private Transform ship;
+	private Vector3 target;
+	private Texture2D crossHairTex;
     private float timer;
 	private Camera camera;
 
 	// Use this for initialization
 	void Start () 
     {
-        reticle = transform.FindChild("Reticle");
+		crossHairTex = Resources.Load ("CrossHair") as Texture2D;
         timer = FireCooldown;
 		camera = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<Camera>();
         ship = GameObject.FindGameObjectWithTag("Player").transform;
@@ -27,7 +29,9 @@ public class PlayerShipShooting : MonoBehaviour
         timer -= Time.deltaTime * 1000;
 
 		if (!OculusAim) 
-			UpdateAiming();		
+			UpdateAiming();	
+		else
+			target = transform.forward * ReticleDistance;
 		
         if ((Input.GetKeyDown (KeyCode.Mouse0) || Input.GetKeyDown (KeyCode.JoystickButton2)) && timer < 0) {
 			//Debug.Log ("shooting");
@@ -39,7 +43,7 @@ public class PlayerShipShooting : MonoBehaviour
     {
         timer = FireCooldown;
 
-		Vector3 relpos = (reticle.position - ship.position).normalized;
+		Vector3 relpos = (target - ship.position).normalized;
         GameObject clone;
         clone = Instantiate(projectile, ship.position, Quaternion.LookRotation(relpos)) as GameObject;
     }
@@ -48,6 +52,17 @@ public class PlayerShipShooting : MonoBehaviour
 	{
 		Ray ray = camera.ScreenPointToRay (Input.mousePosition);
 
-		reticle.position = ray.GetPoint (ReticleDistance);
+		target = ray.GetPoint (ReticleDistance);
+	}
+
+	void OnGUI()
+	{
+		GUI.color = Color.red;
+		if (!OculusAim)
+			GUI.DrawTexture (new Rect (Input.mousePosition.x - 24, ((Input.mousePosition.y - Screen.height) * -1) - 24,
+			                           	48, 48), crossHairTex, ScaleMode.ScaleToFit);
+		else 
+			GUI.DrawTexture (new Rect (Screen.width / 2 + (Screen.width / 3.5f) - (crossHairTex.width / 2), 
+			                           Screen.height / 2, 64, 64), crossHairTex, ScaleMode.ScaleToFit);
 	}
 }
