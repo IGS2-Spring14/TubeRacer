@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: aeeffc5738876c04384e1f30f7747c96
+guid: f782920707f7d2a4bb8c58be03690e5c
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
     100000: //RootNode
-    100002: nurbsCylinder1
-    100004: pCone1
-    100006: pSphere1
     400000: //RootNode
-    400002: nurbsCylinder1
-    400004: pCone1
-    400006: pSphere1
-    2300000: pCone1
-    2300002: pSphere1
-    3300000: pCone1
-    3300002: pSphere1
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: pSphere1
-    4300002: pCone1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -36,7 +27,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 500
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
