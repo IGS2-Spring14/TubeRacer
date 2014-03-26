@@ -13,21 +13,25 @@ public class Enemy_Controller : MonoBehaviour
 	internal bool isFollowing = false;
 	SplineInterpolator TheirSpline;
 	SplineInterpolator MySpline;
-
+	
 	void Awake ()
 	{
 		target = GameObject.Find ("PlayerShip").transform;
 		targetObject = GameObject.Find ("GamePlatform");
-
-		SplineController TheirSplineControl = target.GetComponent<SplineController> ();
+		
+		SplineController TheirSplineControl = targetObject.GetComponent<SplineController> ();
 		SplineController MySplineControl = this.GetComponent<SplineController> ();
-		MySplineControl.SplineRoot = GameObject.Find ("Path");
+		
+		// MySplineControl.SplineRoot = GameObject.Find ("Path_Player");
+		Debug.Log (TheirSplineControl.SplineRoot);
+		
+		MySplineControl.SplineRoot = TheirSplineControl.SplineRoot;
 	}
-
+	
 	// Use this for initialization
 	void Start () 
 	{
-
+		
 	}
 	
 	// Update is called once per frame
@@ -38,13 +42,13 @@ public class Enemy_Controller : MonoBehaviour
 			UpdateAimRotation ();
 			UpdateFiring ();
 		}
-
+		
 		if (Vector3.Distance(target.position, transform.position) > FollowDistance && !isFollowing)
 		{
 			UpdateFollowing(); 
 		}
 	}
-
+	
 	void UpdateAimRotation()
 	{
 		//Direction to look at (needs to be reversed so model faces player)
@@ -53,9 +57,9 @@ public class Enemy_Controller : MonoBehaviour
 		//Face the turret toward the player (y is axis of rotation)
 		transform.rotation = Quaternion.LookRotation(relPos);
 		
-
+		
 	}
-
+	
 	// Update is called once per frame
 	void UpdateFiring () 
 	{
@@ -70,7 +74,7 @@ public class Enemy_Controller : MonoBehaviour
 			clone = Instantiate (projectile, transform.position, transform.rotation) as Rigidbody;
 		}
 	}
-
+	
 	void UpdateFollowing()
 	{
 		TheirSpline = targetObject.GetComponent<SplineInterpolator> ();

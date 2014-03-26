@@ -20,7 +20,7 @@ public class PlayerShipShooting : MonoBehaviour
 		crossHairTex = Resources.Load ("CrossHair") as Texture2D;
         timer = FireCooldown;
 		camera = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<Camera>();
-        ship = GameObject.FindGameObjectWithTag("Player").transform;
+        ship = GameObject.FindGameObjectWithTag("PlayerShip").transform;
 	}
 	
 	// Update is called once per frame

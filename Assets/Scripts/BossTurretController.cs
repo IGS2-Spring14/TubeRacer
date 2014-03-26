@@ -8,7 +8,7 @@ public class BossTurretController : MonoBehaviour
 	public Transform target, GunTransform;
 	
 	//Firing
-	public Rigidbody projectile;
+	public GameObject projectile;
 	public int FiringCooldown = 1000;
 	public int StaggerTime = 0;
 	float timer = 0;
@@ -19,12 +19,12 @@ public class BossTurretController : MonoBehaviour
 	public float LeadTime = 10;
 	public int MinRange = 0; 
 	//Vector3 relPos;
-
+	
 	Boss_1_AI MyAI;
-
+	
 	//Temp Destroy
-	public float Destroy_Timer = 5;
-	private float Destroy_Time;
+	//public float Destroy_Timer = 5;
+	//private float Destroy_Time;
 	
 	// Use this for initialization
 	void Awake ()
@@ -33,7 +33,7 @@ public class BossTurretController : MonoBehaviour
 		
 		GameObject targetObject = GameObject.Find ("GamePlatform");
 		Spline = targetObject.GetComponent<SplineInterpolator> ();
-
+		
 		GameObject MyBoss = GameObject.Find("Boss_1_Prefab(Clone)");
 		MyAI = MyBoss.GetComponent<Boss_1_AI> ();
 	}
@@ -43,15 +43,15 @@ public class BossTurretController : MonoBehaviour
 		//target = GameObject.FindGameObjectWithTag("Player").transform;
 		//GunTransform = transform.FindChild("Firing_Gun").transform;
 		timer = StaggerTime;
-		Destroy_Time = Time.time + (Destroy_Timer * 3);
+		//Destroy_Time = Time.time + (Destroy_Timer * 3);
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		UpdateDestroy ();
-		Debug.Log (Destroy_Time);
-
+		//UpdateDestroy ();
+		//Debug.Log (Destroy_Time);
+		
 		if (Vector3.Distance(target.position, transform.position) > MinRange)
 			if (Vector3.Distance(target.position, transform.position) < Range) 
 		{
@@ -93,17 +93,19 @@ public class BossTurretController : MonoBehaviour
 		if (timer <= 1)
 		{
 			timer = FiringCooldown;
-			Rigidbody clone;
-			clone = Instantiate (projectile, transform.position, GunTransform.rotation) as Rigidbody;
+			GameObject clone;
+			clone = Instantiate (projectile, transform.position, GunTransform.rotation) as GameObject;
 		}
 	}
-
-	void UpdateDestroy ()
+	
+	/*void UpdateDestroy ()
 	{
 		if (Time.time > Destroy_Time)
 		{
 			MyAI.SendMessage ("TurretDeath");
 			Destroy (this.gameObject);
 		}
-	}
+	}*/
+	
+	
 }

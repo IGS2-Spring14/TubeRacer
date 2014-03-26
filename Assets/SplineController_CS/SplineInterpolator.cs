@@ -10,11 +10,14 @@ public class SplineInterpolator : MonoBehaviour
 {
 	public bool StopShip = false;
 	public bool ResetSpeed = false;
+	public bool IsPlayer = false; 
+	public bool IsStraightPath = false;
+	public bool IsFlipped = false;
 	bool UserSet = false;
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
-
+	
 	public float TimeScale = 1.0f;
-
+	Quaternion TempRot; 
 	
 	public void SlowDown()
 	{
@@ -45,7 +48,7 @@ public class SplineInterpolator : MonoBehaviour
 	}
 
 	List<SplineNode> mNodes = new List<SplineNode>();
-	string mState = "";
+	public string mState = "";
 	bool mRotations;
 
 	OnEndCallback mOnEndCallback;
@@ -158,23 +161,25 @@ public class SplineInterpolator : MonoBehaviour
 
 	void Update()
 	{
-		if ((Input.GetKey (KeyCode.UpArrow)) || Input.GetKey (KeyCode.JoystickButton4)){
-						SpeedUp ();
-			UserSet = false;
-		} else if ((Input.GetKey (KeyCode.DownArrow))|| Input.GetKey (KeyCode.JoystickButton5)){
-						SlowDown ();
-			UserSet=false;
-				} else
+		if (IsPlayer)
 		{
-			if(TimeScale>6.9f||TimeScale<6.7f && !UserSet)
+			if ((Input.GetKey (KeyCode.UpArrow)) || Input.GetKey (KeyCode.JoystickButton4)){
+							SpeedUp ();
+				UserSet = false;
+			} else if ((Input.GetKey (KeyCode.DownArrow))|| Input.GetKey (KeyCode.JoystickButton5)){
+							SlowDown ();
+				UserSet=false;
+					} else
 			{
-				if(TimeScale>6.9f)
-					TimeScale = TimeScale - 0.3f;
-				if(TimeScale<6.4f)
-					TimeScale = TimeScale + 0.3f;
-			}
+				if(TimeScale>6.9f||TimeScale<6.7f && !UserSet)
+				{
+					if(TimeScale>6.9f)
+						TimeScale = TimeScale - 0.3f;
+					if(TimeScale<6.4f)
+						TimeScale = TimeScale + 0.3f;
 				}
-
+					}
+		}
 
 		if (mState == "Reset" || mState == "Stopped" || mNodes.Count < 4)
 			return;
@@ -231,9 +236,25 @@ public class SplineInterpolator : MonoBehaviour
 
 			transform.position = GetHermiteInternal(mCurrentIdx, param);
 
+			//Debug.Log ("Node: " + mNodes[mCurrentIdx].Rot);
+			//Debug.Log ("Squad: " + GetSquad(mCurrentIdx, param)); 
+
+			Debug.Log (mCurrentTime);
 			if (mRotations)
 			{
-				transform.rotation = GetSquad(mCurrentIdx, param);
+				if (IsStraightPath)
+					transform.rotation = mNodes[mCurrentIdx].Rot;
+				else
+				{
+					if (IsFlipped)
+					{
+						TempRot = GetSquad(mCurrentIdx, param);
+						TempRot.y += 180;
+						transform.rotation = TempRot;
+					}
+					else
+						transform.rotation = GetSquad(mCurrentIdx, param);
+				}
 			}
 		}
 	}
