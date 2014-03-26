@@ -163,7 +163,6 @@ public class SplineController : MonoBehaviour
 				//if (!playerSFX[0].isPlaying)
 					playerSFX[0].Play();
 				print (playerSFX[0].isPlaying);
-				//MyCamera.SendMessage ("Shake");
 			} else
 				if (Log)
 					Debug.Log ("Player hit " + collision.ToString () + ".");

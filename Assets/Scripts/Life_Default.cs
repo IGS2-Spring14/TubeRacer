@@ -4,6 +4,7 @@ using System.Collections;
 public class Life_Default : MonoBehaviour {
 	public int life;
 	GameObject clone;
+	public bool VerifyAllCollisions = false;
 		// Use this for initialization
 	void Start () {
 		clone = this.gameObject;
@@ -30,5 +31,7 @@ public class Life_Default : MonoBehaviour {
 						Debug.Log (this.name.ToString () + " was hit");
 						life--;
 				}
+		else if(VerifyAllCollisions)
+			Debug.Log (this.name.ToString () + " was hit by " + collision.gameObject.ToString());
 	}
 }

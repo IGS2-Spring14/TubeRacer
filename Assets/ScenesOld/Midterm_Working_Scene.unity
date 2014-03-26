@@ -39463,6 +39463,7 @@ GameObject:
   - 4: {fileID: 593774912}
   - 114: {fileID: 593774914}
   - 136: {fileID: 593774913}
+  - 54: {fileID: 593774915}
   m_Layer: 0
   m_Name: FrigatePrefab
   m_TagString: Untagged
@@ -39491,12 +39492,12 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 1530808576}
   m_GameObject: {fileID: 593774911}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 5638
-  m_Height: 22525
+  m_Radius: 6443
+  m_Height: 26475
   m_Direction: 0
-  m_Center: {x: 10000, y: 0, z: -532}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &593774914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39510,6 +39511,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  VerifyAllCollisions: 0
+--- !u!54 &593774915
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: e20a71394a04f86498ba6bce93e7d014,
+    type: 2}
+  m_PrefabInternal: {fileID: 1530808576}
+  m_GameObject: {fileID: 593774911}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &594636861
 GameObject:
   m_ObjectHideFlags: 0
@@ -49567,6 +49585,7 @@ GameObject:
   - 4: {fileID: 805169850}
   - 114: {fileID: 805169852}
   - 136: {fileID: 805169851}
+  - 54: {fileID: 805169853}
   m_Layer: 0
   m_Name: FrigatePrefab
   m_TagString: Untagged
@@ -49595,12 +49614,12 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 1289234499}
   m_GameObject: {fileID: 805169849}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 5638
-  m_Height: 22525
+  m_Radius: 6443
+  m_Height: 26475
   m_Direction: 0
-  m_Center: {x: 10000, y: 0, z: -532}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &805169852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49614,6 +49633,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  VerifyAllCollisions: 0
+--- !u!54 &805169853
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: e20a71394a04f86498ba6bce93e7d014,
+    type: 2}
+  m_PrefabInternal: {fileID: 1289234499}
+  m_GameObject: {fileID: 805169849}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &807348159
 GameObject:
   m_ObjectHideFlags: 0
@@ -54801,7 +54837,6 @@ GameObject:
   - 81: {fileID: 922468621}
   - 114: {fileID: 922468620}
   - 114: {fileID: 922468619}
-  - 114: {fileID: 922468624}
   - 114: {fileID: 922468625}
   m_Layer: 8
   m_Name: CameraRight
@@ -54901,22 +54936,6 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
---- !u!114 &922468624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851,
-    type: 2}
-  m_PrefabInternal: {fileID: 1458906741}
-  m_GameObject: {fileID: 922468617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FireCooldown: 500
-  projectile: {fileID: 0}
-  ReticleDistance: 1000
-  OculusAim: 1
 --- !u!114 &922468625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90096,7 +90115,20 @@ Prefab:
       propertyPath: SplineRoot
       value: 
       objectReference: {fileID: 249607706}
-    m_RemovedComponents: []
+    - target: {fileID: 100028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_RootGameObject: {fileID: 1747417769}
   m_IsPrefabParent: 0
@@ -112384,6 +112416,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1877069803}
+  - 114: {fileID: 1877069804}
   m_Layer: 0
   m_Name: OculusEnable
   m_TagString: Untagged
@@ -112403,6 +112436,17 @@ Transform:
   m_Children:
   - {fileID: 927795396}
   m_Father: {fileID: 273756269}
+--- !u!114 &1877069804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877069802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7e8ff6be2d137408e07e6da83714a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1877567834
 GameObject:
   m_ObjectHideFlags: 0
@@ -115003,6 +115047,7 @@ GameObject:
   - 4: {fileID: 1914979293}
   - 114: {fileID: 1914979297}
   - 136: {fileID: 1914979296}
+  - 54: {fileID: 1914979294}
   m_Layer: 0
   m_Name: FrigatePrefab
   m_TagString: Untagged
@@ -115023,6 +115068,22 @@ Transform:
   - {fileID: 189530906}
   - {fileID: 1672619069}
   m_Father: {fileID: 0}
+--- !u!54 &1914979294
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: e20a71394a04f86498ba6bce93e7d014,
+    type: 2}
+  m_PrefabInternal: {fileID: 1177867681}
+  m_GameObject: {fileID: 1914979292}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!136 &1914979296
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -115031,12 +115092,12 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 1177867681}
   m_GameObject: {fileID: 1914979292}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 5638
-  m_Height: 22525
+  m_Radius: 6443
+  m_Height: 26475
   m_Direction: 0
-  m_Center: {x: 10000, y: 0, z: -532}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1914979297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115050,6 +115111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  VerifyAllCollisions: 0
 --- !u!1 &1921028434
 GameObject:
   m_ObjectHideFlags: 0
@@ -125926,6 +125988,7 @@ GameObject:
   - 4: {fileID: 2142314965}
   - 114: {fileID: 2142314967}
   - 136: {fileID: 2142314966}
+  - 54: {fileID: 2142314968}
   m_Layer: 0
   m_Name: FrigatePrefab
   m_TagString: Untagged
@@ -125954,12 +126017,12 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 1614114433}
   m_GameObject: {fileID: 2142314964}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 5638
-  m_Height: 22525
+  m_Radius: 6443
+  m_Height: 26475
   m_Direction: 0
-  m_Center: {x: 10000, y: 0, z: -532}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2142314967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125973,6 +126036,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  VerifyAllCollisions: 0
+--- !u!54 &2142314968
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: e20a71394a04f86498ba6bce93e7d014,
+    type: 2}
+  m_PrefabInternal: {fileID: 1614114433}
+  m_GameObject: {fileID: 2142314964}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &2144962639
 GameObject:
   m_ObjectHideFlags: 0
