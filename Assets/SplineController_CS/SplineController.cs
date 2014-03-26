@@ -25,7 +25,7 @@ public class SplineController : MonoBehaviour
 
 	public AudioSource [] playerSFX;
 
-	void OnDrawGizmos()
+	public void OnDrawGizmos()
 	{
 		Transform[] trans = GetTransforms();
 		if (trans.Length < 2)
@@ -143,7 +143,6 @@ public class SplineController : MonoBehaviour
 	/// </summary>
 	void FollowSpline()
 	{
-		Debug.Log (mTransforms[0]);
 		if (mTransforms != null)
 			if (mTransforms.Length > 0)
 			{

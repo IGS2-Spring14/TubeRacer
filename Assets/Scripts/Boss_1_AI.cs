@@ -11,7 +11,16 @@ public class Boss_1_AI : MonoBehaviour
 	internal bool isFollowing = false;
 	SplineInterpolator TheirSpline;
 	SplineInterpolator MySpline;
-	int Health = 4; 
+	public int Health = 8; 
+
+	/* --------------------------------------------
+	 * --------------------------------Rotation WIP
+	bool isRotated = false;
+	float HorizontalMovement;
+	float VerticalMovement;
+	Quaternion TempRot; 
+	-------------------------------------------- */
+	GameObject myPath;
 
 	void Awake ()
 	{
@@ -19,7 +28,8 @@ public class Boss_1_AI : MonoBehaviour
 		targetObject = GameObject.Find ("GamePlatform");
 		
 		SplineController MySplineControl = this.GetComponent<SplineController> ();
-		MySplineControl.SplineRoot = GameObject.Find ("Path_Boss");
+		myPath = GameObject.Find ("Path_Boss");
+		MySplineControl.SplineRoot = myPath;
 	}
 
 	// Use this for initialization
@@ -33,6 +43,7 @@ public class Boss_1_AI : MonoBehaviour
 	{
 		if (Vector3.Distance(target.position, transform.position) > FollowDistance && !isFollowing)
 		{
+			isFollowing = true; 
 			UpdateFollowing(); 
 		}
 
@@ -40,6 +51,29 @@ public class Boss_1_AI : MonoBehaviour
 		{
 			BossDeath();
 		}
+
+		/* --------------------------------------------
+		 * --------------------------------Rotation WIP
+		if (Health == 7)
+			if (!isRotated)
+		{
+			//	transform.rotation.z = 180; 
+			/*
+			    isRotated = true; 
+			 	TempRot = myPath.transform.rotation;
+			 	TempRot.y = 180;
+				myPath.transform.rotation = TempRot; 
+			*/
+			/*
+				for (int i = 0; i < 17; i++)
+				{
+					//MySpline.mNodes[i].Rot.y += 180;
+				}
+			*/
+		/*	
+			isRotated = true; 
+			MySpline.IsFlipped = true; 
+		-------------------------------------------- */
 	}
 
 	void UpdateFollowing()
@@ -48,7 +82,6 @@ public class Boss_1_AI : MonoBehaviour
 		MySpline = this.GetComponent<SplineInterpolator> ();
 
 		MySpline.TimeScale = TheirSpline.TimeScale;
-		isFollowing = true; 
 	}
 
 	void TurretDeath()
@@ -62,4 +95,34 @@ public class Boss_1_AI : MonoBehaviour
 		Debug.Log ("Boss Defeated");
 		Destroy (this.gameObject);
 	}
+
+	void OnTriggerEnter(Collider collision)
+	{
+		if (collision.CompareTag ("Gun")) {
+			Destroy(collision);
+		}
+	}
+
+	/* --------------------------------------------
+	 * --------------------------------Rotation WIP
+	void UpdateRotation
+	{
+
+		 rotation += 180 * Time.deltaTime;
+		
+		altitude = Mathf.Clamp(altitude, minAltitude, maxAltitude);
+
+	
+
+		var pos = transform.parent.up * -altitude;
+		var rot = Quaternion.AngleAxis(rotation, transform.forward);
+		
+		pos = rot * pos;
+		
+		var rotAngle = Quaternion.LookRotation(transform.forward, -pos);
+		
+		transform.rotation = rotAngle;
+		transform.position = transform.parent.position + pos;
+	}
+	-------------------------------------------- */
 }

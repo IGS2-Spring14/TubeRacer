@@ -4,7 +4,7 @@ using System.Collections;
 public class Event_Boss_Enter : MonoBehaviour {
 
 	public GameObject BossObject;
-	bool IsTriggered = false;
+	bool IsTriggered = false; 
 
 	// Use this for initialization
 	void Start () {
@@ -16,22 +16,29 @@ public class Event_Boss_Enter : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter(Collision myCollision)
+	void OnTriggerEnter(Collider myCollider)
 	{
-
-		Debug.Log (myCollision.gameObject.name);
-		if (myCollision.gameObject.name == "GamePlatform" && !IsTriggered)
+		
+		Debug.Log (myCollider.gameObject.name);
+		if (myCollider.gameObject.name == "GamePlatform" && !IsTriggered)
 		{
 			Debug.Log ("Event Triggered");
 			IsTriggered = true;
-
+			
 			Vector3 Temp = transform.position;
-			Temp.x = 0;
-			Temp.y = 1000;
-			Temp.z = 2000;
-
+			Temp.x = 1000;
+			Temp.y = 0;
+			Temp.z = 0;
+			
 			GameObject Boss;
-			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject; 
+			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
+			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
+			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
+			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
+			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
+			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
+			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
+			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
 		}
 	}
 }
