@@ -62,7 +62,7 @@ public class PlayerShipShooting : MonoBehaviour
 			GUI.DrawTexture (new Rect (Input.mousePosition.x - 24, ((Input.mousePosition.y - Screen.height) * -1) - 24,
 			                           	48, 48), crossHairTex, ScaleMode.ScaleToFit);
 		else 
-			GUI.DrawTexture (new Rect (Screen.width / 2 + (Screen.width / 3.5f) - (crossHairTex.width / 2), 
-			                           Screen.height / 2, 64, 64), crossHairTex, ScaleMode.ScaleToFit);
+			GUI.DrawTexture (new Rect ((Screen.width / 2) + (Screen.width / 4.7f) - (crossHairTex.width / 2), 
+			                           (Screen.height / 2) - (crossHairTex.width / 2), 48, 48), crossHairTex, ScaleMode.ScaleToFit);
 	}
 }
