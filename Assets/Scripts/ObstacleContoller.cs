@@ -21,10 +21,35 @@ public class ObstacleContoller : MonoBehaviour
 	public float rotationOffset = 5000f;
 	public bool useRotationOffset = false;
 
+    private bool drop = false;
+
 	// Use this for initialization
 	void Start () 
     {
         prevPosition = transform.position;
+
+        if (useRotationOffset && obstacleType == ObstacleType.RotatingPattern)
+        {
+            GameObject parentOrigin = new GameObject();
+            parentOrigin.transform.position = transform.position;
+            transform.position = new Vector3(transform.position.x + rotationOffset, transform.position.y, transform.position.z);
+            transform.parent = parentOrigin.transform;
+        }
+        else if (obstacleType == ObstacleType.SuddenMovement)
+        {
+            if (direction == Direction.DOWN)
+                Velocity = new Vector3(0, -1, 0);
+            else if (direction == Direction.UP)
+                Velocity = new Vector3(0, 1, 0);
+            else if (direction == Direction.LEFT)
+                Velocity = new Vector3(-1, 0, 0);
+            else if (direction == Direction.RIGHT)
+                Velocity = new Vector3(1, 0, 0);
+            else if (direction == Direction.FORWARD)
+                Velocity = new Vector3(0, 0, -1);
+            else
+                Velocity = new Vector3(0, 0, 1);
+        }
 	}
 	
 	// Update is called once per frame
@@ -37,10 +62,14 @@ public class ObstacleContoller : MonoBehaviour
         {
             UpdateMovingPattern();
         }
-		else if (obstacleType == ObstacleType.RotatingPattern)
-		{
-			UpdateRotatingPattern();
-		}
+        else if (obstacleType == ObstacleType.SuddenMovement)
+        {
+            UpdateSuddenMovement();
+        }
+        else if (obstacleType == ObstacleType.RotatingPattern)
+        {
+            UpdateRotatingPattern();
+        }
 	}
 
     private void UpdateMovingPattern()
@@ -72,12 +101,28 @@ public class ObstacleContoller : MonoBehaviour
         }
     }
 
-	void UpdateRotatingPattern()
+    private void UpdateSuddenMovement()
+    {
+        if (drop)
+        {
+            if (traverseDistance < TraverseDistance)
+                transform.Translate(Velocity * speed);
+        }
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+        if (col.tag == "Player")
+        {
+            drop = true;
+        }
+    }
+
+	private void UpdateRotatingPattern()
 	{
-		//if (useRotationOffset && transform.position != new Vector3 ((transform.position.x + rotationOffset), transform.position.y, transform.position.z))
-				//		transform.position = new Vector3 ((transform.position.x + rotationOffset), transform.position.y, transform.position.z);
-
-		transform.Rotate(Vector3.forward, rotationSpeed);
-
+        if (useRotationOffset)
+            transform.parent.Rotate(Vector3.forward, rotationSpeed);
+        else
+		    transform.Rotate(Vector3.forward, rotationSpeed);
 	}
 }

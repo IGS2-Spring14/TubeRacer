@@ -30,9 +30,12 @@ public class ObstacleBuilderEditor : Editor
         {
             obstacle.obstacleType = ObstacleContoller.ObstacleType.SuddenMovement;
 
-            GUILayout.Label("SuddenMovement obstacle will hold its position until the player\nenters its trigger box to move in a direction (not repeating)");
+            GUILayout.Label("SuddenMovement obstacle will hold its position until the player\nenters its trigger box to 'drop' in a direction direction (not repeating)");
             GUILayout.Space(10f);
 
+            obstacle.direction = (ObstacleContoller.Direction)EditorGUILayout.EnumPopup("Direction to 'drop' towards", obstacle.direction);
+            obstacle.TraverseDistance = EditorGUILayout.FloatField("Drop Distance", obstacle.TraverseDistance);
+            obstacle.speed = EditorGUILayout.FloatField("Speed", obstacle.speed);
         }
 		else if ( obstacle.obstacleSelectionIndex == 2)
         {
