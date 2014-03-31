@@ -8,7 +8,6 @@ public class Life_Default : MonoBehaviour {
 		// Use this for initialization
 	void Start () {
 		clone = this.gameObject;
-		life = 3;
 	}
 
 	public void Die()
