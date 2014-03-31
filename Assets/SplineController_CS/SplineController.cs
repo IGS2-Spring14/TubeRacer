@@ -21,7 +21,7 @@ public class SplineController : MonoBehaviour
 	public int HitMaximum = 10;
 	private int NumberHit = 1;
 	SplineInterpolator mSplineInterp;
-	Transform[] mTransforms;
+	public Transform[] mTransforms;
 
 	public AudioSource [] playerSFX;
 
@@ -141,7 +141,7 @@ public class SplineController : MonoBehaviour
 	/// <summary>
 	/// Starts the interpolation
 	/// </summary>
-	void FollowSpline()
+	public void FollowSpline()
 	{
 		if (mTransforms != null)
 			if (mTransforms.Length > 0)
