@@ -507,7 +507,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100034}
   m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: -10990.957, y: 0, z: 6884.65234}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4500, y: 4500, z: 4500}
   m_Children:
   - {fileID: 400032}
@@ -915,9 +915,11 @@ MonoBehaviour:
   projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
+  firingSFX: {fileID: 0}
   Spline: {fileID: 0}
   Range: 50000
   LeadTime: 2.25
+  MinRange: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -935,9 +937,11 @@ MonoBehaviour:
   projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
+  firingSFX: {fileID: 0}
   Spline: {fileID: 0}
   Range: 50000
   LeadTime: 2.25
+  MinRange: 0
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -955,9 +959,11 @@ MonoBehaviour:
   projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
+  firingSFX: {fileID: 0}
   Spline: {fileID: 0}
   Range: 50000
   LeadTime: 2.25
+  MinRange: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -975,9 +981,11 @@ MonoBehaviour:
   projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
+  firingSFX: {fileID: 0}
   Spline: {fileID: 0}
   Range: 50000
   LeadTime: 2.25
+  MinRange: 0
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -995,9 +1003,11 @@ MonoBehaviour:
   projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
+  firingSFX: {fileID: 0}
   Spline: {fileID: 0}
   Range: 50000
   LeadTime: 2.25
+  MinRange: 0
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1015,9 +1025,11 @@ MonoBehaviour:
   projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
+  firingSFX: {fileID: 0}
   Spline: {fileID: 0}
   Range: 50000
   LeadTime: 2.25
+  MinRange: 0
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1035,9 +1047,11 @@ MonoBehaviour:
   projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
+  firingSFX: {fileID: 0}
   Spline: {fileID: 0}
   Range: 50000
   LeadTime: 2.25
+  MinRange: 0
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1055,9 +1069,11 @@ MonoBehaviour:
   projectile: {fileID: 5400000, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
+  firingSFX: {fileID: 0}
   Spline: {fileID: 0}
   Range: 50000
   LeadTime: 2.25
+  MinRange: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

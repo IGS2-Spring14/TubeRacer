@@ -15,7 +15,7 @@ public class SplineInterpolator : MonoBehaviour
 	public bool IsFlipped = false;
 	bool UserSet = false;
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
-	
+
 	public float TimeScale = 1.0f;
 	Quaternion TempRot; 
 	
@@ -157,7 +157,7 @@ public class SplineInterpolator : MonoBehaviour
 	}
 
 	public float mCurrentTime;
-	int mCurrentIdx = 1;
+	public int mCurrentIdx = 1;
 
 	void Update()
 	{
@@ -239,7 +239,7 @@ public class SplineInterpolator : MonoBehaviour
 			//Debug.Log ("Node: " + mNodes[mCurrentIdx].Rot);
 			//Debug.Log ("Squad: " + GetSquad(mCurrentIdx, param)); 
 
-			Debug.Log (mCurrentTime);
+			//Debug.Log (mCurrentTime);
 			if (mRotations)
 			{
 				if (IsStraightPath)
