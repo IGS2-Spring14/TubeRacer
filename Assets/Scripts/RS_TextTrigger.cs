@@ -72,7 +72,7 @@ public class RS_TextTrigger : MonoBehaviour {
 	void OnGUI () {
 		//Displays text object if allowed to display it with a height specified by boxHeight
 		if (displayText)
-			GUI.Label (new Rect (Screen.width / 8, 7 * Screen.height / 8, 3 * Screen.width / 4, boxHeight), text, gameGUI.label);
+			GUI.Label (new Rect (Screen.width / 8, 5 * Screen.height / 8, 3 * Screen.width / 4, boxHeight), text, gameGUI.label);
 	}
 	
 	// Update is called once per frame
