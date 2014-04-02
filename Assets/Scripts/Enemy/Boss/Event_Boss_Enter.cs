@@ -32,13 +32,6 @@ public class Event_Boss_Enter : MonoBehaviour {
 			
 			GameObject Boss;
 			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
-			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
-			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
-			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
-			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
-			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
-			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
-			Boss = Instantiate (BossObject, Temp, transform.rotation) as GameObject;  
 		}
 	}
 }
