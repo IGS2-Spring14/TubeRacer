@@ -34,8 +34,9 @@ public class BossTurretController : MonoBehaviour
 		GameObject targetObject = GameObject.Find ("GamePlatform");
 		Spline = targetObject.GetComponent<SplineInterpolator> ();
 		
-		GameObject MyBoss = GameObject.Find("Boss_1_Prefab(Clone)");
-		MyAI = MyBoss.GetComponent<Boss_1_AI> ();
+		//GameObject MyBoss = GameObject.Find("Prototype_Boss_Prefab(Clone)");
+		//MyAI = MyBoss.GetComponent<Boss_1_AI> ();
+		this.GetComponent<Boss_1_AI> ();
 	}
 	
 	void Start () 
