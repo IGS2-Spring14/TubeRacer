@@ -13,10 +13,11 @@ public class SplineInterpolator : MonoBehaviour
 	public bool IsPlayer = false; 
 	public bool IsStraightPath = false;
 	public bool IsFlipped = false;
-	bool UserSet = false;
+	bool UserSet = false, boosting = false;
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
 
 	public float TimeScale = 1.0f;
+	public float boostDecayRate = 1.5f;
 	Quaternion TempRot; 
 	
 	public void SlowDown()
@@ -29,6 +30,11 @@ public class SplineInterpolator : MonoBehaviour
 	{
 		//Debug.Log ("I will speed you up to " + TimeScale);
 		TimeScale = TimeScale + 0.2f;
+	}
+	public void SpeedUp(float speed)
+	{
+		//Debug.Log ("I will speed you up to " + TimeScale);
+		TimeScale = TimeScale + speed;
 	}
 	public void SetSpeed(float Speed)
 	{
@@ -163,7 +169,12 @@ public class SplineInterpolator : MonoBehaviour
 	{
 		if (IsPlayer)
 		{
-			if ((Input.GetKey (KeyCode.UpArrow)) || Input.GetKey (KeyCode.JoystickButton4)){
+			if (Input.GetKey (KeyCode.Space))
+			{
+				SpeedUp(12f);
+				boosting = true;
+			}
+			else if ((Input.GetKey (KeyCode.UpArrow)) || Input.GetKey (KeyCode.JoystickButton4)){
 							SpeedUp ();
 				UserSet = false;
 			} else if ((Input.GetKey (KeyCode.DownArrow))|| Input.GetKey (KeyCode.JoystickButton5)){
@@ -174,9 +185,17 @@ public class SplineInterpolator : MonoBehaviour
 				if(TimeScale>6.9f||TimeScale<6.7f && !UserSet)
 				{
 					if(TimeScale>6.9f)
+					{
 						TimeScale = TimeScale - 0.3f;
+						if (boosting)
+							TimeScale -= boostDecayRate;
+					}
 					if(TimeScale<6.4f)
+					{
 						TimeScale = TimeScale + 0.3f;
+						if (boosting)
+							boosting = false;
+					}
 				}
 					}
 		}
