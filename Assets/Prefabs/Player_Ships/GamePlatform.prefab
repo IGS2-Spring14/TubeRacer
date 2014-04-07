@@ -169,7 +169,6 @@ GameObject:
   - 81: {fileID: 8100002}
   - 114: {fileID: 11400016}
   - 114: {fileID: 11400014}
-  - 114: {fileID: 11400018}
   - 114: {fileID: 11400004}
   m_Layer: 8
   m_Name: CameraRight
@@ -222,6 +221,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400028}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: OculusEnable
   m_TagString: Untagged
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SplineRoot: {fileID: 0}
   MyCamera: {fileID: 0}
-  Duration: 180
+  Duration: 720
   OrientationMode: 1
   WrapMode: 1
   AutoStart: 1
@@ -829,6 +829,7 @@ MonoBehaviour:
   Log: 1
   EnableCollision: 1
   HitMaximum: 10
+  mTransforms: []
   playerSFX:
   - {fileID: 8200000}
 --- !u!114 &11400002
@@ -860,6 +861,7 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: e8b6ab1774eb206469491bce50ba2938, type: 2}
   ReticleDistance: 1000
   OculusAim: 1
+  ShootDebug: 0
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -873,8 +875,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  TimeScale: 6.88000011
+  AllowChangeSpeed: 1
+  IsStraightPath: 0
+  IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
+  TimeScale: 1
+  boostDecayRate: 1.5
+  mState: Loop
   mCurrentTime: 0
+  mCurrentIdx: 1
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -888,6 +898,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shake_decay: 0
   shake_intensity: 0
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7e8ff6be2d137408e07e6da83714a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -899,10 +920,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireCooldown: 10
+  FireCooldown: 1
   projectile: {fileID: 100002, guid: e8b6ab1774eb206469491bce50ba2938, type: 2}
   ReticleDistance: 1000
   OculusAim: 0
+  ShootDebug: 0
 --- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -934,21 +956,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NeckPosition: {x: 0, y: .600000024, z: 0}
   EyePosition: {x: 0, y: .150000006, z: .0900000036}
---- !u!114 &11400018
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FireCooldown: 500
-  projectile: {fileID: 0}
-  ReticleDistance: 1000
-  OculusAim: 1
 --- !u!114 &11400020
 MonoBehaviour:
   m_ObjectHideFlags: 1
