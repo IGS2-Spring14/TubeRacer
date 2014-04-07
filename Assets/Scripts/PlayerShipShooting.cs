@@ -7,6 +7,7 @@ public class PlayerShipShooting : MonoBehaviour
     public GameObject projectile;
 	public float ReticleDistance = 1000;
 	public bool OculusAim = false;
+	public bool ShootDebug = false;
 
 	private Transform ship;
 	private Vector3 target;
@@ -37,13 +38,14 @@ public class PlayerShipShooting : MonoBehaviour
 			target = transform.position + (transform.forward * ReticleDistance);
 		
         if ((Input.GetKeyDown (KeyCode.Mouse0) || Input.GetKeyDown (KeyCode.JoystickButton2)) && timer < 0) {
-			//Debug.Log ("shooting");
+
 			Fire ();
 		}
-
-		Fire ();
+		if(ShootDebug)
+			Fire ();
 	}
 
+	//fires the bullets
     private void Fire()
     {
         timer = FireCooldown;
@@ -51,9 +53,10 @@ public class PlayerShipShooting : MonoBehaviour
 		Vector3 relpos = (target - transform.position).normalized;
 		Vector3 offset = new Vector3(0, -25, 200);
         GameObject clone;
-        clone = Instantiate(projectile, Camera.main.transform.position + offset, Quaternion.LookRotation(relpos)) as GameObject;
+        clone = Instantiate(projectile, Camera.main.transform.position + offset, Quaternion.LookRotation(relpos)) as GameObject;	
 	}
 
+	//update aiming for the non-oculus version
 	private void UpdateAiming()
 	{
 		Ray ray = camera.ScreenPointToRay (Input.mousePosition);
@@ -61,6 +64,8 @@ public class PlayerShipShooting : MonoBehaviour
 		target = ray.GetPoint (ReticleDistance);
 	}
 
+
+	//draws the reticle on the screen
 	void OnGUI()
 	{
 		GUI.color = Color.red;

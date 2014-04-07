@@ -10,7 +10,7 @@ public class SplineInterpolator : MonoBehaviour
 {
 	public bool StopShip = false;
 	public bool ResetSpeed = false;
-	public bool IsPlayer = false; 
+	public bool AllowChangeSpeed = true; 
 	public bool IsStraightPath = false;
 	public bool IsFlipped = false;
 	public float SpeedUpValue = 250f;
@@ -21,7 +21,7 @@ public class SplineInterpolator : MonoBehaviour
 	public float TimeScale = 1.0f;
 	public float boostDecayRate = 1.5f;
 	Quaternion TempRot; 
-	
+
 	public void SlowDown()
 	{
 		//Debug.Log ("I will speed you down to " + TimeScale);
@@ -170,9 +170,9 @@ public class SplineInterpolator : MonoBehaviour
 
 	void Update()
 	{
-		if (IsPlayer)
+		if (AllowChangeSpeed)
 		{
-			if (Input.GetKeyDown (KeyCode.Space) || Input.GetKey (KeyCode.JoystickButton8))
+			if (Input.GetKeyDown (KeyCode.Space) || Input.GetKeyDown (KeyCode.JoystickButton1))
 			{
 				SpeedUp(SpeedUpValue);
 				boosting = true;

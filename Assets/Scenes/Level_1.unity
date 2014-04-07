@@ -135,6 +135,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 12480902}
   - 95: {fileID: 12480903}
+  - 54: {fileID: 12480906}
+  - 114: {fileID: 12480905}
+  - 114: {fileID: 12480904}
   m_Layer: 0
   m_Name: Space_Junk_JG
   m_TagString: Untagged
@@ -183,6 +186,62 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &12480904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1963841641}
+  m_GameObject: {fileID: 12480901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &12480905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1963841641}
+  m_GameObject: {fileID: 12480901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &12480906
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1963841641}
+  m_GameObject: {fileID: 12480901}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &13249911
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,6 +569,9 @@ GameObject:
   - 33: {fileID: 37020077}
   - 23: {fileID: 37020076}
   - 95: {fileID: 37020075}
+  - 54: {fileID: 37020081}
+  - 114: {fileID: 37020080}
+  - 114: {fileID: 37020079}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -574,6 +636,62 @@ Transform:
   m_Children:
   - {fileID: 1234952523}
   m_Father: {fileID: 0}
+--- !u!114 &37020079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1794214234}
+  m_GameObject: {fileID: 37020074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &37020080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1794214234}
+  m_GameObject: {fileID: 37020074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &37020081
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1794214234}
+  m_GameObject: {fileID: 37020074}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &38632038
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +919,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 78016163}
   - 95: {fileID: 78016164}
+  - 54: {fileID: 78016167}
+  - 114: {fileID: 78016166}
+  - 114: {fileID: 78016165}
   m_Layer: 0
   m_Name: Space_Junk_JG
   m_TagString: Untagged
@@ -849,6 +970,62 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &78016165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 181711970}
+  m_GameObject: {fileID: 78016162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &78016166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 181711970}
+  m_GameObject: {fileID: 78016162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &78016167
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 181711970}
+  m_GameObject: {fileID: 78016162}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &83999909
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,6 +1037,9 @@ GameObject:
   - 33: {fileID: 83999913}
   - 23: {fileID: 83999912}
   - 95: {fileID: 83999911}
+  - 54: {fileID: 83999916}
+  - 114: {fileID: 83999915}
+  - 114: {fileID: 83999914}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -924,6 +1104,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 960421014}
   m_GameObject: {fileID: 83999909}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &83999914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 960421014}
+  m_GameObject: {fileID: 83999909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &83999915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 960421014}
+  m_GameObject: {fileID: 83999909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &83999916
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 960421014}
+  m_GameObject: {fileID: 83999909}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &87984130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1304,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 96119762}
+  - 114: {fileID: 96119763}
   m_Layer: 0
   m_Name: OculusEnable
   m_TagString: Untagged
@@ -1087,6 +1324,17 @@ Transform:
   m_Children:
   - {fileID: 869476779}
   m_Father: {fileID: 1062481802}
+--- !u!114 &96119763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96119761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7e8ff6be2d137408e07e6da83714a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &96839467
 Prefab:
   m_ObjectHideFlags: 0
@@ -1168,6 +1416,9 @@ GameObject:
   - 33: {fileID: 107897111}
   - 23: {fileID: 107897110}
   - 95: {fileID: 107897109}
+  - 54: {fileID: 107897115}
+  - 114: {fileID: 107897114}
+  - 114: {fileID: 107897113}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -1232,6 +1483,62 @@ Transform:
   m_Children:
   - {fileID: 531216387}
   m_Father: {fileID: 0}
+--- !u!114 &107897113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1158055066}
+  m_GameObject: {fileID: 107897108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &107897114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1158055066}
+  m_GameObject: {fileID: 107897108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &107897115
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1158055066}
+  m_GameObject: {fileID: 107897108}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &111080701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,6 +1868,9 @@ GameObject:
   - 33: {fileID: 143638908}
   - 23: {fileID: 143638907}
   - 95: {fileID: 143638906}
+  - 54: {fileID: 143638911}
+  - 114: {fileID: 143638910}
+  - 114: {fileID: 143638909}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -1625,6 +1935,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 2124204165}
   m_GameObject: {fileID: 143638904}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &143638909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2124204165}
+  m_GameObject: {fileID: 143638904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &143638910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2124204165}
+  m_GameObject: {fileID: 143638904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &143638911
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2124204165}
+  m_GameObject: {fileID: 143638904}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &144554334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,6 +2277,9 @@ GameObject:
   - 33: {fileID: 182698074}
   - 23: {fileID: 182698073}
   - 95: {fileID: 182698072}
+  - 54: {fileID: 182698077}
+  - 114: {fileID: 182698076}
+  - 114: {fileID: 182698075}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -1975,6 +2344,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 821264389}
   m_GameObject: {fileID: 182698070}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &182698075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 821264389}
+  m_GameObject: {fileID: 182698070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &182698076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 821264389}
+  m_GameObject: {fileID: 182698070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &182698077
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 821264389}
+  m_GameObject: {fileID: 182698070}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &194518180
 Prefab:
   m_ObjectHideFlags: 0
@@ -2674,6 +3099,9 @@ GameObject:
   - 33: {fileID: 275797814}
   - 23: {fileID: 275797813}
   - 95: {fileID: 275797812}
+  - 54: {fileID: 275797817}
+  - 114: {fileID: 275797816}
+  - 114: {fileID: 275797815}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -2738,6 +3166,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1135184246}
   m_GameObject: {fileID: 275797810}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &275797815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135184246}
+  m_GameObject: {fileID: 275797810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &275797816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135184246}
+  m_GameObject: {fileID: 275797810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &275797817
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135184246}
+  m_GameObject: {fileID: 275797810}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &283140509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2749,6 +3233,9 @@ GameObject:
   - 33: {fileID: 283140512}
   - 23: {fileID: 283140511}
   - 95: {fileID: 283140510}
+  - 54: {fileID: 283140516}
+  - 114: {fileID: 283140515}
+  - 114: {fileID: 283140514}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -2813,6 +3300,62 @@ Transform:
   m_Children:
   - {fileID: 1597395999}
   m_Father: {fileID: 0}
+--- !u!114 &283140514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1299408633}
+  m_GameObject: {fileID: 283140509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &283140515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1299408633}
+  m_GameObject: {fileID: 283140509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &283140516
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1299408633}
+  m_GameObject: {fileID: 283140509}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &283376701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2969,6 +3512,9 @@ GameObject:
   - 33: {fileID: 297078990}
   - 23: {fileID: 297078989}
   - 95: {fileID: 297078988}
+  - 54: {fileID: 297078994}
+  - 114: {fileID: 297078993}
+  - 114: {fileID: 297078992}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -3033,6 +3579,62 @@ Transform:
   m_Children:
   - {fileID: 1163458242}
   m_Father: {fileID: 0}
+--- !u!114 &297078992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 158468267}
+  m_GameObject: {fileID: 297078987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &297078993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 158468267}
+  m_GameObject: {fileID: 297078987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &297078994
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 158468267}
+  m_GameObject: {fileID: 297078987}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &298058667
 GameObject:
   m_ObjectHideFlags: 0
@@ -3274,7 +3876,7 @@ GameObject:
   - 81: {fileID: 332903427}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3378,7 +3980,6 @@ GameObject:
   - 124: {fileID: 347614316}
   - 114: {fileID: 347614315}
   - 114: {fileID: 347614314}
-  - 114: {fileID: 347614313}
   - 114: {fileID: 347614312}
   m_Layer: 8
   m_Name: CameraRight
@@ -3403,22 +4004,7 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: e8b6ab1774eb206469491bce50ba2938, type: 2}
   ReticleDistance: 1000
   OculusAim: 1
---- !u!114 &347614313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851,
-    type: 2}
-  m_PrefabInternal: {fileID: 409608677}
-  m_GameObject: {fileID: 347614311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FireCooldown: 500
-  projectile: {fileID: 0}
-  ReticleDistance: 1000
-  OculusAim: 1
+  ShootDebug: 0
 --- !u!114 &347614314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3978,6 +4564,9 @@ GameObject:
   - 33: {fileID: 374594512}
   - 23: {fileID: 374594511}
   - 95: {fileID: 374594510}
+  - 54: {fileID: 374594515}
+  - 114: {fileID: 374594514}
+  - 114: {fileID: 374594513}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -4042,6 +4631,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1266051308}
   m_GameObject: {fileID: 374594508}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &374594513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266051308}
+  m_GameObject: {fileID: 374594508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &374594514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266051308}
+  m_GameObject: {fileID: 374594508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &374594515
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266051308}
+  m_GameObject: {fileID: 374594508}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &384174499
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,8 +4895,21 @@ Prefab:
       propertyPath: WrapMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: StopShip
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: IsPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8100002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+    - {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_RootGameObject: {fileID: 1498703126}
   m_IsPrefabParent: 0
@@ -4325,6 +4983,9 @@ GameObject:
   - 33: {fileID: 417243111}
   - 23: {fileID: 417243110}
   - 95: {fileID: 417243109}
+  - 54: {fileID: 417243114}
+  - 114: {fileID: 417243113}
+  - 114: {fileID: 417243112}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -4389,6 +5050,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1266671707}
   m_GameObject: {fileID: 417243107}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &417243112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266671707}
+  m_GameObject: {fileID: 417243107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &417243113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266671707}
+  m_GameObject: {fileID: 417243107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &417243114
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266671707}
+  m_GameObject: {fileID: 417243107}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &424597726
 GameObject:
   m_ObjectHideFlags: 0
@@ -5352,6 +6069,9 @@ GameObject:
   - 33: {fileID: 525271756}
   - 23: {fileID: 525271755}
   - 95: {fileID: 525271754}
+  - 54: {fileID: 525271760}
+  - 114: {fileID: 525271759}
+  - 114: {fileID: 525271758}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -5416,6 +6136,62 @@ Transform:
   m_Children:
   - {fileID: 932501635}
   m_Father: {fileID: 0}
+--- !u!114 &525271758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 194518180}
+  m_GameObject: {fileID: 525271753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &525271759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 194518180}
+  m_GameObject: {fileID: 525271753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &525271760
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 194518180}
+  m_GameObject: {fileID: 525271753}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &531216386
 GameObject:
   m_ObjectHideFlags: 0
@@ -5518,6 +6294,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 546539599}
   - 95: {fileID: 546539600}
+  - 54: {fileID: 546539604}
+  - 114: {fileID: 546539603}
+  - 114: {fileID: 546539602}
   - 114: {fileID: 546539601}
   m_Layer: 0
   m_Name: Space_Junk_JG
@@ -5592,6 +6371,62 @@ MonoBehaviour:
   rotationSpeed: 1
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!114 &546539602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1524328788}
+  m_GameObject: {fileID: 546539598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &546539603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1524328788}
+  m_GameObject: {fileID: 546539598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &546539604
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1524328788}
+  m_GameObject: {fileID: 546539598}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &557660106
 GameObject:
   m_ObjectHideFlags: 0
@@ -5747,6 +6582,9 @@ GameObject:
   - 33: {fileID: 591056379}
   - 23: {fileID: 591056378}
   - 95: {fileID: 591056377}
+  - 54: {fileID: 591056382}
+  - 114: {fileID: 591056381}
+  - 114: {fileID: 591056380}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -5811,6 +6649,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1865415558}
   m_GameObject: {fileID: 591056375}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &591056380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1865415558}
+  m_GameObject: {fileID: 591056375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &591056381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1865415558}
+  m_GameObject: {fileID: 591056375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &591056382
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1865415558}
+  m_GameObject: {fileID: 591056375}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &594046372
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,6 +6921,9 @@ GameObject:
   - 33: {fileID: 614375759}
   - 23: {fileID: 614375758}
   - 95: {fileID: 614375757}
+  - 54: {fileID: 614375762}
+  - 114: {fileID: 614375761}
+  - 114: {fileID: 614375760}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -6091,6 +6988,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1936577716}
   m_GameObject: {fileID: 614375755}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &614375760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1936577716}
+  m_GameObject: {fileID: 614375755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &614375761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1936577716}
+  m_GameObject: {fileID: 614375755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &614375762
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1936577716}
+  m_GameObject: {fileID: 614375755}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &617289344
 GameObject:
   m_ObjectHideFlags: 0
@@ -6186,6 +7139,9 @@ GameObject:
   - 33: {fileID: 655080650}
   - 23: {fileID: 655080649}
   - 95: {fileID: 655080648}
+  - 54: {fileID: 655080654}
+  - 114: {fileID: 655080653}
+  - 114: {fileID: 655080652}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -6250,6 +7206,62 @@ Transform:
   m_Children:
   - {fileID: 401516917}
   m_Father: {fileID: 0}
+--- !u!114 &655080652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2004663739}
+  m_GameObject: {fileID: 655080647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &655080653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2004663739}
+  m_GameObject: {fileID: 655080647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &655080654
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2004663739}
+  m_GameObject: {fileID: 655080647}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &659012416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6287,6 +7299,9 @@ GameObject:
   - 33: {fileID: 663475017}
   - 23: {fileID: 663475016}
   - 95: {fileID: 663475015}
+  - 54: {fileID: 663475021}
+  - 114: {fileID: 663475020}
+  - 114: {fileID: 663475019}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -6351,6 +7366,62 @@ Transform:
   m_Children:
   - {fileID: 1601810570}
   m_Father: {fileID: 0}
+--- !u!114 &663475019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 306859115}
+  m_GameObject: {fileID: 663475014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &663475020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 306859115}
+  m_GameObject: {fileID: 663475014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &663475021
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 306859115}
+  m_GameObject: {fileID: 663475014}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &665015941
 GameObject:
   m_ObjectHideFlags: 0
@@ -6414,6 +7485,9 @@ GameObject:
   - 33: {fileID: 669472413}
   - 23: {fileID: 669472412}
   - 95: {fileID: 669472411}
+  - 54: {fileID: 669472416}
+  - 114: {fileID: 669472415}
+  - 114: {fileID: 669472414}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -6478,6 +7552,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1255511228}
   m_GameObject: {fileID: 669472409}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &669472414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1255511228}
+  m_GameObject: {fileID: 669472409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &669472415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1255511228}
+  m_GameObject: {fileID: 669472409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &669472416
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1255511228}
+  m_GameObject: {fileID: 669472409}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &676400705
 GameObject:
   m_ObjectHideFlags: 0
@@ -6515,6 +7645,9 @@ GameObject:
   - 33: {fileID: 676811348}
   - 23: {fileID: 676811347}
   - 95: {fileID: 676811346}
+  - 54: {fileID: 676811352}
+  - 114: {fileID: 676811351}
+  - 114: {fileID: 676811350}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -6579,6 +7712,62 @@ Transform:
   m_Children:
   - {fileID: 299126692}
   m_Father: {fileID: 0}
+--- !u!114 &676811350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 855965611}
+  m_GameObject: {fileID: 676811345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &676811351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 855965611}
+  m_GameObject: {fileID: 676811345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &676811352
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 855965611}
+  m_GameObject: {fileID: 676811345}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &677314289
 GameObject:
   m_ObjectHideFlags: 0
@@ -7012,6 +8201,9 @@ GameObject:
   - 33: {fileID: 710541522}
   - 23: {fileID: 710541521}
   - 95: {fileID: 710541520}
+  - 54: {fileID: 710541525}
+  - 114: {fileID: 710541524}
+  - 114: {fileID: 710541523}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -7076,6 +8268,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 213059660}
   m_GameObject: {fileID: 710541518}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &710541523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 213059660}
+  m_GameObject: {fileID: 710541518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &710541524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 213059660}
+  m_GameObject: {fileID: 710541518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &710541525
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 213059660}
+  m_GameObject: {fileID: 710541518}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &713346137
 GameObject:
   m_ObjectHideFlags: 0
@@ -7289,6 +8537,9 @@ GameObject:
   - 33: {fileID: 757340993}
   - 23: {fileID: 757340992}
   - 95: {fileID: 757340991}
+  - 54: {fileID: 757340997}
+  - 114: {fileID: 757340996}
+  - 114: {fileID: 757340995}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -7353,6 +8604,62 @@ Transform:
   m_Children:
   - {fileID: 524447397}
   m_Father: {fileID: 0}
+--- !u!114 &757340995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 452833415}
+  m_GameObject: {fileID: 757340990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &757340996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 452833415}
+  m_GameObject: {fileID: 757340990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &757340997
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 452833415}
+  m_GameObject: {fileID: 757340990}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &757912761
 GameObject:
   m_ObjectHideFlags: 0
@@ -7673,6 +8980,9 @@ GameObject:
   - 33: {fileID: 780711002}
   - 23: {fileID: 780711001}
   - 95: {fileID: 780711000}
+  - 54: {fileID: 780711006}
+  - 114: {fileID: 780711005}
+  - 114: {fileID: 780711004}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -7737,6 +9047,62 @@ Transform:
   m_Children:
   - {fileID: 1210640576}
   m_Father: {fileID: 0}
+--- !u!114 &780711004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2007251140}
+  m_GameObject: {fileID: 780710999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &780711005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2007251140}
+  m_GameObject: {fileID: 780710999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &780711006
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2007251140}
+  m_GameObject: {fileID: 780710999}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &783075946
 GameObject:
   m_ObjectHideFlags: 0
@@ -8190,6 +9556,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 823733298}
   - 95: {fileID: 823733300}
+  - 54: {fileID: 823733303}
+  - 114: {fileID: 823733302}
+  - 114: {fileID: 823733301}
   - 114: {fileID: 823733299}
   m_Layer: 0
   m_Name: Space_Junk_JG
@@ -8264,6 +9633,62 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &823733301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 697918615}
+  m_GameObject: {fileID: 823733297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &823733302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 697918615}
+  m_GameObject: {fileID: 823733297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &823733303
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 697918615}
+  m_GameObject: {fileID: 823733297}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &824720021
 GameObject:
   m_ObjectHideFlags: 0
@@ -8725,6 +10150,9 @@ GameObject:
   - 33: {fileID: 875142744}
   - 23: {fileID: 875142743}
   - 95: {fileID: 875142742}
+  - 54: {fileID: 875142748}
+  - 114: {fileID: 875142747}
+  - 114: {fileID: 875142746}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -8789,6 +10217,62 @@ Transform:
   m_Children:
   - {fileID: 1969857510}
   m_Father: {fileID: 0}
+--- !u!114 &875142746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 296887032}
+  m_GameObject: {fileID: 875142741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &875142747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 296887032}
+  m_GameObject: {fileID: 875142741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &875142748
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 296887032}
+  m_GameObject: {fileID: 875142741}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &875559303
 GameObject:
   m_ObjectHideFlags: 0
@@ -8800,6 +10284,9 @@ GameObject:
   - 33: {fileID: 875559306}
   - 23: {fileID: 875559305}
   - 95: {fileID: 875559304}
+  - 54: {fileID: 875559310}
+  - 114: {fileID: 875559309}
+  - 114: {fileID: 875559308}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -8864,6 +10351,62 @@ Transform:
   m_Children:
   - {fileID: 739900038}
   m_Father: {fileID: 0}
+--- !u!114 &875559308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117692952}
+  m_GameObject: {fileID: 875559303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &875559309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117692952}
+  m_GameObject: {fileID: 875559303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &875559310
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117692952}
+  m_GameObject: {fileID: 875559303}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &885813746
 GameObject:
   m_ObjectHideFlags: 0
@@ -10141,7 +11684,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1062481802}
   - 114: {fileID: 1062481804}
-  - 114: {fileID: 1062481803}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: PlayerShip
@@ -10166,20 +11708,6 @@ Transform:
   - {fileID: 96119762}
   - {fileID: 1176055883}
   m_Father: {fileID: 1498703127}
---- !u!114 &1062481803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1062481801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxAltitude: 10
-  minAltitude: .5
-  maneuverability: {x: 200, y: 1}
 --- !u!114 &1062481804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10440,6 +11968,9 @@ GameObject:
   - 33: {fileID: 1077269559}
   - 23: {fileID: 1077269558}
   - 95: {fileID: 1077269557}
+  - 54: {fileID: 1077269563}
+  - 114: {fileID: 1077269562}
+  - 114: {fileID: 1077269561}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -10504,6 +12035,62 @@ Transform:
   m_Children:
   - {fileID: 496294267}
   m_Father: {fileID: 0}
+--- !u!114 &1077269561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1509691322}
+  m_GameObject: {fileID: 1077269556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1077269562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1509691322}
+  m_GameObject: {fileID: 1077269556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1077269563
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1509691322}
+  m_GameObject: {fileID: 1077269556}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1090341271
 GameObject:
   m_ObjectHideFlags: 0
@@ -11631,6 +13218,9 @@ GameObject:
   - 33: {fileID: 1237355736}
   - 23: {fileID: 1237355735}
   - 95: {fileID: 1237355734}
+  - 54: {fileID: 1237355740}
+  - 114: {fileID: 1237355739}
+  - 114: {fileID: 1237355738}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -11695,6 +13285,62 @@ Transform:
   m_Children:
   - {fileID: 345498845}
   m_Father: {fileID: 0}
+--- !u!114 &1237355738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 822699402}
+  m_GameObject: {fileID: 1237355733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1237355739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 822699402}
+  m_GameObject: {fileID: 1237355733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1237355740
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 822699402}
+  m_GameObject: {fileID: 1237355733}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1237697560
 GameObject:
   m_ObjectHideFlags: 0
@@ -12537,6 +14183,9 @@ GameObject:
   - 33: {fileID: 1298127696}
   - 23: {fileID: 1298127695}
   - 95: {fileID: 1298127694}
+  - 54: {fileID: 1298127699}
+  - 114: {fileID: 1298127698}
+  - 114: {fileID: 1298127697}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -12601,6 +14250,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 925655203}
   m_GameObject: {fileID: 1298127692}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &1298127697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 925655203}
+  m_GameObject: {fileID: 1298127692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1298127698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 925655203}
+  m_GameObject: {fileID: 1298127692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1298127699
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 925655203}
+  m_GameObject: {fileID: 1298127692}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1299408633
 Prefab:
   m_ObjectHideFlags: 0
@@ -12703,6 +14408,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1316870815}
   - 95: {fileID: 1316870816}
+  - 54: {fileID: 1316870819}
+  - 114: {fileID: 1316870818}
+  - 114: {fileID: 1316870817}
   m_Layer: 0
   m_Name: Space_Junk_JG
   m_TagString: Untagged
@@ -12751,6 +14459,62 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &1316870817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1531265808}
+  m_GameObject: {fileID: 1316870814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1316870818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1531265808}
+  m_GameObject: {fileID: 1316870814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1316870819
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1531265808}
+  m_GameObject: {fileID: 1316870814}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1320319775
 GameObject:
   m_ObjectHideFlags: 0
@@ -13130,6 +14894,7 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: e8b6ab1774eb206469491bce50ba2938, type: 2}
   ReticleDistance: 1000
   OculusAim: 0
+  ShootDebug: 0
 --- !u!1 &1361870587
 GameObject:
   m_ObjectHideFlags: 0
@@ -13219,6 +14984,9 @@ GameObject:
   - 33: {fileID: 1377308662}
   - 23: {fileID: 1377308661}
   - 95: {fileID: 1377308660}
+  - 54: {fileID: 1377308666}
+  - 114: {fileID: 1377308665}
+  - 114: {fileID: 1377308664}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -13283,6 +15051,62 @@ Transform:
   m_Children:
   - {fileID: 992251673}
   m_Father: {fileID: 0}
+--- !u!114 &1377308664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 112186778}
+  m_GameObject: {fileID: 1377308659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1377308665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 112186778}
+  m_GameObject: {fileID: 1377308659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1377308666
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 112186778}
+  m_GameObject: {fileID: 1377308659}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1377412797
 GameObject:
   m_ObjectHideFlags: 0
@@ -14183,6 +16007,7 @@ MonoBehaviour:
   Log: 1
   EnableCollision: 1
   HitMaximum: 10
+  mTransforms: []
   playerSFX:
   - {fileID: 1507478870}
 --- !u!114 &1498703131
@@ -14199,12 +16024,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 3
-  mState: Loop
+  boostDecayRate: 1.5
+  mState: 
   mCurrentTime: 0
+  mCurrentIdx: 1
 --- !u!1 &1506297089
 GameObject:
   m_ObjectHideFlags: 0
@@ -15346,6 +17175,9 @@ GameObject:
   - 33: {fileID: 1637629684}
   - 23: {fileID: 1637629683}
   - 95: {fileID: 1637629682}
+  - 54: {fileID: 1637629687}
+  - 114: {fileID: 1637629686}
+  - 114: {fileID: 1637629685}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -15410,6 +17242,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 537963594}
   m_GameObject: {fileID: 1637629680}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &1637629685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 537963594}
+  m_GameObject: {fileID: 1637629680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1637629686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 537963594}
+  m_GameObject: {fileID: 1637629680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1637629687
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 537963594}
+  m_GameObject: {fileID: 1637629680}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1640119110
 GameObject:
   m_ObjectHideFlags: 0
@@ -15904,6 +17792,9 @@ GameObject:
   - 33: {fileID: 1696854646}
   - 23: {fileID: 1696854645}
   - 95: {fileID: 1696854644}
+  - 54: {fileID: 1696854650}
+  - 114: {fileID: 1696854649}
+  - 114: {fileID: 1696854648}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -15968,6 +17859,62 @@ Transform:
   m_Children:
   - {fileID: 11213901}
   m_Father: {fileID: 0}
+--- !u!114 &1696854648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1076228957}
+  m_GameObject: {fileID: 1696854643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1696854649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1076228957}
+  m_GameObject: {fileID: 1696854643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1696854650
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1076228957}
+  m_GameObject: {fileID: 1696854643}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1698117823
 GameObject:
   m_ObjectHideFlags: 0
@@ -15979,6 +17926,9 @@ GameObject:
   - 33: {fileID: 1698117826}
   - 23: {fileID: 1698117825}
   - 95: {fileID: 1698117824}
+  - 54: {fileID: 1698117830}
+  - 114: {fileID: 1698117829}
+  - 114: {fileID: 1698117828}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -16043,6 +17993,62 @@ Transform:
   m_Children:
   - {fileID: 750740438}
   m_Father: {fileID: 0}
+--- !u!114 &1698117828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 966495423}
+  m_GameObject: {fileID: 1698117823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1698117829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 966495423}
+  m_GameObject: {fileID: 1698117823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1698117830
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 966495423}
+  m_GameObject: {fileID: 1698117823}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1698864762
 GameObject:
   m_ObjectHideFlags: 0
@@ -16220,6 +18226,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1731178041}
   - 95: {fileID: 1731178042}
+  - 54: {fileID: 1731178046}
+  - 114: {fileID: 1731178045}
+  - 114: {fileID: 1731178044}
   - 114: {fileID: 1731178043}
   m_Layer: 0
   m_Name: Space_Junk_JG
@@ -16294,6 +18303,62 @@ MonoBehaviour:
   rotationSpeed: 1
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!114 &1731178044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 582339586}
+  m_GameObject: {fileID: 1731178040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1731178045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 582339586}
+  m_GameObject: {fileID: 1731178040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1731178046
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 582339586}
+  m_GameObject: {fileID: 1731178040}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1738729696
 GameObject:
   m_ObjectHideFlags: 0
@@ -16441,6 +18506,9 @@ GameObject:
   - 33: {fileID: 1772869478}
   - 23: {fileID: 1772869477}
   - 95: {fileID: 1772869476}
+  - 54: {fileID: 1772869483}
+  - 114: {fileID: 1772869482}
+  - 114: {fileID: 1772869481}
   - 114: {fileID: 1772869480}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -16531,6 +18599,62 @@ MonoBehaviour:
   rotationSpeed: 1
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!114 &1772869481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1515524325}
+  m_GameObject: {fileID: 1772869475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1772869482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1515524325}
+  m_GameObject: {fileID: 1772869475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1772869483
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1515524325}
+  m_GameObject: {fileID: 1772869475}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1775664332
 GameObject:
   m_ObjectHideFlags: 0
@@ -16655,6 +18779,9 @@ GameObject:
   - 33: {fileID: 1786750776}
   - 23: {fileID: 1786750775}
   - 95: {fileID: 1786750774}
+  - 54: {fileID: 1786750779}
+  - 114: {fileID: 1786750778}
+  - 114: {fileID: 1786750777}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -16719,6 +18846,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1432886480}
   m_GameObject: {fileID: 1786750772}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
+--- !u!114 &1786750777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1432886480}
+  m_GameObject: {fileID: 1786750772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1786750778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1432886480}
+  m_GameObject: {fileID: 1786750772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1786750779
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1432886480}
+  m_GameObject: {fileID: 1786750772}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1787446691
 GameObject:
   m_ObjectHideFlags: 0
@@ -17792,6 +19975,9 @@ GameObject:
   - 33: {fileID: 1896608465}
   - 23: {fileID: 1896608464}
   - 95: {fileID: 1896608463}
+  - 54: {fileID: 1896608469}
+  - 114: {fileID: 1896608468}
+  - 114: {fileID: 1896608467}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -17856,6 +20042,62 @@ Transform:
   m_Children:
   - {fileID: 950674148}
   m_Father: {fileID: 0}
+--- !u!114 &1896608467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1492967418}
+  m_GameObject: {fileID: 1896608462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1896608468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1492967418}
+  m_GameObject: {fileID: 1896608462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1896608469
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1492967418}
+  m_GameObject: {fileID: 1896608462}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1902153942
 GameObject:
   m_ObjectHideFlags: 0
@@ -18185,6 +20427,9 @@ GameObject:
   - 33: {fileID: 1960491276}
   - 23: {fileID: 1960491275}
   - 95: {fileID: 1960491274}
+  - 54: {fileID: 1960491280}
+  - 114: {fileID: 1960491279}
+  - 114: {fileID: 1960491278}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -18249,6 +20494,62 @@ Transform:
   m_Children:
   - {fileID: 371670409}
   m_Father: {fileID: 0}
+--- !u!114 &1960491278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 326459702}
+  m_GameObject: {fileID: 1960491273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1960491279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 326459702}
+  m_GameObject: {fileID: 1960491273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1960491280
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 326459702}
+  m_GameObject: {fileID: 1960491273}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1963841641
 Prefab:
   m_ObjectHideFlags: 0
@@ -18495,6 +20796,9 @@ GameObject:
   - 33: {fileID: 1998265449}
   - 23: {fileID: 1998265448}
   - 95: {fileID: 1998265447}
+  - 54: {fileID: 1998265453}
+  - 114: {fileID: 1998265452}
+  - 114: {fileID: 1998265451}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -18559,6 +20863,62 @@ Transform:
   m_Children:
   - {fileID: 115449662}
   m_Father: {fileID: 0}
+--- !u!114 &1998265451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2091102398}
+  m_GameObject: {fileID: 1998265446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &1998265452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2091102398}
+  m_GameObject: {fileID: 1998265446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &1998265453
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2091102398}
+  m_GameObject: {fileID: 1998265446}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2004115801
 GameObject:
   m_ObjectHideFlags: 0
@@ -19575,6 +21935,9 @@ GameObject:
   - 33: {fileID: 2097536380}
   - 23: {fileID: 2097536379}
   - 95: {fileID: 2097536378}
+  - 54: {fileID: 2097536384}
+  - 114: {fileID: 2097536383}
+  - 114: {fileID: 2097536382}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
   m_TagString: Untagged
@@ -19639,6 +22002,62 @@ Transform:
   m_Children:
   - {fileID: 2028064377}
   m_Father: {fileID: 0}
+--- !u!114 &2097536382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068117358}
+  m_GameObject: {fileID: 2097536377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292911df4346d884ebe590ef2b4d4e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleType: 2
+  obstacleTypeNames:
+  - MovingPattern
+  - SuddenMovement
+  - RotatingPattern
+  obstacleSelectionIndex: 2
+  direction: 1
+  Velocity: {x: 0, y: 0, z: 0}
+  prevPosition: {x: 0, y: 0, z: 0}
+  TraverseDistance: 3000
+  speed: 30
+  rotationSpeed: 5
+  rotationOffset: 5000
+  useRotationOffset: 0
+--- !u!114 &2097536383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068117358}
+  m_GameObject: {fileID: 2097536377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Projectile_Speed: 15000
+  Destroy_Timer: 25
+--- !u!54 &2097536384
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1068117358}
+  m_GameObject: {fileID: 2097536377}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2103700607
 GameObject:
   m_ObjectHideFlags: 0
