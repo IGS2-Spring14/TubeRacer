@@ -7,6 +7,7 @@ public class PlayerShipShooting : MonoBehaviour
     public GameObject projectile;
 	public float ReticleDistance = 1000;
 	public bool OculusAim = false;
+	public bool ShootDebug = false;
 
 	private Transform ship;
 	private Vector3 target;
@@ -14,7 +15,7 @@ public class PlayerShipShooting : MonoBehaviour
     private float timer;
 	private Camera camera;
 
-	public AudioSource firingSFX;
+	private SplineInterpolator SI;
 
 	// Use this for initialization
 	void Start () 
@@ -23,6 +24,7 @@ public class PlayerShipShooting : MonoBehaviour
         timer = FireCooldown;
 		camera = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<Camera>();
         ship = GameObject.FindGameObjectWithTag("PlayerShip").transform;
+		SI = transform.root.GetComponent<SplineInterpolator> ();
 	}
 	
 	// Update is called once per frame
@@ -33,25 +35,28 @@ public class PlayerShipShooting : MonoBehaviour
 		if (!OculusAim) 
 			UpdateAiming();	
 		else
-			target = transform.forward * ReticleDistance;
+			target = transform.position + (transform.forward * ReticleDistance);
 		
         if ((Input.GetKeyDown (KeyCode.Mouse0) || Input.GetKeyDown (KeyCode.JoystickButton2)) && timer < 0) {
-			//Debug.Log ("shooting");
+
 			Fire ();
 		}
+		if(ShootDebug)
+			Fire ();
 	}
 
+	//fires the bullets
     private void Fire()
     {
         timer = FireCooldown;
 
-		Vector3 relpos = (target - ship.position).normalized;
+		Vector3 relpos = (target - transform.position).normalized;
+		Vector3 offset = new Vector3(0, -25, 200);
         GameObject clone;
-        clone = Instantiate(projectile, ship.position, Quaternion.LookRotation(relpos)) as GameObject;
-		//if (!firingSFX.isPlaying)
-			firingSFX.Play ();
-    }
+        clone = Instantiate(projectile, Camera.main.transform.position + offset, Quaternion.LookRotation(relpos)) as GameObject;	
+	}
 
+	//update aiming for the non-oculus version
 	private void UpdateAiming()
 	{
 		Ray ray = camera.ScreenPointToRay (Input.mousePosition);
@@ -59,6 +64,8 @@ public class PlayerShipShooting : MonoBehaviour
 		target = ray.GetPoint (ReticleDistance);
 	}
 
+
+	//draws the reticle on the screen
 	void OnGUI()
 	{
 		GUI.color = Color.red;

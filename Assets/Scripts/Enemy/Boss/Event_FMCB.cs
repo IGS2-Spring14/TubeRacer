@@ -35,9 +35,9 @@ public class Event_FMCB : MonoBehaviour {
 			IsActive = true;
 			
 			Vector3 Temp = transform.position;
-			Temp.x += 1000;
+			Temp.x = 0;
 			Temp.y = 0;
-			Temp.z = 0;
+			Temp.z += 1000;
 			
 			GameObject Boss;
 			Boss = Instantiate (MidbossObject, Temp, transform.rotation) as GameObject;  

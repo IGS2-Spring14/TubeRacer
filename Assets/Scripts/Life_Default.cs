@@ -27,10 +27,9 @@ public class Life_Default : MonoBehaviour {
 	void OnTriggerEnter(Collider collision)
 	{
 		if (collision.gameObject.CompareTag ("Gun")) {
-						Debug.Log (this.name.ToString () + " was hit");
+			//Debug.Log (this.name.ToString () + " was hit");
 						life--;
-				}
-		else if(VerifyAllCollisions)
-			Debug.Log (this.name.ToString () + " was hit by " + collision.gameObject.ToString());
+				} else if (VerifyAllCollisions)
+						;//Debug.Log (this.name.ToString () + " was hit by " + collision.gameObject.ToString());
 	}
 }
