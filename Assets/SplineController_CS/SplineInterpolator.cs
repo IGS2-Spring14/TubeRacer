@@ -13,6 +13,8 @@ public class SplineInterpolator : MonoBehaviour
 	public bool IsPlayer = false; 
 	public bool IsStraightPath = false;
 	public bool IsFlipped = false;
+	public float SpeedUpValue = 250f;
+	public float DefaultSpeed = 6.8f;
 	bool UserSet = false, boosting = false;
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
 
@@ -29,7 +31,8 @@ public class SplineInterpolator : MonoBehaviour
 	public void SpeedUp()
 	{
 		//Debug.Log ("I will speed you up to " + TimeScale);
-		TimeScale = TimeScale + 0.2f;
+		TimeScale = TimeScale + (TimeScale / 50f);
+		//TimeScale = TimeScale + 0.2f;
 	}
 	public void SpeedUp(float speed)
 	{
@@ -169,9 +172,9 @@ public class SplineInterpolator : MonoBehaviour
 	{
 		if (IsPlayer)
 		{
-			if (Input.GetKey (KeyCode.Space))
+			if (Input.GetKeyDown (KeyCode.Space) || Input.GetKey (KeyCode.JoystickButton8))
 			{
-				SpeedUp(12f);
+				SpeedUp(SpeedUpValue);
 				boosting = true;
 			}
 			else if ((Input.GetKey (KeyCode.UpArrow)) || Input.GetKey (KeyCode.JoystickButton4)){
@@ -182,19 +185,21 @@ public class SplineInterpolator : MonoBehaviour
 				UserSet=false;
 					} else
 			{
-				if(TimeScale>6.9f||TimeScale<6.7f && !UserSet)
+				if((TimeScale>DefaultSpeed + 0.1f)||(TimeScale<DefaultSpeed - 0.1) && !UserSet)
 				{
-					if(TimeScale>6.9f)
+					if(TimeScale>DefaultSpeed + 0.1f)
 					{
-						TimeScale = TimeScale - 0.3f;
+						TimeScale = TimeScale - (TimeScale/30);
 						if (boosting)
 							TimeScale -= boostDecayRate;
 					}
-					if(TimeScale<6.4f)
+					if(TimeScale<DefaultSpeed - 0.1f)
 					{
-						TimeScale = TimeScale + 0.3f;
-						if (boosting)
+						TimeScale = TimeScale + (DefaultSpeed/20);
+						if (boosting){
 							boosting = false;
+							ResetSpeed = true;
+						}
 					}
 				}
 					}
@@ -208,7 +213,7 @@ public class SplineInterpolator : MonoBehaviour
 				}
 		if (ResetSpeed){
 			StopShip = false;
-			TimeScale = 6.88f;
+			TimeScale = DefaultSpeed;
 			ResetSpeed = false;
 				}
 
