@@ -25,6 +25,7 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 	public Transform target;
 	public GameObject targetObject;
 	//public bool ActivatedByTrigger = false; 
+	public AudioSource firingSFX;
 
 	// Splines
 	SplineController TheirSplineControl;
@@ -115,6 +116,8 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 			timer = FiringCooldown;
 			GameObject clone;
 			clone = Instantiate (projectile, transform.position, transform.rotation) as GameObject;
+			//if (!firingSFX.isPlaying)
+			firingSFX.Play();
 		}
 	}
 	

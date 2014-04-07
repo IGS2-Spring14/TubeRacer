@@ -14,6 +14,8 @@ public class PlayerShipShooting : MonoBehaviour
     private float timer;
 	private Camera camera;
 
+	public AudioSource firingSFX;
+
 	// Use this for initialization
 	void Start () 
     {
@@ -46,6 +48,8 @@ public class PlayerShipShooting : MonoBehaviour
 		Vector3 relpos = (target - ship.position).normalized;
         GameObject clone;
         clone = Instantiate(projectile, ship.position, Quaternion.LookRotation(relpos)) as GameObject;
+		//if (!firingSFX.isPlaying)
+			firingSFX.Play ();
     }
 
 	private void UpdateAiming()
