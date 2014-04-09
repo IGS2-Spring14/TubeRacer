@@ -4,10 +4,15 @@ using System.Collections;
 public class Life_Default : MonoBehaviour {
 	public int life;
 	GameObject clone;
+	public GameObject explosion;
 	public bool VerifyAllCollisions = false;
+
 		// Use this for initialization
 	void Start () {
 		clone = this.gameObject;
+
+		//Gets explosion particle system prefab for cloning
+		//explosion = GameObject.Find ("Explosion Particle");
 	}
 
 	public void Die()
@@ -20,8 +25,9 @@ public class Life_Default : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (life == 0) {
+			//The actual death :P
 			Die();
-				}
+		}
 	}
 
 	void OnTriggerEnter(Collider collision)
@@ -29,7 +35,12 @@ public class Life_Default : MonoBehaviour {
 		if (collision.gameObject.CompareTag ("Gun")) {
 			//Debug.Log (this.name.ToString () + " was hit");
 						life--;
-				} else if (VerifyAllCollisions)
-						;//Debug.Log (this.name.ToString () + " was hit by " + collision.gameObject.ToString());
+		} else if (VerifyAllCollisions) ;//Debug.Log (this.name.ToString () + " was hit by " + collision.gameObject.ToString());
+	}
+
+	void OnDestroy () {
+		//Creates explosion effect on "death" if a player or an enemy
+		if (this.gameObject.tag == "PlayerShip" || this.gameObject.tag == "Enemy")
+			Instantiate (explosion, transform.position, transform.rotation);
 	}
 }

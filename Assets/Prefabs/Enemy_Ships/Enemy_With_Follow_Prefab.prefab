@@ -48,7 +48,7 @@ GameObject:
   - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,9 +292,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -312,6 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  explosion: {fileID: 100002, guid: 9a9483fef28edd84387dc4b9ec244a69, type: 2}
   VerifyAllCollisions: 0
 --- !u!1001 &100100000
 Prefab:
