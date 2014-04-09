@@ -12,6 +12,8 @@ public class Flyer : MonoBehaviour
     private State state = State.attack;
 
     private float _turnRate, increaseTurnRate;
+	private float _speed, increaseSpeed;
+	private float fireDelay;
 
     private Transform player;
     private Quaternion rotation;
@@ -36,7 +38,7 @@ public class Flyer : MonoBehaviour
         if (state == State.attack)
         {
             _turnRate = turnRate + increaseTurnRate;
-            increaseTurnRate += 0.005f;
+            increaseTurnRate += 0.05f;
 
             if (distance < idleDistance)
                 state = State.idle;
@@ -48,6 +50,7 @@ public class Flyer : MonoBehaviour
 
             if (distance > engageDistance)
                 state = State.attack;
+				//Fire();
         }
 
          direction = player.position - transform.position;
@@ -55,5 +58,11 @@ public class Flyer : MonoBehaviour
 
          transform.rotation = Quaternion.Slerp(transform.rotation, rotation, _turnRate * Time.deltaTime);
          transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
+	}
+
+	private IEnumerable Fire()
+	{
+		yield return new WaitForSeconds(2f);
+		//Fire
 	}
 }
