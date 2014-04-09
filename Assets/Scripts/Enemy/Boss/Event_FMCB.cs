@@ -4,7 +4,11 @@ using System.Collections;
 public class Event_FMCB : MonoBehaviour {
 	
 	public GameObject MidbossObject;
-	bool IsActive = false; 
+	bool IsActive = false;
+	/*
+	public enum ePathDirection { X, Y, Z };
+	public ePathDirection mPathDirection = ePathDirection.X; 
+	*/
 	GameObject targetObject;
 	SplineInterpolator TheirSplineInterpolator; 
 
@@ -28,17 +32,33 @@ public class Event_FMCB : MonoBehaviour {
 	void OnTriggerEnter(Collider myCollider)
 	{
 		
-		Debug.Log (myCollider.gameObject.name);
+		//Debug.Log (myCollider.gameObject.name);
 		if (myCollider.gameObject.name == "GamePlatform" && !IsActive)
 		{
 			Debug.Log ("Event Triggered");
 			IsActive = true;
-			
+
 			Vector3 Temp = transform.position;
-			Temp.x = 0;
-			Temp.y = 0;
-			Temp.z += 1000;
-			
+			/*
+			if (mPathDirection == ePathDirection.X)
+			{
+				Temp.x += 1000;
+				Temp.y = 0;
+				Temp.z = 0;
+			}
+			else if (mPathDirection == ePathDirection.Y)
+			{
+				Temp.x = 0;
+				Temp.y += 1000;
+				Temp.z = 0;
+			}
+			else
+			{
+				Temp.x = 0;
+				Temp.y = 0;
+				Temp.z += 1000;
+			}*/
+
 			GameObject Boss;
 			Boss = Instantiate (MidbossObject, Temp, transform.rotation) as GameObject;  
 

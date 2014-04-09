@@ -1,0 +1,19 @@
+Interstitial 1
+	
+HQ:	Welcome to the Conflict Avoidance course, Captain. It's basically an obstacle course in space. Don't hit anything. Otherwise you'll die. And spaceships cost about seventeen billion dollars apiece.
+
+2
+
+HQ:	Nice job with the asteroid belt. It gets harder from here.
+
+3
+
+HQ:	Okay, I lied. This one's pretty easy; just don't scrape the paint on the walls.
+
+4
+
+HQ:	Now this is where it gets interesting. The walls move now. Don't hit them.
+
+5
+
+HQ:	Congratulations. You've successfully completed the Conflict Avoidance course without screwing up TOO bad. Now it's time to shoot things. I hope you're excited.

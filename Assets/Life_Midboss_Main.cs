@@ -36,7 +36,6 @@ public class Life_Midboss_Main : MonoBehaviour {
 			Vulnerable = true; 
 		}
 
-
 		//Debug.Log (life);
 		if (life < 1) 
 		{
