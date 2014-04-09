@@ -2645,7 +2645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &135191508
 Transform:
   m_ObjectHideFlags: 0
@@ -2669,7 +2669,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 915917227}
   m_GameObject: {fileID: 135191507}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1000
@@ -2688,10 +2688,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameGUI: {fileID: 11400000, guid: 796cac1d80682b44f872c7b1556cd84e, type: 2}
   messageTime: 2
-  customText: "Okay, now that that's done let's move on to SHOOTING! \r\nAim at the
-    targets and click the Left Mouse Button to fire! \r\nIf it helps, pretend they
-    kicked your space puppy. \r\nYou gonna stand for that? ... No?\r\nGood. Now go
-    get 'em!"
+  customText: "HQ: Okay, now that that's done let's move on to SHOOTING! \r\nAim at
+    the targets and click the Left Mouse Button to fire! \r\nIf it helps, pretend
+    they kicked your space puppy. \r\nYou gonna stand for that? ... No?\r\nGood. Now
+    go get 'em!"
   textSFX:
   - {fileID: 44512681}
   - {fileID: 26996412}
@@ -3483,7 +3483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &161392549
 Transform:
   m_ObjectHideFlags: 0
@@ -3507,7 +3507,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 2075019994}
   m_GameObject: {fileID: 161392548}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1000
@@ -3526,8 +3526,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameGUI: {fileID: 11400000, guid: 796cac1d80682b44f872c7b1556cd84e, type: 2}
   messageTime: 3
-  customText: "Remember to keep your eyes peeled.\r\nEasier to get delicious eye juice
-    from... \r\nI mean find enemies with."
+  customText: "HQ: Remember to keep your eyes peeled.\r\nEasier to get delicious eye
+    juice from... \r\nI mean find enemies with."
   textSFX:
   - {fileID: 888389385}
   - {fileID: 1007544688}
@@ -5697,7 +5697,7 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: e8b6ab1774eb206469491bce50ba2938, type: 2}
   ReticleDistance: 1000
   OculusAim: 0
-  firingSFX: {fileID: 745625062}
+  ShootDebug: 0
 --- !u!1 &249607706
 GameObject:
   m_ObjectHideFlags: 0
@@ -6885,9 +6885,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -9501,12 +9503,10 @@ Transform:
   m_PrefabInternal: {fileID: 1759132663}
   m_GameObject: {fileID: 425301327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 201.438721, y: 9745.37305, z: 7656.94385}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 800892608}
   - {fileID: 1430891055}
-  - {fileID: 745625061}
   m_Father: {fileID: 273756269}
 --- !u!1 &426424915
 GameObject:
@@ -11135,9 +11135,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -11574,9 +11576,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -12778,9 +12782,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -13998,9 +14004,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -16572,9 +16580,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -17722,92 +17732,6 @@ Transform:
   m_Children:
   - {fileID: 1991166877}
   m_Father: {fileID: 1728374845}
---- !u!1 &745625060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100022, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 1759132663}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 745625061}
-  - 82: {fileID: 745625062}
-  m_Layer: 0
-  m_Name: Player_Fire
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &745625061
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400022, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 1759132663}
-  m_GameObject: {fileID: 745625060}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 425301328}
---- !u!82 &745625062
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200002, guid: 24661ac4586cb491b9ea820bf0d1d851,
-    type: 2}
-  m_PrefabInternal: {fileID: 1759132663}
-  m_GameObject: {fileID: 745625060}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: bf75b984df8a84987bcf3a8bf6e2862d, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: .5
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!1 &748065947
 GameObject:
   m_ObjectHideFlags: 0
@@ -19080,92 +19004,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2131504921}
---- !u!1 &800892607
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100026, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 1759132663}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 800892608}
-  - 82: {fileID: 800892609}
-  m_Layer: 0
-  m_Name: Player_Hit
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &800892608
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400026, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 1759132663}
-  m_GameObject: {fileID: 800892607}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 425301328}
---- !u!82 &800892609
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200004, guid: 24661ac4586cb491b9ea820bf0d1d851,
-    type: 2}
-  m_PrefabInternal: {fileID: 1759132663}
-  m_GameObject: {fileID: 800892607}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: a019ae3af8e864616b85773c509f5285, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: .75
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!1 &806121642
 GameObject:
   m_ObjectHideFlags: 0
@@ -19182,7 +19020,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &806121643
 Transform:
   m_ObjectHideFlags: 0
@@ -19206,7 +19044,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 1591531124}
   m_GameObject: {fileID: 806121642}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1000
@@ -19225,8 +19063,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameGUI: {fileID: 11400000, guid: 796cac1d80682b44f872c7b1556cd84e, type: 2}
   messageTime: 3
-  customText: "Now let's... WHAT?! \r\nWhat are THEY doin' here? \r\nLook out soldi-
-    \r*static*"
+  customText: "HQ: Now let's... WHAT?! \r\nWhat are THEY doin' here? \r\nLook out
+    soldi- \r*static*"
   textSFX:
   - {fileID: 678116753}
   - {fileID: 2018471289}
@@ -21704,8 +21542,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b3107ddff4fd077488a983c17038c675, type: 2}
       propertyPath: customText
-      value: "Okay, now that that's done let's move on to SHOOTING! \r\nAim at the
-        targets and click the Left Mouse Button to fire! \r\nIf it helps, pretend
+      value: "HQ: Okay, now that that's done let's move on to SHOOTING! \r\nAim at
+        the targets and click the Left Mouse Button to fire! \r\nIf it helps, pretend
         they kicked your space puppy. \r\nYou gonna stand for that? ... No?\r\nGood.
         Now go get 'em!"
       objectReference: {fileID: 0}
@@ -21719,7 +21557,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: b3107ddff4fd077488a983c17038c675, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: b3107ddff4fd077488a983c17038c675, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3107ddff4fd077488a983c17038c675, type: 2}
@@ -21902,7 +21744,6 @@ GameObject:
   - 81: {fileID: 922468621}
   - 114: {fileID: 922468620}
   - 114: {fileID: 922468619}
-  - 114: {fileID: 922468624}
   - 114: {fileID: 922468625}
   m_Layer: 8
   m_Name: CameraRight
@@ -22002,23 +21843,6 @@ Camera:
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
   m_OcclusionCulling: 1
---- !u!114 &922468624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851,
-    type: 2}
-  m_PrefabInternal: {fileID: 1759132663}
-  m_GameObject: {fileID: 922468617}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FireCooldown: 500
-  projectile: {fileID: 0}
-  ReticleDistance: 1000
-  OculusAim: 1
-  firingSFX: {fileID: 0}
 --- !u!114 &922468625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22035,7 +21859,7 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: e8b6ab1774eb206469491bce50ba2938, type: 2}
   ReticleDistance: 1000
   OculusAim: 1
-  firingSFX: {fileID: 0}
+  ShootDebug: 0
 --- !u!1 &925170903
 GameObject:
   m_ObjectHideFlags: 0
@@ -23950,9 +23774,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -26063,9 +25889,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -27914,9 +27742,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -31535,9 +31365,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -33800,7 +33632,7 @@ MonoBehaviour:
   HitMaximum: 10
   mTransforms: []
   playerSFX:
-  - {fileID: 800892609}
+  - {fileID: 1430891056}
 --- !u!108 &1367977159
 Light:
   m_ObjectHideFlags: 0
@@ -33952,9 +33784,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -35247,7 +35081,7 @@ GameObject:
   - 4: {fileID: 1430891055}
   - 82: {fileID: 1430891056}
   m_Layer: 0
-  m_Name: Player_Engine
+  m_Name: Player_Hit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35274,10 +35108,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 5530560f17e1c74419ed2b0d19c1002b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: .100000001
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -36493,9 +36327,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -38980,7 +38816,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b3107ddff4fd077488a983c17038c675, type: 2}
       propertyPath: customText
-      value: "Now let's... WHAT?! \r\nWhat are THEY doin' here? \r\nLook out soldi-
+      value: "HQ: Now let's... WHAT?! \r\nWhat are THEY doin' here? \r\nLook out soldi-
         \r*static*"
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: b3107ddff4fd077488a983c17038c675, type: 2}
@@ -38989,7 +38825,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: b3107ddff4fd077488a983c17038c675, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: b3107ddff4fd077488a983c17038c675, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3107ddff4fd077488a983c17038c675, type: 2}
@@ -39410,9 +39250,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -40313,9 +40155,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -42594,9 +42438,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 1
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 12
   boostDecayRate: 1.5
   mState: Loop
@@ -44070,9 +43916,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -46622,6 +46470,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1877069803}
+  - 114: {fileID: 1877069804}
   m_Layer: 0
   m_Name: OculusEnable
   m_TagString: Untagged
@@ -46641,6 +46490,18 @@ Transform:
   m_Children:
   - {fileID: 927795396}
   m_Father: {fileID: 273756269}
+--- !u!114 &1877069804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 24661ac4586cb491b9ea820bf0d1d851,
+    type: 2}
+  m_PrefabInternal: {fileID: 1759132663}
+  m_GameObject: {fileID: 1877069802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7e8ff6be2d137408e07e6da83714a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1877350714
 GameObject:
   m_ObjectHideFlags: 0
@@ -48205,9 +48066,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -49088,9 +48951,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -50687,8 +50552,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b3107ddff4fd077488a983c17038c675, type: 2}
       propertyPath: customText
-      value: "Remember to keep your eyes peeled.\r\nEasier to get delicious eye juice
-        from... \r\nI mean find enemies with."
+      value: "HQ: Remember to keep your eyes peeled.\r\nEasier to get delicious eye
+        juice from... \r\nI mean find enemies with."
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: b3107ddff4fd077488a983c17038c675, type: 2}
       propertyPath: m_Name
@@ -50696,7 +50561,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: b3107ddff4fd077488a983c17038c675, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13500000, guid: b3107ddff4fd077488a983c17038c675, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3107ddff4fd077488a983c17038c675, type: 2}
