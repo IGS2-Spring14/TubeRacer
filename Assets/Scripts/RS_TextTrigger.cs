@@ -50,7 +50,7 @@ public class RS_TextTrigger : MonoBehaviour {
 
 		timer = 0f;
 
-		letterPause = 0.04f;
+		letterPause = 0.02f;
 		messageTime *= 60f;
 
 		boxHeight = 0;
