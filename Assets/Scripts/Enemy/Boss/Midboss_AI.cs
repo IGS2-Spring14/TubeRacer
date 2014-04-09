@@ -7,7 +7,10 @@ public class Midboss_AI : MonoBehaviour
 	public Transform target;
 	public GameObject targetObject;
 	public int FollowDistance = 8000;
-	
+
+	public enum ePathDirection { X, Y, Z };
+	public ePathDirection mPathDirection = ePathDirection.X; 
+
 	internal bool isFollowing = false;
 	SplineInterpolator TheirSplineInterpolator;
 	SplineInterpolator MySpline;
@@ -31,12 +34,30 @@ public class Midboss_AI : MonoBehaviour
 		MyEventScript = MyEventObject.GetComponent<Event_FMCB> (); 
 
 		// my path
-		Quaternion Rot = transform.rotation;
-		Rot.x = 0;
-		Rot.y = 0;
-		Rot.z = 0;
+		// path rotation
+		Quaternion TempRot = transform.rotation;
+		TempRot.x = 0;
+		TempRot.y = 0;
+		TempRot.z = 0;
+
+		// path position
+		Vector3 TempPos = targetObject.transform.position;	
+		if (mPathDirection == ePathDirection.X)
+		{
+			TempPos.x += 1000;
+		}
+		else if (mPathDirection == ePathDirection.Y)
+		{
+			TempPos.y += 1000;
+		}
+		else
+		{
+			TempPos.z += 1000;
+		}
+
 		GameObject clone;
-		clone = Instantiate (PathPrefab, transform.position, Rot) as GameObject;
+		clone = Instantiate (PathPrefab, TempPos, TempRot) as GameObject;
+		Debug.Log (clone.transform.position);
 		MySplineControl.SplineRoot = GameObject.Find (clone.name);
 	}
 	
@@ -58,6 +79,11 @@ public class Midboss_AI : MonoBehaviour
 		*/
 		Vector3 relPos = target.position - transform.position;
 		transform.rotation = Quaternion.LookRotation(relPos);
+
+		if (Health == 1)
+		{
+
+		}
 
 		if (Health == 0)
 		{

@@ -891,8 +891,8 @@ GameObject:
   - 33: {fileID: 3300054}
   - 23: {fileID: 2300054}
   - 114: {fileID: 11400000}
-  - 54: {fileID: 5400000}
   - 136: {fileID: 13600000}
+  - 54: {fileID: 5400008}
   m_Layer: 0
   m_Name: pCylinder6
   m_TagString: Untagged
@@ -911,8 +911,8 @@ GameObject:
   - 33: {fileID: 3300056}
   - 23: {fileID: 2300056}
   - 114: {fileID: 11400002}
-  - 54: {fileID: 5400002}
   - 136: {fileID: 13600002}
+  - 54: {fileID: 5400002}
   m_Layer: 0
   m_Name: pCylinder5
   m_TagString: Untagged
@@ -931,8 +931,8 @@ GameObject:
   - 33: {fileID: 3300058}
   - 23: {fileID: 2300058}
   - 114: {fileID: 11400004}
-  - 54: {fileID: 5400004}
   - 136: {fileID: 13600004}
+  - 54: {fileID: 5400004}
   m_Layer: 0
   m_Name: pCylinder4
   m_TagString: Untagged
@@ -951,8 +951,8 @@ GameObject:
   - 33: {fileID: 3300060}
   - 23: {fileID: 2300060}
   - 114: {fileID: 11400006}
-  - 54: {fileID: 5400006}
   - 136: {fileID: 13600006}
+  - 54: {fileID: 5400006}
   m_Layer: 0
   m_Name: pCylinder3
   m_TagString: Untagged
@@ -972,6 +972,7 @@ GameObject:
   - 23: {fileID: 2300062}
   - 65: {fileID: 6500000}
   - 114: {fileID: 11400008}
+  - 54: {fileID: 5400000}
   m_Layer: 0
   m_Name: pCube1
   m_TagString: Untagged
@@ -1751,7 +1752,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1759.90295, y: -3682.99121, z: -65152.6406}
+  m_LocalPosition: {x: -1755.18066, y: -4177.14355, z: -64007.4492}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400120}
@@ -2657,13 +2658,13 @@ Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100110}
+  m_GameObject: {fileID: 100118}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2678,7 +2679,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2693,7 +2694,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2708,7 +2709,22 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &5400008
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100110}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -2720,7 +2736,7 @@ BoxCollider:
   m_GameObject: {fileID: 100118}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.85000002, y: .280000001, z: .899999976}
   m_Center: {x: -2.68220901e-07, y: .0222431086, z: -.158581033}
@@ -2826,7 +2842,8 @@ MonoBehaviour:
   target: {fileID: 0}
   targetObject: {fileID: 0}
   FollowDistance: 8000
-  Health: 4
+  mPathDirection: 2
+  Health: 5
   PathPrefab: {fileID: 100034, guid: 49f8b62113ba57f45a169dad5fce7531, type: 2}
 --- !u!114 &11400012
 MonoBehaviour:
