@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Flyer : MonoBehaviour 
+public class SwarmerController : MonoBehaviour 
 {
     public float speed = 5.0f;
     public float turnRate = 0.5f;

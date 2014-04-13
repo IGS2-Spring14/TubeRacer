@@ -15721,10 +15721,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac48e73967fbd7149a107df005b4a311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireCooldown: 10
+  FireCooldown: 1
   projectile: {fileID: 100002, guid: e8b6ab1774eb206469491bce50ba2938, type: 2}
   ReticleDistance: 1000
   OculusAim: 0
+  ShootDebug: 0
 --- !u!1 &249607706
 GameObject:
   m_ObjectHideFlags: 0
@@ -16194,11 +16195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAltitude: 10
   minAltitude: .5
-  SPEED: 10
-  boostSpeed: 25
-  boostDecay: .100000001
   maneuverability: {x: 200, y: 1}
-  SI: {fileID: 1747417773}
 --- !u!1001 &277791297
 Prefab:
   m_ObjectHideFlags: 0
@@ -39443,6 +39440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  explosion: {fileID: 0}
   VerifyAllCollisions: 0
 --- !u!54 &593774915
 Rigidbody:
@@ -49633,6 +49631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  explosion: {fileID: 0}
   VerifyAllCollisions: 0
 --- !u!54 &805169853
 Rigidbody:
@@ -54952,6 +54951,7 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: e8b6ab1774eb206469491bce50ba2938, type: 2}
   ReticleDistance: 1000
   OculusAim: 1
+  ShootDebug: 0
 --- !u!1 &922555567
 GameObject:
   m_ObjectHideFlags: 0
@@ -84935,7 +84935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SplineRoot: {fileID: 249607706}
   MyCamera: {fileID: 0}
-  Duration: 180
+  Duration: 720
   OrientationMode: 1
   WrapMode: 1
   AutoStart: 1
@@ -104648,15 +104648,15 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 1be4472894949437694aead55c6da60f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 10000
+  MinDistance: 1000
+  MaxDistance: 5000
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -105903,6 +105903,7 @@ GameObject:
   - 114: {fileID: 1367977158}
   - 136: {fileID: 1747417774}
   - 54: {fileID: 1747417775}
+  - 114: {fileID: 1747417776}
   m_Layer: 0
   m_Name: GamePlatform
   m_TagString: Player
@@ -105968,10 +105969,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
-  TimeScale: 6.88000011
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
+  TimeScale: 1
+  boostDecayRate: 1.5
   mState: Loop
   mCurrentTime: 0
   mCurrentIdx: 1
@@ -106005,6 +106009,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1747417776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1747417769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69b7c4c326650fc49ba798bfcd946476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAmount: 15
+  swarmer: {fileID: 100002, guid: 31bb4cd570d963e4fbab375d0231a8f5, type: 2}
 --- !u!1 &1753423076
 GameObject:
   m_ObjectHideFlags: 0
@@ -112582,6 +112599,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1877069803}
+  - 114: {fileID: 1877069805}
   - 114: {fileID: 1877069804}
   m_Layer: 0
   m_Name: OculusEnable
@@ -112607,6 +112625,18 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877069802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7e8ff6be2d137408e07e6da83714a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1877069805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 24661ac4586cb491b9ea820bf0d1d851,
+    type: 2}
+  m_PrefabInternal: {fileID: 1458906741}
   m_GameObject: {fileID: 1877069802}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -115277,6 +115307,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  explosion: {fileID: 0}
   VerifyAllCollisions: 0
 --- !u!1001 &1916765638
 Prefab:
@@ -126306,6 +126337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  explosion: {fileID: 0}
   VerifyAllCollisions: 0
 --- !u!54 &2142314968
 Rigidbody:
