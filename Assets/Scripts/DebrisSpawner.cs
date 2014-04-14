@@ -28,14 +28,14 @@ public class DebrisSpawner : MonoBehaviour
             for (int i = 0; i < SpawnIntensity; i++)
             {
                 Rigidbody debris = Debris[Random.Range(0, Debris.Length-1)];
-                Vector3 offset = new Vector3(Random.Range(0, transform.localScale.x * 10), 0, Random.Range(0, transform.localScale.z * 10));
+				Vector3 offset = new Vector3(0, Random.Range(-transform.localScale.y * 10, transform.localScale.y * 10), Random.Range(-transform.localScale.z * 5, transform.localScale.z * 5));
 
                 Quaternion rot = new Quaternion();
                 rot.eulerAngles = new Vector3(transform.rotation.eulerAngles.x, 270f, transform.rotation.eulerAngles.z);
                 Rigidbody clone;
                 clone = Instantiate(debris, transform.position + offset, rot) as Rigidbody;
                 Vector3 scale = clone.gameObject.transform.localScale;
-                clone.gameObject.transform.localScale = scale * Random.Range(20.0f, 60.0f);
+                clone.gameObject.transform.localScale = scale * Random.Range(20.0f, 80.0f);
             }
 		}
 	}

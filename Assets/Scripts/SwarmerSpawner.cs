@@ -11,9 +11,9 @@ public class SwarmerSpawner : MonoBehaviour
 	{ 
 		for (int i = 0; i < spawnAmount; i++) 
 		{
-			GameObject.Instantiate(swarmer, new Vector3(Random.Range(50000, 100000),
-			                                            Random.Range (50000, 100000),
-			                                            Random.Range(50000, 100000)), Quaternion.identity);
+			GameObject.Instantiate(swarmer, new Vector3(Random.Range(-100000, 100000),
+			                                            Random.Range (-100000, 100000),
+			                                            Random.Range(-100000, 100000)), Quaternion.identity);
 		}
 	}
 	

@@ -16249,11 +16249,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 82699.0781
+      value: 81131.3203
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1367.71912
+      value: -12757.8652
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -16277,20 +16277,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: SpawnIntensity
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: SpawnMinTime
-      value: 500
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: SpawnMaxTime
-      value: 1200
+      value: 1400
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: Debris.Array.data[2]
       value: 
-      objectReference: {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
+      objectReference: {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
     - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: Debris.Array.data[3]
       value: 
@@ -42795,74 +42795,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 717107510}
---- !u!1001 &680737712
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: Debris.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 23746.2266
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 36934.3203
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 782.019348
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -.0356856212
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -.0138398083
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .944468856
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .326364338
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: SpawnIntensity
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: SpawnMinTime
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: SpawnMaxTime
-      value: 1200
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: Debris.Array.data[2]
-      value: 
-      objectReference: {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
-    - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: Debris.Array.data[3]
-      value: 
-      objectReference: {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
-    - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-      propertyPath: Debris.Array.data[4]
-      value: 
-      objectReference: {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-  m_RootGameObject: {fileID: 1063127713}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1001 &682100692
 Prefab:
   m_ObjectHideFlags: 0
@@ -66070,7 +66002,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-  m_PrefabInternal: {fileID: 680737712}
+  m_PrefabInternal: {fileID: 1350500047}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1063127717}
@@ -66089,7 +66021,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9,
     type: 2}
-  m_PrefabInternal: {fileID: 680737712}
+  m_PrefabInternal: {fileID: 1350500047}
   m_GameObject: {fileID: 1063127713}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -66102,7 +66034,7 @@ MonoBehaviour:
   Debris:
   - {fileID: 5400000, guid: 2e8941a94bb7c0a41881c79a3e3fa07d, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
-  - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
+  - {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
 --- !u!64 &1063127715
@@ -66110,7 +66042,7 @@ MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 6400000, guid: e33c305e909638640a4412627e2f1cd9,
     type: 2}
-  m_PrefabInternal: {fileID: 680737712}
+  m_PrefabInternal: {fileID: 1350500047}
   m_GameObject: {fileID: 1063127713}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -66124,14 +66056,14 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: e33c305e909638640a4412627e2f1cd9,
     type: 2}
-  m_PrefabInternal: {fileID: 680737712}
+  m_PrefabInternal: {fileID: 1350500047}
   m_GameObject: {fileID: 1063127713}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1063127717
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
-  m_PrefabInternal: {fileID: 680737712}
+  m_PrefabInternal: {fileID: 1350500047}
   m_GameObject: {fileID: 1063127713}
   m_LocalRotation: {x: -.0356856212, y: -.0138398083, z: .944468856, w: .326364338}
   m_LocalPosition: {x: 23746.2266, y: 36934.3203, z: 782.019348}
@@ -83667,6 +83599,46 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!1001 &1350500047
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 23746.2266
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 36934.3203
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 782.019348
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -.0356856212
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -.0138398083
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .944468856
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .326364338
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
+  m_RootGameObject: {fileID: 1063127713}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1352837647
 GameObject:
   m_ObjectHideFlags: 0
@@ -86461,13 +86433,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a3145a5023c344adf86ac829329c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnIntensity: 10
-  SpawnMinTime: 500
-  SpawnMaxTime: 1200
+  SpawnIntensity: 7
+  SpawnMinTime: 800
+  SpawnMaxTime: 1400
   Debris:
   - {fileID: 5400000, guid: 2e8941a94bb7c0a41881c79a3e3fa07d, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
-  - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
+  - {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
 --- !u!64 &1390526269
@@ -86499,7 +86471,7 @@ Transform:
   m_PrefabInternal: {fileID: 277840617}
   m_GameObject: {fileID: 1390526267}
   m_LocalRotation: {x: -.231647536, y: -.201947391, z: .6253317, w: .717298388}
-  m_LocalPosition: {x: 82699.0781, y: -1367.71912, z: 45497.7891}
+  m_LocalPosition: {x: 81131.3203, y: -12757.8652, z: 45497.7891}
   m_LocalScale: {x: 10000, y: 1, z: 50000}
   m_Children: []
   m_Father: {fileID: 0}
@@ -106020,7 +105992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b7c4c326650fc49ba798bfcd946476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnAmount: 15
+  spawnAmount: 45
   swarmer: {fileID: 100002, guid: 31bb4cd570d963e4fbab375d0231a8f5, type: 2}
 --- !u!1 &1753423076
 GameObject:

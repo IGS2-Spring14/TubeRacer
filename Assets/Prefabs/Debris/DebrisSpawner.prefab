@@ -24,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: .819152057, w: .57357645}
-  m_LocalPosition: {x: 78437.2031, y: 20671.2559, z: -1690.61523}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10000, y: 1, z: 50000}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,15 +60,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e8a3145a5023c344adf86ac829329c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnIntensity: 20
-  SpawnMinTime: 100
-  SpawnMaxTime: 500
+  SpawnIntensity: 10
+  SpawnMinTime: 500
+  SpawnMaxTime: 1200
   Debris:
   - {fileID: 5400000, guid: 2e8941a94bb7c0a41881c79a3e3fa07d, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
-  - {fileID: 5400000, guid: f735f48bc054be344b404724e76ea36a, type: 2}
-  - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   - {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+  - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
+  - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

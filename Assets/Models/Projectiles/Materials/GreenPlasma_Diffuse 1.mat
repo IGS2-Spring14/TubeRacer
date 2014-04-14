@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: prop_asteroid_02_mat
-  m_Shader: {fileID: 4, guid: 0000000000000000f000000000000000, type: 0}
+  m_Name: GreenPlasma_Diffuse 1
+  m_Shader: {fileID: 10, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
@@ -17,27 +17,23 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: ba157ba55f72c424a9e88f3c029997c4, type: 3}
+          m_Texture: {fileID: 2800000, guid: 02df35ba9106924408d4abc6cbf8ce61, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _BumpMap
+          name: _Illum
         second:
-          m_Texture: {fileID: 2800000, guid: 6d9b42ac01f24bf4d98923573f103575, type: 3}
+          m_Texture: {fileID: 2800000, guid: dea1248bec736694cb74e09081e04838, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
-          name: _Shininess
-        second: .0489402972
+          name: _EmissionLM
+        second: 0
     m_Colors:
       data:
         first:
           name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _SpecColor
-        second: {r: .389705896, g: .360616297, b: .298010379, a: 1}
+        second: {r: .588235319, g: .588235319, b: .588235319, a: 1}
