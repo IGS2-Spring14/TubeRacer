@@ -100,6 +100,8 @@ public class RS_TextTrigger : MonoBehaviour {
 					textSFX[0].Stop();
 
 				//Begins coroutine for "typing" out message
+				GameObject playership = GameObject.FindWithTag("Player");
+				playership.SendMessage("SetSpeed", 0.1f);
 				StartCoroutine (TypeText ());
 			}
 
@@ -109,7 +111,8 @@ public class RS_TextTrigger : MonoBehaviour {
 				//Resets string to be displayed so the message isn't 
 				//shown while box is shrinking
 				text = "";
-
+				GameObject playership = GameObject.FindWithTag("Player");
+				playership.SendMessage("SetSpeed",3f);
 				boxHeight -= 5;
 
 				//Plays box shrinking sound while shrinking

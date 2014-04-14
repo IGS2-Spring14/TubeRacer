@@ -48,6 +48,9 @@ public class SplineController : MonoBehaviour
 		}
 	}
 
+	void OnGUI () {
+		GUI.Box (new Rect (Screen.width - 100,Screen.height - 50,100,50), (HitMaximum - NumberHit) + " lifes");
+	}
 
 	void Start()
 	{
@@ -162,6 +165,15 @@ public class SplineController : MonoBehaviour
 				//if (!playerSFX[0].isPlaying)
 					playerSFX[0].Play();
 				print (playerSFX[0].isPlaying);
+			}
+			else if (collision.gameObject.CompareTag ("DieWhenHit")) {
+					if (Log)
+					Debug.Log (collision.ToString () + " hit player " + NumberHit + " times.");
+					NumberHit++;
+					// put sound here
+					//if (!playerSFX[0].isPlaying)
+					playerSFX[0].Play();
+					print (playerSFX[0].isPlaying);
 			} else
 				if (Log)
 					Debug.Log ("Player hit " + collision.ToString () + ".");
