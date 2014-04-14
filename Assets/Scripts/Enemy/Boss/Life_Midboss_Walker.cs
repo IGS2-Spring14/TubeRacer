@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Life_Midboss_Cylinder : MonoBehaviour {
+public class Life_Midboss_Walker : MonoBehaviour {
 	public int life = 3;
 	GameObject clone;
 	Midboss_AI MyAI;
-	bool Vulnerable = false; 
+	
 	
 	// Use this for initialization
 	void Awake ()
@@ -30,15 +30,9 @@ public class Life_Midboss_Cylinder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (MyAI.Health == 5)
-		{
-			Vulnerable = true; 
-		}
-
 		//Debug.Log (life);
 		if (life < 1) {
 			MyAI.SendMessage ("ComponentDeath");
-			Destroy (GameObject.Find ("obj_" + this.name));
 			Die();
 		}
 	}
@@ -46,11 +40,8 @@ public class Life_Midboss_Cylinder : MonoBehaviour {
 	void OnTriggerEnter(Collider collision)
 	{
 		if (collision.CompareTag ("Gun")) {
-			if (Vulnerable)
-			{
 			Debug.Log (this.name.ToString () + " was hit");
 			life--;
-			}
 		}
 	}
 }

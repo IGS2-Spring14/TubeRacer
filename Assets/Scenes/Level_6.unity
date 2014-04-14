@@ -1529,7 +1529,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 1e73163652a6f61478d60da15ddbc4f3, type: 2}
       propertyPath: MidbossObject
       value: 
-      objectReference: {fileID: 100122, guid: 798a07d5810d1b04d9e9252c7d49d702, type: 2}
+      objectReference: {fileID: 100098, guid: 798a07d5810d1b04d9e9252c7d49d702, type: 2}
     - target: {fileID: 6500000, guid: 1e73163652a6f61478d60da15ddbc4f3, type: 2}
       propertyPath: m_Size.z
       value: 2000
@@ -2367,7 +2367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f773e03016ab624da164aa2b2a9a5eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MidbossObject: {fileID: 100122, guid: 798a07d5810d1b04d9e9252c7d49d702, type: 2}
+  MidbossObject: {fileID: 100098, guid: 798a07d5810d1b04d9e9252c7d49d702, type: 2}
 --- !u!65 &1122984678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3827,6 +3827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
+  explosion: {fileID: 0}
   VerifyAllCollisions: 0
 --- !u!1 &1685956926
 GameObject:
