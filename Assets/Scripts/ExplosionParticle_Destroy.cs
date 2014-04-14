@@ -13,14 +13,17 @@ using System.Collections;
 public class ExplosionParticle_Destroy : MonoBehaviour {
 
 	public ParticleSystem explosion;
-	//bool hasBegun = false;
+	public AudioSource sfx;
+	bool hasBegun = false;
 
 	void Awake () {
 		//Gets particle system in child member for playing
 		//explosion = GameObject.Find ("Explosion Particle").GetComponentInChildren("Asteroid Explosion");
 
 		//Plays the particle animation
-		explosion.Play ();
+		//explosion.Play ();
+		sfx.Play ();
+		hasBegun = true;
 	}
 
 	// Use this for initialization
@@ -33,7 +36,7 @@ public class ExplosionParticle_Destroy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//Destroys self if explosion "has begun playing" and the particle animation is finished
-		if (!explosion.isPlaying)
+		if (hasBegun && !explosion.isPlaying)
 			Destroy (this.gameObject);
 	}
 }
