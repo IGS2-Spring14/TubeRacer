@@ -31,4 +31,10 @@ public class Missile_Control : MonoBehaviour {
 			Destroy (this.gameObject);
 		}
 	}
+	void OnTriggerEnter(Collider collision)
+	{
+		if (collision.gameObject.CompareTag ("Tube"))
+						Destroy (this.gameObject);
+		Debug.Log ("I am a bullet and I just collided with " + collision.gameObject.tag);
+	}
 }

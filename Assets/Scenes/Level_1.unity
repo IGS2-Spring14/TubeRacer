@@ -222,7 +222,6 @@ GameObject:
   - 4: {fileID: 12480902}
   - 95: {fileID: 12480903}
   - 54: {fileID: 12480906}
-  - 114: {fileID: 12480905}
   - 114: {fileID: 12480904}
   m_Layer: 0
   m_Name: Space_Junk_JG
@@ -298,20 +297,6 @@ MonoBehaviour:
   rotationSpeed: 5
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &12480905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
-    type: 2}
-  m_PrefabInternal: {fileID: 1963841641}
-  m_GameObject: {fileID: 12480901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &12480906
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -656,7 +641,6 @@ GameObject:
   - 23: {fileID: 37020076}
   - 95: {fileID: 37020075}
   - 54: {fileID: 37020081}
-  - 114: {fileID: 37020080}
   - 114: {fileID: 37020079}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -745,23 +729,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &37020080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1794214234}
-  m_GameObject: {fileID: 37020074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &37020081
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -950,9 +920,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 54375395}
+  - 136: {fileID: 54375396}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -970,6 +941,20 @@ Transform:
   - {fileID: 196228902}
   - {fileID: 1350077485}
   m_Father: {fileID: 0}
+--- !u!136 &54375396
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1636369922}
+  m_GameObject: {fileID: 54375394}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &62936663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,7 +991,6 @@ GameObject:
   - 4: {fileID: 78016163}
   - 95: {fileID: 78016164}
   - 54: {fileID: 78016167}
-  - 114: {fileID: 78016166}
   - 114: {fileID: 78016165}
   m_Layer: 0
   m_Name: Space_Junk_JG
@@ -1082,20 +1066,6 @@ MonoBehaviour:
   rotationSpeed: 5
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &78016166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
-    type: 2}
-  m_PrefabInternal: {fileID: 181711970}
-  m_GameObject: {fileID: 78016162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &78016167
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1124,7 +1094,6 @@ GameObject:
   - 23: {fileID: 83999912}
   - 95: {fileID: 83999911}
   - 54: {fileID: 83999916}
-  - 114: {fileID: 83999915}
   - 114: {fileID: 83999914}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -1213,23 +1182,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &83999915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 960421014}
-  m_GameObject: {fileID: 83999909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &83999916
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1391,7 +1346,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 96119762}
   - 114: {fileID: 96119764}
-  - 114: {fileID: 96119763}
   m_Layer: 0
   m_Name: OculusEnable
   m_TagString: Untagged
@@ -1411,17 +1365,6 @@ Transform:
   m_Children:
   - {fileID: 869476779}
   m_Father: {fileID: 1062481802}
---- !u!114 &96119763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 96119761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e7e8ff6be2d137408e07e6da83714a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &96119764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1516,7 +1459,6 @@ GameObject:
   - 23: {fileID: 107897110}
   - 95: {fileID: 107897109}
   - 54: {fileID: 107897115}
-  - 114: {fileID: 107897114}
   - 114: {fileID: 107897113}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -1605,23 +1547,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &107897114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1158055066}
-  m_GameObject: {fileID: 107897108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &107897115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1700,7 +1628,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1377308659}
   m_IsPrefabParent: 0
@@ -1968,7 +1897,6 @@ GameObject:
   - 23: {fileID: 143638907}
   - 95: {fileID: 143638906}
   - 54: {fileID: 143638911}
-  - 114: {fileID: 143638910}
   - 114: {fileID: 143638909}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -2057,23 +1985,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &143638910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 2124204165}
-  m_GameObject: {fileID: 143638904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &143638911
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2183,11 +2097,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -348.518341
+      value: -348.518402
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 678.129028
+      value: 920.065674
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2209,7 +2123,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 297078987}
   m_IsPrefabParent: 0
@@ -2446,7 +2361,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .744808912
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_RootGameObject: {fileID: 78016162}
   m_IsPrefabParent: 0
@@ -2463,7 +2379,6 @@ GameObject:
   - 23: {fileID: 182698073}
   - 95: {fileID: 182698072}
   - 54: {fileID: 182698077}
-  - 114: {fileID: 182698076}
   - 114: {fileID: 182698075}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -2552,23 +2467,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &182698076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 821264389}
-  m_GameObject: {fileID: 182698070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &182698077
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2620,7 +2521,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 525271753}
   m_IsPrefabParent: 0
@@ -2874,7 +2776,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 710541518}
   m_IsPrefabParent: 0
@@ -3253,9 +3156,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 265204268}
+  - 136: {fileID: 265204269}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3273,6 +3177,20 @@ Transform:
   - {fileID: 1292782100}
   - {fileID: 945170879}
   m_Father: {fileID: 0}
+--- !u!136 &265204269
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 699367778}
+  m_GameObject: {fileID: 265204267}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &275797810
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,7 +3203,6 @@ GameObject:
   - 23: {fileID: 275797813}
   - 95: {fileID: 275797812}
   - 54: {fileID: 275797817}
-  - 114: {fileID: 275797816}
   - 114: {fileID: 275797815}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -3374,23 +3291,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &275797816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1135184246}
-  m_GameObject: {fileID: 275797810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &275797817
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3419,7 +3322,6 @@ GameObject:
   - 23: {fileID: 283140511}
   - 95: {fileID: 283140510}
   - 54: {fileID: 283140516}
-  - 114: {fileID: 283140515}
   - 114: {fileID: 283140514}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -3508,23 +3410,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &283140515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1299408633}
-  m_GameObject: {fileID: 283140509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &283140516
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3681,7 +3569,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 875142741}
   m_IsPrefabParent: 0
@@ -3698,7 +3587,6 @@ GameObject:
   - 23: {fileID: 297078989}
   - 95: {fileID: 297078988}
   - 54: {fileID: 297078994}
-  - 114: {fileID: 297078993}
   - 114: {fileID: 297078992}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -3759,7 +3647,7 @@ Transform:
   m_PrefabInternal: {fileID: 158468267}
   m_GameObject: {fileID: 297078987}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: -348.518341, y: 678.129028, z: 949.37207}
+  m_LocalPosition: {x: -348.518402, y: 920.065674, z: 949.37207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1163458242}
@@ -3787,23 +3675,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &297078993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 158468267}
-  m_GameObject: {fileID: 297078987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &297078994
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4002,7 +3876,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 663475014}
   m_IsPrefabParent: 0
@@ -4042,7 +3917,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1960491273}
   m_IsPrefabParent: 0
@@ -4836,7 +4712,6 @@ GameObject:
   - 23: {fileID: 374594511}
   - 95: {fileID: 374594510}
   - 54: {fileID: 374594515}
-  - 114: {fileID: 374594514}
   - 114: {fileID: 374594513}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -4852,7 +4727,7 @@ Transform:
   m_PrefabInternal: {fileID: 1266051308}
   m_GameObject: {fileID: 374594508}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 457.365723, y: -108.728516, z: -1170.56152}
+  m_LocalPosition: {x: 565.653259, y: -108.728516, z: -1170.56152}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 347975161}
@@ -4925,23 +4800,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &374594514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1266051308}
-  m_GameObject: {fileID: 374594508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &374594515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5089,7 +4950,7 @@ Camera:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
+  m_PrefabInternal: {fileID: 1447961443}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401516917}
@@ -5104,7 +4965,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
+  m_PrefabInternal: {fileID: 1447961443}
   m_GameObject: {fileID: 401516916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 247.085938, y: 766.261719, z: -2108.58984}
@@ -5305,7 +5166,6 @@ GameObject:
   - 23: {fileID: 417243110}
   - 95: {fileID: 417243109}
   - 54: {fileID: 417243114}
-  - 114: {fileID: 417243113}
   - 114: {fileID: 417243112}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -5394,23 +5254,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &417243113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1266671707}
-  m_GameObject: {fileID: 417243107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &417243114
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5759,7 +5605,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 757340990}
   m_IsPrefabParent: 0
@@ -5801,9 +5648,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462254594}
+  - 136: {fileID: 462254595}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5821,6 +5669,20 @@ Transform:
   - {fileID: 1438512167}
   - {fileID: 1417519288}
   m_Father: {fileID: 0}
+--- !u!136 &462254595
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 365671593}
+  m_GameObject: {fileID: 462254593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &468657578
 GameObject:
   m_ObjectHideFlags: 0
@@ -6458,7 +6320,6 @@ GameObject:
   - 23: {fileID: 525271755}
   - 95: {fileID: 525271754}
   - 54: {fileID: 525271760}
-  - 114: {fileID: 525271759}
   - 114: {fileID: 525271758}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -6547,23 +6408,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &525271759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 194518180}
-  m_GameObject: {fileID: 525271753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &525271760
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6641,7 +6488,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1637629680}
   m_IsPrefabParent: 0
@@ -6683,7 +6531,6 @@ GameObject:
   - 4: {fileID: 546539599}
   - 95: {fileID: 546539600}
   - 54: {fileID: 546539604}
-  - 114: {fileID: 546539603}
   - 114: {fileID: 546539602}
   - 114: {fileID: 546539601}
   m_Layer: 0
@@ -6785,20 +6632,6 @@ MonoBehaviour:
   rotationSpeed: 5
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &546539603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
-    type: 2}
-  m_PrefabInternal: {fileID: 1524328788}
-  m_GameObject: {fileID: 546539598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &546539604
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6902,7 +6735,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .744808912
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_RootGameObject: {fileID: 1731178040}
   m_IsPrefabParent: 0
@@ -6971,7 +6805,6 @@ GameObject:
   - 23: {fileID: 591056378}
   - 95: {fileID: 591056377}
   - 54: {fileID: 591056382}
-  - 114: {fileID: 591056381}
   - 114: {fileID: 591056380}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -7060,23 +6893,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &591056381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1865415558}
-  m_GameObject: {fileID: 591056375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &591056382
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7310,7 +7129,6 @@ GameObject:
   - 23: {fileID: 614375758}
   - 95: {fileID: 614375757}
   - 54: {fileID: 614375762}
-  - 114: {fileID: 614375761}
   - 114: {fileID: 614375760}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -7399,23 +7217,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &614375761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1936577716}
-  m_GameObject: {fileID: 614375755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &614375762
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7606,7 +7410,7 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
+  m_PrefabInternal: {fileID: 1447961443}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 655080651}
@@ -7614,7 +7418,6 @@ GameObject:
   - 23: {fileID: 655080649}
   - 95: {fileID: 655080648}
   - 54: {fileID: 655080654}
-  - 114: {fileID: 655080653}
   - 114: {fileID: 655080652}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -7629,7 +7432,7 @@ Animator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9500000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
+  m_PrefabInternal: {fileID: 1447961443}
   m_GameObject: {fileID: 655080647}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
@@ -7643,7 +7446,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
+  m_PrefabInternal: {fileID: 1447961443}
   m_GameObject: {fileID: 655080647}
   m_Enabled: 1
   m_CastShadows: 1
@@ -7665,17 +7468,17 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
+  m_PrefabInternal: {fileID: 1447961443}
   m_GameObject: {fileID: 655080647}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
 --- !u!4 &655080651
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
+  m_PrefabInternal: {fileID: 1447961443}
   m_GameObject: {fileID: 655080647}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: -147.546616, y: 648.566406, z: 9810.15137}
+  m_LocalPosition: {x: -147.54657, y: 141.660706, z: 9810.15137}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 401516917}
@@ -7685,7 +7488,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
+  m_PrefabInternal: {fileID: 1447961443}
   m_GameObject: {fileID: 655080647}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -7703,29 +7506,15 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &655080653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
-  m_GameObject: {fileID: 655080647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &655080654
 Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2004663739}
+  m_PrefabInternal: {fileID: 1447961443}
   m_GameObject: {fileID: 655080647}
   serializedVersion: 2
   m_Mass: 1
@@ -7774,7 +7563,6 @@ GameObject:
   - 23: {fileID: 663475016}
   - 95: {fileID: 663475015}
   - 54: {fileID: 663475021}
-  - 114: {fileID: 663475020}
   - 114: {fileID: 663475019}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -7863,23 +7651,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &663475020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 306859115}
-  m_GameObject: {fileID: 663475014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &663475021
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7960,7 +7734,6 @@ GameObject:
   - 23: {fileID: 669472412}
   - 95: {fileID: 669472411}
   - 54: {fileID: 669472416}
-  - 114: {fileID: 669472415}
   - 114: {fileID: 669472414}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -7976,7 +7749,7 @@ Transform:
   m_PrefabInternal: {fileID: 1255511228}
   m_GameObject: {fileID: 669472409}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: -147.546494, y: -383.485504, z: 949.37207}
+  m_LocalPosition: {x: -147.546448, y: -627.99762, z: 949.37207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1069899658}
@@ -8049,23 +7822,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &669472415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1255511228}
-  m_GameObject: {fileID: 669472409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &669472416
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8120,7 +7879,6 @@ GameObject:
   - 23: {fileID: 676811347}
   - 95: {fileID: 676811346}
   - 54: {fileID: 676811352}
-  - 114: {fileID: 676811351}
   - 114: {fileID: 676811350}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -8209,23 +7967,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &676811351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 855965611}
-  m_GameObject: {fileID: 676811345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &676811352
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8529,7 +8273,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .725048661
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_RootGameObject: {fileID: 823733297}
   m_IsPrefabParent: 0
@@ -8644,9 +8389,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 705966969}
+  - 136: {fileID: 705966970}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8664,6 +8410,20 @@ Transform:
   - {fileID: 457156082}
   - {fileID: 434118174}
   m_Father: {fileID: 0}
+--- !u!136 &705966970
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1065515137}
+  m_GameObject: {fileID: 705966968}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &710541518
 GameObject:
   m_ObjectHideFlags: 0
@@ -8676,7 +8436,6 @@ GameObject:
   - 23: {fileID: 710541521}
   - 95: {fileID: 710541520}
   - 54: {fileID: 710541525}
-  - 114: {fileID: 710541524}
   - 114: {fileID: 710541523}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -8765,23 +8524,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &710541524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 213059660}
-  m_GameObject: {fileID: 710541518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &710541525
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9066,9 +8811,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 750746572}
+  - 136: {fileID: 750746573}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9086,6 +8832,20 @@ Transform:
   - {fileID: 783075947}
   - {fileID: 1585931142}
   m_Father: {fileID: 0}
+--- !u!136 &750746573
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 503486541}
+  m_GameObject: {fileID: 750746571}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &757340990
 GameObject:
   m_ObjectHideFlags: 0
@@ -9098,7 +8858,6 @@ GameObject:
   - 23: {fileID: 757340992}
   - 95: {fileID: 757340991}
   - 54: {fileID: 757340997}
-  - 114: {fileID: 757340996}
   - 114: {fileID: 757340995}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -9187,23 +8946,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &757340996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 452833415}
-  m_GameObject: {fileID: 757340990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &757340997
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9533,7 +9278,7 @@ Animator:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
+  m_PrefabInternal: {fileID: 1008735710}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 780711003}
@@ -9541,7 +9286,6 @@ GameObject:
   - 23: {fileID: 780711001}
   - 95: {fileID: 780711000}
   - 54: {fileID: 780711006}
-  - 114: {fileID: 780711005}
   - 114: {fileID: 780711004}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -9556,7 +9300,7 @@ Animator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9500000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
+  m_PrefabInternal: {fileID: 1008735710}
   m_GameObject: {fileID: 780710999}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
@@ -9570,7 +9314,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
+  m_PrefabInternal: {fileID: 1008735710}
   m_GameObject: {fileID: 780710999}
   m_Enabled: 1
   m_CastShadows: 1
@@ -9592,17 +9336,17 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
+  m_PrefabInternal: {fileID: 1008735710}
   m_GameObject: {fileID: 780710999}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
 --- !u!4 &780711003
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
+  m_PrefabInternal: {fileID: 1008735710}
   m_GameObject: {fileID: 780710999}
   m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: -348.518402, y: 1163.69165, z: 7215.52441}
+  m_LocalPosition: {x: -348.518433, y: 1312.01123, z: 7215.52441}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1210640576}
@@ -9612,7 +9356,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
+  m_PrefabInternal: {fileID: 1008735710}
   m_GameObject: {fileID: 780710999}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -9630,34 +9374,20 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &780711005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
-  m_GameObject: {fileID: 780710999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &780711006
 Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
     type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
+  m_PrefabInternal: {fileID: 1008735710}
   m_GameObject: {fileID: 780710999}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: .0399999991
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -9944,9 +9674,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 800375994}
+  - 136: {fileID: 800375995}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9964,6 +9695,20 @@ Transform:
   - {fileID: 1784323482}
   - {fileID: 1857951184}
   m_Father: {fileID: 0}
+--- !u!136 &800375995
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1215512091}
+  m_GameObject: {fileID: 800375993}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &804820859
 GameObject:
   m_ObjectHideFlags: 0
@@ -10195,7 +9940,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 182698070}
   m_IsPrefabParent: 0
@@ -10235,7 +9981,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1237355733}
   m_IsPrefabParent: 0
@@ -10250,7 +9997,6 @@ GameObject:
   - 4: {fileID: 823733298}
   - 95: {fileID: 823733300}
   - 54: {fileID: 823733303}
-  - 114: {fileID: 823733302}
   - 114: {fileID: 823733301}
   - 114: {fileID: 823733299}
   m_Layer: 0
@@ -10352,20 +10098,6 @@ MonoBehaviour:
   rotationSpeed: 5
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &823733302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
-    type: 2}
-  m_PrefabInternal: {fileID: 697918615}
-  m_GameObject: {fileID: 823733297}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &823733303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10755,7 +10487,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 676811345}
   m_IsPrefabParent: 0
@@ -10930,7 +10663,6 @@ GameObject:
   - 23: {fileID: 875142743}
   - 95: {fileID: 875142742}
   - 54: {fileID: 875142748}
-  - 114: {fileID: 875142747}
   - 114: {fileID: 875142746}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -11019,23 +10751,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &875142747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 296887032}
-  m_GameObject: {fileID: 875142741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &875142748
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11064,7 +10782,6 @@ GameObject:
   - 23: {fileID: 875559305}
   - 95: {fileID: 875559304}
   - 54: {fileID: 875559310}
-  - 114: {fileID: 875559309}
   - 114: {fileID: 875559308}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -11153,23 +10870,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &875559309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1117692952}
-  m_GameObject: {fileID: 875559303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &875559310
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11360,7 +11063,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1298127692}
   m_IsPrefabParent: 0
@@ -11875,7 +11579,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 83999909}
   m_IsPrefabParent: 0
@@ -11915,7 +11620,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1698117823}
   m_IsPrefabParent: 0
@@ -12290,9 +11996,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 997337807}
+  - 136: {fileID: 997337808}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12310,6 +12017,20 @@ Transform:
   - {fileID: 43599770}
   - {fileID: 990997846}
   m_Father: {fileID: 0}
+--- !u!136 &997337808
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1807952526}
+  m_GameObject: {fileID: 997337806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &1000604728
 GameObject:
   m_ObjectHideFlags: 0
@@ -12463,6 +12184,50 @@ MonoBehaviour:
   rotationSpeed: 1
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!1001 &1008735710
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -348.518433
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1312.01123
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 7215.52441
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_AngularDrag
+      value: .0399999991
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+  m_RootGameObject: {fileID: 780710999}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1001 &1008785126
 Prefab:
   m_ObjectHideFlags: 0
@@ -13162,7 +12927,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 2097536377}
   m_IsPrefabParent: 0
@@ -13254,7 +13020,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1696854643}
   m_IsPrefabParent: 0
@@ -13271,7 +13038,6 @@ GameObject:
   - 23: {fileID: 1077269558}
   - 95: {fileID: 1077269557}
   - 54: {fileID: 1077269563}
-  - 114: {fileID: 1077269562}
   - 114: {fileID: 1077269561}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -13360,23 +13126,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1077269562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1509691322}
-  m_GameObject: {fileID: 1077269556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1077269563
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13525,7 +13277,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 875559303}
   m_IsPrefabParent: 0
@@ -13847,7 +13600,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 275797810}
   m_IsPrefabParent: 0
@@ -14093,7 +13847,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 107897108}
   m_IsPrefabParent: 0
@@ -14499,7 +14254,7 @@ Prefab:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
+  m_PrefabInternal: {fileID: 1008735710}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1210640576}
@@ -14514,7 +14269,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_PrefabInternal: {fileID: 2007251140}
+  m_PrefabInternal: {fileID: 1008735710}
   m_GameObject: {fileID: 1210640575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 247.085938, y: 766.261719, z: -2108.58984}
@@ -14656,7 +14411,6 @@ GameObject:
   - 23: {fileID: 1237355735}
   - 95: {fileID: 1237355734}
   - 54: {fileID: 1237355740}
-  - 114: {fileID: 1237355739}
   - 114: {fileID: 1237355738}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -14745,23 +14499,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1237355739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 822699402}
-  m_GameObject: {fileID: 1237355733}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1237355740
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14924,11 +14664,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -147.546494
+      value: -147.546448
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -383.485504
+      value: -627.99762
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14950,7 +14690,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 669472409}
   m_IsPrefabParent: 0
@@ -15022,7 +14763,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 457.365723
+      value: 565.653259
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -15048,7 +14789,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 374594508}
   m_IsPrefabParent: 0
@@ -15088,7 +14830,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 417243107}
   m_IsPrefabParent: 0
@@ -15621,7 +15364,6 @@ GameObject:
   - 23: {fileID: 1298127695}
   - 95: {fileID: 1298127694}
   - 54: {fileID: 1298127699}
-  - 114: {fileID: 1298127698}
   - 114: {fileID: 1298127697}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -15710,23 +15452,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1298127698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 925655203}
-  m_GameObject: {fileID: 1298127692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1298127699
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15778,7 +15506,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 283140509}
   m_IsPrefabParent: 0
@@ -15846,7 +15575,6 @@ GameObject:
   - 4: {fileID: 1316870815}
   - 95: {fileID: 1316870816}
   - 54: {fileID: 1316870819}
-  - 114: {fileID: 1316870818}
   - 114: {fileID: 1316870817}
   m_Layer: 0
   m_Name: Space_Junk_JG
@@ -15922,20 +15650,6 @@ MonoBehaviour:
   rotationSpeed: 5
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1316870818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
-    type: 2}
-  m_PrefabInternal: {fileID: 1531265808}
-  m_GameObject: {fileID: 1316870814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1316870819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16508,7 +16222,6 @@ GameObject:
   - 23: {fileID: 1377308661}
   - 95: {fileID: 1377308660}
   - 54: {fileID: 1377308666}
-  - 114: {fileID: 1377308665}
   - 114: {fileID: 1377308664}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -16597,23 +16310,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1377308665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 112186778}
-  m_GameObject: {fileID: 1377308659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1377308666
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17163,7 +16862,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1786750772}
   m_IsPrefabParent: 0
@@ -17309,6 +17009,46 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!1001 &1447961443
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -147.54657
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 141.660706
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9810.15137
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: .707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .707106829
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+  m_RootGameObject: {fileID: 655080647}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1451907237
 GameObject:
   m_ObjectHideFlags: 0
@@ -17575,7 +17315,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1896608462}
   m_IsPrefabParent: 0
@@ -17866,7 +17607,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1077269556}
   m_IsPrefabParent: 0
@@ -17906,7 +17648,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1772869475}
   m_IsPrefabParent: 0
@@ -18100,7 +17843,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .725048661
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_RootGameObject: {fileID: 546539598}
   m_IsPrefabParent: 0
@@ -18140,7 +17884,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .744808912
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_RootGameObject: {fileID: 1316870814}
   m_IsPrefabParent: 0
@@ -18921,7 +18666,6 @@ GameObject:
   - 23: {fileID: 1637629683}
   - 95: {fileID: 1637629682}
   - 54: {fileID: 1637629687}
-  - 114: {fileID: 1637629686}
   - 114: {fileID: 1637629685}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -19010,23 +18754,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1637629686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 537963594}
-  m_GameObject: {fileID: 1637629680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1637629687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19538,7 +19268,6 @@ GameObject:
   - 23: {fileID: 1696854645}
   - 95: {fileID: 1696854644}
   - 54: {fileID: 1696854650}
-  - 114: {fileID: 1696854649}
   - 114: {fileID: 1696854648}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -19627,23 +19356,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1696854649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1076228957}
-  m_GameObject: {fileID: 1696854643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1696854650
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19672,7 +19387,6 @@ GameObject:
   - 23: {fileID: 1698117825}
   - 95: {fileID: 1698117824}
   - 54: {fileID: 1698117830}
-  - 114: {fileID: 1698117829}
   - 114: {fileID: 1698117828}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -19761,23 +19475,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1698117829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 966495423}
-  m_GameObject: {fileID: 1698117823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1698117830
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20021,7 +19721,6 @@ GameObject:
   - 4: {fileID: 1731178041}
   - 95: {fileID: 1731178042}
   - 54: {fileID: 1731178046}
-  - 114: {fileID: 1731178045}
   - 114: {fileID: 1731178044}
   - 114: {fileID: 1731178043}
   m_Layer: 0
@@ -20123,20 +19822,6 @@ MonoBehaviour:
   rotationSpeed: 5
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1731178045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc,
-    type: 2}
-  m_PrefabInternal: {fileID: 582339586}
-  m_GameObject: {fileID: 1731178040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1731178046
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20301,7 +19986,6 @@ GameObject:
   - 23: {fileID: 1772869477}
   - 95: {fileID: 1772869476}
   - 54: {fileID: 1772869483}
-  - 114: {fileID: 1772869482}
   - 114: {fileID: 1772869481}
   - 114: {fileID: 1772869480}
   m_Layer: 0
@@ -20385,7 +20069,7 @@ MonoBehaviour:
   - SuddenMovement
   - RotatingPattern
   obstacleSelectionIndex: 0
-  direction: 2
+  direction: 1
   Velocity: {x: 0, y: 0, z: 0}
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
@@ -20416,23 +20100,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1772869482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1515524325}
-  m_GameObject: {fileID: 1772869475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1772869483
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20574,7 +20244,6 @@ GameObject:
   - 23: {fileID: 1786750775}
   - 95: {fileID: 1786750774}
   - 54: {fileID: 1786750779}
-  - 114: {fileID: 1786750778}
   - 114: {fileID: 1786750777}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -20663,23 +20332,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1786750778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1432886480}
-  m_GameObject: {fileID: 1786750772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1786750779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20757,7 +20412,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 37020074}
   m_IsPrefabParent: 0
@@ -21357,9 +21013,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1840252436}
+  - 136: {fileID: 1840252437}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21377,6 +21034,20 @@ Transform:
   - {fileID: 1296228672}
   - {fileID: 1476038169}
   m_Father: {fileID: 0}
+--- !u!136 &1840252437
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 96839467}
+  m_GameObject: {fileID: 1840252435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &1841391230
 GameObject:
   m_ObjectHideFlags: 0
@@ -21690,7 +21361,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 591056375}
   m_IsPrefabParent: 0
@@ -21703,9 +21375,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1875023084}
+  - 136: {fileID: 1875023085}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21723,6 +21396,20 @@ Transform:
   - {fileID: 214146308}
   - {fileID: 1111760772}
   m_Father: {fileID: 0}
+--- !u!136 &1875023085
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1523411184}
+  m_GameObject: {fileID: 1875023083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &1876480717
 GameObject:
   m_ObjectHideFlags: 0
@@ -21856,7 +21543,6 @@ GameObject:
   - 23: {fileID: 1896608464}
   - 95: {fileID: 1896608463}
   - 54: {fileID: 1896608469}
-  - 114: {fileID: 1896608468}
   - 114: {fileID: 1896608467}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -21945,23 +21631,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1896608468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1492967418}
-  m_GameObject: {fileID: 1896608462}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1896608469
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22324,7 +21996,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .707106829
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 614375755}
   m_IsPrefabParent: 0
@@ -22394,7 +22067,6 @@ GameObject:
   - 23: {fileID: 1960491275}
   - 95: {fileID: 1960491274}
   - 54: {fileID: 1960491280}
-  - 114: {fileID: 1960491279}
   - 114: {fileID: 1960491278}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -22483,23 +22155,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1960491279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 326459702}
-  m_GameObject: {fileID: 1960491273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1960491280
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22551,7 +22209,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_RootGameObject: {fileID: 12480901}
   m_IsPrefabParent: 0
@@ -22849,7 +22508,6 @@ GameObject:
   - 23: {fileID: 1998265448}
   - 95: {fileID: 1998265447}
   - 54: {fileID: 1998265453}
-  - 114: {fileID: 1998265452}
   - 114: {fileID: 1998265451}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -22938,23 +22596,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &1998265452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 2091102398}
-  m_GameObject: {fileID: 1998265446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &1998265453
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23029,46 +22673,6 @@ Transform:
   m_LocalScale: {x: 1.39999998, y: .25, z: 1.39999998}
   m_Children: []
   m_Father: {fileID: 1316870815}
---- !u!1001 &2004663739
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -147.546616
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 648.566406
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 9810.15137
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .707106829
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .707106829
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_RootGameObject: {fileID: 655080647}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &2005776449
 GameObject:
   m_ObjectHideFlags: 0
@@ -23104,46 +22708,6 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2005776449}
   m_Enabled: 1
---- !u!1001 &2007251140
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -348.518402
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1163.69165
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 7215.52441
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .707106829
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .707106829
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
-  m_RootGameObject: {fileID: 780710999}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &2010985916
 GameObject:
   m_ObjectHideFlags: 0
@@ -24062,9 +23626,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2070780241}
+  - 136: {fileID: 2070780242}
   m_Layer: 0
   m_Name: straight_v2
-  m_TagString: Untagged
+  m_TagString: Tube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24082,6 +23647,20 @@ Transform:
   - {fileID: 2104256125}
   - {fileID: 243413802}
   m_Father: {fileID: 0}
+--- !u!136 &2070780242
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13600000, guid: f4a6192440dca50468447de337522fd5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1207267190}
+  m_GameObject: {fileID: 2070780240}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2534.83008
+  m_Height: 29836
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 4694}
 --- !u!1 &2071138188
 GameObject:
   m_ObjectHideFlags: 0
@@ -24203,7 +23782,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 1998265446}
   m_IsPrefabParent: 0
@@ -24246,7 +23826,6 @@ GameObject:
   - 23: {fileID: 2097536379}
   - 95: {fileID: 2097536378}
   - 54: {fileID: 2097536384}
-  - 114: {fileID: 2097536383}
   - 114: {fileID: 2097536382}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
@@ -24335,23 +23914,9 @@ MonoBehaviour:
   prevPosition: {x: 0, y: 0, z: 0}
   TraverseDistance: 3000
   speed: 30
-  rotationSpeed: 5
+  rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
---- !u!114 &2097536383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 4752f9c4a26c5174694a90c58f65b3f1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1068117358}
-  m_GameObject: {fileID: 2097536377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Projectile_Speed: 15000
-  Destroy_Timer: 25
 --- !u!54 &2097536384
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24727,7 +24292,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   m_RootGameObject: {fileID: 143638904}
   m_IsPrefabParent: 0
