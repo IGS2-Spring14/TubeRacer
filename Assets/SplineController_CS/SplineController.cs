@@ -48,6 +48,9 @@ public class SplineController : MonoBehaviour
 		}
 	}
 
+	void OnGUI () {
+		GUI.Box (new Rect (Screen.width - 100,Screen.height - 50,100,50), (HitMaximum - NumberHit) + " lifes");
+	}
 
 	void Start()
 	{
