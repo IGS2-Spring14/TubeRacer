@@ -8,6 +8,8 @@ public class SwarmerController : MonoBehaviour
     public float engageDistance = 15f;
     public float idleDistance = 2f;
 
+	public GameObject projectile;
+
     private enum State { idle, attack }
     private State state = State.attack;
 
@@ -38,19 +40,25 @@ public class SwarmerController : MonoBehaviour
         if (state == State.attack)
         {
             _turnRate = turnRate + increaseTurnRate;
-            increaseTurnRate += 0.05f;
 
             if (distance < idleDistance)
+			{
                 state = State.idle;
-        }
+				StartCoroutine("IncreaseTurnRate");
+				StopCoroutine("Fire");
+        	}
+		}
         else
         {
             _turnRate = 0.0f;
             increaseTurnRate = 0.0f;
 
             if (distance > engageDistance)
+			{
                 state = State.attack;
-				//Fire();
+				StartCoroutine("Fire");
+				StopCoroutine("IncreaseTurnRate");
+			}
         }
 
          direction = player.position - transform.position;
@@ -60,9 +68,22 @@ public class SwarmerController : MonoBehaviour
          transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
 	}
 
-	private IEnumerable Fire()
+	private IEnumerator Fire()
 	{
-		yield return new WaitForSeconds(2f);
-		//Fire
+		while (true)
+		{
+			GameObject clone;
+			clone = Instantiate (projectile, transform.position, Quaternion.LookRotation(player.position-transform.position)) as GameObject;
+			yield return new WaitForSeconds(0.5f);
+		}
+	}
+
+	private IEnumerator IncreaseTurnRate()
+	{
+		while (true)
+		{
+			increaseTurnRate += Random.Range(0.0f, 0.05f) + (increaseTurnRate * 1.05f);
+			yield return new WaitForSeconds(0.5f);
+		}
 	}
 }
