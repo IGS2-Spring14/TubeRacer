@@ -15,15 +15,8 @@ public class SplineController : MonoBehaviour
 	public bool AutoStart = true;
 	public bool AutoClose = true;
 	public bool HideOnExecute = true;
-	public bool DieByHit = false;
-	public bool Log = true;
-	public bool EnableCollision = true;
-	public int HitMaximum = 10;
-	private int NumberHit = 1;
 	SplineInterpolator mSplineInterp;
 	public Transform[] mTransforms;
-
-	public AudioSource [] playerSFX;
 
 	public void OnDrawGizmos()
 	{
@@ -48,10 +41,6 @@ public class SplineController : MonoBehaviour
 		}
 	}
 
-	void OnGUI () {
-		GUI.Box (new Rect (Screen.width - 100,Screen.height - 50,100,50), (HitMaximum - NumberHit) + " lifes");
-	}
-
 	void Start()
 	{
 		mSplineInterp = GetComponent(typeof(SplineInterpolator)) as SplineInterpolator;
@@ -68,10 +57,6 @@ public class SplineController : MonoBehaviour
 
 	void Update()
 	{
-		if (DieByHit) {
-						if (NumberHit > HitMaximum)
-								Destroy (gameObject);
-				}
 	}
 
 	void SetupSplineInterpolator(SplineInterpolator interp, Transform[] trans)
@@ -154,29 +139,4 @@ public class SplineController : MonoBehaviour
 			}
 	}
 
-	void OnTriggerEnter(Collider collision)
-	{
-		if (EnableCollision) {
-			if (collision.gameObject.CompareTag ("Enemy")) {
-				if (Log)
-					Debug.Log ("Missile hit player " + NumberHit + " times.");
-				NumberHit++;
-				// put sound here
-				//if (!playerSFX[0].isPlaying)
-					playerSFX[0].Play();
-				print (playerSFX[0].isPlaying);
-			}
-			else if (collision.gameObject.CompareTag ("DieWhenHit")) {
-					if (Log)
-					Debug.Log (collision.ToString () + " hit player " + NumberHit + " times.");
-					NumberHit++;
-					// put sound here
-					//if (!playerSFX[0].isPlaying)
-					playerSFX[0].Play();
-					print (playerSFX[0].isPlaying);
-			} else
-				if (Log)
-					Debug.Log ("Player hit " + collision.ToString () + ".");
-		}
-	}
 }
