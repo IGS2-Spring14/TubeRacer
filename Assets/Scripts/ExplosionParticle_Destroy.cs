@@ -24,6 +24,7 @@ public class ExplosionParticle_Destroy : MonoBehaviour {
 		//explosion.Play ();
 		sfx.Play ();
 		hasBegun = true;
+
 	}
 
 	// Use this for initialization
@@ -36,7 +37,10 @@ public class ExplosionParticle_Destroy : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//Destroys self if explosion "has begun playing" and the particle animation is finished
-		if (hasBegun && !explosion.isPlaying)
+		if (hasBegun && !explosion.isPlaying) 
+		{
+			print ("isFinished");
 			Destroy (this.gameObject);
+		}
 	}
 }

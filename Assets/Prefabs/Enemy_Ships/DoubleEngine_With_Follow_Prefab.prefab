@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 3
-  explosion: {fileID: 100002, guid: 9a9483fef28edd84387dc4b9ec244a69, type: 2}
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!1001 &100100000
 Prefab:

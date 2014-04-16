@@ -4,7 +4,7 @@ using System.Collections;
 public class Life_Default : MonoBehaviour {
 	public int life;
 	GameObject clone;
-	public GameObject explosion;
+	public Transform explosion;
 	public bool VerifyAllCollisions = false;
 
 		// Use this for initialization
@@ -25,6 +25,9 @@ public class Life_Default : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (life == 0) {
+			//Creates explosion effect on "death" if a player or an enemy
+			if (this.gameObject.tag == "PlayerShip" || this.gameObject.tag == "Enemy")
+				Instantiate (explosion, transform.position, transform.rotation);
 			//The actual death :P
 			Die();
 		}
@@ -39,8 +42,5 @@ public class Life_Default : MonoBehaviour {
 	}
 
 	void OnDestroy () {
-		//Creates explosion effect on "death" if a player or an enemy
-		if (this.gameObject.tag == "PlayerShip" || this.gameObject.tag == "Enemy")
-			Instantiate (explosion, transform.position, transform.rotation);
 	}
 }
