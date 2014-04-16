@@ -35,6 +35,8 @@ public class Missile_Control : MonoBehaviour {
 	{
 		if (collision.gameObject.CompareTag ("Tube"))
 						Destroy (this.gameObject);
+		if (collision.gameObject.CompareTag ("PlayGame"))
+			Application.LoadLevel("Basic_2_REDUX");
 		Debug.Log ("I am a bullet and I just collided with " + collision.gameObject.tag);
 	}
 }
