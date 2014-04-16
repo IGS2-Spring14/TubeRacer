@@ -7,10 +7,11 @@ public class EnemyControllerWithPath : MonoBehaviour
 	public GameObject projectile;
 	public int FiringCooldown = 1000;
 	public int Range = 500;
+	public int StaggerTime = 0;
 	float timer = 0;
 	 
 	// Movement
-	public int FollowDistance = 5000; 
+	//public int FollowDistance = 5000; 
 	public float MyTimeScale = 10;
 	public GameObject PathPrefab;
 	GameObject TheCounterObject;
@@ -27,10 +28,17 @@ public class EnemyControllerWithPath : MonoBehaviour
 	SplineInterpolator TheirSplineInterpolator;
 	SplineInterpolator MySplineInterpolator;
 
+	// Other
+	public bool isSpawning = true; 
+	//public GameObject MySpawner; 
+
 	void Awake ()
 	{
-		TheCounterObject = GameObject.Find ("EnemyCounter");
-		TheCounterScript = TheCounterObject.GetComponent<EnemyCounter> (); 
+		if (isSpawning)
+		{
+			TheCounterObject = GameObject.Find ("EnemyCounter");
+			TheCounterScript = TheCounterObject.GetComponent<EnemyCounter> (); 
+		}
 
 		target = GameObject.Find ("PlayerShip").transform;
 		targetObject = GameObject.Find ("GamePlatform");
@@ -47,19 +55,27 @@ public class EnemyControllerWithPath : MonoBehaviour
 		Rot.y = 0;
 		Rot.z = 0;
 		Vector3 Temp = transform.position;
-		Temp.z = Random.Range (-1000, 1000); 
+		//Temp.x = Random.Range (-1000, 1000);
+		//Temp.y = Random.Range (-1000, 1000);
+		//Temp.z = Random.Range (-1000, 1000); 
 
 		GameObject clone;
 		clone = Instantiate (PathPrefab, Temp, Rot) as GameObject;
-		clone.name = clone.name + TheCounterScript.EnemyCount;
+
+		if (isSpawning)
+			clone.name = clone.name + TheCounterScript.EnemyCount;
+
 		MySplineControl.SplineRoot = GameObject.Find (clone.name);
-		TheCounterScript.EnemyCount++;
+
+		if (isSpawning)
+			TheCounterScript.EnemyCount++;
 	}
 	
 	// Use this for initialization
 	void Start () 
 	{
-		
+		StaggerTime = Random.Range (0, 800); 
+		timer = StaggerTime;
 	}
 	
 	// Update is called once per frame
