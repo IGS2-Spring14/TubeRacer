@@ -1387,10 +1387,6 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 0
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 10
   mTransforms:
   - {fileID: 0}
   - {fileID: 0}
@@ -1409,7 +1405,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  playerSFX: []
 --- !u!114 &11400036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1423,9 +1418,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  IsPlayer: 0
+  AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
+  SpeedUpValue: 250
+  DefaultSpeed: 6.80000019
   TimeScale: 50
   boostDecayRate: 1.5
   mState: Loop

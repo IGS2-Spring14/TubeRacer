@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd29b6745f5fb14ca4e7f893a555675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Projectile_Speed: 7000
+  Projectile_Speed: 9000
   Destroy_Timer: 3
 --- !u!136 &13600000
 CapsuleCollider:

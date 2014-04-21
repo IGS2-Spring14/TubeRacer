@@ -7,6 +7,8 @@ public class Event_Ship_Spawner : MonoBehaviour {
 	public GameObject MySpawnPoint;
 	public GameObject PathPrefab;
 	public int NumberOfShips;
+	public int SpawnRangeMin = -10;
+	public int SpawnRangeMax = 10;
 
 	bool IsTriggered = false; 
 	
@@ -32,9 +34,9 @@ public class Event_Ship_Spawner : MonoBehaviour {
 			for(int i = 0; i < NumberOfShips; i++)
 			{
 				Vector3 Temp = MySpawnPoint.transform.position;
-				Temp.x += Random.Range(10, -10);
-				Temp.y += Random.Range(10, -10);
-				Temp.z += Random.Range(10, -10);
+				Temp.x += Random.Range(SpawnRangeMax, SpawnRangeMin);
+				Temp.y += Random.Range(SpawnRangeMax, SpawnRangeMin);
+				Temp.z += Random.Range(SpawnRangeMax, SpawnRangeMin);
 
 				//Quaternion Rot = Quaternion.LookRotation();
 

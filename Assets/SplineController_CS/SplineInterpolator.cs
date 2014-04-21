@@ -21,7 +21,7 @@ public class SplineInterpolator : MonoBehaviour
 	public float TimeScale = 1.0f;
 	public float boostDecayRate = 1.5f;
 	Quaternion TempRot; 
-
+	
 	public void SlowDown()
 	{
 		//Debug.Log ("I will speed you down to " + TimeScale);

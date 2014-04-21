@@ -4044,9 +4044,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100162}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6195.88281, y: -16975.7617, z: -22472.7344}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
+  m_LocalPosition: {x: -407.240967, y: 83.9186859, z: -137.016876}
+  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
   m_Children:
   - {fileID: 400382}
   - {fileID: 400296}
@@ -7203,13 +7203,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 400214}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   firingSFX: {fileID: 8200000}
   Spline: {fileID: 0}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!114 &11400002
 MonoBehaviour:
@@ -7225,13 +7225,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 400312}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   firingSFX: {fileID: 8200000}
   Spline: {fileID: 0}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!114 &11400004
 MonoBehaviour:
@@ -7247,13 +7247,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 400074}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   firingSFX: {fileID: 8200000}
   Spline: {fileID: 0}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!114 &11400006
 MonoBehaviour:
@@ -7269,13 +7269,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 400222}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   firingSFX: {fileID: 8200000}
   Spline: {fileID: 0}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!114 &11400008
 MonoBehaviour:
@@ -7291,13 +7291,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 400086}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   firingSFX: {fileID: 8200000}
   Spline: {fileID: 0}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!114 &11400010
 MonoBehaviour:
@@ -7313,13 +7313,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 400036}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   firingSFX: {fileID: 8200000}
   Spline: {fileID: 0}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!114 &11400012
 MonoBehaviour:
@@ -7335,13 +7335,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 400332}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   firingSFX: {fileID: 8200000}
   Spline: {fileID: 0}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!114 &11400014
 MonoBehaviour:
@@ -7357,13 +7357,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 400090}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 8200000}
   Spline: {fileID: 0}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!1001 &100100000
 Prefab:

@@ -10,7 +10,7 @@ public class ShipController : MonoBehaviour
 	public Vector2 maneuverability = Vector2.one;
 
 	float rotation = 0.0f;
-	float altitude = 1.0f;
+	public float altitude = 1.0f;
 
     void Start()
     {

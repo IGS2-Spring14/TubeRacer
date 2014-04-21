@@ -5,6 +5,7 @@ public class Life_Midboss_Main : MonoBehaviour {
 	public int life = 3;
 	GameObject clone;
 	Midboss_AI MyAI;
+	public Transform explosion;
 	bool Vulnerable = false; 
 	
 	
@@ -39,6 +40,10 @@ public class Life_Midboss_Main : MonoBehaviour {
 		//Debug.Log (life);
 		if (life < 1) 
 		{
+			//Creates explosion effect on "death" if a player or an enemy
+			if (this.gameObject.tag == "PlayerShip" || this.gameObject.tag == "Enemy")
+				Instantiate (explosion, transform.position, transform.rotation);
+
 			MyAI.SendMessage ("ComponentDeath");
 			Die();
 		}

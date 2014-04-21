@@ -48,12 +48,14 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 		
 		// Set the path
 		MySplineControl.SplineRoot = TheirSplineControl.SplineRoot;
-		MySplineInterpolator.mState = TheirSplineInterpolator.mState;
+		//MySplineInterpolator.mState = TheirSplineInterpolator.mState;
 	}
 	
 	// Use this for initialization
 	void Start () 
 	{
+		MySplineInterpolator.mState = TheirSplineInterpolator.mState;
+
 		MySplineControl.mTransforms = TheirSplineControl.mTransforms;
 		MySplineControl.Duration = TheirSplineControl.Duration; 
 		MySplineControl.SendMessage ("FollowSpline"); 
@@ -84,15 +86,17 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 		{
 			UpdateAimRotation ();
 			if (isFollowing)
+			{
 				UpdateFiring ();
+			}
 		}
 		
 		
-		if (Vector3.Distance(target.position, transform.position) > FollowDistance && !isFollowing)
+		if (Vector3.Distance(target.position, transform.position) > FollowDistance)
 		{
 			UpdateFollowing(); 
 		}
-
+	
 	}
 	
 	void UpdateAimRotation()

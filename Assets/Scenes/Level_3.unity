@@ -991,6 +991,8 @@ MonoBehaviour:
   MySpawnPoint: {fileID: 1344855266}
   PathPrefab: {fileID: 100004, guid: a7a188d6d4de7d54f9b0b91d32a655ca, type: 2}
   NumberOfShips: 9
+  SpawnRangeMin: -10
+  SpawnRangeMax: 10
 --- !u!65 &23282652
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5513,9 +5515,11 @@ GameObject:
   - 114: {fileID: 141051190}
   - 54: {fileID: 141051189}
   - 114: {fileID: 141051188}
+  - 114: {fileID: 141051193}
+  - 135: {fileID: 141051192}
   m_Layer: 0
   m_Name: Enemy_Spawn_With_Path_Prefab_3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5589,12 +5593,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &141051191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5619,6 +5618,34 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &141051192
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 84b3245dade931d44876e90d834e0b76,
+    type: 2}
+  m_PrefabInternal: {fileID: 947689494}
+  m_GameObject: {fileID: 141051186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &141051193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 84b3245dade931d44876e90d834e0b76,
+    type: 2}
+  m_PrefabInternal: {fileID: 947689494}
+  m_GameObject: {fileID: 141051186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
 --- !u!1 &142502553
 GameObject:
   m_ObjectHideFlags: 0
@@ -10235,9 +10262,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 255645354}
   - 114: {fileID: 255645355}
+  - 135: {fileID: 255645357}
+  - 114: {fileID: 255645356}
   m_Layer: 0
   m_Name: Enemy_DoubleEngine_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10279,6 +10308,32 @@ MonoBehaviour:
   rotationSpeed: 1
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!114 &255645356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 255645353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
+--- !u!135 &255645357
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 255645353}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &256001291
 GameObject:
   m_ObjectHideFlags: 0
@@ -12197,9 +12252,11 @@ GameObject:
   - 114: {fileID: 289750729}
   - 54: {fileID: 289750728}
   - 114: {fileID: 289750727}
+  - 114: {fileID: 289750733}
+  - 135: {fileID: 289750732}
   m_Layer: 0
   m_Name: Enemy_Spawn_With_Path_Prefab_2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12261,12 +12318,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &289750730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12303,6 +12355,34 @@ Transform:
   m_Children:
   - {fileID: 717974401}
   m_Father: {fileID: 0}
+--- !u!135 &289750732
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 75c8919687228854caedcfa57d56cc31,
+    type: 2}
+  m_PrefabInternal: {fileID: 191647291}
+  m_GameObject: {fileID: 289750726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &289750733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 75c8919687228854caedcfa57d56cc31,
+    type: 2}
+  m_PrefabInternal: {fileID: 191647291}
+  m_GameObject: {fileID: 289750726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
 --- !u!1 &291584098
 GameObject:
   m_ObjectHideFlags: 0
@@ -19229,6 +19309,8 @@ MonoBehaviour:
   MySpawnPoint: {fileID: 796206915}
   PathPrefab: {fileID: 100000, guid: 2ad4a42f2b95f8c458f4e481b44a85f9, type: 2}
   NumberOfShips: 9
+  SpawnRangeMin: -10
+  SpawnRangeMax: 10
 --- !u!65 &451667990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21416,9 +21498,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 502367007}
   - 114: {fileID: 502367008}
+  - 135: {fileID: 502367010}
+  - 114: {fileID: 502367009}
   m_Layer: 0
   m_Name: Enemy_DoubleEngine_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21460,6 +21544,32 @@ MonoBehaviour:
   rotationSpeed: 1
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!114 &502367009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502367006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
+--- !u!135 &502367010
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502367006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &503148043
 GameObject:
   m_ObjectHideFlags: 0
@@ -24720,6 +24830,8 @@ MonoBehaviour:
   MySpawnPoint: {fileID: 583600511}
   PathPrefab: {fileID: 100004, guid: 342d9ab070919de4cb216dd1f4325e8f, type: 2}
   NumberOfShips: 9
+  SpawnRangeMin: -10
+  SpawnRangeMax: 10
 --- !u!65 &573305261
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28101,9 +28213,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 640581337}
   - 114: {fileID: 640581336}
+  - 135: {fileID: 640581339}
+  - 114: {fileID: 640581338}
   m_Layer: 0
   m_Name: Enemy_DoubleEngine_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28145,6 +28259,32 @@ Transform:
   m_Children:
   - {fileID: 1737855267}
   m_Father: {fileID: 0}
+--- !u!114 &640581338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640581335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
+--- !u!135 &640581339
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 640581335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &640633558
 GameObject:
   m_ObjectHideFlags: 0
@@ -39008,6 +39148,8 @@ MonoBehaviour:
   MySpawnPoint: {fileID: 954194466}
   PathPrefab: {fileID: 100000, guid: b610a34252dc774438d39784daf9a32c, type: 2}
   NumberOfShips: 9
+  SpawnRangeMin: -10
+  SpawnRangeMax: 10
 --- !u!65 &882286904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47846,6 +47988,7 @@ MonoBehaviour:
   maxAltitude: 10
   minAltitude: .5
   maneuverability: {x: 200, y: 1}
+  altitude: 1
 --- !u!114 &1062481804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47861,6 +48004,7 @@ MonoBehaviour:
   maxAltitude: 10
   minAltitude: .5
   maneuverability: {x: 200, y: 1}
+  altitude: 1
 --- !u!1 &1062484217
 GameObject:
   m_ObjectHideFlags: 0
@@ -51197,9 +51341,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 1144330084}
   - 114: {fileID: 1144330085}
+  - 135: {fileID: 1144330087}
+  - 114: {fileID: 1144330086}
   m_Layer: 0
   m_Name: Enemy_DoubleEngine_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51241,6 +51387,32 @@ MonoBehaviour:
   rotationSpeed: 1
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!114 &1144330086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1144330083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
+--- !u!135 &1144330087
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1144330083}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1145579340
 Prefab:
   m_ObjectHideFlags: 0
@@ -67105,13 +67277,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 1
-  DieByHit: 0
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 10
   mTransforms: []
-  playerSFX:
-  - {fileID: 1507478870}
 --- !u!114 &1498703131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69155,9 +69321,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 1549759133}
   - 114: {fileID: 1549759134}
+  - 135: {fileID: 1549759136}
+  - 114: {fileID: 1549759135}
   m_Layer: 0
   m_Name: Enemy_DoubleEngine_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69199,6 +69367,32 @@ MonoBehaviour:
   rotationSpeed: 1
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!114 &1549759135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549759132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
+--- !u!135 &1549759136
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549759132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1549870661
 GameObject:
   m_ObjectHideFlags: 0
@@ -70769,9 +70963,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 1585525710}
   - 114: {fileID: 1585525711}
+  - 135: {fileID: 1585525713}
+  - 114: {fileID: 1585525712}
   m_Layer: 0
   m_Name: Enemy_DoubleEngine_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70813,6 +71009,32 @@ MonoBehaviour:
   rotationSpeed: 1
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!114 &1585525712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585525709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
+--- !u!135 &1585525713
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585525709}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1586281053
 GameObject:
   m_ObjectHideFlags: 0
@@ -80057,9 +80279,11 @@ GameObject:
   - 114: {fileID: 1813186398}
   - 54: {fileID: 1813186397}
   - 114: {fileID: 1813186396}
+  - 114: {fileID: 1813186402}
+  - 135: {fileID: 1813186401}
   m_Layer: 0
   m_Name: Enemy_Spawn_With_Path_Prefab_4
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80121,12 +80345,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1813186399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80163,6 +80382,34 @@ Transform:
   m_Children:
   - {fileID: 2065241012}
   m_Father: {fileID: 0}
+--- !u!135 &1813186401
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 6db0d3d8e71273a47b73a6ced3c05793,
+    type: 2}
+  m_PrefabInternal: {fileID: 1947147495}
+  m_GameObject: {fileID: 1813186395}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1813186402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400006, guid: 6db0d3d8e71273a47b73a6ced3c05793,
+    type: 2}
+  m_PrefabInternal: {fileID: 1947147495}
+  m_GameObject: {fileID: 1813186395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
 --- !u!1 &1815173007
 GameObject:
   m_ObjectHideFlags: 0
@@ -82721,9 +82968,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 1881343765}
   - 114: {fileID: 1881343764}
+  - 135: {fileID: 1881343767}
+  - 114: {fileID: 1881343766}
   m_Layer: 0
   m_Name: Enemy_DoubleEngine_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82765,6 +83014,32 @@ Transform:
   m_Children:
   - {fileID: 1675186711}
   m_Father: {fileID: 0}
+--- !u!114 &1881343766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881343763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
+--- !u!135 &1881343767
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881343763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1881377022
 GameObject:
   m_ObjectHideFlags: 0
@@ -88287,9 +88562,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 2017024841}
   - 114: {fileID: 2017024840}
+  - 135: {fileID: 2017024843}
+  - 114: {fileID: 2017024842}
   m_Layer: 0
   m_Name: Enemy_DoubleEngine_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88331,6 +88608,32 @@ Transform:
   m_Children:
   - {fileID: 1654449866}
   m_Father: {fileID: 0}
+--- !u!114 &2017024842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2017024839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 3
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+  VerifyAllCollisions: 0
+--- !u!135 &2017024843
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2017024839}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2020525253
 GameObject:
   m_ObjectHideFlags: 0
