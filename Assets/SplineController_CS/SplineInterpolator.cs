@@ -174,8 +174,12 @@ public class SplineInterpolator : MonoBehaviour
 		{
 			if (Input.GetKeyDown (KeyCode.Space) || Input.GetKeyDown (KeyCode.JoystickButton1))
 			{
+				if(!boosting)
+				{
 				SpeedUp(SpeedUpValue);
 				boosting = true;
+				}
+				Debug.Log("boosting " + boosting);
 			}
 			else if ((Input.GetKey (KeyCode.UpArrow)) || Input.GetKey (KeyCode.JoystickButton4)){
 							SpeedUp ();
@@ -193,7 +197,7 @@ public class SplineInterpolator : MonoBehaviour
 						if (boosting)
 							TimeScale -= boostDecayRate;
 					}
-					if(TimeScale<DefaultSpeed - 0.1f)
+					if(TimeScale<=DefaultSpeed)
 					{
 						TimeScale = TimeScale + (DefaultSpeed/20);
 						if (boosting){
