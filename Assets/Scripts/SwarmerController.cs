@@ -36,7 +36,7 @@ public class SwarmerController : MonoBehaviour
 		                            player.position.z + Random.Range (-playerTargetOffset, playerTargetOffset));
         _turnRate = turnRate;
 		speed = Random.Range (speed, maxSpeed);
-		EliteSwarmer = (Random.Range (0, 10) < 1) ? true : false;
+		EliteSwarmer = (Random.Range (0, 10) < 2) ? true : false;
 	}
 	
 	// Update is called once per frame
@@ -46,9 +46,9 @@ public class SwarmerController : MonoBehaviour
 
         if (state == State.attack)
         {
-            _turnRate = turnRate + increaseTurnRate;
+			_turnRate = turnRate + increaseTurnRate;
 			if (EliteSwarmer)
-				_turnRate = turnRate * 2f;
+				_turnRate = turnRate * 2.5f;
 
 			if (distance < Random.Range(idleDistance, (idleDistance*1.3f)))
 			{
@@ -94,7 +94,7 @@ public class SwarmerController : MonoBehaviour
 	{
 		while (true)
 		{
-			increaseTurnRate += (increaseTurnRate * Random.Range(1.02f, 1.1f));
+			increaseTurnRate += (increaseTurnRate * Random.Range(1.02f, 1.3f));
 			yield return new WaitForSeconds(0.5f);
 		}
 	}

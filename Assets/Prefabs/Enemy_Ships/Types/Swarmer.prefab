@@ -112,10 +112,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8000
-  maxSpeed: 15000
-  turnRate: .200000003
-  engageDistance: 60000
-  idleDistance: 3000
+  maxSpeed: 14000
+  turnRate: .449999988
+  engageDistance: 90000
+  idleDistance: 2000
   playerTargetOffset: 1000
   projectile: {fileID: 100002, guid: 54bae88fb67fd4c45bda16c67cf9da1f, type: 2}
 --- !u!135 &13500000
