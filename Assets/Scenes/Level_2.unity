@@ -342,6 +342,110 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1096871993}
+--- !u!1 &14992948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+  m_PrefabInternal: {fileID: 993613591}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 14992954}
+  - 33: {fileID: 14992953}
+  - 23: {fileID: 14992952}
+  - 114: {fileID: 14992951}
+  - 54: {fileID: 14992950}
+  - 65: {fileID: 14992949}
+  m_Layer: 0
+  m_Name: 3DButton_QuitButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &14992949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 33cd346e5f2ea12448ae550a9cb9a505,
+    type: 2}
+  m_PrefabInternal: {fileID: 993613591}
+  m_GameObject: {fileID: 14992948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &14992950
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 33cd346e5f2ea12448ae550a9cb9a505,
+    type: 2}
+  m_PrefabInternal: {fileID: 993613591}
+  m_GameObject: {fileID: 14992948}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &14992951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 33cd346e5f2ea12448ae550a9cb9a505,
+    type: 2}
+  m_PrefabInternal: {fileID: 993613591}
+  m_GameObject: {fileID: 14992948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0839b85dd560e41910e4bcb732ec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredScene: Menu
+  isLevelRestartButton: 0
+--- !u!23 &14992952
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 33cd346e5f2ea12448ae550a9cb9a505,
+    type: 2}
+  m_PrefabInternal: {fileID: 993613591}
+  m_GameObject: {fileID: 14992948}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: f4952667d39864840b3325aa496964f2, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &14992953
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 33cd346e5f2ea12448ae550a9cb9a505,
+    type: 2}
+  m_PrefabInternal: {fileID: 993613591}
+  m_GameObject: {fileID: 14992948}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &14992954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+  m_PrefabInternal: {fileID: 993613591}
+  m_GameObject: {fileID: 14992948}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 120, y: 40, z: .100000001}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &15788538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,13 +1648,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 932575311}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   firingSFX: {fileID: 1154804022}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &58028825
 Animator:
@@ -1757,13 +1861,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 54701490}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   firingSFX: {fileID: 1154804022}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &77756638
 Animator:
@@ -2192,13 +2296,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 184020855}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   firingSFX: {fileID: 232103182}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &105255506
 Animator:
@@ -4426,13 +4530,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 1044123069}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   firingSFX: {fileID: 1154804022}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &188892124
 Animator:
@@ -6588,6 +6692,7 @@ MonoBehaviour:
   maxAltitude: 10
   minAltitude: .5
   maneuverability: {x: 200, y: 1}
+  altitude: 1
 --- !u!1 &276699318
 GameObject:
   m_ObjectHideFlags: 0
@@ -7032,6 +7137,7 @@ GameObject:
   - 54: {fileID: 296391697}
   - 114: {fileID: 296391696}
   - 114: {fileID: 296391700}
+  - 135: {fileID: 296391701}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -7112,12 +7218,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &296391699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7132,7 +7233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -7157,6 +7258,19 @@ MonoBehaviour:
   life: 3
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
+--- !u!135 &296391701
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 396493092}
+  m_GameObject: {fileID: 296391694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &297051440
 GameObject:
   m_ObjectHideFlags: 0
@@ -8796,13 +8910,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 1367444364}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   firingSFX: {fileID: 1154804022}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &366339020
 Animator:
@@ -11590,6 +11704,7 @@ GameObject:
   - 54: {fileID: 501480544}
   - 114: {fileID: 501480543}
   - 114: {fileID: 501480548}
+  - 135: {fileID: 501480547}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -11670,12 +11785,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &501480546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11690,7 +11800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -11700,6 +11810,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &501480547
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 835392976}
+  m_GameObject: {fileID: 501480541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &501480548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12018,6 +12141,7 @@ GameObject:
   - 54: {fileID: 513413865}
   - 114: {fileID: 513413864}
   - 114: {fileID: 513413869}
+  - 135: {fileID: 513413868}
   m_Layer: 0
   m_Name: DoubleEngine_With_Follow_Prefab
   m_TagString: Enemy
@@ -12098,12 +12222,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &513413867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12118,7 +12237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -12128,6 +12247,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &513413868
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 56d2c5861b5841f479f6b9211e5232a4,
+    type: 2}
+  m_PrefabInternal: {fileID: 751184894}
+  m_GameObject: {fileID: 513413862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &513413869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13445,6 +13577,7 @@ GameObject:
   - 54: {fileID: 549227909}
   - 114: {fileID: 549227908}
   - 114: {fileID: 549227914}
+  - 135: {fileID: 549227913}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -13512,12 +13645,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &549227911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13532,7 +13660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -13555,6 +13683,19 @@ Transform:
   - {fileID: 2108495015}
   - {fileID: 907419893}
   m_Father: {fileID: 0}
+--- !u!135 &549227913
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1756356091}
+  m_GameObject: {fileID: 549227907}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &549227914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13742,13 +13883,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 1386584266}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   firingSFX: {fileID: 1154804022}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &556555984
 Animator:
@@ -14701,6 +14842,7 @@ GameObject:
   - 54: {fileID: 603121951}
   - 114: {fileID: 603121950}
   - 114: {fileID: 603121956}
+  - 135: {fileID: 603121955}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -14768,12 +14910,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &603121953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14788,7 +14925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -14811,6 +14948,19 @@ Transform:
   - {fileID: 1261908893}
   - {fileID: 1460625659}
   m_Father: {fileID: 0}
+--- !u!135 &603121955
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 2034478362}
+  m_GameObject: {fileID: 603121949}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &603121956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17394,6 +17544,7 @@ GameObject:
   - 54: {fileID: 700433768}
   - 114: {fileID: 700433767}
   - 114: {fileID: 700433773}
+  - 135: {fileID: 700433772}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -17461,12 +17612,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &700433770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17481,7 +17627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -17504,6 +17650,19 @@ Transform:
   - {fileID: 1690920175}
   - {fileID: 722652635}
   m_Father: {fileID: 0}
+--- !u!135 &700433772
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 656054554}
+  m_GameObject: {fileID: 700433766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &700433773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20578,6 +20737,54 @@ Transform:
   m_Children:
   - {fileID: 1408946326}
   m_Father: {fileID: 678715209}
+--- !u!1001 &827906476
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -4.37113883e-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .100000001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+  m_RootGameObject: {fileID: 985031184}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &828972412
 GameObject:
   m_ObjectHideFlags: 0
@@ -20689,13 +20896,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 83346973}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   firingSFX: {fileID: 1154804022}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &831111002
 Animator:
@@ -24575,6 +24782,110 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1740552638}
+--- !u!1 &985031184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+  m_PrefabInternal: {fileID: 827906476}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 985031190}
+  - 33: {fileID: 985031189}
+  - 23: {fileID: 985031188}
+  - 114: {fileID: 985031187}
+  - 54: {fileID: 985031186}
+  - 65: {fileID: 985031185}
+  m_Layer: 0
+  m_Name: 3DButton_RestartButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!65 &985031185
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 5090022192a7d2d4498b6120b3ce11bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 827906476}
+  m_GameObject: {fileID: 985031184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: -3.7252903e-09, y: 0, z: 0}
+--- !u!54 &985031186
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5090022192a7d2d4498b6120b3ce11bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 827906476}
+  m_GameObject: {fileID: 985031184}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &985031187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 5090022192a7d2d4498b6120b3ce11bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 827906476}
+  m_GameObject: {fileID: 985031184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e0839b85dd560e41910e4bcb732ec62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desiredScene: 
+  isLevelRestartButton: 1
+--- !u!23 &985031188
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 5090022192a7d2d4498b6120b3ce11bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 827906476}
+  m_GameObject: {fileID: 985031184}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 31b398cc982bd794794edff2b8a27150, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &985031189
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 5090022192a7d2d4498b6120b3ce11bd,
+    type: 2}
+  m_PrefabInternal: {fileID: 827906476}
+  m_GameObject: {fileID: 985031184}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &985031190
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+  m_PrefabInternal: {fileID: 827906476}
+  m_GameObject: {fileID: 985031184}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -4.37113883e-08}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 120, y: 40, z: .100000001}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &986112619
 GameObject:
   m_ObjectHideFlags: 0
@@ -24962,6 +25273,54 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 260731056}
+--- !u!1001 &993613591
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -4.37113883e-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .100000001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
+  m_RootGameObject: {fileID: 14992948}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &993678505
 GameObject:
   m_ObjectHideFlags: 0
@@ -24975,6 +25334,7 @@ GameObject:
   - 54: {fileID: 993678508}
   - 114: {fileID: 993678507}
   - 114: {fileID: 993678512}
+  - 135: {fileID: 993678511}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -25055,12 +25415,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &993678510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25075,7 +25430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -25085,6 +25440,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &993678511
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1762532084}
+  m_GameObject: {fileID: 993678505}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &993678512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27312,6 +27680,7 @@ GameObject:
   - 54: {fileID: 1089781957}
   - 114: {fileID: 1089781956}
   - 114: {fileID: 1089781960}
+  - 135: {fileID: 1089781961}
   m_Layer: 0
   m_Name: Spinner_With_Follow_Prefab
   m_TagString: Enemy
@@ -27392,12 +27761,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1089781959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27412,7 +27776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -27437,6 +27801,19 @@ MonoBehaviour:
   life: 3
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
+--- !u!135 &1089781961
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 14e434724fa827d4eab0ba254768af18,
+    type: 2}
+  m_PrefabInternal: {fileID: 160460376}
+  m_GameObject: {fileID: 1089781954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 850
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1090202851
 GameObject:
   m_ObjectHideFlags: 0
@@ -28158,13 +28535,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 1221736465}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   firingSFX: {fileID: 1154804022}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1118069751
 Animator:
@@ -28697,13 +29074,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 318412963}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   firingSFX: {fileID: 232103182}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1131181014
 Animator:
@@ -29181,6 +29558,7 @@ GameObject:
   - 54: {fileID: 1143319801}
   - 114: {fileID: 1143319800}
   - 114: {fileID: 1143319805}
+  - 135: {fileID: 1143319804}
   m_Layer: 0
   m_Name: DoubleEngine_With_Follow_Prefab
   m_TagString: Enemy
@@ -29261,12 +29639,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1143319803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29281,7 +29654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -29291,6 +29664,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &1143319804
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 56d2c5861b5841f479f6b9211e5232a4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1671868062}
+  m_GameObject: {fileID: 1143319798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1143319805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31116,13 +31502,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 162220354}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   firingSFX: {fileID: 232103182}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1205432678
 Animator:
@@ -33081,6 +33467,7 @@ GameObject:
   - 54: {fileID: 1267553273}
   - 114: {fileID: 1267553272}
   - 114: {fileID: 1267553277}
+  - 135: {fileID: 1267553276}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -33161,12 +33548,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1267553275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33181,7 +33563,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -33191,6 +33573,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &1267553276
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 986336602}
+  m_GameObject: {fileID: 1267553270}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1267553277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33634,13 +34029,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 650869438}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   firingSFX: {fileID: 232103182}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1288778973
 Animator:
@@ -35553,13 +35948,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 1
-  DieByHit: 0
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 10
   mTransforms: []
-  playerSFX:
-  - {fileID: 1430891056}
 --- !u!108 &1367977159
 Light:
   m_ObjectHideFlags: 0
@@ -35609,6 +35998,7 @@ GameObject:
   - 54: {fileID: 1368230013}
   - 114: {fileID: 1368230012}
   - 114: {fileID: 1368230017}
+  - 135: {fileID: 1368230016}
   m_Layer: 0
   m_Name: DoubleEngine_With_Follow_Prefab
   m_TagString: Enemy
@@ -35689,12 +36079,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1368230015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35709,7 +36094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -35719,6 +36104,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &1368230016
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 56d2c5861b5841f479f6b9211e5232a4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1320681748}
+  m_GameObject: {fileID: 1368230010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1368230017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36687,13 +37085,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 1377103724}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   firingSFX: {fileID: 232103182}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1425279913
 Animator:
@@ -38087,6 +38485,7 @@ GameObject:
   - 54: {fileID: 1466985329}
   - 114: {fileID: 1466985328}
   - 114: {fileID: 1466985333}
+  - 135: {fileID: 1466985332}
   m_Layer: 0
   m_Name: Spinner_With_Follow_Prefab
   m_TagString: Enemy
@@ -38167,12 +38566,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1466985331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38187,7 +38581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -38197,6 +38591,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &1466985332
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 14e434724fa827d4eab0ba254768af18,
+    type: 2}
+  m_PrefabInternal: {fileID: 593878371}
+  m_GameObject: {fileID: 1466985326}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 850
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1466985333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38747,13 +39154,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 1673791129}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 1154804022}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1490035672
 Animator:
@@ -41102,6 +41509,7 @@ GameObject:
   - 54: {fileID: 1608963632}
   - 114: {fileID: 1608963631}
   - 114: {fileID: 1608963636}
+  - 135: {fileID: 1608963635}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -41182,12 +41590,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1608963634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41202,7 +41605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -41212,6 +41615,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &1608963635
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1018816673}
+  m_GameObject: {fileID: 1608963629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1608963636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42009,6 +42425,7 @@ GameObject:
   - 54: {fileID: 1651963399}
   - 114: {fileID: 1651963398}
   - 114: {fileID: 1651963403}
+  - 135: {fileID: 1651963402}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -42089,12 +42506,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1651963401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42109,7 +42521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -42119,6 +42531,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &1651963402
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1237563555}
+  m_GameObject: {fileID: 1651963396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1651963403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45760,13 +46185,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 1113876412}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 232103182}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1775109141
 Animator:
@@ -45922,6 +46347,7 @@ GameObject:
   - 54: {fileID: 1780456529}
   - 114: {fileID: 1780456528}
   - 114: {fileID: 1780456533}
+  - 135: {fileID: 1780456532}
   m_Layer: 0
   m_Name: Enemy_With_Follow_Prefab
   m_TagString: Enemy
@@ -46002,12 +46428,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1780456531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46022,7 +46443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -46032,6 +46453,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &1780456532
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 27114ebfd3cff8a419705d5271ab21b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 986489787}
+  m_GameObject: {fileID: 1780456526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1780456533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46937,13 +47371,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 1855772852}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   firingSFX: {fileID: 232103182}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1810775807
 Animator:
@@ -48859,13 +49293,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 0}
   GunTransform: {fileID: 426424916}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   firingSFX: {fileID: 232103182}
   Spline: {fileID: 0}
   Range: 10000
-  LeadTime: 2.25
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1894174959
 Animator:
@@ -50108,6 +50542,7 @@ GameObject:
   - 54: {fileID: 1972513761}
   - 114: {fileID: 1972513760}
   - 114: {fileID: 1972513765}
+  - 135: {fileID: 1972513764}
   m_Layer: 0
   m_Name: Spinner_With_Follow_Prefab
   m_TagString: Enemy
@@ -50188,12 +50623,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1972513763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50208,7 +50638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -50218,6 +50648,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &1972513764
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 14e434724fa827d4eab0ba254768af18,
+    type: 2}
+  m_PrefabInternal: {fileID: 776343246}
+  m_GameObject: {fileID: 1972513758}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 850
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1972513765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50837,7 +51280,7 @@ Transform:
   m_GameObject: {fileID: 1993098569}
   m_LocalRotation: {x: 0, y: -.382682949, z: 0, w: .923879802}
   m_LocalPosition: {x: -16041.2041, y: -21733.1562, z: -30897.2578}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
   m_Children:
   - {fileID: 1129197927}
   - {fileID: 1490035670}
@@ -50981,6 +51424,7 @@ GameObject:
   - 54: {fileID: 1999717101}
   - 114: {fileID: 1999717100}
   - 114: {fileID: 1999717105}
+  - 135: {fileID: 1999717104}
   m_Layer: 0
   m_Name: DoubleEngine_With_Follow_Prefab
   m_TagString: Enemy
@@ -51061,12 +51505,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 0
-  DieByHit: 1
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
   mTransforms: []
-  playerSFX: []
 --- !u!114 &1999717103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51081,7 +51520,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
@@ -51091,6 +51530,19 @@ MonoBehaviour:
   mState: 
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!135 &1999717104
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 56d2c5861b5841f479f6b9211e5232a4,
+    type: 2}
+  m_PrefabInternal: {fileID: 705006663}
+  m_GameObject: {fileID: 1999717098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 600
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1999717105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53410,7 +53862,7 @@ Transform:
   m_GameObject: {fileID: 2102897271}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6195.88281, y: -16975.7617, z: -22472.7344}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
   m_Children:
   - {fileID: 1910150665}
   - {fileID: 1775109139}

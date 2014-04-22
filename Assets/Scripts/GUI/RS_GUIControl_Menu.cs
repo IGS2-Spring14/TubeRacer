@@ -29,7 +29,7 @@ public class RS_GUIControl_Menu : MonoBehaviour {
 		if (GUI.Button (new Rect(3 * Screen.width / 8, Screen.height / 2, Screen.width / 4, 50), "", gameGUI.FindStyle("StartButton"))){
 			//RS_GUIControl_Loading.toScreen = "Basic_2";
 			music.RemoveObject();
-			Application.LoadLevel("Basic_2_REDUX");
+			Application.LoadLevel("Level_1");
 		}
 		
 		if (GUI.Button (new Rect(3 * Screen.width / 8, Screen.height / 2 + 70, Screen.width / 4, 50), "", gameGUI.FindStyle("OptionsButton"))){

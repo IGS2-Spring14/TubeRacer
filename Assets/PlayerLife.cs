@@ -20,7 +20,7 @@ public class PlayerLife : MonoBehaviour {
 		if (DieByHit) {
 			if (NumberHit > HitMaximum)
 			{
-				Destroy (this.gameObject);
+				//Destroy (this.gameObject);
 				Debug.Log("You died");
 			}
 		}
