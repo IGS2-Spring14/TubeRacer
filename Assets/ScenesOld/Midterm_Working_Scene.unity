@@ -333,13 +333,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1132292047}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 400
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &9628687
 Animator:
@@ -3146,6 +3146,62 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224815123}
+--- !u!1 &33990408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+  m_PrefabInternal: {fileID: 1247513248}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 33990411}
+  - 65: {fileID: 33990410}
+  - 114: {fileID: 33990409}
+  m_Layer: 0
+  m_Name: SwarmerSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &33990409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9cf2f63575e21cb449e432f52f705de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1247513248}
+  m_GameObject: {fileID: 33990408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69b7c4c326650fc49ba798bfcd946476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAmount: 60
+  swarmer: {fileID: 100002, guid: 31bb4cd570d963e4fbab375d0231a8f5, type: 2}
+  spawnThroughTrigger: 1
+--- !u!65 &33990410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 9cf2f63575e21cb449e432f52f705de4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1247513248}
+  m_GameObject: {fileID: 33990408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3, y: 2, z: 20}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &33990411
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+  m_PrefabInternal: {fileID: 1247513248}
+  m_GameObject: {fileID: 33990408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11418.0723, y: -2354.33301, z: 22426.1719}
+  m_LocalScale: {x: 5000, y: 5000, z: 500}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &34929105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,13 +3561,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1683996859}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 300
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &36668474
 Animator:
@@ -16193,9 +16249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAltitude: 10
-  minAltitude: .5
+  maxAltitude: 1000
+  minAltitude: 1000
   maneuverability: {x: 200, y: 1}
+  altitude: 1
 --- !u!1001 &277791297
 Prefab:
   m_ObjectHideFlags: 0
@@ -16290,7 +16347,7 @@ Prefab:
     - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: Debris.Array.data[2]
       value: 
-      objectReference: {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+      objectReference: {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
     - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
       propertyPath: Debris.Array.data[3]
       value: 
@@ -27041,13 +27098,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 353641347}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 700
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &409419555
 Animator:
@@ -28995,13 +29052,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1175445068}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 200
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &453864701
 Animator:
@@ -48261,9 +48318,9 @@ AudioSource:
   m_GameObject: {fileID: 800892607}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: a019ae3af8e864616b85773c509f5285, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5530560f17e1c74419ed2b0d19c1002b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .100000001
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -55092,7 +55149,7 @@ Transform:
   m_GameObject: {fileID: 928287939}
   m_LocalRotation: {x: 0, y: .707105994, z: 0, w: .707107604}
   m_LocalPosition: {x: -5297.72852, y: -1736.23047, z: -12071.1465}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
   m_Children:
   - {fileID: 2112828172}
   - {fileID: 1587522333}
@@ -66034,7 +66091,7 @@ MonoBehaviour:
   Debris:
   - {fileID: 5400000, guid: 2e8941a94bb7c0a41881c79a3e3fa07d, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
-  - {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+  - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
 --- !u!64 &1063127715
@@ -71532,13 +71589,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 412859385}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 100
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1123220484
 Animator:
@@ -79479,6 +79536,50 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1001 &1247513248
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11418.0723
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2354.33301
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22426.1719
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9cf2f63575e21cb449e432f52f705de4, type: 2}
+  m_RootGameObject: {fileID: 33990408}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1247520279
 GameObject:
   m_ObjectHideFlags: 0
@@ -83634,6 +83735,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .326364338
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
+      propertyPath: Debris.Array.data[2]
+      value: 
+      objectReference: {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e33c305e909638640a4412627e2f1cd9, type: 2}
   m_RootGameObject: {fileID: 1063127713}
@@ -84913,13 +85018,7 @@ MonoBehaviour:
   AutoStart: 1
   AutoClose: 0
   HideOnExecute: 1
-  DieByHit: 0
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 10
   mTransforms: []
-  playerSFX:
-  - {fileID: 800892609}
 --- !u!108 &1367977159
 Light:
   m_ObjectHideFlags: 0
@@ -86439,7 +86538,7 @@ MonoBehaviour:
   Debris:
   - {fileID: 5400000, guid: 2e8941a94bb7c0a41881c79a3e3fa07d, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
-  - {fileID: 5400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+  - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
   - {fileID: 5400000, guid: 3d7dbc914c16ad74099f652080ce27f8, type: 2}
 --- !u!64 &1390526269
@@ -89662,13 +89761,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 139231684}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 500
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1436873001
 Animator:
@@ -96749,13 +96848,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 1779050813}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 600
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1567994502
 Animator:
@@ -98220,13 +98319,13 @@ MonoBehaviour:
   MaxGunAngle: 60
   target: {fileID: 273756269}
   GunTransform: {fileID: 439782732}
-  projectile: {fileID: 100000, guid: 8cdd457f231fdb44695c5607ae92a21c, type: 2}
+  projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 1739396455}
   Spline: {fileID: 1747417773}
-  Range: 50000
-  LeadTime: 2.25
+  Range: 100
+  LeadTime: 1
   MinRange: 0
 --- !u!95 &1587522335
 Animator:
@@ -105944,10 +106043,10 @@ MonoBehaviour:
   AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
-  SpeedUpValue: 250
-  DefaultSpeed: 6.80000019
-  TimeScale: 1
-  boostDecayRate: 1.5
+  SpeedUpValue: 100
+  DefaultSpeed: 10
+  TimeScale: 3
+  boostDecayRate: 1
   mState: Loop
   mCurrentTime: 0
   mCurrentIdx: 1
@@ -105961,8 +106060,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: .479999989
-  m_Height: 1.80999994
+  m_Radius: 500
+  m_Height: 10.8699999
   m_Direction: 2
   m_Center: {x: .00999999978, y: -.140000001, z: 0}
 --- !u!54 &1747417775
@@ -105994,6 +106093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnAmount: 45
   swarmer: {fileID: 100002, guid: 31bb4cd570d963e4fbab375d0231a8f5, type: 2}
+  spawnThroughTrigger: 1
 --- !u!1 &1753423076
 GameObject:
   m_ObjectHideFlags: 0
