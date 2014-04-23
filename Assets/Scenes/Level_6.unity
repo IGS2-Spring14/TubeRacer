@@ -1688,8 +1688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAltitude: 1
-  minAltitude: 1
+  maxAltitude: 30
+  minAltitude: 30
   maneuverability: {x: 200, y: 1}
   altitude: 1
 --- !u!1 &275962506
@@ -10787,7 +10787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SplineRoot: {fileID: 249607706}
   MyCamera: {fileID: 0}
-  Duration: 360
+  Duration: 540
   OrientationMode: 1
   WrapMode: 1
   AutoStart: 1
@@ -13440,7 +13440,7 @@ GameObject:
   - 135: {fileID: 1684969831}
   m_Layer: 0
   m_Name: Core
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16780,7 +16780,7 @@ Prefab:
       objectReference: {fileID: 1747417773}
     - target: {fileID: 11400000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: Duration
-      value: 360
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: mState
@@ -16812,11 +16812,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: maxAltitude
-      value: 1
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: minAltitude
-      value: 1
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
