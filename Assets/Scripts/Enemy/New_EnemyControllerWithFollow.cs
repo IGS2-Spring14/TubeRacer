@@ -54,7 +54,7 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		MySplineInterpolator.mState = TheirSplineInterpolator.mState;
+		MySplineInterpolator.mState = "Loop";//TheirSplineInterpolator.mState;
 
 		MySplineControl.mTransforms = TheirSplineControl.mTransforms;
 		MySplineControl.Duration = TheirSplineControl.Duration; 
@@ -103,7 +103,7 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 	{
 		//Direction to look at (needs to be reversed so model faces player)
 		Vector3 relPos = target.position - transform.position;
-		
+
 		//Face the turret toward the player (y is axis of rotation)
 		transform.rotation = Quaternion.LookRotation(relPos);
 	}

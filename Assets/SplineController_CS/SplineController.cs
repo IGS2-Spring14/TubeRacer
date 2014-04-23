@@ -17,6 +17,8 @@ public class SplineController : MonoBehaviour
 	public bool HideOnExecute = true;
 	SplineInterpolator mSplineInterp;
 	public Transform[] mTransforms;
+	private SplineInterpolator interp;
+	//public bool fromActivate = false; 
 
 	public void OnDrawGizmos()
 	{
@@ -24,7 +26,7 @@ public class SplineController : MonoBehaviour
 		if (trans.Length < 2)
 			return;
 
-		SplineInterpolator interp = GetComponent(typeof(SplineInterpolator)) as SplineInterpolator;
+		interp = GetComponent(typeof(SplineInterpolator)) as SplineInterpolator;
 		SetupSplineInterpolator(interp, trans);
 		interp.StartInterpolation(null, false, WrapMode);
 
@@ -61,8 +63,11 @@ public class SplineController : MonoBehaviour
 
 	void SetupSplineInterpolator(SplineInterpolator interp, Transform[] trans)
 	{
-		interp.Reset();
+		// For activated enemies
+		interp = GetComponent(typeof(SplineInterpolator)) as SplineInterpolator;
+		mSplineInterp = GetComponent(typeof(SplineInterpolator)) as SplineInterpolator;
 
+		interp.Reset();
 		float step = (AutoClose) ? Duration / trans.Length :
 			Duration / (trans.Length - 1);
 
