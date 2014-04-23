@@ -3289,8 +3289,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAltitude: 10
-  minAltitude: .5
+  maxAltitude: 1000
+  minAltitude: 1000
   maneuverability: {x: 200, y: 1}
   altitude: 1
 --- !u!1001 &1076862926
@@ -4648,6 +4648,8 @@ GameObject:
   - 114: {fileID: 1498703130}
   - 136: {fileID: 1498703129}
   - 54: {fileID: 1498703128}
+  - 114: {fileID: 1498703132}
+  - 114: {fileID: 1498703133}
   m_Layer: 0
   m_Name: GamePlatform
   m_TagString: Player
@@ -4694,8 +4696,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: .479999989
-  m_Height: 1.80999994
+  m_Radius: 500
+  m_Height: 10.8699999
   m_Direction: 2
   m_Center: {x: .00999999978, y: -.140000001, z: 0}
 --- !u!114 &1498703130
@@ -4736,13 +4738,44 @@ MonoBehaviour:
   AllowChangeSpeed: 1
   IsStraightPath: 0
   IsFlipped: 0
-  SpeedUpValue: 250
-  DefaultSpeed: 6.80000019
+  SpeedUpValue: 100
+  DefaultSpeed: 10
   TimeScale: 3
-  boostDecayRate: 1.5
+  boostDecayRate: 1
   mState: Loop
   mCurrentTime: 0
   mCurrentIdx: 1
+--- !u!114 &1498703132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851,
+    type: 2}
+  m_PrefabInternal: {fileID: 409608677}
+  m_GameObject: {fileID: 1498703126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a24b7947d8d754bb842947adae6c90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DieByHit: 0
+  Log: 1
+  EnableCollision: 1
+  HitMaximum: 10
+  playerSFX: []
+--- !u!114 &1498703133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498703126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69b7c4c326650fc49ba798bfcd946476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnAmount: 30
+  swarmer: {fileID: 100002, guid: 31bb4cd570d963e4fbab375d0231a8f5, type: 2}
+  spawnThroughTrigger: 0
 --- !u!1 &1507478868
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,9 +4812,9 @@ AudioSource:
   m_GameObject: {fileID: 1507478868}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: a019ae3af8e864616b85773c509f5285, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 5530560f17e1c74419ed2b0d19c1002b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: .100000001
   m_Pitch: 1
   Loop: 0
   Mute: 0
