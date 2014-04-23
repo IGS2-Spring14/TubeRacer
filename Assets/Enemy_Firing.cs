@@ -36,7 +36,11 @@ public class Enemy_Firing : MonoBehaviour {
 	void UpdateAimRotation()
 	{
 		//Direction to look at (needs to be reversed so model faces player)
-		Vector3 relPos = target.position - transform.position;
+		//Vector3 relPos = target.position - transform.position;
+		Vector3 relPos = TheirSpline.GetHermiteAtTime (TheirSpline.mCurrentTime + (LeadTime * TheirSpline.TimeScale)) - transform.position;
+		relPos.y -= 1000; 
+		//Debug.Log ("relPos: " + relPos.y);
+		//Debug.Log ("target: " + target.transform.position.y);
 
 		//Face the turret toward the player (y is axis of rotation)
 		transform.rotation = Quaternion.LookRotation(relPos);
