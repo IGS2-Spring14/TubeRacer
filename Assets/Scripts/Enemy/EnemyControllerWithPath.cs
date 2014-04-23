@@ -74,7 +74,7 @@ public class EnemyControllerWithPath : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
-		StaggerTime = Random.Range (0, 800); 
+		StaggerTime = Random.Range (0, FiringCooldown); 
 		timer = StaggerTime;
 	}
 	
@@ -99,11 +99,9 @@ public class EnemyControllerWithPath : MonoBehaviour
 	{
 		//Direction to look at (needs to be reversed so model faces player)
 		Vector3 relPos = target.position - transform.position;
-		
+
 		//Face the turret toward the player (y is axis of rotation)
 		transform.rotation = Quaternion.LookRotation(relPos);
-		
-		
 	}
 	
 	// Update is called once per frame

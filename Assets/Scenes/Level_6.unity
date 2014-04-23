@@ -14208,7 +14208,9 @@ MonoBehaviour:
   Log: 1
   EnableCollision: 1
   HitMaximum: 10
-  playerSFX: []
+  NumberHit: 1
+  playerSFX:
+  - {fileID: 800892609}
 --- !u!1 &1764740101
 GameObject:
   m_ObjectHideFlags: 0
@@ -16738,6 +16740,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: playerSFX.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -16818,6 +16824,10 @@ Prefab:
       propertyPath: minAltitude
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: playerSFX.Array.data[0]
+      value: 
+      objectReference: {fileID: 800892609}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_RootGameObject: {fileID: 1747417769}

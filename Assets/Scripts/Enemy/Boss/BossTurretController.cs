@@ -14,7 +14,7 @@ public class BossTurretController : MonoBehaviour
 	float timer = 0;
 	
 	// Both
-	public SplineInterpolator Spline;
+	public SplineInterpolator TheirSpline;
 	public int Range = 500; 
 	public float LeadTime = 10;
 	public int MinRange = 0; 
@@ -32,7 +32,7 @@ public class BossTurretController : MonoBehaviour
 		target = GameObject.Find ("PlayerShip").transform;
 		
 		GameObject targetObject = GameObject.Find ("GamePlatform");
-		Spline = targetObject.GetComponent<SplineInterpolator> ();
+		TheirSpline = targetObject.GetComponent<SplineInterpolator> ();
 		
 		//GameObject MyBoss = GameObject.Find("Prototype_Boss_Prefab(Clone)");
 		//MyAI = MyBoss.GetComponent<Boss_1_AI> ();
@@ -65,7 +65,7 @@ public class BossTurretController : MonoBehaviour
 	{
 		//Direction to look at (needs to be reversed so model faces player)
 		//Vector3 relPos = target.position - transform.position;
-		Vector3 relPos = Spline.GetHermiteAtTime (Spline.mCurrentTime + (LeadTime * Spline.TimeScale)) - transform.position;
+		Vector3 relPos = TheirSpline.GetHermiteAtTime (TheirSpline.mCurrentTime + (LeadTime * TheirSpline.TimeScale)) - transform.position;
 		relPos.y = 0.0f;
 		
 		
@@ -75,7 +75,7 @@ public class BossTurretController : MonoBehaviour
 		
 		//Face the gun toward the player
 		//relPos = target.position - transform.position;
-		relPos = Spline.GetHermiteAtTime (Spline.mCurrentTime + (LeadTime * Spline.TimeScale)) - transform.position;
+		relPos = TheirSpline.GetHermiteAtTime (TheirSpline.mCurrentTime + (LeadTime * TheirSpline.TimeScale)) - transform.position;
 		if (Vector3.Angle(relPos, transform.forward) <= MaxGunAngle)
 			GunTransform.rotation = Quaternion.LookRotation(relPos);
 		

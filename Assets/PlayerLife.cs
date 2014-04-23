@@ -7,7 +7,7 @@ public class PlayerLife : MonoBehaviour {
 	public bool Log = true;
 	public bool EnableCollision = true;
 	public int HitMaximum = 10;
-	private int NumberHit = 1;
+	public int NumberHit = 1;
 	public AudioSource [] playerSFX;
 	// Use this for initialization
 	void Start () {
