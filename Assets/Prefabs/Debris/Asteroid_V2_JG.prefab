@@ -26,11 +26,11 @@ GameObject:
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
   - 95: {fileID: 9500000}
-  - 54: {fileID: 5400000}
   - 114: {fileID: 11400002}
+  - 136: {fileID: 13600000}
   m_Layer: 0
   m_Name: Asteroid_V2_JG
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,8 +52,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106829}
-  m_LocalPosition: {x: -147.54657, y: 141.660706, z: 9810.15137}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3513.75098, y: -108.728516, z: 3526.13477}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -86,21 +86,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_Mesh: {fileID: 4300000, guid: f782920707f7d2a4bb8c58be03690e5c, type: 3}
---- !u!54 &5400000
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!95 &9500000
 Animator:
   serializedVersion: 2
@@ -140,6 +125,19 @@ MonoBehaviour:
   rotationSpeed: .200000003
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!136 &13600000
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 439.380402
+  m_Height: 1170.28638
+  m_Direction: 1
+  m_Center: {x: 0, y: -40.0444946, z: -1.52587891e-05}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
