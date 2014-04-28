@@ -6,8 +6,8 @@ public class PlayerLife : MonoBehaviour {
 	public bool DieByHit = false;
 	public bool Log = true;
 	public bool EnableCollision = true;
-	public int HitMaximum = 10;
-	private int NumberHit = 1;
+	public int HitMaximum;
+	private int NumberHit = 0;
 	public AudioSource [] playerSFX;
 	// Use this for initialization
 	void Start () {
@@ -56,5 +56,9 @@ public class PlayerLife : MonoBehaviour {
 			else if (Log)
 				Debug.Log ("Player hit " + collision.ToString () + ".");
 		}
+	}
+
+	public int GetHitNumber () {
+		return NumberHit;
 	}
 }
