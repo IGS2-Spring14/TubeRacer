@@ -37,6 +37,7 @@ public class RS_TextTrigger : MonoBehaviour {
 	public string customText;
 	public AudioSource [] textSFX;
 
+	GameObject playership;
 	string text;
 	float timer, letterPause;
 	bool displayText, setTime, growBox, shrinkBox;
@@ -47,7 +48,8 @@ public class RS_TextTrigger : MonoBehaviour {
 		text = "";
 		displayText = false;
 		setTime = false;
-
+		
+		playership = GameObject.FindWithTag("Player");
 		timer = 0f;
 
 		letterPause = 0.02f;
@@ -71,8 +73,10 @@ public class RS_TextTrigger : MonoBehaviour {
 
 	void OnGUI () {
 		//Displays text object if allowed to display it with a height specified by boxHeight
-		if (displayText)
-			GUI.Label (new Rect (Screen.width / 8, 5 * Screen.height / 8, 3 * Screen.width / 4, boxHeight), text, gameGUI.label);
+		if (displayText) {
+						//GUI.Label (new Rect (Screen.width / 14, 3 * Screen.height / 8, 3 * Screen.width / 8, boxHeight), text, gameGUI.label);
+						GUI.Label (new Rect (7.6f * Screen.width / 14	, 3 * Screen.height / 8, 3 * Screen.width / 8, boxHeight), text, gameGUI.label);
+				}
 	}
 	
 	// Update is called once per frame
@@ -100,7 +104,6 @@ public class RS_TextTrigger : MonoBehaviour {
 					textSFX[0].Stop();
 
 				//Begins coroutine for "typing" out message
-				GameObject playership = GameObject.FindWithTag("Player");
 				playership.SendMessage("SetSpeed", 0.1f);
 				StartCoroutine (TypeText ());
 			}
@@ -112,7 +115,7 @@ public class RS_TextTrigger : MonoBehaviour {
 				//shown while box is shrinking
 				text = "";
 				GameObject playership = GameObject.FindWithTag("Player");
-				playership.SendMessage("SetSpeed",3f);
+				playership.SendMessage("SetSpeed",10f);
 				boxHeight -= 5;
 
 				//Plays box shrinking sound while shrinking
@@ -162,7 +165,7 @@ public class RS_TextTrigger : MonoBehaviour {
 	void OnTriggerEnter (Collider collision) {
 		//Begins displaying text and growing the text box
 		//if the player makes contact with this object's collider
-		if (collision.gameObject.tag == "Player") {
+		if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "PlayerShip") {
 			displayText = true;
 			growBox = true;
 		}

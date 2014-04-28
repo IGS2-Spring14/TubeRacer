@@ -37,7 +37,7 @@ public class PlayerLife : MonoBehaviour {
 	void OnTriggerEnter(Collider collision)
 	{
 		if (EnableCollision) {
-			if (collision.gameObject.CompareTag ("Enemy")) {
+			if (collision.gameObject.CompareTag ("Enemy")||collision.gameObject.CompareTag ("Spacemine")) {
 				if (Log)
 					Debug.Log ("Missile hit player " + NumberHit + " times.");
 				NumberHit++;

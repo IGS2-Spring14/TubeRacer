@@ -38,9 +38,11 @@ public class PlayerShipShooting : MonoBehaviour
 			target = transform.position + (transform.forward * ReticleDistance);
 		
         if ((Input.GetKeyDown (KeyCode.Mouse0) || Input.GetKeyDown (KeyCode.JoystickButton2)) && timer < 0) {
-
 			Fire ();
 		}
+		if (Input.GetKey (KeyCode.JoystickButton7) && Input.GetKey (KeyCode.JoystickButton6)&&Input.GetKey (KeyCode.JoystickButton2)) {
+						Fire ();
+				}
 		if(ShootDebug)
 			Fire ();
 	}
