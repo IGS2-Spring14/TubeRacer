@@ -14,6 +14,7 @@ public class WalkerTurretController : MonoBehaviour
 	float timer = 0;
 	public AudioSource firingSFX;
 	public Transform MainGun, LeftRack, RightRack; 
+	public int BulletOffsetRange = 0; 
 
 	// Both
 	public SplineInterpolator Spline;
@@ -81,9 +82,40 @@ public class WalkerTurretController : MonoBehaviour
 		{
 			timer = FiringCooldown;
 			GameObject clone; 
-			clone = Instantiate (projectile, MainGun.position, GunTransform.rotation) as GameObject;
-			clone = Instantiate (projectile, LeftRack.position, GunTransform.rotation) as GameObject;
-			clone = Instantiate (projectile, RightRack.position, GunTransform.rotation) as GameObject;
+
+			// main gun
+			// randomize the bullet offset
+			Vector3 TempPos = MainGun.position;
+			TempPos.x += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.y += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.z += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			
+			// create the bullet
+			clone = Instantiate (projectile, TempPos, transform.rotation) as GameObject;
+
+
+			// left rack
+			// randomize the bullet offset
+			TempPos = LeftRack.position;
+			TempPos.x += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.y += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.z += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			
+			// create the bullet
+			clone = Instantiate (projectile, TempPos, transform.rotation) as GameObject;
+
+
+			// right rack
+			// randomize the bullet offset
+			TempPos = RightRack.position;
+			TempPos.x += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.y += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.z += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			
+			// create the bullet
+			clone = Instantiate (projectile, TempPos, transform.rotation) as GameObject;
+
+
 			//if (!firingSFX.isPlaying)
 			firingSFX.Play ();
 			//print (firingSFX.isPlaying);

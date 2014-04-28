@@ -2594,7 +2594,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -556.218994, y: 99.023201, z: -2260.35229}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400160}
@@ -5428,6 +5428,7 @@ MonoBehaviour:
   MainGun: {fileID: 400086}
   LeftRack: {fileID: 400008}
   RightRack: {fileID: 400012}
+  BulletOffsetRange: 500
   Spline: {fileID: 0}
   Range: 5000
   LeadTime: 10
@@ -5466,6 +5467,7 @@ MonoBehaviour:
   MainGun: {fileID: 400208}
   LeftRack: {fileID: 400126}
   RightRack: {fileID: 400130}
+  BulletOffsetRange: 500
   Spline: {fileID: 0}
   Range: 5000
   LeadTime: 10
@@ -5499,6 +5501,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
+  BulletOffsetRange: 500
   Range: 5000
   MinRange: 0
 --- !u!114 &11400026
@@ -5517,6 +5520,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
+  BulletOffsetRange: 500
   Range: 5000
   MinRange: 0
 --- !u!114 &11400028
@@ -5535,6 +5539,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
+  BulletOffsetRange: 500
   Range: 5000
   MinRange: 0
 --- !u!114 &11400030
@@ -5553,6 +5558,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
+  BulletOffsetRange: 500
   Range: 5000
   MinRange: 0
 --- !u!135 &13500000

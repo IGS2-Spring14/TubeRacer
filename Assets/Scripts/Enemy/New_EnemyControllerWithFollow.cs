@@ -20,6 +20,7 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 	public float PositionOffsetZ = 0; 
 	public bool RandomizeOffset = false; 
 	Vector3 OffsetTransform; 
+	public int BulletOffsetRange = 0; 
 	
 	// Firing and movement
 	public Transform target;
@@ -49,6 +50,9 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 		// Set the path
 		MySplineControl.SplineRoot = TheirSplineControl.SplineRoot;
 		//MySplineInterpolator.mState = TheirSplineInterpolator.mState;
+
+		// disable collider
+		collider.enabled = false;
 	}
 	
 	// Use this for initialization
@@ -81,21 +85,25 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 		OffsetTransform.z += PositionOffsetZ;
 		transform.position = OffsetTransform;
 
+		if (Vector3.Distance(target.position, transform.position) > FollowDistance)
+		{
+			// enable collider
+			collider.enabled = true;
+
+			// follow
+			UpdateFollowing(); 
+		}
 
 		if (Vector3.Distance(target.position, transform.position) < Range) 
 		{
+			// fire
 			UpdateAimRotation ();
 			if (isFollowing)
 			{
 				UpdateFiring ();
 			}
 		}
-		
-		
-		if (Vector3.Distance(target.position, transform.position) > FollowDistance)
-		{
-			UpdateFollowing(); 
-		}
+
 	
 	}
 	
@@ -119,7 +127,15 @@ public class New_EnemyControllerWithFollow : MonoBehaviour
 		{
 			timer = FiringCooldown;
 			GameObject clone;
-			clone = Instantiate (projectile, transform.position, transform.rotation) as GameObject;
+
+			// randomize the bullet offset
+			Vector3 TempPos = transform.position;
+			TempPos.x += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.y += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.z += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+
+
+			clone = Instantiate (projectile, TempPos, transform.rotation) as GameObject;
 			//if (!firingSFX.isPlaying)
 			firingSFX.Play();
 		}

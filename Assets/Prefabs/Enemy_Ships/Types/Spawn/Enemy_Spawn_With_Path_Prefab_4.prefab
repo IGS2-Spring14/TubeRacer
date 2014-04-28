@@ -161,6 +161,7 @@ MonoBehaviour:
   FiringCooldown: 800
   Range: 200
   StaggerTime: 0
+  BulletOffsetRange: 25
   MyTimeScale: 7
   PathPrefab: {fileID: 100000, guid: 2ad4a42f2b95f8c458f4e481b44a85f9, type: 2}
   target: {fileID: 0}

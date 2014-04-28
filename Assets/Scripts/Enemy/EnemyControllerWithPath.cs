@@ -9,7 +9,8 @@ public class EnemyControllerWithPath : MonoBehaviour
 	public int Range = 500;
 	public int StaggerTime = 0;
 	float timer = 0;
-	 
+	public int BulletOffsetRange = 0; 
+
 	// Movement
 	//public int FollowDistance = 5000; 
 	public float MyTimeScale = 10;
@@ -115,7 +116,15 @@ public class EnemyControllerWithPath : MonoBehaviour
 		{
 			timer = FiringCooldown;
 			GameObject clone;
-			clone = Instantiate (projectile, transform.position, transform.rotation) as GameObject;
+
+			// randomize the bullet offset
+			Vector3 TempPos = transform.position;
+			TempPos.x += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.y += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.z += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			
+			// create the bullet
+			clone = Instantiate (projectile, TempPos, transform.rotation) as GameObject;
 		}
 	}
 	

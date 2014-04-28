@@ -13,6 +13,7 @@ public class TurretController : MonoBehaviour
 	public int StaggerTime = 0;
 	float timer = 0;
 	public AudioSource firingSFX;
+	public int BulletOffsetRange = 0; 
 
 	// Both
 	public SplineInterpolator Spline;
@@ -78,7 +79,16 @@ public class TurretController : MonoBehaviour
 		{
 			timer = FiringCooldown;
 			GameObject clone;
-			clone = Instantiate (projectile, transform.position, GunTransform.rotation) as GameObject;
+
+			// randomize the bullet offset
+			Vector3 TempPos = transform.position;
+			TempPos.x += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.y += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.z += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			
+			// create the bullet
+			clone = Instantiate (projectile, TempPos, GunTransform.rotation) as GameObject;
+
 			//if (!firingSFX.isPlaying)
 			firingSFX.Play ();
 			//print (firingSFX.isPlaying);

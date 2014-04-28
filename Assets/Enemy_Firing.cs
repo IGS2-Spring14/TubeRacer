@@ -12,6 +12,7 @@ public class Enemy_Firing : MonoBehaviour {
 	public GameObject targetObject;
 	private SplineInterpolator TheirSpline;
 	public float LeadTime = 0; 
+	public int BulletOffsetRange = 0; 
 
 	void Awake()
 	{
@@ -57,7 +58,15 @@ public class Enemy_Firing : MonoBehaviour {
 		{
 			timer = FiringCooldown;
 			GameObject clone;
-			clone = Instantiate (projectile, transform.position, transform.rotation) as GameObject;
+
+			// randomize the bullet offset
+			Vector3 TempPos = transform.position;
+			TempPos.x += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.y += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			TempPos.z += Random.Range(-BulletOffsetRange, BulletOffsetRange);
+			
+			// create the bullet
+			clone = Instantiate (projectile, TempPos, transform.rotation) as GameObject;
 		}
 	}
 }
