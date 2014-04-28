@@ -251,6 +251,11 @@ public class SplineInterpolator : MonoBehaviour
 					mCurrentIdx = 1;
 					mCurrentTime = 0;
 				}
+
+				// Destroy enemy ships that reach the end of their path
+				if (!AllowChangeSpeed) // if not the player
+					Destroy(this.gameObject); 
+
 			}
 		}
 
