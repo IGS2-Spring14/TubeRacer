@@ -108,7 +108,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 11213901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,7 +642,7 @@ GameObject:
   - 95: {fileID: 37020075}
   - 114: {fileID: 37020079}
   - 136: {fileID: 37020080}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -1137,7 +1137,7 @@ GameObject:
   - 95: {fileID: 83999911}
   - 114: {fileID: 83999914}
   - 136: {fileID: 83999915}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -1544,7 +1544,7 @@ GameObject:
   - 95: {fileID: 107897109}
   - 114: {fileID: 107897113}
   - 136: {fileID: 107897114}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -1713,6 +1713,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -1786,7 +1794,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 115449662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1927,7 +1935,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 138008562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1984,7 +1992,7 @@ GameObject:
   - 95: {fileID: 143638906}
   - 114: {fileID: 143638909}
   - 136: {fileID: 143638910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -2209,6 +2217,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -2511,7 +2527,7 @@ GameObject:
   - 95: {fileID: 182698072}
   - 114: {fileID: 182698075}
   - 136: {fileID: 182698076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -2653,6 +2669,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -2758,7 +2782,7 @@ GameObject:
   - 33: {fileID: 198621358}
   - 65: {fileID: 198621357}
   - 23: {fileID: 198621356}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -2912,6 +2936,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -3342,7 +3374,7 @@ GameObject:
   - 95: {fileID: 275797812}
   - 114: {fileID: 275797815}
   - 136: {fileID: 275797816}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -3458,7 +3490,7 @@ GameObject:
   - 95: {fileID: 283140510}
   - 114: {fileID: 283140514}
   - 136: {fileID: 283140515}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -3569,7 +3601,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 283376702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3705,6 +3737,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -3725,7 +3765,7 @@ GameObject:
   - 95: {fileID: 297078988}
   - 114: {fileID: 297078992}
   - 136: {fileID: 297078993}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -3862,7 +3902,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 299126692}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3892,7 +3932,7 @@ GameObject:
   - 65: {fileID: 302781888}
   - 23: {fileID: 302781887}
   - 114: {fileID: 302781891}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4014,6 +4054,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -4059,6 +4107,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -4241,7 +4297,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 345498845}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4387,7 +4443,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 347975161}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4439,7 +4495,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 357493974}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4768,7 +4824,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 371670409}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4857,7 +4913,7 @@ GameObject:
   - 95: {fileID: 374594510}
   - 114: {fileID: 374594513}
   - 136: {fileID: 374594514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -5098,7 +5154,7 @@ GameObject:
   - 33: {fileID: 394568230}
   - 65: {fileID: 394568229}
   - 23: {fileID: 394568228}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -5164,7 +5220,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401516917}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5303,7 +5359,7 @@ GameObject:
   - 95: {fileID: 417243109}
   - 114: {fileID: 417243112}
   - 136: {fileID: 417243113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -5685,7 +5741,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451034895}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5741,6 +5797,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -5917,7 +5981,7 @@ GameObject:
   - 65: {fileID: 470749274}
   - 23: {fileID: 470749273}
   - 114: {fileID: 470749277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6123,7 +6187,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496294267}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6223,7 +6287,7 @@ GameObject:
   - 65: {fileID: 506157602}
   - 23: {fileID: 506157601}
   - 114: {fileID: 506157605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6314,7 +6378,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 507438606}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6491,7 +6555,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 524447397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6522,7 +6586,7 @@ GameObject:
   - 95: {fileID: 525271754}
   - 114: {fileID: 525271758}
   - 136: {fileID: 525271759}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -6633,7 +6697,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 531216387}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6689,6 +6753,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -7053,7 +7125,7 @@ GameObject:
   - 95: {fileID: 591056377}
   - 114: {fileID: 591056380}
   - 136: {fileID: 591056381}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -7398,7 +7470,7 @@ GameObject:
   - 33: {fileID: 608939232}
   - 65: {fileID: 608939231}
   - 23: {fileID: 608939230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -7495,7 +7567,7 @@ GameObject:
   - 95: {fileID: 614375757}
   - 114: {fileID: 614375760}
   - 136: {fileID: 614375761}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -7846,7 +7918,7 @@ GameObject:
   - 95: {fileID: 655080648}
   - 114: {fileID: 655080652}
   - 136: {fileID: 655080653}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -7988,7 +8060,7 @@ GameObject:
   - 95: {fileID: 663475015}
   - 114: {fileID: 663475019}
   - 136: {fileID: 663475020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -8156,7 +8228,7 @@ GameObject:
   - 95: {fileID: 669472411}
   - 114: {fileID: 669472414}
   - 136: {fileID: 669472415}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -8298,7 +8370,7 @@ GameObject:
   - 95: {fileID: 676811346}
   - 114: {fileID: 676811350}
   - 136: {fileID: 676811351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -8949,7 +9021,7 @@ GameObject:
   - 95: {fileID: 710541520}
   - 114: {fileID: 710541523}
   - 136: {fileID: 710541524}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -9115,7 +9187,7 @@ GameObject:
   - 33: {fileID: 721505745}
   - 65: {fileID: 721505744}
   - 23: {fileID: 721505743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -9294,7 +9366,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 739900038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9320,7 +9392,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 750740438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9394,7 +9466,7 @@ GameObject:
   - 95: {fileID: 757340991}
   - 114: {fileID: 757340995}
   - 136: {fileID: 757340996}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -9593,7 +9665,7 @@ GameObject:
   - 65: {fileID: 768080151}
   - 23: {fileID: 768080150}
   - 114: {fileID: 768080154}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9798,7 +9870,7 @@ GameObject:
   - 33: {fileID: 779170778}
   - 65: {fileID: 779170777}
   - 23: {fileID: 779170776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -9915,7 +9987,7 @@ GameObject:
   - 95: {fileID: 780711000}
   - 114: {fileID: 780711004}
   - 136: {fileID: 780711005}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -10596,6 +10668,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -10641,6 +10721,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -11121,6 +11209,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: playerSFX.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11156,12 +11248,33 @@ Prefab:
     - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1498703129}
+      objectReference: {fileID: 1062481803}
     - target: {fileID: 11400028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: HitMaximum
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11400028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: DieByHit
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: Log
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: mainCam
+      value: 
+      objectReference: {fileID: 38632046}
+    - target: {fileID: 11400028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: explosion
+      value: 
+      objectReference: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
+    - target: {fileID: 11400028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: playerSFX.Array.data[1]
+      value: 
+      objectReference: {fileID: 1507478870}
+    m_RemovedComponents:
+    - {fileID: 11400030, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_RootGameObject: {fileID: 1498703126}
   m_IsPrefabParent: 0
@@ -11204,6 +11317,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -11409,7 +11530,7 @@ GameObject:
   - 95: {fileID: 875142742}
   - 114: {fileID: 875142746}
   - 136: {fileID: 875142747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -11525,7 +11646,7 @@ GameObject:
   - 95: {fileID: 875559304}
   - 114: {fileID: 875559308}
   - 136: {fileID: 875559309}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -11806,6 +11927,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -11847,7 +11976,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 932501635}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12172,7 +12301,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 950674148}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12353,6 +12482,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -12398,6 +12535,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -12530,7 +12675,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 975353202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12750,7 +12895,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 992251673}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12881,7 +13026,7 @@ GameObject:
   - 65: {fileID: 1008651785}
   - 23: {fileID: 1008651784}
   - 114: {fileID: 1008651788}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13006,6 +13151,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -13575,10 +13728,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DieByHit: 1
-  Log: 1
+  Log: 0
   EnableCollision: 1
-  HitMaximum: 3
+  HitMaximum: 2
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   playerSFX:
+  - {fileID: 1507478870}
   - {fileID: 1507478870}
 --- !u!114 &1062481804
 MonoBehaviour:
@@ -13751,6 +13906,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -13766,7 +13929,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1069899658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13849,6 +14012,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -13869,7 +14040,7 @@ GameObject:
   - 95: {fileID: 1077269557}
   - 114: {fileID: 1077269561}
   - 136: {fileID: 1077269562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -14006,7 +14177,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1093815181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14134,6 +14305,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -14463,6 +14642,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -14534,7 +14721,7 @@ GameObject:
   - 33: {fileID: 1138875634}
   - 65: {fileID: 1138875633}
   - 23: {fileID: 1138875632}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -14866,6 +15053,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -14881,7 +15076,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1163458242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15362,7 +15557,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1210640576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15485,7 +15680,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1234952523}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15516,7 +15711,7 @@ GameObject:
   - 95: {fileID: 1237355734}
   - 114: {fileID: 1237355738}
   - 136: {fileID: 1237355739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -15795,6 +15990,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -15899,6 +16102,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -15944,6 +16155,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -16216,7 +16435,7 @@ GameObject:
   - 65: {fileID: 1280028779}
   - 23: {fileID: 1280028778}
   - 114: {fileID: 1280028782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16481,7 +16700,7 @@ GameObject:
   - 95: {fileID: 1298127694}
   - 114: {fileID: 1298127697}
   - 136: {fileID: 1298127698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -16622,6 +16841,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -16900,7 +17127,7 @@ GameObject:
   - 33: {fileID: 1332218286}
   - 65: {fileID: 1332218285}
   - 23: {fileID: 1332218284}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -17405,7 +17632,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1371518463}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17463,7 +17690,7 @@ GameObject:
   - 95: {fileID: 1377308660}
   - 114: {fileID: 1377308664}
   - 136: {fileID: 1377308665}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -18186,6 +18413,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -18372,6 +18607,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -18649,6 +18892,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -18667,7 +18918,6 @@ GameObject:
   - 114: {fileID: 1498703131}
   - 114: {fileID: 1498703130}
   - 54: {fileID: 1498703128}
-  - 114: {fileID: 1498703129}
   - 114: {fileID: 1498703132}
   m_Layer: 0
   m_Name: GamePlatform
@@ -18705,24 +18955,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &1498703129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400030, guid: 24661ac4586cb491b9ea820bf0d1d851,
-    type: 2}
-  m_PrefabInternal: {fileID: 854684090}
-  m_GameObject: {fileID: 1498703126}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a24b7947d8d754bb842947adae6c90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DieByHit: 0
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
-  playerSFX:
-  - {fileID: 1507478870}
 --- !u!114 &1498703130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18782,7 +19014,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerShip: {fileID: 1062481801}
   platform: {fileID: 1498703131}
-  player: {fileID: 1498703129}
+  player: {fileID: 1062481803}
+  mainCam: {fileID: 38632046}
   button:
   - {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
   - {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
@@ -18963,6 +19196,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -19008,6 +19249,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -19749,7 +19998,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1597395999}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19775,7 +20024,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1601810570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19914,7 +20163,7 @@ GameObject:
   - 33: {fileID: 1633451861}
   - 65: {fileID: 1633451860}
   - 23: {fileID: 1633451859}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -20055,7 +20304,7 @@ GameObject:
   - 95: {fileID: 1637629682}
   - 114: {fileID: 1637629685}
   - 136: {fileID: 1637629686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -20534,7 +20783,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1685351708}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20654,7 +20903,7 @@ GameObject:
   - 95: {fileID: 1696854644}
   - 114: {fileID: 1696854648}
   - 136: {fileID: 1696854649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -20770,7 +21019,7 @@ GameObject:
   - 95: {fileID: 1698117824}
   - 114: {fileID: 1698117828}
   - 136: {fileID: 1698117829}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -21367,7 +21616,7 @@ GameObject:
   - 114: {fileID: 1772869481}
   - 114: {fileID: 1772869480}
   - 136: {fileID: 1772869482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -21692,7 +21941,7 @@ GameObject:
   - 95: {fileID: 1786750774}
   - 114: {fileID: 1786750777}
   - 136: {fileID: 1786750778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -21859,6 +22108,14 @@ Prefab:
     - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
       propertyPath: m_TagString
       value: DieWhenHit
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
@@ -22313,7 +22570,7 @@ GameObject:
   - 65: {fileID: 1829104405}
   - 23: {fileID: 1829104404}
   - 114: {fileID: 1829104408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22814,6 +23071,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -22875,7 +23140,7 @@ GameObject:
   - 33: {fileID: 1876480720}
   - 65: {fileID: 1876480719}
   - 23: {fileID: 1876480718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -22998,7 +23263,7 @@ GameObject:
   - 95: {fileID: 1896608463}
   - 114: {fileID: 1896608467}
   - 136: {fileID: 1896608468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -23109,7 +23374,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1902153943}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23224,7 +23489,7 @@ GameObject:
   - 33: {fileID: 1909813881}
   - 65: {fileID: 1909813880}
   - 23: {fileID: 1909813879}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -23451,6 +23716,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -23524,7 +23797,7 @@ GameObject:
   - 95: {fileID: 1960491274}
   - 114: {fileID: 1960491278}
   - 136: {fileID: 1960491279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -23728,7 +24001,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1969857510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23988,7 +24261,7 @@ GameObject:
   - 95: {fileID: 1998265447}
   - 114: {fileID: 1998265451}
   - 136: {fileID: 1998265452}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -24183,7 +24456,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2005776449}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &2006201785
 GameObject:
   m_ObjectHideFlags: 0
@@ -24362,7 +24635,7 @@ GameObject:
   - 65: {fileID: 2022948744}
   - 23: {fileID: 2022948743}
   - 114: {fileID: 2022948747}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24505,7 +24778,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2028064377}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24535,7 +24808,7 @@ GameObject:
   - 65: {fileID: 2030429138}
   - 23: {fileID: 2030429137}
   - 114: {fileID: 2030429141}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24754,7 +25027,7 @@ GameObject:
   - 65: {fileID: 2036248251}
   - 23: {fileID: 2036248250}
   - 114: {fileID: 2036248254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Move_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24929,7 +25202,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2054431911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25341,6 +25614,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -25387,7 +25668,7 @@ GameObject:
   - 95: {fileID: 2097536378}
   - 114: {fileID: 2097536382}
   - 136: {fileID: 2097536383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -25646,7 +25927,7 @@ GameObject:
   - 33: {fileID: 2110533664}
   - 65: {fileID: 2110533663}
   - 23: {fileID: 2110533662}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -25853,6 +26134,14 @@ Prefab:
       propertyPath: m_TagString
       value: DieWhenHit
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     - {fileID: 5400000, guid: 4752f9c4a26c5174694a90c58f65b3f1, type: 2}
@@ -25871,7 +26160,7 @@ GameObject:
   - 33: {fileID: 2129826029}
   - 65: {fileID: 2129826028}
   - 23: {fileID: 2129826027}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -25937,7 +26226,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2132074603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

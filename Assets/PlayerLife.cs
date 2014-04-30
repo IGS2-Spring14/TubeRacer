@@ -8,10 +8,12 @@ public class PlayerLife : MonoBehaviour {
 	public bool EnableCollision = true;
 	public int HitMaximum;
 	private int NumberHit = 0;
+	public Transform explosion;
+	private bool hasExploded;
 	public AudioSource [] playerSFX;
 	// Use this for initialization
 	void Start () {
-	
+		hasExploded = false;
 	}
 	
 	// Update is called once per frame
@@ -21,6 +23,11 @@ public class PlayerLife : MonoBehaviour {
 			if (NumberHit > HitMaximum)
 			{
 				//Destroy (this.gameObject);
+				if (!hasExploded)
+				{
+					Instantiate (explosion, transform.position, transform.rotation);
+					hasExploded = true;
+				}
 				Debug.Log("You died");
 			}
 		}
