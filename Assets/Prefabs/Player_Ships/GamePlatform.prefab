@@ -32,7 +32,6 @@ GameObject:
   - 114: {fileID: 11400006}
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
-  - 114: {fileID: 11400030}
   - 114: {fileID: 11400018}
   m_Layer: 0
   m_Name: GamePlatform
@@ -280,7 +279,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .00726985931, z: -7875.53564}
+  m_LocalPosition: {x: 0, y: 0, z: -7875.53564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400012}
@@ -960,6 +959,7 @@ MonoBehaviour:
   playerShip: {fileID: 100006}
   platform: {fileID: 11400006}
   player: {fileID: 11400028}
+  mainCam: {fileID: 2000000}
   button:
   - {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
   - {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
@@ -1048,27 +1048,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DieByHit: 1
-  Log: 1
+  Log: 0
   EnableCollision: 1
-  HitMaximum: 1
+  HitMaximum: 2
+  explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   playerSFX:
   - {fileID: 8200000}
---- !u!114 &11400030
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0a24b7947d8d754bb842947adae6c90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DieByHit: 0
-  Log: 1
-  EnableCollision: 1
-  HitMaximum: 1
-  playerSFX:
   - {fileID: 8200000}
 --- !u!124 &12400000
 Behaviour:
