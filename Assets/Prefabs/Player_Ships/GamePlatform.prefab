@@ -904,7 +904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 100
