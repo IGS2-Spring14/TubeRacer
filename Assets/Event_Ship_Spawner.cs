@@ -24,7 +24,7 @@ public class Event_Ship_Spawner : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider myCollider)
 	{
-		if (myCollider.gameObject.name == "GamePlatform" && !IsTriggered)
+		if (myCollider.gameObject.name == "PlayerShip" && !IsTriggered)
 		{
 			Debug.Log ("Event Triggered");
 			IsTriggered = true;
