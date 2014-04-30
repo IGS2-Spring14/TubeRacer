@@ -35,9 +35,11 @@ public class RS_StopShipOnDeath : MonoBehaviour {
 			backRotation.SetLookRotation (playerShip.transform.forward * -1, playerShip.transform.up);
 		//}
 
+		//Stops game platform and creates restart/quit buttons
 		if (player.GetHitNumber () > player.HitMaximum && !buttonsExist) {
 			//Stops the player ship form moving
 			platform.StopShip = true;
+			mainCam.cullingMask &= ~(1 << LayerMask.NameToLayer ("Debris"));
 
 			//Creats restart/quit buttons
 			if (platform.StopShip){
