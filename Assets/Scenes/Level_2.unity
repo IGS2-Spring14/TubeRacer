@@ -1494,6 +1494,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 600
   firingSFX: {fileID: 1154804022}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -1707,6 +1708,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 100
   firingSFX: {fileID: 1154804022}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -2142,6 +2144,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 700
   firingSFX: {fileID: 232103182}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -4376,6 +4379,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 200
   firingSFX: {fileID: 1154804022}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -6560,6 +6564,60 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1042430903}
+--- !u!1 &267639337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+  m_PrefabInternal: {fileID: 1286841007}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 267639340}
+  - 65: {fileID: 267639339}
+  - 114: {fileID: 267639338}
+  m_Layer: 0
+  m_Name: NextLevelTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &267639338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: fd131f49320c6d54d853ac638a2f3f8d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1286841007}
+  m_GameObject: {fileID: 267639337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8703b548d0da3418927cf081220898, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Level_3
+--- !u!65 &267639339
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: fd131f49320c6d54d853ac638a2f3f8d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1286841007}
+  m_GameObject: {fileID: 267639337}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10000, y: 10000, z: 10000}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &267639340
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+  m_PrefabInternal: {fileID: 1286841007}
+  m_GameObject: {fileID: 267639337}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10534, y: -18030, z: 78385}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &268932724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6623,6 +6681,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 273756269}
   - 114: {fileID: 273756270}
+  - 136: {fileID: 1747417774}
+  - 114: {fileID: 1747417776}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: PlayerShip
@@ -6640,11 +6700,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1115642231}
   - {fileID: 2000452110}
   - {fileID: 1367977157}
   - {fileID: 248828035}
   - {fileID: 1877069803}
+  - {fileID: 1189355367}
   - {fileID: 425301328}
   m_Father: {fileID: 1747417772}
 --- !u!114 &273756270
@@ -7177,6 +7237,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1432149110}
@@ -7265,7 +7326,7 @@ SphereCollider:
   m_GameObject: {fileID: 296391694}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -8920,6 +8981,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 500
   firingSFX: {fileID: 1154804022}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -11796,6 +11858,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1769619537}
@@ -11869,7 +11932,7 @@ SphereCollider:
   m_GameObject: {fileID: 501480541}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -12233,6 +12296,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 288314327}
@@ -12306,7 +12370,7 @@ SphereCollider:
   m_GameObject: {fileID: 513413862}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -13656,6 +13720,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 907419892}
@@ -13742,7 +13807,7 @@ SphereCollider:
   m_GameObject: {fileID: 549227907}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -13937,6 +14002,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 700
   firingSFX: {fileID: 1154804022}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -14977,6 +15043,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1460625658}
@@ -15063,7 +15130,7 @@ SphereCollider:
   m_GameObject: {fileID: 603121949}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -17707,6 +17774,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 722652634}
@@ -17793,7 +17861,7 @@ SphereCollider:
   m_GameObject: {fileID: 700433766}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -20994,6 +21062,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 400
   firingSFX: {fileID: 1154804022}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -23324,7 +23393,6 @@ GameObject:
   - 4: {fileID: 922468618}
   - 20: {fileID: 922468623}
   - 124: {fileID: 922468622}
-  - 81: {fileID: 922468621}
   - 114: {fileID: 922468620}
   - 114: {fileID: 922468619}
   - 114: {fileID: 922468625}
@@ -23380,14 +23448,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NeckPosition: {x: 0, y: .600000024, z: 0}
   EyePosition: {x: 0, y: .150000006, z: .0900000036}
---- !u!81 &922468621
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8100002, guid: 24661ac4586cb491b9ea820bf0d1d851,
-    type: 2}
-  m_PrefabInternal: {fileID: 2022889660}
-  m_GameObject: {fileID: 922468617}
-  m_Enabled: 1
 --- !u!124 &922468622
 Behaviour:
   m_ObjectHideFlags: 0
@@ -25354,6 +25414,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 483227894}
@@ -25427,7 +25488,7 @@ SphereCollider:
   m_GameObject: {fileID: 993678505}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -27734,7 +27795,7 @@ Transform:
   m_GameObject: {fileID: 1089781954}
   m_LocalRotation: {x: 0, y: .499999374, z: 0, w: .866025805}
   m_LocalPosition: {x: 38847.9219, y: -21404.7422, z: -42006.0625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .199999988}
   m_Children:
   - {fileID: 218147247}
   - {fileID: 458170501}
@@ -27752,14 +27813,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
-  FiringCooldown: 500
+  FiringCooldown: 1000
   Range: 6000
-  FollowDistance: 5000
+  FollowDistance: 2100
   MyTimeScale: 10
   PositionOffsetX: 0
   PositionOffsetY: 0
-  PositionOffsetZ: 0
-  RandomizeOffset: 1
+  PositionOffsetZ: -100
+  RandomizeOffset: 0
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 218147248}
@@ -27818,10 +27880,10 @@ MonoBehaviour:
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
-  DefaultSpeed: 6.80000019
+  DefaultSpeed: 15
   TimeScale: 15
   boostDecayRate: 1.5
-  mState: 
+  mState: Loop
   mCurrentTime: 0
   mCurrentIdx: 1
 --- !u!114 &1089781960
@@ -27848,7 +27910,7 @@ SphereCollider:
   m_GameObject: {fileID: 1089781954}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 850
   m_Center: {x: 0, y: 0, z: 0}
@@ -28401,8 +28463,9 @@ GameObject:
   - 4: {fileID: 1115642231}
   - 33: {fileID: 1747417771}
   - 23: {fileID: 1747417770}
+  - 95: {fileID: 1115642232}
   m_Layer: 0
-  m_Name: vehicle_playerShip
+  m_Name: Player_Standard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28414,11 +28477,26 @@ Transform:
   m_PrefabParentObject: {fileID: 400010, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_PrefabInternal: {fileID: 2022889660}
   m_GameObject: {fileID: 1115642230}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.43051144e-08, y: .0829431489, z: .019070778}
+  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 273756269}
+  m_Father: {fileID: 1189355367}
+--- !u!95 &1115642232
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 24661ac4586cb491b9ea820bf0d1d851,
+    type: 2}
+  m_PrefabInternal: {fileID: 2022889660}
+  m_GameObject: {fileID: 1115642230}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0ab6b92aaa5c58b409b88a147c5e2369, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1117470902
 GameObject:
   m_ObjectHideFlags: 0
@@ -28508,6 +28586,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 300
   firingSFX: {fileID: 1154804022}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -29119,6 +29198,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 600
   firingSFX: {fileID: 232103182}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -29641,6 +29721,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1956267474}
@@ -29714,7 +29795,7 @@ SphereCollider:
   m_GameObject: {fileID: 1143319798}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -30967,6 +31048,33 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1261952229}
+--- !u!1 &1189355366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+  m_PrefabInternal: {fileID: 2022889660}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1189355367}
+  m_Layer: 0
+  m_Name: Player_Standard_Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1189355367
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+  m_PrefabInternal: {fileID: 2022889660}
+  m_GameObject: {fileID: 1189355366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.0928326696, z: .00634765625}
+  m_LocalScale: {x: .00206545368, y: .00206545368, z: .00206545368}
+  m_Children:
+  - {fileID: 1115642231}
+  m_Father: {fileID: 273756269}
 --- !u!1 &1189971198
 GameObject:
   m_ObjectHideFlags: 0
@@ -31583,6 +31691,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 100
   firingSFX: {fileID: 232103182}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -33614,6 +33723,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 399363785}
@@ -33687,7 +33797,7 @@ SphereCollider:
   m_GameObject: {fileID: 1267553270}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -34104,6 +34214,50 @@ Transform:
   m_Children:
   - {fileID: 855969209}
   m_Father: {fileID: 732768437}
+--- !u!1001 &1286841007
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -10534
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -18030
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 78385
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+      propertyPath: SceneName
+      value: Level_3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fd131f49320c6d54d853ac638a2f3f8d, type: 2}
+  m_RootGameObject: {fileID: 267639337}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1288778970
 GameObject:
   m_ObjectHideFlags: 0
@@ -34166,6 +34320,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 500
   firingSFX: {fileID: 232103182}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -36031,7 +36186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1367977157
 Transform:
   m_ObjectHideFlags: 0
@@ -36057,7 +36212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SplineRoot: {fileID: 249607706}
   MyCamera: {fileID: 0}
-  Duration: 720
+  Duration: 300
   OrientationMode: 1
   WrapMode: 1
   AutoStart: 1
@@ -36155,6 +36310,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 655240291}
@@ -36228,7 +36384,7 @@ SphereCollider:
   m_GameObject: {fileID: 1368230010}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -37204,6 +37360,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 400
   firingSFX: {fileID: 232103182}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -38644,7 +38801,7 @@ Transform:
   m_GameObject: {fileID: 1466985326}
   m_LocalRotation: {x: 0, y: .499999374, z: 0, w: .866025805}
   m_LocalPosition: {x: 49009.8359, y: -16320.7236, z: -42006.0625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .199999988}
   m_Children:
   - {fileID: 572594718}
   - {fileID: 1087926505}
@@ -38664,12 +38821,13 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 500
   Range: 6000
-  FollowDistance: 5000
+  FollowDistance: 2100
   MyTimeScale: 10
   PositionOffsetX: 0
   PositionOffsetY: 0
-  PositionOffsetZ: 0
-  RandomizeOffset: 1
+  PositionOffsetZ: -100
+  RandomizeOffset: 0
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 572594719}
@@ -38728,10 +38886,10 @@ MonoBehaviour:
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
-  DefaultSpeed: 6.80000019
+  DefaultSpeed: 15
   TimeScale: 15
   boostDecayRate: 1.5
-  mState: 
+  mState: Loop
   mCurrentTime: 0
   mCurrentIdx: 1
 --- !u!135 &1466985332
@@ -38743,7 +38901,7 @@ SphereCollider:
   m_GameObject: {fileID: 1466985326}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 850
   m_Center: {x: 0, y: 0, z: 0}
@@ -39301,6 +39459,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 1154804022}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -41806,6 +41965,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 820632382}
@@ -41879,7 +42039,7 @@ SphereCollider:
   m_GameObject: {fileID: 1608963629}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -42722,6 +42882,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 660319203}
@@ -42795,7 +42956,7 @@ SphereCollider:
   m_GameObject: {fileID: 1651963396}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -45026,9 +45187,7 @@ GameObject:
   - 4: {fileID: 1747417772}
   - 114: {fileID: 1747417773}
   - 114: {fileID: 1367977158}
-  - 136: {fileID: 1747417774}
   - 54: {fileID: 1747417775}
-  - 114: {fileID: 1747417776}
   m_Layer: 0
   m_Name: GamePlatform
   m_TagString: Player
@@ -45049,8 +45208,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 8940b037a9b441c4cbd3d2b446838424, type: 2}
-  - {fileID: 2100000, guid: f36c72c738c55f741afcd674a0b1245f, type: 2}
+  - {fileID: 2100000, guid: 7db1f7a618223ea46b7b9d1344c2f83c, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -45066,7 +45224,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 2022889660}
   m_GameObject: {fileID: 1115642230}
-  m_Mesh: {fileID: 4300002, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 0ab6b92aaa5c58b409b88a147c5e2369, type: 3}
 --- !u!4 &1747417772
 Transform:
   m_ObjectHideFlags: 0
@@ -45094,13 +45252,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 100
-  DefaultSpeed: 10
+  DefaultSpeed: 4
   TimeScale: 3
-  boostDecayRate: 1
+  boostDecayRate: .810000002
   mState: Loop
   mCurrentTime: 0
   mCurrentIdx: 1
@@ -45110,14 +45268,14 @@ CapsuleCollider:
   m_PrefabParentObject: {fileID: 13600000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
   m_PrefabInternal: {fileID: 2022889660}
-  m_GameObject: {fileID: 1747417769}
+  m_GameObject: {fileID: 273756268}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 500
-  m_Height: 10.8699999
+  m_Radius: .479999989
+  m_Height: 1.80999994
   m_Direction: 2
-  m_Center: {x: .00999999978, y: -.140000001, z: 0}
+  m_Center: {x: .00999999978, y: .0199999996, z: -.0399999991}
 --- !u!54 &1747417775
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -45140,7 +45298,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
   m_PrefabInternal: {fileID: 2022889660}
-  m_GameObject: {fileID: 1747417769}
+  m_GameObject: {fileID: 273756268}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0a24b7947d8d754bb842947adae6c90, type: 3}
@@ -46426,6 +46584,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 232103182}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -46626,6 +46785,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1861022939}
@@ -46699,7 +46859,7 @@ SphereCollider:
   m_GameObject: {fileID: 1780456526}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
@@ -47612,6 +47772,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 300
   firingSFX: {fileID: 232103182}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -49330,7 +49491,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1877069803
 Transform:
   m_ObjectHideFlags: 0
@@ -49602,6 +49763,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 200
   firingSFX: {fileID: 232103182}
+  BulletOffsetRange: 0
   Spline: {fileID: 0}
   Range: 10000
   LeadTime: 1
@@ -50891,7 +51053,7 @@ Transform:
   m_GameObject: {fileID: 1972513758}
   m_LocalRotation: {x: 0, y: .793352544, z: 0, w: .608762503}
   m_LocalPosition: {x: 15403.1553, y: -19576.0781, z: -40690.3867}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .200000003, y: .200000003, z: .199999988}
   m_Children:
   - {fileID: 1522310913}
   - {fileID: 1799120906}
@@ -50911,12 +51073,13 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 500
   Range: 6000
-  FollowDistance: 5000
+  FollowDistance: 2100
   MyTimeScale: 10
   PositionOffsetX: 0
   PositionOffsetY: 0
-  PositionOffsetZ: 0
-  RandomizeOffset: 1
+  PositionOffsetZ: -100
+  RandomizeOffset: 0
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1522310912}
@@ -50975,10 +51138,10 @@ MonoBehaviour:
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 250
-  DefaultSpeed: 6.80000019
+  DefaultSpeed: 15
   TimeScale: 15
   boostDecayRate: 1.5
-  mState: 
+  mState: Loop
   mCurrentTime: 0
   mCurrentIdx: 1
 --- !u!135 &1972513764
@@ -50990,7 +51153,7 @@ SphereCollider:
   m_GameObject: {fileID: 1972513758}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 850
   m_Center: {x: 0, y: 0, z: 0}
@@ -51827,6 +51990,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 1
+  BulletOffsetRange: 500
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 785211232}
@@ -51900,7 +52064,7 @@ SphereCollider:
   m_GameObject: {fileID: 1999717098}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 600
   m_Center: {x: 0, y: 0, z: 0}
