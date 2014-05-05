@@ -64,4 +64,8 @@ public class PlayerLife : MonoBehaviour {
 				Debug.Log ("Player hit " + collision.ToString () + ".");
 		}
 	}
+
+	public int GetHitNumber () {
+		return NumberHit;
+	}
 }

@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 136: {fileID: 13600000}
   - 54: {fileID: 5400000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: FrigatePrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400002}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Line007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400004}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bone002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400006}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RotatorBone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400008}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Group004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400010}
   - 137: {fileID: 13700000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Frigate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400014}
   - 111: {fileID: 11100000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Frigate_Mather_Animated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - 4: {fileID: 400016}
   - 198: {fileID: 19800000}
   - 199: {fileID: 19900000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - 4: {fileID: 400018}
   - 198: {fileID: 19800002}
   - 199: {fileID: 19900002}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - 4: {fileID: 400020}
   - 198: {fileID: 19800004}
   - 199: {fileID: 19900004}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - 4: {fileID: 400022}
   - 198: {fileID: 19800006}
   - 199: {fileID: 19900006}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   - 4: {fileID: 400024}
   - 198: {fileID: 19800008}
   - 199: {fileID: 19900008}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   - 4: {fileID: 400026}
   - 198: {fileID: 19800010}
   - 199: {fileID: 19900010}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -237,7 +237,7 @@ GameObject:
   - 4: {fileID: 400028}
   - 198: {fileID: 19800012}
   - 199: {fileID: 19900012}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - 4: {fileID: 400030}
   - 198: {fileID: 19800014}
   - 199: {fileID: 19900014}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   - 4: {fileID: 400032}
   - 198: {fileID: 19800016}
   - 199: {fileID: 19900016}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   - 4: {fileID: 400034}
   - 198: {fileID: 19800018}
   - 199: {fileID: 19900018}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - 4: {fileID: 400036}
   - 198: {fileID: 19800020}
   - 199: {fileID: 19900020}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - 4: {fileID: 400038}
   - 198: {fileID: 19800022}
   - 199: {fileID: 19900022}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   - 4: {fileID: 400040}
   - 198: {fileID: 19800024}
   - 199: {fileID: 19900024}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   - 4: {fileID: 400042}
   - 198: {fileID: 19800026}
   - 199: {fileID: 19900026}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   - 4: {fileID: 400044}
   - 198: {fileID: 19800028}
   - 199: {fileID: 19900028}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,7 +390,7 @@ GameObject:
   - 4: {fileID: 400046}
   - 198: {fileID: 19800030}
   - 199: {fileID: 19900030}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   - 4: {fileID: 400048}
   - 198: {fileID: 19800032}
   - 199: {fileID: 19900032}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   - 4: {fileID: 400050}
   - 198: {fileID: 19800034}
   - 199: {fileID: 19900034}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   - 4: {fileID: 400052}
   - 198: {fileID: 19800036}
   - 199: {fileID: 19900036}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   - 4: {fileID: 400054}
   - 198: {fileID: 19800038}
   - 199: {fileID: 19900038}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400056}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Thrusters particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

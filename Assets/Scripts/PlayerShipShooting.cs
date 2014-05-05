@@ -8,6 +8,7 @@ public class PlayerShipShooting : MonoBehaviour
 	public float ReticleDistance = 1000;
 	public bool OculusAim = false;
 	public bool ShootDebug = false;
+	public AudioSource sfx;
 
 	private Transform ship;
 	private Vector3 target;
@@ -56,6 +57,7 @@ public class PlayerShipShooting : MonoBehaviour
 		Vector3 offset = new Vector3(0, -25, 200);
         GameObject clone;
         clone = Instantiate(projectile, Camera.main.transform.position + offset, Quaternion.LookRotation(relpos)) as GameObject;	
+		sfx.Play ();
 	}
 
 	//update aiming for the non-oculus version

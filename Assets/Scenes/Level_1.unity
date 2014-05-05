@@ -108,7 +108,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 11213901}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - 54: {fileID: 12480906}
   - 114: {fileID: 12480904}
   - 136: {fileID: 12480905}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Space_Junk_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   - 4: {fileID: 13249912}
   - 33: {fileID: 13249914}
   - 23: {fileID: 13249913}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   - 4: {fileID: 18750027}
   - 33: {fileID: 18750029}
   - 23: {fileID: 18750028}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ GameObject:
   - 4: {fileID: 21209601}
   - 33: {fileID: 21209603}
   - 23: {fileID: 21209602}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ GameObject:
   - 4: {fileID: 22401022}
   - 33: {fileID: 22401024}
   - 23: {fileID: 22401023}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +622,7 @@ GameObject:
   - 4: {fileID: 22595788}
   - 33: {fileID: 22595790}
   - 23: {fileID: 22595789}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +683,7 @@ GameObject:
   - 95: {fileID: 37020075}
   - 114: {fileID: 37020079}
   - 136: {fileID: 37020080}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -836,7 +836,7 @@ Animator:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 38632039}
@@ -857,7 +857,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 38632038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: .409362316, z: -.812704682}
@@ -869,7 +869,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400008, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 38632038}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -883,7 +883,7 @@ Skybox:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4500000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 38632038}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: b749987e0735540be824d5432955915d, type: 2}
@@ -892,7 +892,7 @@ AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 8100000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 38632038}
   m_Enabled: 0
 --- !u!92 &38632044
@@ -900,7 +900,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9200000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 38632038}
   m_Enabled: 1
 --- !u!124 &38632045
@@ -908,7 +908,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 12400000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 38632038}
   m_Enabled: 1
 --- !u!20 &38632046
@@ -916,7 +916,7 @@ Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2000000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 38632038}
   m_Enabled: 1
   serializedVersion: 2
@@ -1077,7 +1077,7 @@ GameObject:
   - 54: {fileID: 78016167}
   - 114: {fileID: 78016165}
   - 136: {fileID: 78016166}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Space_Junk_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -1194,7 +1194,7 @@ GameObject:
   - 114: {fileID: 83999914}
   - 136: {fileID: 83999916}
   - 136: {fileID: 83999915}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -1321,7 +1321,7 @@ GameObject:
   - 4: {fileID: 87984131}
   - 33: {fileID: 87984133}
   - 23: {fileID: 87984132}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1451,7 +1451,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 96119762}
@@ -1462,12 +1462,12 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &96119762
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 96119761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -.0199999996, y: -5.98000002, z: .560000002}
@@ -1480,7 +1480,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400010, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 96119761}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -1540,7 +1540,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 102744153}
   - 111: {fileID: 102744154}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RotationTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1616,7 +1616,7 @@ GameObject:
   - 114: {fileID: 107897113}
   - 136: {fileID: 107897115}
   - 136: {fileID: 107897114}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -1816,7 +1816,7 @@ GameObject:
   - 4: {fileID: 113596095}
   - 33: {fileID: 113596097}
   - 23: {fileID: 113596096}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1872,7 +1872,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 115449662}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1920,7 +1920,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100004, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 125228942}
@@ -1936,7 +1936,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400004, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 125228941}
   m_LocalRotation: {x: -.0348994955, y: 0, z: 0, w: .999390841}
   m_LocalPosition: {x: .153216958, y: .0842921287, z: .204199851}
@@ -1948,7 +1948,7 @@ Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 10800000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 125228941}
   m_Enabled: 1
   serializedVersion: 3
@@ -1987,7 +1987,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 132659637}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2013,7 +2013,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 138008562}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2071,7 +2071,7 @@ GameObject:
   - 114: {fileID: 143638909}
   - 136: {fileID: 143638911}
   - 136: {fileID: 143638910}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -2198,7 +2198,7 @@ GameObject:
   - 4: {fileID: 144554335}
   - 33: {fileID: 144554337}
   - 23: {fileID: 144554336}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2510,7 +2510,7 @@ GameObject:
   - 4: {fileID: 178536608}
   - 33: {fileID: 178536610}
   - 23: {fileID: 178536609}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2617,7 +2617,7 @@ GameObject:
   - 114: {fileID: 182698075}
   - 136: {fileID: 182698077}
   - 136: {fileID: 182698076}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -2817,7 +2817,7 @@ GameObject:
   - 4: {fileID: 194780520}
   - 33: {fileID: 194780522}
   - 23: {fileID: 194780521}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2905,7 +2905,7 @@ GameObject:
   - 33: {fileID: 198621358}
   - 65: {fileID: 198621357}
   - 23: {fileID: 198621356}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -2967,7 +2967,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100010, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 205999682}
@@ -2987,7 +2987,7 @@ Animator:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9500000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 205999678}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 0ab6b92aaa5c58b409b88a147c5e2369, type: 3}
@@ -3001,7 +3001,7 @@ Renderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2300000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 205999678}
   m_Enabled: 1
   m_CastShadows: 1
@@ -3023,14 +3023,14 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 3300000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 205999678}
   m_Mesh: {fileID: 4300000, guid: 0ab6b92aaa5c58b409b88a147c5e2369, type: 3}
 --- !u!4 &205999682
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400010, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 205999678}
   m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -3047,7 +3047,7 @@ GameObject:
   - 4: {fileID: 207202481}
   - 33: {fileID: 207202483}
   - 23: {fileID: 207202482}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3232,7 +3232,7 @@ GameObject:
   - 4: {fileID: 237583181}
   - 33: {fileID: 237583180}
   - 23: {fileID: 237583179}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3388,7 +3388,7 @@ GameObject:
   - 4: {fileID: 255277944}
   - 33: {fileID: 255277946}
   - 23: {fileID: 255277945}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3472,7 +3472,7 @@ GameObject:
   - 4: {fileID: 257286949}
   - 33: {fileID: 257286951}
   - 23: {fileID: 257286950}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3617,7 +3617,7 @@ GameObject:
   - 114: {fileID: 275797815}
   - 136: {fileID: 275797817}
   - 136: {fileID: 275797816}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -3748,7 +3748,7 @@ GameObject:
   - 114: {fileID: 283140514}
   - 136: {fileID: 283140516}
   - 136: {fileID: 283140515}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -3873,7 +3873,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 283376702}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4030,7 +4030,7 @@ GameObject:
   - 114: {fileID: 297078992}
   - 136: {fileID: 297078994}
   - 136: {fileID: 297078993}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -4181,7 +4181,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 299126692}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4604,7 +4604,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 345498845}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4626,7 +4626,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 347614318}
@@ -4647,7 +4647,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400004, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 347614311}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4659,12 +4659,13 @@ MonoBehaviour:
   ReticleDistance: 1000
   OculusAim: 1
   ShootDebug: 0
+  sfx: {fileID: 0}
 --- !u!114 &347614314
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400014, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 347614311}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4683,7 +4684,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400016, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 347614311}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -4697,7 +4698,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 12400004, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 347614311}
   m_Enabled: 1
 --- !u!20 &347614317
@@ -4705,7 +4706,7 @@ Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2000004, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 347614311}
   m_Enabled: 1
   serializedVersion: 2
@@ -4734,7 +4735,7 @@ Camera:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 347614311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -4750,7 +4751,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 347975161}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4802,7 +4803,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 357493974}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4857,7 +4858,7 @@ GameObject:
   - 4: {fileID: 361298850}
   - 33: {fileID: 361298852}
   - 23: {fileID: 361298851}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4959,7 +4960,7 @@ GameObject:
   - 4: {fileID: 366316721}
   - 33: {fileID: 366316723}
   - 23: {fileID: 366316722}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5017,7 +5018,7 @@ GameObject:
   - 4: {fileID: 368580762}
   - 33: {fileID: 368580764}
   - 23: {fileID: 368580763}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5075,7 +5076,7 @@ GameObject:
   - 4: {fileID: 371341052}
   - 33: {fileID: 371341054}
   - 23: {fileID: 371341053}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5131,7 +5132,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 371670409}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5159,7 +5160,7 @@ GameObject:
   - 4: {fileID: 373424095}
   - 33: {fileID: 373424097}
   - 23: {fileID: 373424096}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5221,7 +5222,7 @@ GameObject:
   - 114: {fileID: 374594513}
   - 136: {fileID: 374594515}
   - 136: {fileID: 374594514}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -5368,7 +5369,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100024, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 393568712}
@@ -5387,7 +5388,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400024, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 393568711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -5399,7 +5400,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400024, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 393568711}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5418,7 +5419,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400026, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 393568711}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -5432,7 +5433,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 12400006, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 393568711}
   m_Enabled: 1
 --- !u!20 &393568716
@@ -5440,7 +5441,7 @@ Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2000006, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 393568711}
   m_Enabled: 1
   serializedVersion: 2
@@ -5476,7 +5477,7 @@ GameObject:
   - 33: {fileID: 394568230}
   - 65: {fileID: 394568229}
   - 23: {fileID: 394568228}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -5542,7 +5543,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401516917}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5596,7 +5597,7 @@ GameObject:
   - 4: {fileID: 412520683}
   - 33: {fileID: 412520685}
   - 23: {fileID: 412520684}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5712,7 +5713,7 @@ GameObject:
   - 114: {fileID: 417243112}
   - 136: {fileID: 417243114}
   - 136: {fileID: 417243113}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -5839,7 +5840,7 @@ GameObject:
   - 4: {fileID: 424597727}
   - 33: {fileID: 424597729}
   - 23: {fileID: 424597728}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5994,7 +5995,7 @@ GameObject:
   - 4: {fileID: 447749558}
   - 33: {fileID: 447749560}
   - 23: {fileID: 447749559}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6052,7 +6053,7 @@ GameObject:
   - 4: {fileID: 449218845}
   - 33: {fileID: 449218847}
   - 23: {fileID: 449218846}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6108,7 +6109,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451034895}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6254,7 +6255,7 @@ GameObject:
   - 4: {fileID: 468657579}
   - 33: {fileID: 468657581}
   - 23: {fileID: 468657580}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6432,7 +6433,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 478030021}
   - 137: {fileID: 478030022}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cylinder003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6600,7 +6601,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496294267}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6791,7 +6792,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 507438606}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6819,7 +6820,7 @@ GameObject:
   - 4: {fileID: 507457965}
   - 33: {fileID: 507457967}
   - 23: {fileID: 507457966}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6960,74 +6961,6 @@ MonoBehaviour:
   - {fileID: 1130474898}
   - {fileID: 168211297}
   - {fileID: 168211297}
---- !u!1001 &519218638
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: playerSFX.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .00726985931
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -7875.53564
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: SplineRoot
-      value: 
-      objectReference: {fileID: 806749885}
-    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: playerSFX.Array.data[0]
-      value: 
-      objectReference: {fileID: 1507478870}
-    - target: {fileID: 100028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: maxAltitude
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: minAltitude
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-      propertyPath: altitude
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_RootGameObject: {fileID: 1498703126}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &524447396
 GameObject:
   m_ObjectHideFlags: 0
@@ -7036,7 +6969,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 524447397}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7068,7 +7001,7 @@ GameObject:
   - 114: {fileID: 525271758}
   - 136: {fileID: 525271760}
   - 136: {fileID: 525271759}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -7193,7 +7126,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 531216387}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7297,7 +7230,7 @@ GameObject:
   - 114: {fileID: 546539602}
   - 114: {fileID: 546539601}
   - 136: {fileID: 546539603}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Space_Junk_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -7632,7 +7565,7 @@ GameObject:
   - 114: {fileID: 591056380}
   - 136: {fileID: 591056382}
   - 136: {fileID: 591056381}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -7814,7 +7747,7 @@ GameObject:
   - 4: {fileID: 597052005}
   - 33: {fileID: 597052007}
   - 23: {fileID: 597052006}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7981,7 +7914,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 603537248}
   - 137: {fileID: 603537249}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cylinder003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8046,7 +7979,7 @@ GameObject:
   - 33: {fileID: 608939232}
   - 65: {fileID: 608939231}
   - 23: {fileID: 608939230}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -8144,7 +8077,7 @@ GameObject:
   - 114: {fileID: 614375760}
   - 136: {fileID: 614375762}
   - 136: {fileID: 614375761}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -8448,7 +8381,7 @@ GameObject:
   - 4: {fileID: 635535636}
   - 33: {fileID: 635535638}
   - 23: {fileID: 635535637}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8510,7 +8443,7 @@ GameObject:
   - 114: {fileID: 655080652}
   - 136: {fileID: 655080654}
   - 136: {fileID: 655080653}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -8707,7 +8640,7 @@ GameObject:
   - 114: {fileID: 663475019}
   - 136: {fileID: 663475021}
   - 136: {fileID: 663475020}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -8890,7 +8823,7 @@ GameObject:
   - 114: {fileID: 669472414}
   - 136: {fileID: 669472416}
   - 136: {fileID: 669472415}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -9047,7 +8980,7 @@ GameObject:
   - 114: {fileID: 676811350}
   - 136: {fileID: 676811352}
   - 136: {fileID: 676811351}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -9174,7 +9107,7 @@ GameObject:
   - 4: {fileID: 677314292}
   - 33: {fileID: 677314291}
   - 23: {fileID: 677314290}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9256,7 +9189,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 681259238}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9284,7 +9217,7 @@ GameObject:
   - 4: {fileID: 692145399}
   - 33: {fileID: 692145401}
   - 23: {fileID: 692145400}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9342,7 +9275,7 @@ GameObject:
   - 4: {fileID: 692902059}
   - 33: {fileID: 692902061}
   - 23: {fileID: 692902060}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9527,7 +9460,7 @@ GameObject:
   - 4: {fileID: 698623080}
   - 33: {fileID: 698623082}
   - 23: {fileID: 698623081}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9721,7 +9654,7 @@ GameObject:
   - 114: {fileID: 710541523}
   - 136: {fileID: 710541525}
   - 136: {fileID: 710541524}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -9901,7 +9834,7 @@ GameObject:
   - 33: {fileID: 721505745}
   - 65: {fileID: 721505744}
   - 23: {fileID: 721505743}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -10080,7 +10013,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 739900038}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10098,6 +10031,54 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 875559307}
+--- !u!1001 &745115665
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .00726985931
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7875.53564
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: SplineRoot
+      value: 
+      objectReference: {fileID: 806749885}
+    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: HitMaximum
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+  m_RootGameObject: {fileID: 1498703126}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &750740437
 GameObject:
   m_ObjectHideFlags: 0
@@ -10106,7 +10087,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 750740438}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10181,7 +10162,7 @@ GameObject:
   - 114: {fileID: 757340995}
   - 136: {fileID: 757340997}
   - 136: {fileID: 757340996}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -10308,7 +10289,7 @@ GameObject:
   - 4: {fileID: 757912762}
   - 33: {fileID: 757912764}
   - 23: {fileID: 757912763}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10360,7 +10341,7 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100022, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 758869698}
@@ -10375,7 +10356,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400022, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 758869697}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.0928326696, z: .00634765625}
@@ -10512,7 +10493,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 776092910}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Trap_Rotation_Prefab
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -10567,7 +10548,7 @@ GameObject:
   - 4: {fileID: 777954933}
   - 33: {fileID: 777954935}
   - 23: {fileID: 777954934}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10626,7 +10607,7 @@ GameObject:
   - 33: {fileID: 779170778}
   - 65: {fileID: 779170777}
   - 23: {fileID: 779170776}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -10698,7 +10679,7 @@ GameObject:
   - 114: {fileID: 780711004}
   - 136: {fileID: 780711006}
   - 136: {fileID: 780711005}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -10914,7 +10895,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100012, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 789470390}
@@ -10933,7 +10914,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400012, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 789470389}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
@@ -10945,7 +10926,7 @@ Skybox:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 4500002, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 789470389}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: b749987e0735540be824d5432955915d, type: 2}
@@ -10954,7 +10935,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 12400002, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 789470389}
   m_Enabled: 1
 --- !u!92 &789470393
@@ -10962,7 +10943,7 @@ Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 9200002, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 789470389}
   m_Enabled: 1
 --- !u!20 &789470394
@@ -10970,7 +10951,7 @@ Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 2000002, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 789470389}
   m_Enabled: 1
   serializedVersion: 2
@@ -11459,7 +11440,7 @@ GameObject:
   - 114: {fileID: 823733301}
   - 114: {fileID: 823733299}
   - 136: {fileID: 823733302}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Space_Junk_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -11597,7 +11578,7 @@ GameObject:
   - 4: {fileID: 824720022}
   - 33: {fileID: 824720024}
   - 23: {fileID: 824720023}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11655,7 +11636,7 @@ GameObject:
   - 4: {fileID: 834038791}
   - 33: {fileID: 834038793}
   - 23: {fileID: 834038792}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11713,7 +11694,7 @@ GameObject:
   - 4: {fileID: 844752240}
   - 33: {fileID: 844752242}
   - 23: {fileID: 844752241}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11981,7 +11962,7 @@ GameObject:
   - 4: {fileID: 868760843}
   - 33: {fileID: 868760845}
   - 23: {fileID: 868760844}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12059,7 +12040,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100020, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 869476779}
@@ -12076,7 +12057,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400020, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 869476778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 6.69999981, z: -.769999981}
@@ -12090,7 +12071,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400020, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 869476778}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -12104,7 +12085,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400022, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 869476778}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -12169,7 +12150,7 @@ GameObject:
   - 114: {fileID: 875142746}
   - 136: {fileID: 875142748}
   - 136: {fileID: 875142747}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -12300,7 +12281,7 @@ GameObject:
   - 114: {fileID: 875559308}
   - 136: {fileID: 875559310}
   - 136: {fileID: 875559309}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -12454,7 +12435,7 @@ GameObject:
   - 33: {fileID: 898630074}
   - 65: {fileID: 898630073}
   - 23: {fileID: 898630072}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -12617,7 +12598,7 @@ GameObject:
   - 4: {fileID: 911694082}
   - 33: {fileID: 911694084}
   - 23: {fileID: 911694083}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12745,7 +12726,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 932501635}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13070,7 +13051,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 950674148}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13314,7 +13295,7 @@ GameObject:
   - 4: {fileID: 967256550}
   - 33: {fileID: 967256552}
   - 23: {fileID: 967256551}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13372,7 +13353,7 @@ GameObject:
   - 4: {fileID: 973484060}
   - 33: {fileID: 973484062}
   - 23: {fileID: 973484061}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13428,7 +13409,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 975353202}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13482,7 +13463,7 @@ GameObject:
   - 4: {fileID: 981373083}
   - 33: {fileID: 981373085}
   - 23: {fileID: 981373084}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13648,7 +13629,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 992251673}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13719,7 +13700,7 @@ GameObject:
   - 4: {fileID: 1000604729}
   - 33: {fileID: 1000604731}
   - 23: {fileID: 1000604730}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14042,7 +14023,7 @@ GameObject:
   - 4: {fileID: 1009983684}
   - 33: {fileID: 1009983686}
   - 23: {fileID: 1009983685}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14364,7 +14345,7 @@ GameObject:
   - 4: {fileID: 1045028913}
   - 33: {fileID: 1045028915}
   - 23: {fileID: 1045028914}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14502,7 +14483,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100006, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1062481802}
@@ -14520,7 +14501,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400006, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1062481801}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -14538,7 +14519,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1062481801}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -14548,15 +14529,15 @@ MonoBehaviour:
   DieByHit: 0
   Log: 1
   EnableCollision: 1
-  HitMaximum: 10
+  HitMaximum: 0
   playerSFX:
-  - {fileID: 1507478870}
+  - {fileID: 1205820215}
 --- !u!114 &1062481804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1062481801}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -14564,7 +14545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAltitude: 1
-  minAltitude: -1
+  minAltitude: 0
   maneuverability: {x: 200, y: 1}
   altitude: 0
 --- !u!136 &1062481805
@@ -14572,7 +14553,7 @@ CapsuleCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 13600000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1062481801}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -14591,7 +14572,7 @@ GameObject:
   - 4: {fileID: 1064816618}
   - 33: {fileID: 1064816620}
   - 23: {fileID: 1064816619}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14737,7 +14718,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1069899658}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14841,7 +14822,7 @@ GameObject:
   - 114: {fileID: 1077269561}
   - 136: {fileID: 1077269563}
   - 136: {fileID: 1077269562}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -15018,7 +14999,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1093815181}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15044,7 +15025,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1108381699}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15191,7 +15172,7 @@ GameObject:
   - 4: {fileID: 1129463459}
   - 33: {fileID: 1129463461}
   - 23: {fileID: 1129463460}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15520,7 +15501,7 @@ GameObject:
   - 33: {fileID: 1138875634}
   - 65: {fileID: 1138875633}
   - 23: {fileID: 1138875632}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -15871,7 +15852,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1163458242}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15951,7 +15932,7 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100030, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1176055883}
@@ -15966,13 +15947,14 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400030, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1176055882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 201.438721, y: 9745.37305, z: 7656.94385}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1507478869}
+  - {fileID: 1205820214}
   m_Father: {fileID: 1062481802}
 --- !u!1 &1176639505
 GameObject:
@@ -16064,7 +16046,7 @@ GameObject:
   - 33: {fileID: 1182962219}
   - 65: {fileID: 1182962218}
   - 23: {fileID: 1182962217}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -16190,7 +16172,7 @@ GameObject:
   - 4: {fileID: 1193681258}
   - 33: {fileID: 1193681260}
   - 23: {fileID: 1193681259}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16246,7 +16228,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1193697615}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bone002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16274,7 +16256,7 @@ GameObject:
   - 4: {fileID: 1198618503}
   - 33: {fileID: 1198618505}
   - 23: {fileID: 1198618504}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16348,6 +16330,92 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 806749886}
+--- !u!1 &1205820213
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100032, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+  m_PrefabInternal: {fileID: 745115665}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1205820214}
+  - 82: {fileID: 1205820215}
+  m_Layer: 0
+  m_Name: Player_Fire
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1205820214
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400032, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+  m_PrefabInternal: {fileID: 745115665}
+  m_GameObject: {fileID: 1205820213}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1176055883}
+--- !u!82 &1205820215
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 24661ac4586cb491b9ea820bf0d1d851,
+    type: 2}
+  m_PrefabInternal: {fileID: 745115665}
+  m_GameObject: {fileID: 1205820213}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: bf75b984df8a84987bcf3a8bf6e2862d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: .100000001
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1206006226
 GameObject:
   m_ObjectHideFlags: 0
@@ -16448,7 +16516,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1210640576}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16673,7 +16741,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1234952523}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16705,7 +16773,7 @@ GameObject:
   - 114: {fileID: 1237355738}
   - 136: {fileID: 1237355740}
   - 136: {fileID: 1237355739}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -16832,7 +16900,7 @@ GameObject:
   - 4: {fileID: 1237697563}
   - 33: {fileID: 1237697562}
   - 23: {fileID: 1237697561}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17015,7 +17083,7 @@ GameObject:
   - 4: {fileID: 1262423820}
   - 33: {fileID: 1262423822}
   - 23: {fileID: 1262423821}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17165,7 +17233,7 @@ GameObject:
   - 4: {fileID: 1267245476}
   - 33: {fileID: 1267245478}
   - 23: {fileID: 1267245477}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17249,7 +17317,7 @@ GameObject:
   - 4: {fileID: 1269575636}
   - 33: {fileID: 1269575638}
   - 23: {fileID: 1269575637}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17307,7 +17375,7 @@ GameObject:
   - 4: {fileID: 1271276857}
   - 33: {fileID: 1271276859}
   - 23: {fileID: 1271276858}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17512,7 +17580,7 @@ GameObject:
   - 4: {fileID: 1286935159}
   - 33: {fileID: 1286935161}
   - 23: {fileID: 1286935160}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17685,7 +17753,7 @@ GameObject:
   - 114: {fileID: 1298127697}
   - 136: {fileID: 1298127699}
   - 136: {fileID: 1298127698}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -17856,7 +17924,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1300981499}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bone002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17991,7 +18059,7 @@ GameObject:
   - 54: {fileID: 1316870819}
   - 114: {fileID: 1316870817}
   - 136: {fileID: 1316870818}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Space_Junk_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -18184,7 +18252,7 @@ GameObject:
   - 33: {fileID: 1332218286}
   - 65: {fileID: 1332218285}
   - 23: {fileID: 1332218284}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -18362,7 +18430,7 @@ GameObject:
   - 4: {fileID: 1346711492}
   - 33: {fileID: 1346711494}
   - 23: {fileID: 1346711493}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18459,7 +18527,7 @@ Animator:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100014, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1359366489}
@@ -18475,7 +18543,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400014, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1359366488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -18488,7 +18556,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400012, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1359366488}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -18500,6 +18568,7 @@ MonoBehaviour:
   ReticleDistance: 1000
   OculusAim: 0
   ShootDebug: 0
+  sfx: {fileID: 1205820215}
 --- !u!1 &1361870587
 GameObject:
   m_ObjectHideFlags: 0
@@ -18689,7 +18758,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1371518463}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18715,7 +18784,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1375694822}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Trap_Rotation_Prefab
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -18748,7 +18817,7 @@ GameObject:
   - 114: {fileID: 1377308664}
   - 136: {fileID: 1377308666}
   - 136: {fileID: 1377308665}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -18875,7 +18944,7 @@ GameObject:
   - 4: {fileID: 1377412798}
   - 33: {fileID: 1377412800}
   - 23: {fileID: 1377412799}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18960,7 +19029,7 @@ GameObject:
   - 4: {fileID: 1384970942}
   - 33: {fileID: 1384970944}
   - 23: {fileID: 1384970943}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19071,7 +19140,7 @@ GameObject:
   - 4: {fileID: 1385723240}
   - 33: {fileID: 1385723242}
   - 23: {fileID: 1385723241}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19134,7 +19203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1400929491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19199,6 +19268,10 @@ Prefab:
       propertyPath: music
       value: 
       objectReference: {fileID: 953138709}
+    - target: {fileID: 100000, guid: bbfc52a7d9e174845a8b12fc8991151e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bbfc52a7d9e174845a8b12fc8991151e, type: 2}
   m_RootGameObject: {fileID: 1400929490}
@@ -19418,7 +19491,7 @@ GameObject:
   - 4: {fileID: 1430566264}
   - 33: {fileID: 1430566266}
   - 23: {fileID: 1430566265}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19788,7 +19861,7 @@ GameObject:
   - 4: {fileID: 1463407748}
   - 33: {fileID: 1463407750}
   - 23: {fileID: 1463407749}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20093,13 +20166,14 @@ MeshFilter:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1498703127}
   - 114: {fileID: 1498703131}
   - 114: {fileID: 1498703130}
   - 54: {fileID: 1498703128}
+  - 114: {fileID: 1498703129}
   m_Layer: 0
   m_Name: GamePlatform
   m_TagString: Player
@@ -20111,7 +20185,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1498703126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: .00726985931, z: -7875.53564}
@@ -20125,7 +20199,7 @@ Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 5400000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1498703126}
   serializedVersion: 2
   m_Mass: 1
@@ -20136,12 +20210,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1498703129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400028, guid: 24661ac4586cb491b9ea820bf0d1d851,
+    type: 2}
+  m_PrefabInternal: {fileID: 745115665}
+  m_GameObject: {fileID: 1498703126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1934321afa053c948ade7bab62720bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerShip: {fileID: 1062481801}
+  platform: {fileID: 1498703131}
+  playerLife: {fileID: 1062481803}
+  mainCam: {fileID: 38632046}
+  button:
+  - {fileID: 400000, guid: 5090022192a7d2d4498b6120b3ce11bd, type: 2}
+  - {fileID: 400000, guid: 33cd346e5f2ea12448ae550a9cb9a505, type: 2}
 --- !u!114 &1498703130
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400000, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1498703126}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -20162,7 +20255,7 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11400006, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1498703126}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -20176,6 +20269,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 100
   DefaultSpeed: 4
+  IsPlayer: 1
   TimeScale: 3
   boostDecayRate: .810000002
   mState: Loop
@@ -20210,8 +20304,8 @@ Transform:
 --- !u!1 &1507478868
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100032, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabParentObject: {fileID: 100026, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1507478869}
@@ -20226,8 +20320,8 @@ GameObject:
 --- !u!4 &1507478869
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400032, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabParentObject: {fileID: 400026, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1507478868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -20237,9 +20331,9 @@ Transform:
 --- !u!82 &1507478870
 AudioSource:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8200000, guid: 24661ac4586cb491b9ea820bf0d1d851,
+  m_PrefabParentObject: {fileID: 8200002, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1507478868}
   m_Enabled: 1
   serializedVersion: 3
@@ -20499,7 +20593,7 @@ GameObject:
   - 4: {fileID: 1520743639}
   - 33: {fileID: 1520743641}
   - 23: {fileID: 1520743640}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21112,7 +21206,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1597395999}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21138,7 +21232,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1601810570}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21218,7 +21312,7 @@ GameObject:
   - 4: {fileID: 1625181991}
   - 33: {fileID: 1625181993}
   - 23: {fileID: 1625181992}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21277,7 +21371,7 @@ GameObject:
   - 33: {fileID: 1633451861}
   - 65: {fileID: 1633451860}
   - 23: {fileID: 1633451859}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -21419,7 +21513,7 @@ GameObject:
   - 114: {fileID: 1637629685}
   - 136: {fileID: 1637629687}
   - 136: {fileID: 1637629686}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -21546,7 +21640,7 @@ GameObject:
   - 4: {fileID: 1640119111}
   - 33: {fileID: 1640119113}
   - 23: {fileID: 1640119112}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21648,7 +21742,7 @@ GameObject:
   - 4: {fileID: 1658785037}
   - 33: {fileID: 1658785036}
   - 23: {fileID: 1658785035}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21706,7 +21800,7 @@ GameObject:
   - 4: {fileID: 1665050928}
   - 33: {fileID: 1665050930}
   - 23: {fileID: 1665050929}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21764,7 +21858,7 @@ GameObject:
   - 4: {fileID: 1676456863}
   - 33: {fileID: 1676456865}
   - 23: {fileID: 1676456864}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21874,7 +21968,7 @@ GameObject:
   - 4: {fileID: 1684401646}
   - 33: {fileID: 1684401648}
   - 23: {fileID: 1684401647}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21956,7 +22050,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1685351708}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21978,7 +22072,7 @@ Transform:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100008, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1691946696}
@@ -21994,7 +22088,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400008, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1691946695}
   m_LocalRotation: {x: -.0348994955, y: 0, z: 0, w: .999390841}
   m_LocalPosition: {x: -.160833076, y: .084292002, z: .2042}
@@ -22006,7 +22100,7 @@ Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 10800002, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1691946695}
   m_Enabled: 1
   serializedVersion: 3
@@ -22051,7 +22145,7 @@ GameObject:
   - 114: {fileID: 1696854648}
   - 136: {fileID: 1696854650}
   - 136: {fileID: 1696854649}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -22182,7 +22276,7 @@ GameObject:
   - 114: {fileID: 1698117828}
   - 136: {fileID: 1698117830}
   - 136: {fileID: 1698117829}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -22307,7 +22401,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1698864763}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22333,7 +22427,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1702916514}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22414,7 +22508,7 @@ GameObject:
   - 4: {fileID: 1715156866}
   - 33: {fileID: 1715156868}
   - 23: {fileID: 1715156867}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22472,7 +22566,7 @@ GameObject:
   - 4: {fileID: 1724486074}
   - 33: {fileID: 1724486076}
   - 23: {fileID: 1724486075}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22533,7 +22627,7 @@ GameObject:
   - 114: {fileID: 1731178044}
   - 114: {fileID: 1731178043}
   - 136: {fileID: 1731178045}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Space_Junk_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -22812,7 +22906,7 @@ GameObject:
   - 136: {fileID: 1772869483}
   - 114: {fileID: 1772869480}
   - 136: {fileID: 1772869482}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -23004,7 +23098,7 @@ GameObject:
   - 4: {fileID: 1775664333}
   - 33: {fileID: 1775664335}
   - 23: {fileID: 1775664334}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23113,7 +23207,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1778991530}
   - 111: {fileID: 1778991531}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RotationTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23192,7 +23286,7 @@ GameObject:
   - 114: {fileID: 1786750777}
   - 136: {fileID: 1786750779}
   - 136: {fileID: 1786750778}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -23605,7 +23699,7 @@ GameObject:
   - 4: {fileID: 1809113279}
   - 33: {fileID: 1809113281}
   - 23: {fileID: 1809113280}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23708,7 +23802,7 @@ GameObject:
   - 4: {fileID: 1821265395}
   - 33: {fileID: 1821265397}
   - 23: {fileID: 1821265396}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23919,7 +24013,7 @@ GameObject:
   - 4: {fileID: 1829408719}
   - 33: {fileID: 1829408721}
   - 23: {fileID: 1829408720}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24014,7 +24108,7 @@ CapsuleCollider:
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100016, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1841391231}
@@ -24030,7 +24124,7 @@ GameObject:
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400016, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1841391230}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -24042,7 +24136,7 @@ Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 10800004, guid: 24661ac4586cb491b9ea820bf0d1d851,
     type: 2}
-  m_PrefabInternal: {fileID: 519218638}
+  m_PrefabInternal: {fileID: 745115665}
   m_GameObject: {fileID: 1841391230}
   m_Enabled: 1
   serializedVersion: 3
@@ -24083,7 +24177,7 @@ GameObject:
   - 4: {fileID: 1852230024}
   - 33: {fileID: 1852230026}
   - 23: {fileID: 1852230025}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24486,7 +24580,7 @@ GameObject:
   - 33: {fileID: 1876480720}
   - 65: {fileID: 1876480719}
   - 23: {fileID: 1876480718}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -24598,7 +24692,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1889637353}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24656,7 +24750,7 @@ GameObject:
   - 114: {fileID: 1896608467}
   - 136: {fileID: 1896608469}
   - 136: {fileID: 1896608468}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -24781,7 +24875,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1902153943}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24896,7 +24990,7 @@ GameObject:
   - 33: {fileID: 1909813881}
   - 65: {fileID: 1909813880}
   - 23: {fileID: 1909813879}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -25010,7 +25104,7 @@ GameObject:
   - 4: {fileID: 1922349684}
   - 33: {fileID: 1922349686}
   - 23: {fileID: 1922349685}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25281,7 +25375,7 @@ GameObject:
   - 114: {fileID: 1960491278}
   - 136: {fileID: 1960491280}
   - 136: {fileID: 1960491279}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -25503,7 +25597,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1969857510}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25560,7 +25654,7 @@ GameObject:
   - 4: {fileID: 1972177182}
   - 33: {fileID: 1972177184}
   - 23: {fileID: 1972177183}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25618,7 +25712,7 @@ GameObject:
   - 4: {fileID: 1980988524}
   - 33: {fileID: 1980988526}
   - 23: {fileID: 1980988525}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25819,7 +25913,7 @@ GameObject:
   - 114: {fileID: 1998265451}
   - 136: {fileID: 1998265453}
   - 136: {fileID: 1998265452}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -25946,7 +26040,7 @@ GameObject:
   - 4: {fileID: 2004115804}
   - 33: {fileID: 2004115803}
   - 23: {fileID: 2004115802}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26037,7 +26131,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2006201786}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bone001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26350,7 +26444,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2028064377}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26471,7 +26565,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2031647821}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26499,7 +26593,7 @@ GameObject:
   - 4: {fileID: 2032065021}
   - 33: {fileID: 2032065023}
   - 23: {fileID: 2032065022}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26678,7 +26772,7 @@ GameObject:
   - 4: {fileID: 2048895697}
   - 33: {fileID: 2048895699}
   - 23: {fileID: 2048895698}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26734,7 +26828,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2054431911}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27193,7 +27287,7 @@ GameObject:
   - 114: {fileID: 2097536382}
   - 136: {fileID: 2097536384}
   - 136: {fileID: 2097536383}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Asteroid_V2_JG
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -27320,7 +27414,7 @@ GameObject:
   - 4: {fileID: 2103700608}
   - 33: {fileID: 2103700610}
   - 23: {fileID: 2103700609}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Screw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27407,7 +27501,7 @@ GameObject:
   - 4: {fileID: 2107056877}
   - 33: {fileID: 2107056879}
   - 23: {fileID: 2107056878}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27492,7 +27586,7 @@ GameObject:
   - 33: {fileID: 2110533664}
   - 65: {fileID: 2110533663}
   - 23: {fileID: 2110533662}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -27586,7 +27680,7 @@ GameObject:
   - 4: {fileID: 2118914480}
   - 33: {fileID: 2118914479}
   - 23: {fileID: 2118914478}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27717,7 +27811,7 @@ GameObject:
   - 33: {fileID: 2129826029}
   - 65: {fileID: 2129826028}
   - 23: {fileID: 2129826027}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
@@ -27783,7 +27877,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2132074603}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27811,7 +27905,7 @@ GameObject:
   - 4: {fileID: 2135962182}
   - 33: {fileID: 2135962184}
   - 23: {fileID: 2135962183}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Extention3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
