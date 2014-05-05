@@ -26,24 +26,32 @@ public class SplineInterpolator : MonoBehaviour
 	public void SlowDown()
 	{
 		//Debug.Log ("I will speed you down to " + TimeScale);
-		if(TimeScale-0.2f>0f)
-		TimeScale = TimeScale - 0.2f;
+		if(TimeScale-0.2f>1.0f)
+			TimeScale = TimeScale - 0.2f;
 	}
 	public void SpeedUp()
 	{
 		//Debug.Log ("I will speed you up to " + TimeScale);
-		TimeScale = TimeScale + (TimeScale / 50f);
+		if(TimeScale<6.0f)
+			TimeScale = TimeScale + (TimeScale / 50f);
 		//TimeScale = TimeScale + 0.2f;
 	}
 	public void SpeedUp(float speed)
 	{
-		//Debug.Log ("I will speed you up to " + TimeScale);
-		TimeScale = TimeScale + speed;
+			TimeScale = TimeScale + speed;
 	}
 	public void SetSpeed(float Speed)
 	{
 		TimeScale = Speed;
 		UserSet = true;
+		}
+	public void LockSpeedChange()
+	{
+				AllowChangeSpeed = false;
+		}
+	public void UnlockSpeedChange()
+	{
+				AllowChangeSpeed = true;
 		}
 
 	internal class SplineNode

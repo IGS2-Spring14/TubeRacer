@@ -78,7 +78,7 @@ public class RS_TextTrigger : MonoBehaviour {
 						GUI.Label (new Rect (7.6f * Screen.width / 14	, 3 * Screen.height / 8, 3 * Screen.width / 8, boxHeight), text, gameGUI.label);
 				}
 	}
-	
+	private float spd;
 	// Update is called once per frame
 	void Update () {
 		//If allowed to display text
@@ -104,6 +104,10 @@ public class RS_TextTrigger : MonoBehaviour {
 					textSFX[0].Stop();
 
 				//Begins coroutine for "typing" out message
+				SplineInterpolator speed = (SplineInterpolator) playership.GetComponent("SplineInterpolator");
+				spd = speed.TimeScale;
+				
+				playership.SendMessage("LockSpeedChange");
 				playership.SendMessage("SetSpeed", 0.1f);
 				StartCoroutine (TypeText ());
 			}
@@ -114,10 +118,10 @@ public class RS_TextTrigger : MonoBehaviour {
 				//Resets string to be displayed so the message isn't 
 				//shown while box is shrinking
 				text = "";
-				GameObject playership = GameObject.FindWithTag("Player");
-				playership.SendMessage("SetSpeed",10f);
 				boxHeight -= 5;
-
+				playership = GameObject.FindWithTag("Player");
+				playership.SendMessage("SetSpeed",spd);
+				playership.SendMessage("UnlockSpeedChange");
 				//Plays box shrinking sound while shrinking
 				if (!textSFX[1].isPlaying)
 					textSFX[1].Play();
@@ -125,7 +129,6 @@ public class RS_TextTrigger : MonoBehaviour {
 				boxHeight = 0;
 				//Stops box growing in height
 				shrinkBox = false;
-
 				//Stops box shrinking sound once max height is reached and
 				//sound is still playing
 				if (textSFX[1].isPlaying)
@@ -147,7 +150,7 @@ public class RS_TextTrigger : MonoBehaviour {
 					timer = messageTime;
 					setTime = true;
 				}
-				
+	
 				//Counts down timer for displaying message
 				if (timer > 0f && setTime)
 					timer -= 1f;
