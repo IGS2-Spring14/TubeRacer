@@ -205,6 +205,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 6.80000019
+  IsPlayer: 0
   TimeScale: 6.5
   boostDecayRate: 1.5
   mState: 
@@ -221,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &13500000

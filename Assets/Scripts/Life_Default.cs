@@ -26,7 +26,7 @@ public class Life_Default : MonoBehaviour {
 	void Update () {
 		if (life == 0) {
 			//Creates explosion effect on "death" if a player or an enemy
-			if (this.gameObject.tag == "PlayerShip" || this.gameObject.tag == "Enemy")
+			if (this.gameObject.tag == "PlayerShip" || this.gameObject.tag == "Enemy" || this.gameObject.tag == "DieWhenHit")
 				Instantiate (explosion, transform.position, transform.rotation);
 			//The actual death :P
 			Die();

@@ -19,7 +19,7 @@ public class SpaceMine : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collision)
 	{
-		if (collision.gameObject.CompareTag ("Player")) 
+		if (collision.gameObject.CompareTag ("PlayerShip")) 
 		{
 			Debug.Log (this.name.ToString () + " was hit");
 			// Deal damage to the player

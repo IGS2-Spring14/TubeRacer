@@ -266,7 +266,7 @@ MonoBehaviour:
   PositionOffsetY: 0
   PositionOffsetZ: 0
   RandomizeOffset: 0
-  BulletOffsetRange: 25
+  BulletOffsetRange: 0
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 8200000}
@@ -308,6 +308,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 6.80000019
+  IsPlayer: 1
   TimeScale: 15
   boostDecayRate: 1.5
   mState: Loop

@@ -223,9 +223,10 @@ GameObject:
   - 95: {fileID: 12480903}
   - 54: {fileID: 12480906}
   - 114: {fileID: 12480904}
+  - 136: {fileID: 12480905}
   m_Layer: 0
   m_Name: Space_Junk_JG
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -297,6 +298,19 @@ MonoBehaviour:
   rotationSpeed: .5
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!136 &12480905
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 12480901}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 500
+  m_Height: 3000
+  m_Direction: 0
+  m_Center: {x: 0, y: 500, z: 0}
 --- !u!54 &12480906
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1062,9 +1076,10 @@ GameObject:
   - 95: {fileID: 78016164}
   - 54: {fileID: 78016167}
   - 114: {fileID: 78016165}
+  - 136: {fileID: 78016166}
   m_Layer: 0
   m_Name: Space_Junk_JG
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1136,6 +1151,19 @@ MonoBehaviour:
   rotationSpeed: .5
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!136 &78016166
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 78016162}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 500
+  m_Height: 3000
+  m_Direction: 0
+  m_Center: {x: 0, y: 500, z: 0}
 --- !u!54 &78016167
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2564,6 +2592,10 @@ Prefab:
     - target: {fileID: 400030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
       propertyPath: m_LocalRotation.w
       value: .744808912
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+      propertyPath: m_TagString
+      value: DieWhenHit
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
@@ -4181,7 +4213,7 @@ GameObject:
   - 114: {fileID: 302781891}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6310,7 +6342,7 @@ GameObject:
   - 114: {fileID: 470749277}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6670,7 +6702,7 @@ GameObject:
   - 114: {fileID: 506157605}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6935,6 +6967,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: playerSFX.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -6967,6 +7003,26 @@ Prefab:
       propertyPath: SplineRoot
       value: 
       objectReference: {fileID: 806749885}
+    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: playerSFX.Array.data[0]
+      value: 
+      objectReference: {fileID: 1507478870}
+    - target: {fileID: 100028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: maxAltitude
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: minAltitude
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: altitude
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_RootGameObject: {fileID: 1498703126}
@@ -7240,9 +7296,10 @@ GameObject:
   - 54: {fileID: 546539604}
   - 114: {fileID: 546539602}
   - 114: {fileID: 546539601}
+  - 136: {fileID: 546539603}
   m_Layer: 0
   m_Name: Space_Junk_JG
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7339,6 +7396,19 @@ MonoBehaviour:
   rotationSpeed: .5
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!136 &546539603
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 546539598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 500
+  m_Height: 3000
+  m_Direction: 0
+  m_Center: {x: 0, y: 500, z: 0}
 --- !u!54 &546539604
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7485,6 +7555,10 @@ Prefab:
     - target: {fileID: 400030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
       propertyPath: m_LocalRotation.w
       value: .744808912
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+      propertyPath: m_TagString
+      value: DieWhenHit
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
@@ -9363,6 +9437,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1150
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c931d7305862864488f9a696764a04fe, type: 2}
+      propertyPath: m_TagString
+      value: DieWhenHit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c931d7305862864488f9a696764a04fe, type: 2}
   m_RootGameObject: {fileID: 1375694821}
@@ -9428,6 +9506,10 @@ Prefab:
     - target: {fileID: 400030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
       propertyPath: m_LocalRotation.w
       value: .725048661
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+      propertyPath: m_TagString
+      value: DieWhenHit
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
@@ -10341,7 +10423,7 @@ GameObject:
   - 114: {fileID: 768080154}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10432,7 +10514,7 @@ GameObject:
   - 4: {fileID: 776092910}
   m_Layer: 0
   m_Name: Trap_Rotation_Prefab
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11376,9 +11458,10 @@ GameObject:
   - 54: {fileID: 823733303}
   - 114: {fileID: 823733301}
   - 114: {fileID: 823733299}
+  - 136: {fileID: 823733302}
   m_Layer: 0
   m_Name: Space_Junk_JG
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11475,6 +11558,19 @@ MonoBehaviour:
   rotationSpeed: .5
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!136 &823733302
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823733297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 500
+  m_Height: 3000
+  m_Direction: 0
+  m_Center: {x: 0, y: 500, z: 0}
 --- !u!54 &823733303
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13754,7 +13850,7 @@ GameObject:
   - 114: {fileID: 1008651788}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14453,7 +14549,8 @@ MonoBehaviour:
   Log: 1
   EnableCollision: 1
   HitMaximum: 10
-  playerSFX: []
+  playerSFX:
+  - {fileID: 1507478870}
 --- !u!114 &1062481804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14466,10 +14563,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAltitude: 1000
-  minAltitude: 1000
+  maxAltitude: 1
+  minAltitude: -1
   maneuverability: {x: 200, y: 1}
-  altitude: 1
+  altitude: 0
 --- !u!136 &1062481805
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15579,6 +15676,10 @@ Prefab:
     - target: {fileID: 400000, guid: c931d7305862864488f9a696764a04fe, type: 2}
       propertyPath: m_LocalScale.z
       value: 1150
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c931d7305862864488f9a696764a04fe, type: 2}
+      propertyPath: m_TagString
+      value: DieWhenHit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c931d7305862864488f9a696764a04fe, type: 2}
@@ -17320,7 +17421,7 @@ GameObject:
   - 114: {fileID: 1280028782}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17889,9 +17990,10 @@ GameObject:
   - 95: {fileID: 1316870816}
   - 54: {fileID: 1316870819}
   - 114: {fileID: 1316870817}
+  - 136: {fileID: 1316870818}
   m_Layer: 0
   m_Name: Space_Junk_JG
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17963,6 +18065,19 @@ MonoBehaviour:
   rotationSpeed: .5
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!136 &1316870818
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316870814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 500
+  m_Height: 3000
+  m_Direction: 0
+  m_Center: {x: 0, y: 500, z: 0}
 --- !u!54 &1316870819
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18602,7 +18717,7 @@ GameObject:
   - 4: {fileID: 1375694822}
   m_Layer: 0
   m_Name: Trap_Rotation_Prefab
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20511,6 +20626,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: .725048661
       objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+      propertyPath: m_TagString
+      value: DieWhenHit
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
@@ -20596,6 +20715,10 @@ Prefab:
     - target: {fileID: 400030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
       propertyPath: m_LocalRotation.w
       value: .744808912
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+      propertyPath: m_TagString
+      value: DieWhenHit
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
@@ -22409,9 +22532,10 @@ GameObject:
   - 54: {fileID: 1731178046}
   - 114: {fileID: 1731178044}
   - 114: {fileID: 1731178043}
+  - 136: {fileID: 1731178045}
   m_Layer: 0
   m_Name: Space_Junk_JG
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22508,6 +22632,19 @@ MonoBehaviour:
   rotationSpeed: .5
   rotationOffset: 5000
   useRotationOffset: 0
+--- !u!136 &1731178045
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1731178040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 500
+  m_Height: 3000
+  m_Direction: 0
+  m_Center: {x: 0, y: 500, z: 0}
 --- !u!54 &1731178046
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23691,7 +23828,7 @@ GameObject:
   - 114: {fileID: 1829104408}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25296,6 +25433,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
+      propertyPath: m_TagString
+      value: DieWhenHit
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11400000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 53732651a7ed65847a971f420b1b74cc, type: 2}
@@ -25887,7 +26028,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2005776449}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &2006201785
 GameObject:
   m_ObjectHideFlags: 0
@@ -26068,7 +26209,7 @@ GameObject:
   - 114: {fileID: 2022948747}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26241,7 +26382,7 @@ GameObject:
   - 114: {fileID: 2030429141}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26420,7 +26561,7 @@ GameObject:
   - 114: {fileID: 2036248254}
   m_Layer: 0
   m_Name: Move_Cube
-  m_TagString: Untagged
+  m_TagString: DieWhenHit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6719,8 +6719,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bee7199b8baa4469880f92dd37b43dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAltitude: 1000
-  minAltitude: 1000
+  maxAltitude: 1
+  minAltitude: 0
   maneuverability: {x: 200, y: 1}
   altitude: 1
 --- !u!1 &276699318
@@ -45308,7 +45308,8 @@ MonoBehaviour:
   Log: 1
   EnableCollision: 1
   HitMaximum: 10
-  playerSFX: []
+  playerSFX:
+  - {fileID: 1430891056}
 --- !u!1 &1747962119
 GameObject:
   m_ObjectHideFlags: 0
@@ -52693,6 +52694,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: playerSFX.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -52725,6 +52730,22 @@ Prefab:
       propertyPath: SplineRoot
       value: 
       objectReference: {fileID: 249607706}
+    - target: {fileID: 11400018, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: playerSFX.Array.data[0]
+      value: 
+      objectReference: {fileID: 1430891056}
+    - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: minAltitude
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: maxAltitude
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_RootGameObject: {fileID: 1747417769}

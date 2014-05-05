@@ -33,7 +33,7 @@ public class Event_FMCB : MonoBehaviour {
 	{
 		
 		//Debug.Log (myCollider.gameObject.name);
-		if (myCollider.gameObject.name == "GamePlatform" && !IsActive)
+		if (myCollider.gameObject.name == "PlayerShip" && !IsActive)
 		{
 			Debug.Log ("Event Triggered");
 			IsActive = true;

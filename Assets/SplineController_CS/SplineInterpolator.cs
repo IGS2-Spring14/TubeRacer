@@ -15,6 +15,7 @@ public class SplineInterpolator : MonoBehaviour
 	public bool IsFlipped = false;
 	public float SpeedUpValue = 250f;
 	public float DefaultSpeed = 6.8f;
+	public bool IsPlayer = true; 
 	bool UserSet = false, boosting = false;
 	eEndPointsMode mEndPointsMode = eEndPointsMode.AUTO;
 
@@ -245,16 +246,16 @@ public class SplineInterpolator : MonoBehaviour
 					// We call back to inform that we are ended
 					if (mOnEndCallback != null)
 						mOnEndCallback();
+						
+					// Destroy enemy ships that reach the end of their path
+					if (!IsPlayer) // if not the player
+						Destroy(this.gameObject); 
 				}
 				else
 				{
 					mCurrentIdx = 1;
 					mCurrentTime = 0;
 				}
-
-				// Destroy enemy ships that reach the end of their path
-				if (!AllowChangeSpeed) // if not the player
-					Destroy(this.gameObject); 
 
 			}
 		}

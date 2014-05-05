@@ -2594,7 +2594,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3204.52246, y: 1742.72754, z: -61639.3867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400160}
@@ -5363,6 +5363,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 6.80000019
+  IsPlayer: 1
   TimeScale: 10
   boostDecayRate: 1.5
   mState: Reset
@@ -5428,7 +5429,7 @@ MonoBehaviour:
   MainGun: {fileID: 400086}
   LeftRack: {fileID: 400008}
   RightRack: {fileID: 400012}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 25
   Spline: {fileID: 0}
   Range: 5000
   LeadTime: 10
@@ -5467,7 +5468,7 @@ MonoBehaviour:
   MainGun: {fileID: 400208}
   LeftRack: {fileID: 400126}
   RightRack: {fileID: 400130}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 25
   Spline: {fileID: 0}
   Range: 5000
   LeadTime: 10
@@ -5501,7 +5502,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Range: 5000
   MinRange: 0
 --- !u!114 &11400026
@@ -5520,7 +5521,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Range: 5000
   MinRange: 0
 --- !u!114 &11400028
@@ -5539,7 +5540,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Range: 5000
   MinRange: 0
 --- !u!114 &11400030
@@ -5558,7 +5559,7 @@ MonoBehaviour:
   FiringCooldown: 800
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Range: 5000
   MinRange: 0
 --- !u!135 &13500000
@@ -5594,7 +5595,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0299999993
+  m_Radius: .0350000001
   m_Height: .189999998
   m_Direction: 1
   m_Center: {x: -8.38190317e-08, y: -.00868949853, z: 2.5331974e-07}
@@ -5607,7 +5608,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0299999993
+  m_Radius: .0350000001
   m_Height: .189999998
   m_Direction: 1
   m_Center: {x: -8.38190317e-08, y: -.00868926011, z: 1.49011647e-08}
@@ -5620,7 +5621,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0299999993
+  m_Radius: .0350000001
   m_Height: .189999998
   m_Direction: 1
   m_Center: {x: 3.53902578e-08, y: -.00868926011, z: 1.49011647e-08}
@@ -5633,7 +5634,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: .0299999993
+  m_Radius: .0350000001
   m_Height: .189999998
   m_Direction: 1
   m_Center: {x: -8.38190317e-08, y: -.00868949853, z: 2.5331974e-07}

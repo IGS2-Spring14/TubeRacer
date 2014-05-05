@@ -213,10 +213,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &19227770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &19227771
@@ -1505,7 +1504,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: TimeScale
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: Duration
@@ -1543,6 +1542,10 @@ Prefab:
       propertyPath: playerSFX.Array.data[0]
       value: 
       objectReference: {fileID: 1507478870}
+    - target: {fileID: 11400006, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
+      propertyPath: DefaultSpeed
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8100002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
@@ -1593,10 +1596,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &420762887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1608,7 +1610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &420762888
@@ -1741,10 +1743,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &441251128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1756,7 +1757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &441251129
@@ -2103,10 +2104,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &557045618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,7 +2118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &557045619
@@ -2324,10 +2324,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &605955303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2339,7 +2338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &605955304
@@ -2398,10 +2397,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &640102583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2413,7 +2411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &640102584
@@ -2600,10 +2598,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &657984042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2615,7 +2612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &657984043
@@ -2782,10 +2779,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &714426840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2797,7 +2793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &714426841
@@ -2856,10 +2852,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &763584639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2871,7 +2866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &763584640
@@ -2930,10 +2925,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &764528578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2945,7 +2939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &764528579
@@ -3480,10 +3474,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &948255975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3495,7 +3488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &948255976
@@ -3757,10 +3750,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1027670416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3772,7 +3764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1027670417
@@ -3831,10 +3823,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1029074853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3846,7 +3837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1029074854
@@ -4052,10 +4043,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1111631428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4067,7 +4057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1111631429
@@ -4609,10 +4599,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1277623537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4624,7 +4613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1277623538
@@ -4683,10 +4672,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1278173952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4698,7 +4686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1278173953
@@ -4857,10 +4845,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1290234627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4872,7 +4859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1290234628
@@ -5449,10 +5436,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1450312766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5464,7 +5450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1450312767
@@ -5563,10 +5549,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1.5
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 15
+  BulletOffsetRange: 35
 --- !u!114 &1482959030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5578,7 +5563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1482959031
@@ -5694,8 +5679,9 @@ MonoBehaviour:
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 100
-  DefaultSpeed: 4
-  TimeScale: 3
+  DefaultSpeed: 8
+  IsPlayer: 1
+  TimeScale: 8
   boostDecayRate: .810000002
   mState: Loop
   mCurrentTime: 0
@@ -6050,10 +6036,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1579350421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6065,7 +6050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1579350422
@@ -6330,10 +6315,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1663409545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6345,7 +6329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1663409546
@@ -6404,10 +6388,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1691724889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6419,7 +6402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1691724890
@@ -6541,10 +6524,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1749903366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6556,7 +6538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1749903367
@@ -6820,10 +6802,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1863992831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6835,7 +6816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1863992832
@@ -6961,10 +6942,9 @@ MonoBehaviour:
   projectile: {fileID: 100002, guid: 3261d6a367f41db42b6718834e26ad2d, type: 2}
   FiringCooldown: 600
   Range: 15000
-  target: {fileID: 1498703127}
-  targetObject: {fileID: 1498703126}
-  LeadTime: 1
-  BulletOffsetRange: 0
+  TargetPlatform: {fileID: 0}
+  Lead: 8
+  BulletOffsetRange: 35
 --- !u!114 &1901439470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6976,7 +6956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!135 &1901439471

@@ -632,11 +632,19 @@ Prefab:
       objectReference: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: RandomizeOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: life
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: MyTimeScale
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
@@ -826,7 +834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!114 &191406806
@@ -845,12 +853,12 @@ MonoBehaviour:
   FiringCooldown: 1000
   Range: 6000
   FollowDistance: 2100
-  MyTimeScale: 10
+  MyTimeScale: 8
   PositionOffsetX: 75
   PositionOffsetY: -125
   PositionOffsetZ: -100
   RandomizeOffset: 0
-  BulletOffsetRange: 500
+  BulletOffsetRange: 25
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 336346419}
@@ -910,6 +918,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 15
+  IsPlayer: 1
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -2941,7 +2950,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: m_TagString
@@ -3063,7 +3072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!114 &413994762
@@ -3082,12 +3091,12 @@ MonoBehaviour:
   FiringCooldown: 1000
   Range: 6000
   FollowDistance: 2100
-  MyTimeScale: 10
+  MyTimeScale: 8
   PositionOffsetX: -125
   PositionOffsetY: 0
   PositionOffsetZ: -100
   RandomizeOffset: 0
-  BulletOffsetRange: 500
+  BulletOffsetRange: 25
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1557468558}
@@ -3147,6 +3156,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 15
+  IsPlayer: 1
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -3866,7 +3876,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: m_TagString
@@ -4701,7 +4711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!114 &595838366
@@ -4720,12 +4730,12 @@ MonoBehaviour:
   FiringCooldown: 1000
   Range: 6000
   FollowDistance: 2100
-  MyTimeScale: 10
+  MyTimeScale: 8
   PositionOffsetX: 125
   PositionOffsetY: 0
   PositionOffsetZ: -100
   RandomizeOffset: 0
-  BulletOffsetRange: 500
+  BulletOffsetRange: 25
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 980780850}
@@ -4785,6 +4795,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 15
+  IsPlayer: 1
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -4854,11 +4865,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
       propertyPath: RandomizeOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
+      propertyPath: life
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
+      propertyPath: MyTimeScale
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
@@ -4973,7 +4992,7 @@ Prefab:
       objectReference: {fileID: 1747417773}
     - target: {fileID: 11400000, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: m_TagString
@@ -5940,7 +5959,7 @@ MonoBehaviour:
   FiringCooldown: 1000
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Spline: {fileID: 1747417773}
   Range: 5000
   LeadTime: .449999988
@@ -6683,7 +6702,7 @@ MonoBehaviour:
   FiringCooldown: 1000
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Spline: {fileID: 1747417773}
   Range: 5000
   LeadTime: .449999988
@@ -6939,7 +6958,7 @@ MonoBehaviour:
   FiringCooldown: 1000
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Spline: {fileID: 1747417773}
   Range: 5000
   LeadTime: .449999988
@@ -7214,11 +7233,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: RandomizeOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: life
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: MyTimeScale
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
@@ -7704,11 +7731,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: RandomizeOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: life
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: MyTimeScale
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
@@ -8649,7 +8684,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: m_TagString
@@ -8705,7 +8740,7 @@ Prefab:
       objectReference: {fileID: 1747417773}
     - target: {fileID: 11400000, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: m_TagString
@@ -9159,7 +9194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!114 &1158802207
@@ -9178,12 +9213,12 @@ MonoBehaviour:
   FiringCooldown: 1000
   Range: 6000
   FollowDistance: 2100
-  MyTimeScale: 10
+  MyTimeScale: 8
   PositionOffsetX: -75
   PositionOffsetY: -125
   PositionOffsetZ: -100
   RandomizeOffset: 0
-  BulletOffsetRange: 500
+  BulletOffsetRange: 25
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1174071248}
@@ -9243,6 +9278,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 15
+  IsPlayer: 1
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -11141,7 +11177,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: m_TagString
@@ -11224,7 +11260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!114 &1416806774
@@ -11243,12 +11279,12 @@ MonoBehaviour:
   FiringCooldown: 1000
   Range: 6000
   FollowDistance: 1200
-  MyTimeScale: 10
+  MyTimeScale: 8
   PositionOffsetX: 0
   PositionOffsetY: 0
   PositionOffsetZ: -200
   RandomizeOffset: 0
-  BulletOffsetRange: 500
+  BulletOffsetRange: 50
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 894035230}
@@ -11308,6 +11344,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 15
+  IsPlayer: 1
   TimeScale: 15
   boostDecayRate: 1.5
   mState: Loop
@@ -11415,11 +11452,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
       propertyPath: RandomizeOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
+      propertyPath: life
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
+      propertyPath: MyTimeScale
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
@@ -11772,7 +11817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!114 &1476117625
@@ -11791,12 +11836,12 @@ MonoBehaviour:
   FiringCooldown: 1000
   Range: 6000
   FollowDistance: 2100
-  MyTimeScale: 10
+  MyTimeScale: 8
   PositionOffsetX: 0
   PositionOffsetY: 0
   PositionOffsetZ: -100
   RandomizeOffset: 0
-  BulletOffsetRange: 500
+  BulletOffsetRange: 25
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 306155926}
@@ -11856,6 +11901,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 15
+  IsPlayer: 1
   TimeScale: 15
   boostDecayRate: 1.5
   mState: Loop
@@ -12832,7 +12878,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: m_TagString
@@ -12961,7 +13007,7 @@ MonoBehaviour:
   FiringCooldown: 1000
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Spline: {fileID: 1747417773}
   Range: 5000
   LeadTime: .449999988
@@ -13321,7 +13367,15 @@ Prefab:
       objectReference: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
     - target: {fileID: 11400000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
+      propertyPath: life
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
+      propertyPath: MyTimeScale
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14e434724fa827d4eab0ba254768af18, type: 2}
@@ -13648,7 +13702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!114 &1701070483
@@ -13667,12 +13721,12 @@ MonoBehaviour:
   FiringCooldown: 1000
   Range: 6000
   FollowDistance: 2100
-  MyTimeScale: 10
+  MyTimeScale: 8
   PositionOffsetX: 0
   PositionOffsetY: 125
   PositionOffsetZ: -100
   RandomizeOffset: 0
-  BulletOffsetRange: 500
+  BulletOffsetRange: 25
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1540385788}
@@ -13732,6 +13786,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 15
+  IsPlayer: 1
   TimeScale: 15
   boostDecayRate: 1.5
   mState: 
@@ -13937,7 +13992,7 @@ MonoBehaviour:
   FiringCooldown: 1000
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Spline: {fileID: 1747417773}
   Range: 5000
   LeadTime: .449999988
@@ -14228,12 +14283,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StopShip: 0
   ResetSpeed: 0
-  AllowChangeSpeed: 1
+  AllowChangeSpeed: 0
   IsStraightPath: 0
   IsFlipped: 0
   SpeedUpValue: 100
   DefaultSpeed: 4
-  TimeScale: 1
+  IsPlayer: 1
+  TimeScale: 8
   boostDecayRate: .810000002
   mState: Loop
   mCurrentTime: 0
@@ -14478,7 +14534,7 @@ MonoBehaviour:
   FiringCooldown: 1000
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Spline: {fileID: 1747417773}
   Range: 5000
   LeadTime: .449999988
@@ -15230,7 +15286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1877069803
 Transform:
   m_ObjectHideFlags: 0
@@ -15304,11 +15360,19 @@ Prefab:
       objectReference: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: RandomizeOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: life
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: MyTimeScale
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
@@ -16048,7 +16112,7 @@ MonoBehaviour:
   FiringCooldown: 1000
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Spline: {fileID: 1747417773}
   Range: 5000
   LeadTime: .449999988
@@ -16320,7 +16384,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 1663f68f39745ac4c85ae27dd38e0036, type: 2}
       propertyPath: m_TagString
@@ -16377,7 +16441,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!114 &1958529978
@@ -16396,12 +16460,12 @@ MonoBehaviour:
   FiringCooldown: 1000
   Range: 6000
   FollowDistance: 2100
-  MyTimeScale: 10
+  MyTimeScale: 8
   PositionOffsetX: 0
   PositionOffsetY: 0
   PositionOffsetZ: -100
   RandomizeOffset: 0
-  BulletOffsetRange: 500
+  BulletOffsetRange: 25
   target: {fileID: 0}
   targetObject: {fileID: 0}
   firingSFX: {fileID: 1676222588}
@@ -16461,6 +16525,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 15
+  IsPlayer: 1
   TimeScale: 15
   boostDecayRate: 1.5
   mState: Loop
@@ -16872,7 +16937,7 @@ Prefab:
       objectReference: {fileID: 249607706}
     - target: {fileID: 11400006, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: TimeScale
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: SI
@@ -16908,7 +16973,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100028, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 24661ac4586cb491b9ea820bf0d1d851, type: 2}
       propertyPath: maxAltitude
@@ -17396,11 +17461,19 @@ Prefab:
       objectReference: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: BulletOffsetRange
-      value: 500
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
       propertyPath: RandomizeOffset
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: life
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
+      propertyPath: MyTimeScale
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea3e0705e28beae48bb252210bc73080, type: 2}
@@ -17945,7 +18018,7 @@ MonoBehaviour:
   FiringCooldown: 1000
   StaggerTime: 0
   firingSFX: {fileID: 8200000, guid: 700d942c57305c6468dc6c985eee367d, type: 2}
-  BulletOffsetRange: 500
+  BulletOffsetRange: 35
   Spline: {fileID: 1747417773}
   Range: 5000
   LeadTime: .449999988

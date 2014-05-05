@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39acd7fce4302a4684833046b6379b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 1
   explosion: {fileID: 400000, guid: f699019fca888564691f1b41ea36e0ca, type: 2}
   VerifyAllCollisions: 0
 --- !u!114 &11400002
@@ -172,10 +172,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 100002, guid: 24e0c3b71fc9aed46b1c6a20baa4d5f2, type: 2}
-  FiringCooldown: 3000
-  Range: 200
+  FiringCooldown: 2000
+  Range: 500
   StaggerTime: 0
-  BulletOffsetRange: 25
+  BulletOffsetRange: 10
   MyTimeScale: 7
   PathPrefab: {fileID: 100004, guid: 04928068e430ceb48b5ed37322f07316, type: 2}
   target: {fileID: 0}
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SplineRoot: {fileID: 0}
   MyCamera: {fileID: 0}
-  Duration: 60
+  Duration: 120
   OrientationMode: 1
   WrapMode: 0
   AutoStart: 1
@@ -219,6 +219,7 @@ MonoBehaviour:
   IsFlipped: 0
   SpeedUpValue: 250
   DefaultSpeed: 6.80000019
+  IsPlayer: 0
   TimeScale: 10
   boostDecayRate: 1.5
   mState: 

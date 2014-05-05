@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile_Speed: 9000
-  Destroy_Timer: 2
+  Destroy_Timer: 2.5
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

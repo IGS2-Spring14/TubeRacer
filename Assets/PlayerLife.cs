@@ -31,7 +31,10 @@ public class PlayerLife : MonoBehaviour {
 	}
 
 	void OnGUI () {
-		GUI.Box (new Rect (Screen.width - 350,Screen.height - 150,100,55), (HitMaximum - NumberHit) + " lifes\n" + enemies.Length.ToString() + " enemies\n" + targets.Length.ToString()+ " targets");
+		if (HitMaximum - NumberHit == 1)
+			GUI.Box (new Rect (Screen.width - 350,Screen.height - 150,100,55), (HitMaximum - NumberHit) + " life\n" + enemies.Length.ToString() + " enemies\n" + targets.Length.ToString()+ " targets");
+		else
+			GUI.Box (new Rect (Screen.width - 350,Screen.height - 150,100,55), (HitMaximum - NumberHit) + " lives\n" + enemies.Length.ToString() + " enemies\n" + targets.Length.ToString()+ " targets");
 	}
 	
 	void OnTriggerEnter(Collider collision)
